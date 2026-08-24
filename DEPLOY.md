@@ -9,48 +9,22 @@ Only `reader-prototype/dist/` — the 117 generated pages and their assets. Ever
 repository (the markdown, the plans, the lab data) is visible on GitHub but is not part of the
 website.
 
-## One-time setup
+## It is live
 
-The repository is already initialised and committed on `main` — 167 files, one commit, clean
-working tree, **no remote configured**. Nothing has left this machine.
+<https://shnksi.github.io/learn-genomics/>
 
-**1. Decide public or private.** On a free account GitHub Pages requires the repository to be
-**public**. Private repositories can serve Pages on Pro, Team and Enterprise. Read
-[What becomes public](#what-becomes-public) first.
+Repository: <https://github.com/shnksi/learn-genomics> (public — required for Pages on a free
+account). Pages source is set to **GitHub Actions**; nothing is served from the branch itself.
 
-**2. Create the remote and push.** `gh` is installed and authenticated as `shnksi`, so this is
-one command — run it from the repository root:
+### A note on the first deploy
 
-```bash
-gh repo create learn-genomics --public --source=. --remote=origin --push
-```
+The initial push published nothing, and it is worth knowing why. The workflow originally carried
+a `paths:` filter, and **path filters do not match when a branch is created** — there is no prior
+commit to diff against. The run had to be dispatched by hand.
 
-Swap `--public` for `--private` if your plan allows Pages on private repositories. Without `gh`:
-
-```bash
-git remote add origin git@github.com:shnksi/learn-genomics.git
-git push -u origin main
-```
-
-**3. Turn Pages on.** Settings → Pages → Build and deployment → Source → **GitHub Actions**.
-Do not pick "Deploy from a branch" — this repository builds with Actions and publishes nothing
-from the branch itself.
-
-```bash
-gh repo edit --enable-pages 2>/dev/null || echo "set the source in Settings → Pages"
-```
-
-**4. Watch the first run.**
-
-```bash
-gh run watch
-```
-
-The URL appears on the Pages settings page and on the deployment:
-
-```
-https://shnksi.github.io/learn-genomics/
-```
+The filter has since been removed. Every push to `main` now rebuilds, which is both simpler and
+safer: a filter gap would fail the same silent way, leaving the published site quietly stale
+against the prose. A full build takes about twenty seconds.
 
 ## After that
 
