@@ -11,30 +11,45 @@ website.
 
 ## One-time setup
 
-**1. Create the repository.** On a free GitHub account, Pages requires the repository to be
-**public** — see [What becomes public](#what-becomes-public) before you do this. Private
-repositories can serve Pages on Pro, Team and Enterprise.
+The repository is already initialised and committed on `main` — 167 files, one commit, clean
+working tree, **no remote configured**. Nothing has left this machine.
 
-**2. Initialise and push.**
+**1. Decide public or private.** On a free account GitHub Pages requires the repository to be
+**public**. Private repositories can serve Pages on Pro, Team and Enterprise. Read
+[What becomes public](#what-becomes-public) first.
+
+**2. Create the remote and push.** `gh` is installed and authenticated as `shnksi`, so this is
+one command — run it from the repository root:
 
 ```bash
-cd /path/to/learn-genomics
-git init -b main
-git add .
-git commit -m "Genetics & Genomics: course and reader"
-git remote add origin git@github.com:USERNAME/REPO.git
+gh repo create learn-genomics --public --source=. --remote=origin --push
+```
+
+Swap `--public` for `--private` if your plan allows Pages on private repositories. Without `gh`:
+
+```bash
+git remote add origin git@github.com:shnksi/learn-genomics.git
 git push -u origin main
 ```
 
-**3. Turn Pages on.** In the repository: **Settings → Pages → Build and deployment → Source →
-GitHub Actions**. Do not pick "Deploy from a branch" — this repository builds with Actions and
-publishes nothing from the branch itself.
+**3. Turn Pages on.** Settings → Pages → Build and deployment → Source → **GitHub Actions**.
+Do not pick "Deploy from a branch" — this repository builds with Actions and publishes nothing
+from the branch itself.
 
-**4. Wait for the first run.** The **Actions** tab shows *Deploy course reader*. It builds, runs
-its checks, and deploys. The URL appears on the Pages settings page and on the deployment itself:
+```bash
+gh repo edit --enable-pages 2>/dev/null || echo "set the source in Settings → Pages"
+```
+
+**4. Watch the first run.**
+
+```bash
+gh run watch
+```
+
+The URL appears on the Pages settings page and on the deployment:
 
 ```
-https://USERNAME.github.io/REPO/
+https://shnksi.github.io/learn-genomics/
 ```
 
 ## After that
