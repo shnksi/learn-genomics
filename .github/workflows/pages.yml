@@ -9,16 +9,13 @@ name: Deploy course reader
 on:
   push:
     branches: [main]
-    paths:
-      - 'part-*/**'
-      - 'problem-sets/**'
-      - 'labs/**'
-      - 'question-banks/**'
-      - 'reference/**'
-      - 'GLOSSARY.md'
-      - 'reader-prototype/**'
-      - '.github/workflows/pages.yml'
   workflow_dispatch:
+
+# No `paths:` filter. It looks like a saving and is a liability: path filters
+# do not match when a branch is created, which is why the very first push
+# published nothing and had to be dispatched by hand — and any future filter
+# gap would fail the same silent way, leaving the site quietly stale against
+# the prose. A full build takes about 20 seconds, so there is nothing to save.
 
 # Nothing is granted globally; each job asks for exactly what it needs.
 permissions: {}
