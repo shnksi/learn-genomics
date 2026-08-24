@@ -1,0 +1,45 @@
+# ── Environments and caches ─────────────────────────────────────────────────
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+
+# ── Generated site ──────────────────────────────────────────────────────────
+# Built from the markdown by reader-prototype/build.py, and by GitHub Actions
+# on every push. Committing it would put a second copy of the course in git.
+reader-prototype/dist/
+genomic-investigator/dist/
+genomic-investigator/tsconfig.tsbuildinfo
+genome-workshop/foundations-campaign/dist/
+genome-workshop/prototype/dist/
+
+# ── Secrets ─────────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Tooling state, including a credential ───────────────────────────────────
+.gstack/
+**/.gstack/
+
+# ── Lab data: 1.5 GB of sequencing files, all re-downloadable via lab-00 ────
+labs/data/*
+# …except the figures the lab pages embed. Pattern, not a fixed list, so a new
+# figure is published without anyone having to remember this file. verify.py
+# fails the build if a lab references an image that is not here.
+!labs/data/*.png
+!labs/data/*.svg
+
+# ── Unpublished project work — EXCLUDED BY DEFAULT ──────────────────────────
+# "Deploy the course" means the curriculum and its reader. These are separate,
+# in-progress projects: strategy, adversarial reviews and implementation plans
+# that were never written to be read by anyone else. Nothing in the reader
+# depends on any of them.
+#
+# To publish them too, delete this block and re-run `git add .`.
+game-design/
+game-prototypes/
+genome-workshop/
+genomic-investigator/
+review-artifacts/

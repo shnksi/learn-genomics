@@ -1,0 +1,75 @@
+# Build the course reader and publish it to GitHub Pages.
+#
+# The markdown in this repository is the source of truth. The site is never
+# committed — it is rebuilt from the chapters on every push, so the published
+# pages cannot drift from the prose they were made from.
+
+name: Deploy course reader
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'part-*/**'
+      - 'problem-sets/**'
+      - 'labs/**'
+      - 'question-banks/**'
+      - 'reference/**'
+      - 'GLOSSARY.md'
+      - 'reader-prototype/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+# Nothing is granted globally; each job asks for exactly what it needs.
+permissions: {}
+
+# Never let two deploys race; queue instead of cancelling a half-finished one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+
+      # Fail fast if Pages is not yet set to build from Actions, rather than
+      # after a full build. This step's outputs are unused — the site uses
+      # relative paths everywhere and needs no injected base URL.
+      - uses: actions/configure-pages@v6
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+
+      - name: Build the site
+        working-directory: reader-prototype
+        run: python3 build.py
+
+      - name: Verify the build
+        working-directory: reader-prototype
+        run: python3 verify.py
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: reader-prototype/dist
+          # v4 stopped including dotfiles. Without this the artifact ships
+          # without .nojekyll, Pages runs Jekyll over the site, and anything
+          # named with a leading underscore silently disappears.
+          include-hidden-files: true
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

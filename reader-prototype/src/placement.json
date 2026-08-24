@@ -1,0 +1,42 @@
+{
+  "_comment": "Bespoke widgets, keyed by source filename stem. The floor widgets — the misconception diagnostic and the recall queue — are added to every chapter automatically and must NOT be listed here. Only Chapter 00 has bespoke widgets; every other chapter runs on the floor alone.",
+
+  "00-the-whole-story": [
+    {
+      "id": "strand-complement",
+      "after_heading": "1. The storage medium",
+      "title": "Write the other strand",
+      "note": "Objective 1 — you type it, the chapter doesn't."
+    },
+    {
+      "id": "central-dogma",
+      "after_heading": "2. Reading it: the central dogma",
+      "title": "Call the mutation before you make it",
+      "note": "Objective 2 — commit to an outcome, then break the sequence and find out."
+    },
+    {
+      "id": "meiosis-shuffle",
+      "after_heading": "5. Copying and transmitting",
+      "title": "Make a gamete",
+      "note": "Where 2²³ ≈ 8.4 million comes from, and what recombination adds on top."
+    },
+    {
+      "id": "mutation-budget",
+      "after_heading": "6. Where variation comes from",
+      "title": "How many new mutations does a child carry?",
+      "note": "Objective 4 — guess first, then derive it from the rate."
+    },
+    {
+      "id": "drift",
+      "after_heading": "8. Populations, and what evolution actually is",
+      "title": "Run the four forces",
+      "note": "Objective 6 — predict the fate of an allele, then watch twelve populations disagree with you."
+    },
+    {
+      "id": "curriculum-map",
+      "after_heading": "10. The map",
+      "title": "What depends on what",
+      "note": "Built from the diagram above. Click a part to see what it needs and what needs it."
+    }
+  ]
+}
