@@ -20,7 +20,8 @@ No `npm install`, no virtualenv, no third-party Python packages. Python 3 and a 
 documents  115        62 chapters · 7 statistics · 16 problem sets
                       11 labs · 14 question banks · 5 reference
 glossary   413 linkable terms, 4,514 hovercards placed
-links      2,872 cross-document links resolved, 0 dead
+links      3,038 cross-document links resolved, 0 dead
+mentions   145 bare Ch/lab/Part references auto-linked
 widgets    144 mounted across the course
 ```
 
@@ -35,8 +36,8 @@ Every chapter gets four things, and none of them required new content:
 | **Glossary hovercards** | `GLOSSARY.md` | 4,514 placed, first occurrence per section |
 | **Misconception diagnostic** | that chapter's own misconceptions table | 643 rows became distractors |
 | **Recall queue** | that chapter's folded Check-yourself answers | 348 Q/As, scheduled |
-| **Navigation** | the 2,162 `.md` links already in the prose | 2,872 resolved, 0 dead |
-| **Practice pointers** | labs' `Before this:` + problem sets' `Covers Ch NN` | 26 pointers on 25 chapters |
+| **Navigation** | the `.md` links already in the prose, plus 145 bare mentions | 3,038 resolved, 0 dead |
+| **Practice pointers** | labs' `Before this:` + `Covers Ch NN` lines | 41 pointers on 28 chapters — labs, problem sets, question banks |
 
 Two of those surprised me. The chapters already cross-reference each other thousands of times,
 so building every document at once turns those from decoration into the site's navigation with
@@ -127,7 +128,7 @@ Chapter 00.
 | Literal `**` left in prose | **0** (was 531) |
 | Residual backslash escapes | **0** |
 | Unrendered `[text](url)` | **0** |
-| Dead links | **0 of 2,872** |
+| Dead links | **0 of 3,038** |
 | Distinct source words reaching the page | **99.77%** |
 
 The 0.23% is tag names (`details`, `summary`), fence labels (`bash`), and the

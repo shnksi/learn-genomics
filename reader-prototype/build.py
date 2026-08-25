@@ -250,6 +250,19 @@ def extract_practice(docs: list[Doc]) -> dict[str, list[dict]]:
                         "title": getattr(d, "short_title", d.title),
                         "why": "the set covering everything you have just read"})
 
+        elif d.kind == "question-bank":
+            m = re.search(r"^Covers\s+(.+?)\.?$", d.md, re.M)
+            if not m:
+                continue
+            refs = [r for r in re.findall(r"\b(?:Ch\s*)?(\d+[A-Z]?|S\d)\b",
+                                          re.sub(r"\([^)]*\)", "", m.group(1)))
+                    if r in order_of]
+            if refs:
+                attach(max(refs, key=lambda r: order_of[r]),
+                       {"kind": "Question bank", "out": d.out,
+                        "title": getattr(d, "short_title", d.title),
+                        "why": "rapid recall — keep the part in memory"})
+
         elif d.kind == "lab":
             head = "\n".join(d.md.splitlines()[:6])
             # "Ch 26-29" names a range; the lab is due after its END, not its
@@ -266,7 +279,28 @@ def extract_practice(docs: list[Doc]) -> dict[str, list[dict]]:
                         "title": getattr(d, "short_title", d.title),
                         "why": "real data, real tools, in a terminal"})
 
+    # lab-00 declares no chapter prerequisite — correctly, it is environment
+    # setup — which left the one lab that must come FIRST as the only one the
+    # reading order never surfaced. Prepend it to whichever chapter carries the
+    # earliest lab pointer (Ch 29 → lab-07 under the published schedule).
+    lab00 = next((d for d in docs if d.kind == "lab" and "lab-00" in d.rel), None)
+    if lab00:
+        with_labs = [(min(order_of.get(n, 10_000) for n in [by_number_rel(rel, docs)]), rel)
+                     for rel, items in practice.items()
+                     if any(i["kind"] == "Lab" for i in items)]
+        if with_labs:
+            first_rel = min(with_labs)[1]
+            practice[first_rel].insert(0, {
+                "kind": "Lab", "out": lab00.out,
+                "title": getattr(lab00, "short_title", lab00.title),
+                "why": "do this once first — it builds the tool environment"})
+
     return practice
+
+
+def by_number_rel(rel: str, docs: list[Doc]) -> str:
+    d = next(x for x in docs if x.rel == rel)
+    return d.number or ""
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -364,6 +398,75 @@ def resolve_images(page_html: str, doc: Doc, wanted: dict[str, Path]) -> tuple[s
 
     page_html = re.sub(r'<img src="([^"]+)"', fix, page_html)
     return page_html, found
+
+
+# Regions where a bare "Ch 14" is notation, not a cross-reference: code, maths,
+# existing links, headings, glossary buttons — and mermaid source, whose node
+# ids ("subgraph S1", "Part 1") look exactly like references and are not.
+_MENTION_SKIP = re.compile(
+    r"(<pre\b.*?</pre>|<code\b.*?</code>|<a\b.*?</a>|<h[1-6]\b.*?</h[1-6]>"
+    r"|<button\b.*?</button>|<span class=\"math-inline\">.*?</span>"
+    r"|<div class=\"math-display\">.*?</div>|<div class=\"mermaid\">.*?</div>"
+    r"|<[^>]+>)",
+    re.DOTALL,
+)
+
+_BARE_CH = re.compile(r"\b(Ch(?:apter)?\s+)(\d{1,2}[A-Z]?)\b")
+_BARE_LAB = re.compile(r"\blab-(\d{2})\b")
+_BARE_PART = re.compile(r"\bPart\s+(\d{1,2})\b")
+
+# Deliberately NOT auto-linked: bare S1–S7. Ch 15 uses "S1 – A – S2" as
+# pedigree path notation (sibling, ancestor, sibling); linking it to the
+# statistics track would corrupt the page. The S-chapters are already the most
+# heavily linked material in the course, so the loss is a handful of mentions.
+
+
+def link_bare_mentions(page_html: str, doc: Doc, xref: dict) -> tuple[str, int]:
+    """Turn bare prose references — "Ch 14", "lab-03", "Part 6" — into links.
+
+    The course links most cross-references explicitly, but 139 mentions across
+    the built site were plain text: "the RF = 50% ceiling of Ch 14", "you
+    predicted 6.5x in lab-01", "read it again after Part 4". Same convention as
+    the authored links: a Part points at its first chapter.
+    """
+    linked = 0
+
+    def sub_ch(m: re.Match[str]) -> str:
+        nonlocal linked
+        num = m.group(2)
+        key = num.zfill(2) if num.isdigit() else \
+            (num[:-1].zfill(2) + num[-1] if num[:-1].isdigit() else num)
+        out = xref["chapters"].get(key)
+        if not out or out == doc.out:
+            return m.group(0)
+        linked += 1
+        return f'<a href="{out}">{m.group(0)}</a>'
+
+    def sub_lab(m: re.Match[str]) -> str:
+        nonlocal linked
+        out = xref["labs"].get(m.group(1))
+        if not out or out == doc.out:
+            return m.group(0)
+        linked += 1
+        return f'<a href="{out}">{m.group(0)}</a>'
+
+    def sub_part(m: re.Match[str]) -> str:
+        nonlocal linked
+        out = xref["parts"].get(int(m.group(1)))
+        if not out or out == doc.out:
+            return m.group(0)
+        linked += 1
+        return f'<a href="{out}">{m.group(0)}</a>'
+
+    pieces = _MENTION_SKIP.split(page_html)
+    for i, piece in enumerate(pieces):
+        if i % 2 == 1:
+            continue
+        piece = _BARE_CH.sub(sub_ch, piece)
+        piece = _BARE_LAB.sub(sub_lab, piece)
+        piece = _BARE_PART.sub(sub_part, piece)
+        pieces[i] = piece
+    return "".join(pieces), linked
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -479,7 +582,8 @@ def page_template(doc: Doc, body: str, boot: str, nav: dict,
 
 def build_doc(doc: Doc, terms: dict, linkmap: dict, placement: dict,
               nav: dict, images: dict,
-              practice: list[dict] | None = None) -> tuple[str, dict]:
+              practice: list[dict] | None = None,
+              xref: dict | None = None) -> tuple[str, dict]:
     md = doc.md
 
     widget_data: dict = {}
@@ -497,14 +601,19 @@ def build_doc(doc: Doc, terms: dict, linkmap: dict, placement: dict,
                    if w["id"] != "recall-queue" or widget_data["recall"]]
         widgets = placement.get(Path(doc.rel).stem, []) + widgets
 
-    # The header line moves into the top bar rather than being rendered twice.
-    if doc.meta:
-        md = md.replace("> " + doc.meta, "", 1)
+    # The "Before this / Time" header stays IN the body. An earlier layout
+    # moved it into the top bar and stripped it here; the multi-page top bar
+    # shows the part label instead, so the strip had become pure deletion —
+    # every lab's prerequisite line, links included, silently vanished from
+    # the site.
 
     body = render.render_blocks(md.splitlines())
     body, used_terms = render.link_glossary(body, terms)
     body, resolved, dead = resolve_links(body, doc, linkmap)
     body, n_img = resolve_images(body, doc, images)
+    mentions = 0
+    if xref:
+        body, mentions = link_bare_mentions(body, doc, xref)
 
     tail_widgets = [w for w in widgets if w.get("after_heading") is None]
     anchored = [w for w in widgets if w.get("after_heading") is not None]
@@ -531,6 +640,7 @@ def build_doc(doc: Doc, terms: dict, linkmap: dict, placement: dict,
     return page_template(doc, body, boot, nav, practice), {
         "terms": len(used_terms), "resolved": resolved, "dead": dead,
         "widgets": [w["id"] for w in placed], "toc": len(toc), "images": n_img,
+        "mentions": mentions,
     }
 
 
@@ -659,7 +769,8 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
         group("problem-set", "Problem sets",
               "Attempt before revealing — genetics is learned by calculating, not by reading."),
         group("lab", "Labs",
-              "Computational, on real public data. Start with lab-00 to build the environment."),
+              'Computational, on real public data. Start with '
+              '<a href="lab-lab-00-setup.html">lab-00</a> to build the environment.'),
         group("question-bank", "Question banks",
               "Rapid recall. Every chapter&rsquo;s own questions are already scheduled in its reader."),
         group("reference", "Reference", "Glossary, formulas, verified facts, further reading."),
@@ -731,6 +842,18 @@ def main() -> int:
     docs = discover()
     linkmap = build_link_map(docs)
     practice = extract_practice(docs)
+
+    # Lookup tables for the bare-mention pass.
+    xref = {
+        "chapters": {d.number: d.out for d in docs if d.number},
+        "labs": {m.group(1): d.out for d in docs if d.kind == "lab"
+                 for m in [re.search(r"lab-(\d{2})", d.rel)] if m},
+        "parts": {},
+    }
+    for d in sorted([x for x in docs if x.kind == "chapter"], key=lambda x: x.order):
+        pm = re.match(r"part-(\d+)-", d.part_dir)
+        if pm and int(pm.group(1)) not in xref["parts"]:
+            xref["parts"][int(pm.group(1))] = d.out
     terms = render.parse_glossary(GLOSSARY)
 
     reading = sorted([d for d in docs if d.kind in ("chapter", "stat")], key=lambda d: d.order)
@@ -771,18 +894,19 @@ def main() -> int:
     if (ROOT / "vendor" / "LICENSES.md").exists():
         shutil.copy2(ROOT / "vendor" / "LICENSES.md", assets / "LICENSES.md")
 
-    total_terms = total_resolved = total_dead = total_widgets = 0
+    total_terms = total_resolved = total_dead = total_widgets = total_mentions = 0
     images: dict[str, Path] = {}
     by_kind: dict[str, int] = {}
 
     for d in docs:
         page, info = build_doc(d, terms, linkmap, placement, nav_of.get(d.rel, {}),
-                               images, practice.get(d.rel))
+                               images, practice.get(d.rel), xref)
         (DIST / d.out).write_text(page, encoding="utf-8")
         total_terms += info["terms"]
         total_resolved += info["resolved"]
         total_dead += info["dead"]
         total_widgets += len(info["widgets"])
+        total_mentions += info.get("mentions", 0)
         by_kind[d.kind] = by_kind.get(d.kind, 0) + 1
 
     (DIST / "index.html").write_text(build_index(docs, practice), encoding="utf-8")
@@ -805,6 +929,7 @@ def main() -> int:
         print(f"           {v:3d}  {KIND_LABEL.get(k, k)}")
     print(f"glossary   {len(terms):,} linkable terms, {total_terms:,} hovercards placed")
     print(f"links      {total_resolved:,} cross-document links resolved, {total_dead} dead")
+    print(f"mentions   {total_mentions} bare Ch/lab/Part references auto-linked")
     print(f"widgets    {total_widgets} mounted across the course")
     print(f"images     {len(images)} copied into assets/img/")
     print(f"practice   {sum(len(v) for v in practice.values())} pointers on {len(practice)} chapters (labs + problem sets)")
