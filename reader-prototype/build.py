@@ -210,6 +210,66 @@ def _assign_order(docs: list[Doc]) -> None:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# Practice: which lab or problem set becomes due after each chapter
+# ─────────────────────────────────────────────────────────────────────────────
+
+
+def extract_practice(docs: list[Doc]) -> dict[str, list[dict]]:
+    """Map each chapter to the practice that becomes available after it.
+
+    The course already states this, but only in one direction: every lab names
+    the chapters it needs in its "Before this" header, and every problem set
+    opens with "Covers Ch NN-NN". Nothing points back — not one of the 62
+    genetics chapters links to a lab or a problem set, so reading straight
+    through never surfaces either of them. Inverting the mapping costs no new
+    authoring and puts the pointer where the reader actually is.
+
+    A problem set is due after the LAST chapter it covers; a lab after the
+    latest chapter it requires.
+    """
+    by_number = {d.number: d for d in docs if d.number}
+    order_of = {d.number: d.order for d in docs if d.number}
+    practice: dict[str, list[dict]] = {}
+
+    def attach(number: str, item: dict) -> None:
+        target = by_number.get(number)
+        if target:
+            practice.setdefault(target.rel, []).append(item)
+
+    for d in docs:
+        if d.kind == "problem-set":
+            m = re.search(r"^Covers\s+(.+?)\.?$", d.md, re.M)
+            if not m:
+                continue
+            refs = [r for r in re.findall(r"\b(?:Ch\s*)?(\d+[A-Z]?|S\d)\b",
+                                          re.sub(r"\([^)]*\)", "", m.group(1)))
+                    if r in order_of]
+            if refs:
+                attach(max(refs, key=lambda r: order_of[r]),
+                       {"kind": "Problem set", "out": d.out,
+                        "title": getattr(d, "short_title", d.title),
+                        "why": "the set covering everything you have just read"})
+
+        elif d.kind == "lab":
+            head = "\n".join(d.md.splitlines()[:6])
+            # "Ch 26-29" names a range; the lab is due after its END, not its
+            # start. Requiring a "Ch" prefix on every number would silently
+            # place lab-07 three chapters early.
+            refs = []
+            for start, end in re.findall(
+                    r"Ch\s*(\d+[A-Z]?|S\d)(?:\s*[\u2013\u2014-]\s*(\d+[A-Z]?))?", head):
+                refs.append(end or start)
+            refs = [r for r in refs if r in order_of]
+            if refs:
+                attach(max(refs, key=lambda r: order_of[r]),
+                       {"kind": "Lab", "out": d.out,
+                        "title": getattr(d, "short_title", d.title),
+                        "why": "real data, real tools, in a terminal"})
+
+    return practice
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # Cross-document links
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -327,7 +387,8 @@ FLOOR_WIDGETS = [
 ]
 
 
-def page_template(doc: Doc, body: str, boot: str, nav: dict) -> str:
+def page_template(doc: Doc, body: str, boot: str, nav: dict,
+                  practice: list[dict] | None = None) -> str:
     prev_link = (f'<a class="pager-prev" href="{nav["prev"]["out"]}">'
                  f'<span class="pager-dir">Previous</span>'
                  f'<span class="pager-title">{html.escape(nav["prev"]["title"])}</span></a>'
@@ -339,6 +400,22 @@ def page_template(doc: Doc, body: str, boot: str, nav: dict) -> str:
 
     kind = KIND_LABEL.get(doc.kind, doc.kind)
     crumb = html.escape(doc.part_label or kind)
+
+    # What the course says to do now. Derived, not authored: see extract_practice.
+    practice_html = ""
+    if practice:
+        items = "".join(
+            f'<li><a href="{p["out"]}">'
+            f'<span class="practice-kind">{html.escape(p["kind"])}</span>'
+            f'<span class="practice-title">{html.escape(p["title"])}</span>'
+            f'<span class="practice-why">{html.escape(p["why"])}</span></a></li>'
+            for p in practice
+        )
+        practice_html = (
+            '<aside class="practice" aria-label="Practice available after this chapter">'
+            '<h2 class="practice-head">Ready after this chapter</h2>'
+            f'<ul class="practice-list">{items}</ul></aside>'
+        )
 
     return f"""<!doctype html>
 <html lang="en">
@@ -379,6 +456,7 @@ def page_template(doc: Doc, body: str, boot: str, nav: dict) -> str:
   <nav id="toc" class="toc" aria-label="Contents"></nav>
   <main id="doc" class="chapter">
 {body}
+{practice_html}
     <nav class="pager" aria-label="Chapter navigation">
       {prev_link}
       {next_link}
@@ -400,7 +478,8 @@ def page_template(doc: Doc, body: str, boot: str, nav: dict) -> str:
 
 
 def build_doc(doc: Doc, terms: dict, linkmap: dict, placement: dict,
-              nav: dict, images: dict) -> tuple[str, dict]:
+              nav: dict, images: dict,
+              practice: list[dict] | None = None) -> tuple[str, dict]:
     md = doc.md
 
     widget_data: dict = {}
@@ -449,7 +528,7 @@ def build_doc(doc: Doc, terms: dict, linkmap: dict, placement: dict,
         "nav": nav,
     }, ensure_ascii=False)
 
-    return page_template(doc, body, boot, nav), {
+    return page_template(doc, body, boot, nav, practice), {
         "terms": len(used_terms), "resolved": resolved, "dead": dead,
         "widgets": [w["id"] for w in placed], "toc": len(toc), "images": n_img,
     }
@@ -498,7 +577,7 @@ def build_404() -> str:
 """
 
 
-def build_index(docs: list[Doc]) -> str:
+def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) -> str:
     ordered = sorted([d for d in docs if d.kind in ("chapter", "stat")],
                      key=lambda d: d.order)
     pos = {d.number: d.order for d in ordered if d.number}
@@ -551,13 +630,25 @@ def build_index(docs: list[Doc]) -> str:
     if open_list:
         rows.append("</ol>")
 
+    # Where each lab and problem set sits in the reading order, inverted from
+    # the same headers the chapter pages use.
+    due_after: dict[str, str] = {}
+    for rel, items in (practice or {}).items():
+        ch = next((d for d in ordered if d.rel == rel), None)
+        if ch:
+            for it in items:
+                due_after[it["out"]] = ch.number or ""
+
     def group(kind: str, heading: str, blurb: str) -> str:
         items = sorted([d for d in docs if d.kind == kind], key=lambda d: d.rel)
         if not items:
             return ""
+        def tag(d: Doc) -> str:
+            n = due_after.get(d.out)
+            return f'<span class="aux-when">after Ch {html.escape(n)}</span>' if n else ""
         lis = "".join(
             f'<li><a href="{d.out}">'
-            f'{html.escape(getattr(d, "short_title", d.title))}</a></li>'
+            f'{html.escape(getattr(d, "short_title", d.title))}{tag(d)}</a></li>'
             for d in items
         )
         return (f'<section class="aux" id="{kind}s"><h2 class="part-head">'
@@ -639,6 +730,7 @@ def main() -> int:
 
     docs = discover()
     linkmap = build_link_map(docs)
+    practice = extract_practice(docs)
     terms = render.parse_glossary(GLOSSARY)
 
     reading = sorted([d for d in docs if d.kind in ("chapter", "stat")], key=lambda d: d.order)
@@ -684,7 +776,8 @@ def main() -> int:
     by_kind: dict[str, int] = {}
 
     for d in docs:
-        page, info = build_doc(d, terms, linkmap, placement, nav_of.get(d.rel, {}), images)
+        page, info = build_doc(d, terms, linkmap, placement, nav_of.get(d.rel, {}),
+                               images, practice.get(d.rel))
         (DIST / d.out).write_text(page, encoding="utf-8")
         total_terms += info["terms"]
         total_resolved += info["resolved"]
@@ -692,7 +785,7 @@ def main() -> int:
         total_widgets += len(info["widgets"])
         by_kind[d.kind] = by_kind.get(d.kind, 0) + 1
 
-    (DIST / "index.html").write_text(build_index(docs), encoding="utf-8")
+    (DIST / "index.html").write_text(build_index(docs, practice), encoding="utf-8")
     (DIST / "404.html").write_text(build_404(), encoding="utf-8")
 
     # Tell GitHub Pages not to run Jekyll over the output. Without it Jekyll
@@ -714,6 +807,7 @@ def main() -> int:
     print(f"links      {total_resolved:,} cross-document links resolved, {total_dead} dead")
     print(f"widgets    {total_widgets} mounted across the course")
     print(f"images     {len(images)} copied into assets/img/")
+    print(f"practice   {sum(len(v) for v in practice.values())} pointers on {len(practice)} chapters (labs + problem sets)")
     print(f"pages      404.html + .nojekyll written for static hosting")
     size = sum(f.stat().st_size for f in DIST.glob("*.html")) / 1024
     print(f"\nwrote      dist/  ({len(list(DIST.glob('*.html')))} pages, {size:.0f} KB of HTML)")

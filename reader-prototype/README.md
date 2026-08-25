@@ -36,10 +36,17 @@ Every chapter gets four things, and none of them required new content:
 | **Misconception diagnostic** | that chapter's own misconceptions table | 643 rows became distractors |
 | **Recall queue** | that chapter's folded Check-yourself answers | 348 Q/As, scheduled |
 | **Navigation** | the 2,162 `.md` links already in the prose | 2,872 resolved, 0 dead |
+| **Practice pointers** | labs' `Before this:` + problem sets' `Covers Ch NN` | 26 pointers on 25 chapters |
 
-That last row is the one that surprised me. The chapters already cross-reference each other
-thousands of times. Building every document at once turns those from decoration into the
-site's navigation, with no authoring at all.
+Two of those surprised me. The chapters already cross-reference each other thousands of times,
+so building every document at once turns those from decoration into the site's navigation with
+no authoring at all.
+
+And the practice pointers close a real gap. Every lab names the chapters it needs; every problem
+set opens with `Covers Ch NN-NN`. But the pointer only ran one way — **not one of the 62 genetics
+chapters linked to a lab or a problem set**, so reading straight through never surfaced either.
+Inverting that mapping puts "Ready after this chapter" at the foot of the 25 chapters that earn
+one, and tags the index with where each lab sits.
 
 Chapter 00 additionally carries six bespoke widgets declared in `src/placement.json`. Every
 other chapter runs on the floor alone — which is the point: **the floor is what scales.**
