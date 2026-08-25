@@ -43,3 +43,4 @@ game-prototypes/
 genome-workshop/
 genomic-investigator/
 review-artifacts/
+.build-state/

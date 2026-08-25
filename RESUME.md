@@ -1,3 +1,57 @@
+# Part D (SCA12 deep-dive track) build — COMPLETE 2026-08-25
+
+The build described below finished: all 9 deliverables authored, adversarially
+fact-checked (107 findings fixed in round 1), a completeness-critic patch round closed
+10 further gaps (tremor mechanism honesty box, B55β neuronal-function section, hypothesis
+A′′ translational-control row, clinical problems in ps-17, FXTAS/SCA27B differential,
+TETRAS, somatic-mosaicism measurement, management section, label harmonisation), and a
+diff-scoped re-verification caught and fixed 16 findings in the patches themselves.
+Integration done: README, STUDY-GUIDE, GLOSSARY (21 terms), verified-facts (28 sections),
+further-reading (82 papers), 6 back-links. Reader build + verify PASS (126 pages, 0 dead
+links). All changes uncommitted, awaiting review. Known open items (annotated in place,
+not resolved): the PPP2R2B gene-span GENCODE-vs-RefSeq disagreement; overlap between the
+pre-existing SCA12-thresholds verified-facts section and the new per-source grids; the
+contested pathogenic floor (51 vs ≥43 vs ≥46) is taught as contested, per the sources.
+The section below is retained as the historical pause record.
+
+---
+
+# (historical) PAUSED: Part D (SCA12 deep-dive track) build — 2026-08-25
+
+A second build is in progress and was paused mid-run (session usage limit). State:
+
+**All 9 deliverables are drafted on disk** (uncommitted): `part-D-sca12/D1`–`D5`,
+`labs/lab-11-repeat-genotyping.md`, `labs/lab-12-expression-and-isoforms.md` (+ 2 PNGs in
+`labs/data/`), `problem-sets/ps-17-repeat-disorders-and-sca12.md`, `question-banks/qb-part-D.md`.
+Web-verified fact sheets and the style/coverage contracts live in the session scratchpad:
+`/private/tmp/claude-501/-Users-shnksi-learn-genomics/9764e46c-06d6-42e3-96b6-547a46f69f66/scratchpad/sca12/`
+(FACTS-sca12, FACTS-repeat-disorders, FACTS-neuro-pp2a, FACTS-methods, STYLE-CONTRACT, COVERAGE).
+Because /tmp is volatile, a durable copy was made at `.build-state/sca12-scratch/` (gitignored).
+If the /tmp path is gone on resume, restore it first:
+`mkdir -p <tmp-path> && cp .build-state/sca12-scratch/* <tmp-path>/` — the resume script's agents
+read the /tmp path.
+
+**Done:** scouts, all 4 research sheets, all 9 authors, most per-file verify+fix passes
+(D5 confirmed fixed; a qb-part-D blocker about promoter-vs-5'UTR placement of the repeat was
+found and was being fixed). `reference/verified-facts.md` has partial additions.
+
+**Not done:** last few verify/fix stages (lab-12 verify was in flight), the completeness
+critic, the link-integrity sweep, and the whole integration step (README, STUDY-GUIDE,
+GLOSSARY, verified-facts/further-reading merge, back-links from Ch 11/16/48/54/55/57,
+reader-prototype manifest check). Do not treat the drafts as verified until those run.
+
+**To resume** (completed stages return instantly from cache; only unfinished work re-runs):
+```
+Workflow({
+  scriptPath: "/Users/shnksi/.claude/projects/-Users-shnksi-learn-genomics/9764e46c-06d6-42e3-96b6-547a46f69f66/workflows/scripts/sca12-course-extension-wf_4af06f32-a34.js",
+  resumeFromRunId: "wf_4af06f32-a34"
+})
+```
+Journal of every completed agent result:
+`/Users/shnksi/.claude/projects/-Users-shnksi-learn-genomics/9764e46c-06d6-42e3-96b6-547a46f69f66/subagents/workflows/wf_4af06f32-a34/journal.jsonl`
+
+---
+
 # Build complete
 
 **This file can be deleted.** It tracked a multi-session build that is now finished. Kept only

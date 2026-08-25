@@ -242,6 +242,8 @@ The mechanisms differ by location. In *HTT* the repeat is translated into a long
 
 Worth noting for a statistically minded reader: anticipation was for decades dismissed as ascertainment bias, and that scepticism was *methodologically correct*. If you ascertain families through an affected child, you will systematically find early-onset cases in the younger generation and late-onset cases in the older one, manufacturing apparent anticipation from nothing. The hypothesis was right to raise. It happened to be wrong here, and only molecular measurement of repeat length could show that.
 
+If this section reads like the opening of a longer story, it is: [D3 — Repeat-expansion disorders](../part-D-sca12/D3-repeat-expansion-disorders.md), in the optional SCA12 track, expands the four-row table into the full disorder class — the mismatch-repair engine behind the instability, thresholds and premutations, and anticipation made quantitative.
+
 ## 10. Mutational signatures
 
 Every mutational process leaves a characteristic fingerprint in the *joint* distribution of substitution type and sequence context. Encode a genome's somatic mutations as counts over 96 channels — 6 substitution classes (referenced to the pyrimidine of the pair: C>A, C>G, C>T, T>A, T>C, T>G) × 4 possible 5' neighbours × 4 possible 3' neighbours. Each tumour becomes a 96-vector.

@@ -348,6 +348,8 @@ The gap between "sequenced" and "diagnosed" is the field's real workload, and it
 | Novel genes | The gene has no disease association to match against | §10 |
 | Oligogenic architecture, or no genetic cause | There is no single answer to find | Re-examining the phenotype |
 
+The repeat-expansion row has a whole optional track behind it: [D3](../part-D-sca12/D3-repeat-expansion-disorders.md) develops the disorder class this table compresses into one line, and [lab 11](../labs/lab-11-repeat-genotyping.md) runs a targeted repeat genotyper on real 30× data — and shows exactly why the standard pipeline is blind by construction.
+
 Two structural points. Reanalysis of old data against new knowledge yields an extra ~5–15% within a few years, purely from the literature moving — which makes "negative" a timestamped result rather than a conclusion. And exome-vs-genome is not only about coverage: genome sequencing is PCR-free and gives uniform depth, so it also recovers coding variants that capture-based exomes miss in GC-rich first exons.
 
 ## 10. The n-of-1 problem, and matchmaking

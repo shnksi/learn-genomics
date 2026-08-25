@@ -731,7 +731,10 @@ which is the chapter's thesis stated as a table.
   how a classification becomes a report and a clinical decision ·
   [Ch 58 — Ethics, privacy and society](../part-12-applications-and-ethics/58-ethics-and-society.md)
   — consent for secondary findings, the duty to recontact, and who is disadvantaged by an
-  unrepresentative evidence base
+  unrepresentative evidence base ·
+  [D5 — SCA12 II: population, clinic, therapy](../part-D-sca12/D5-sca12-population-clinic-therapy.md)
+  — this framework meets a repeat-length variant: D5 §3 runs the counselling calculation for an
+  allele class the evidence codes were never calibrated on
 
 ## Check yourself
 

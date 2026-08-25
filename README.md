@@ -6,10 +6,11 @@ and mapping, the molecular machinery, bacterial and phage genetics, developmenta
 mutation and recombination, population and quantitative theory — with **human and
 computational genomics built on top of it**.
 
-62 chapters, 16 problem sets with worked solutions, 11 hands-on computational labs, and
-question banks for spaced repetition.
+62 chapters, 17 problem sets with worked solutions, 13 hands-on computational labs, question
+banks for spaced repetition — and an optional five-chapter specialisation track
+([Part D](part-D-sca12/)) that takes one rare disease, SCA12, all the way from neuron to clinic.
 
-**What it is not is a laboratory course.** All 11 labs are computational — real public data,
+**What it is not is a laboratory course.** All 13 labs are computational — real public data,
 real tools, run on your own machine — and there is no bench work anywhere in it. For a reader
 who already programs, that is the right trade and the labs teach a genuine skill. But a
 conventional genetics degree weights wet-lab practical work heavily, and this does not
@@ -91,9 +92,9 @@ separates third-year understanding from first-year.
 
 | | What it is | When to use it |
 |---|---|---|
-| [`problem-sets/`](problem-sets/) | 16 sets, worked solutions folded in `<details>` | After finishing a part. Attempt before revealing — genetics is learned by calculating, not by reading |
-| [`labs/`](labs/) | 11 computational labs on real public data, CLI + Python | Each after the chapter it names in its own `Before this:` header — most sit in Part 9, but [`lab-07`](labs/lab-07-population-genetics.md) follows Ch 29 and [`lab-10`](labs/lab-10-phylogenetics.md) follows Ch 34. Start with [`lab-00`](labs/lab-00-setup.md) to build the environment |
-| [`question-banks/`](question-banks/) | Rapid recall Q&A per part | Ongoing. Convert to Anki with [`reference/to_anki.py`](reference/to_anki.py) |
+| [`problem-sets/`](problem-sets/) | 17 sets, worked solutions folded in `<details>` | After finishing a part. Attempt before revealing — genetics is learned by calculating, not by reading. [`ps-17`](problem-sets/ps-17-repeat-disorders-and-sca12.md) closes the D-track after D5 |
+| [`labs/`](labs/) | 13 computational labs on real public data, CLI + Python | Each after the chapter it names in its own `Before this:` header — most sit in Part 9, but [`lab-07`](labs/lab-07-population-genetics.md) follows Ch 29, [`lab-10`](labs/lab-10-phylogenetics.md) follows Ch 34, and the D-track adds [`lab-11`](labs/lab-11-repeat-genotyping.md) after D3 and [`lab-12`](labs/lab-12-expression-and-isoforms.md) after D4. Start with [`lab-00`](labs/lab-00-setup.md) to build the environment |
+| [`question-banks/`](question-banks/) | Rapid recall Q&A per part, including [`qb-part-D`](question-banks/qb-part-D.md) for the D-track | Ongoing. Convert to Anki with [`reference/to_anki.py`](reference/to_anki.py) |
 
 ## Contents
 
@@ -108,12 +109,17 @@ separates third-year understanding from first-year.
 | S6 | [Likelihood and Bayesian inference](part-S-statistics/S6-likelihood-and-bayes.md) | Ch 32 |
 | S7 | [High-dimensional data](part-S-statistics/S7-high-dimensional-data.md) | Ch 28 |
 
-The full linear order, statistics included:
+The full linear order, statistics included — with the optional D-track's insertion points
+in the same bracket notation:
 
 ```
-00 01 · 02–08 · [S1 S2] · 09 10 11 · [S3 S4] · 12 13 14 15 · 16–20 20A · 21–25 25A ·
-26 27 · [S5 S7] · 28 29 · 30 31 · [S6] · 32 · 33 34 35 35A · 36–58
+00 01 · 02–08 · [D1 D2] · [S1 S2] · 09 10 11 · [S3 S4] · 12 13 14 15 · 16–20 20A · 21–25 25A ·
+26 27 · [S5 S7] · 28 29 · 30 31 · [S6] · 32 · 33 34 35 35A · 36–54 · [D3] · 55–58 · [D4 D5]
 ```
+
+`D` chapters belong to the optional [SCA12 specialisation track](part-D-sca12/) (Part D,
+below): D1 and D2 are readable any time after Ch 08, D3 after Ch 54, and D4–D5 after Ch 58.
+Skipping all five costs nothing downstream — nothing in the main sequence depends on them.
 
 **A letter suffix means "read here, but numbered out of the way".** Chapters `20A`,
 `25A` and `35A` sit exactly where the suffix says — 20A between Ch 20 and Ch 21, 25A after
@@ -234,6 +240,27 @@ it and invalidate several thousand cross-references.
 |---|---|
 | 57 | [Genomics in practice](part-12-applications-and-ethics/57-genomics-in-practice.md) |
 | 58 | [Ethics, privacy and society](part-12-applications-and-ethics/58-ethics-and-society.md) |
+
+### Part D — The SCA12 track: read if your destination is rare neurogenetic disease
+
+An optional specialisation track that takes everything the course teaches and spends it on one
+disease — spinocerebellar ataxia type 12, a repeat-expansion disorder of a phosphatase
+regulatory subunit. If your destination is rare neurogenetic disease, and SCA12 specifically,
+this is the road; if not, skip it and lose nothing, because no main-sequence chapter depends
+on it.
+
+| | | Read after |
+|---|---|---|
+| D1 | [The neuron, the cerebellum and selective vulnerability](part-D-sca12/D1-neurons-and-the-cerebellum.md) | Ch 08 |
+| D2 | [Kinases, phosphatases and PP2A](part-D-sca12/D2-kinases-phosphatases-and-pp2a.md) | Ch 08 |
+| D3 | [Repeat-expansion disorders](part-D-sca12/D3-repeat-expansion-disorders.md) | Ch 54 |
+| D4 | [SCA12 I: from repeat to phenotype](part-D-sca12/D4-sca12-from-repeat-to-phenotype.md) | Ch 58 |
+| D5 | [SCA12 II: population, clinic, therapy](part-D-sca12/D5-sca12-population-clinic-therapy.md) | Ch 58 |
+
+The track carries its own practice: [`lab-11`](labs/lab-11-repeat-genotyping.md) (repeat
+genotyping, after D3), [`lab-12`](labs/lab-12-expression-and-isoforms.md) (*PPP2R2B*
+expression and isoforms, after D4), [`ps-17`](problem-sets/ps-17-repeat-disorders-and-sca12.md)
+(after D5) and [`qb-part-D`](question-banks/qb-part-D.md) for spaced repetition.
 
 ### Reference
 - [Glossary](GLOSSARY.md) — every term, defined once

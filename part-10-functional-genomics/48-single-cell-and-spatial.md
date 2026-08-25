@@ -680,7 +680,11 @@ difference would have returned a small p-value and the opposite mechanistic conc
   [Ch 52](../part-11-human-and-statistical-genomics/52-association-to-mechanism.md) — using
   cell-type-resolved expression to assign a GWAS locus to a cell type ·
   [Ch 56](../part-11-human-and-statistical-genomics/56-cancer-genomics.md) — tumour
-  heterogeneity, where the composition/state confound is the entire subject
+  heterogeneity, where the composition/state confound is the entire subject ·
+  [D4](../part-D-sca12/D4-sca12-from-repeat-to-phenotype.md) and
+  [lab 12](../labs/lab-12-expression-and-isoforms.md) — a clinical use of cell-type resolution:
+  whether *PPP2R2B*'s bulk cerebellar signal survives the granule-cell dilution this chapter
+  warns about is a question only single-nucleus data can answer
 
 ## Check yourself
 

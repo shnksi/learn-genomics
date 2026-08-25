@@ -14,6 +14,8 @@ Every term the curriculum relies on, defined once, with a link to the chapter th
 
 **ACMG/AMP framework** — The 2015 rule set that combines weighted evidence codes into five clinical tiers; it classifies the *evidence about* a variant in a specific gene–disease context, not the variant in the abstract. See also *VUS*. [Ch 55](part-11-human-and-statistical-genomics/55-clinical-variant-interpretation.md)
 
+**action tremor** — Tremor that appears when a body part is voluntarily moved or held against gravity, as opposed to tremor at rest; a claim about *when* the shaking occurs, not what causes it — and the presenting sign in ~90–96% of SCA12 cohorts, ahead of the ataxia. See also *intention tremor*. [D1](part-D-sca12/D1-neurons-and-the-cerebellum.md)
+
 **additive genetic variance (V_A)** — The variance of the fitted values from regressing genotypic value on allele count; the only component transmitted through meiosis, and hence the one that predicts response to selection. [Ch 30](part-06-quantitative-genetics/30-quantitative-traits.md)
 
 **admixture** — Gene flow between previously separated populations, producing individuals whose genome is a mosaic of ancestries and generating long-range linkage disequilibrium even between unlinked loci. [Ch 28](part-05-population-genetics/28-structure-and-inbreeding.md)
@@ -48,9 +50,13 @@ Every term the curriculum relies on, defined once, with a link to the chapter th
 
 **anticodon** — The tRNA triplet that base-pairs with a codon; the ribosome checks codon–anticodon geometry only and cannot verify which amino acid the tRNA is carrying. [Ch 07](part-01-molecular-foundations/07-genetic-code-and-translation.md)
 
+**antisense oligonucleotide (ASO)** — A short synthetic single-stranded nucleic acid designed to base-pair with a chosen RNA and change its fate — degradation, splice redirection (nusinersen), or blocked translation; a sequence-programmable drug class whose hard problem is delivery to the target tissue, not design, and for *PPP2R2B* no ASO has been published. [Ch 06](part-01-molecular-foundations/06-rna-processing.md) · [D5](part-D-sca12/D5-sca12-population-clinic-therapy.md)
+
 **ascertainment bias** — Distortion introduced because the sample was collected conditional on the phenotype; in completely ascertained two-child sibships the recessive expectation is 4/7, not 1/4. [Ch 12](part-02-transmission-genetics/12-probability-and-testing.md)
 
 **ATAC-seq** — Assay for accessible chromatin using Tn5 transposase to insert sequencing adapters into unprotected DNA; ~1–3% of the genome is accessible, and mitochondrial reads are the characteristic artefact. [Ch 49](part-10-functional-genomics/49-epigenome-profiling.md)
+
+**ataxia** — Loss of coordination of voluntary movement — gait, limbs, speech, eye movements — from failure of the cerebellum or its connections; a sign that localises the lesion, not a disease or a diagnosis, which is why "the ataxias" is a list of dozens of unrelated genetic entities. [D1](part-D-sca12/D1-neurons-and-the-cerebellum.md)
 
 **attenuation** — Bacterial regulation that decides whether an *already-initiated* transcript is finished, by coupling ribosome position to RNA secondary structure; a different control point from repression, not a form of it. [Ch 21](part-04-gene-regulation/21-bacterial-regulation.md)
 
@@ -117,6 +123,8 @@ Every term the curriculum relies on, defined once, with a link to the chapter th
 **central dogma** — Sequence information flows DNA → RNA → protein and not back from protein to nucleic acid; a claim about information transfer, not a claim that DNA controls everything. [Ch 00](part-00-orientation/00-the-whole-story.md)
 
 **centromere** — The chromosomal region at which the kinetochore assembles; defined epigenetically by CENP-A nucleosomes, not by its DNA sequence — alpha satellite is the usual substrate, not the instruction, and neocentromeres form on ordinary sequence. [Ch 03](part-01-molecular-foundations/03-genomes-chromosomes-chromatin.md)
+
+**cerebellum** — The hindbrain structure holding roughly 80% of the brain's neurons in a tenth of its mass; it refines and times movement it did not initiate, so damage produces clumsy movement — ataxia, dysmetria, intention tremor — and never paralysis. [D1](part-D-sca12/D1-neurons-and-the-cerebellum.md)
 
 **chiasma** — The cytologically visible site of a crossover between non-sister chromatids; its mechanical job is to hold the bivalent together until anaphase I, with variation as a consequence. [Ch 09](part-02-transmission-genetics/09-mitosis-and-meiosis.md)
 
@@ -282,6 +290,10 @@ Every term the curriculum relies on, defined once, with a link to the chapter th
 
 **forward genetics** — Starting from a phenotype and finding the responsible gene, typically by mutagenesis and screening; contrasted with reverse genetics, which starts from the gene. [Ch 37](part-08-methods/37-model-organisms-and-screens.md)
 
+**founder effect** — Chance shifts in allele frequency, and loss of variation, in a population descended from few founders; it can carry a rare disease allele to high local frequency — Ellis–van Creveld in the Amish, SCA12 in the Agarwal community — with no selection anywhere in the story. [Ch 27](part-05-population-genetics/27-the-four-forces.md) · [D5](part-D-sca12/D5-sca12-population-clinic-therapy.md)
+
+**founder haplotype** — The shared marker haplotype flanking a disease allele in carriers descended from one ancestral mutation event; sharing proves the carriers' common descent, **not** that the community it was found in is the mutation's origin or its boundary — the Indian SCA12 founder haplotype is absent from the American index pedigree, so that expansion arose at least twice. [D5](part-D-sca12/D5-sca12-population-clinic-therapy.md)
+
 **free energy (ΔG°)** — The driving force of a reaction, ΔH° − TΔS°, quoted in kcal/mol and negative when the reaction is favourable as written; it fixes where a reaction ends up (ΔG° = −RT ln K) and says nothing at all about how fast it gets there, which is set by the barrier instead. [Ch 01](part-00-orientation/01-chemistry-and-cell-primer.md)
 
 **FRiP** — Fraction of reads in peaks, a signal-to-background ratio for ChIP and ATAC data; because it is a ratio, sequencing deeper cannot rescue a poor experiment. [Ch 49](part-10-functional-genomics/49-epigenome-profiling.md)
@@ -412,7 +424,13 @@ Every term the curriculum relies on, defined once, with a link to the chapter th
 
 **index SNP (lead SNP)** — The variant with the largest association statistic at a locus, genotyped or imputed; it is a proxy correlated with the causal site rather than the causal site itself, and which member of the LD block tops the list is close to sampling noise. [Ch 51](part-11-human-and-statistical-genomics/51-gwas.md)
 
+**in-repeat read** — A read falling entirely inside a repeat tract, carrying nothing but motif and therefore unmappable on its own sequence; a repeat genotyper rescues it by anchoring its mate, and counts of such reads are what let short-read data flag an expansion *longer than the read length* — as a detection and a lower bound, never a size. [lab 11](labs/lab-11-repeat-genotyping.md)
+
+**intention tremor** — Action tremor that worsens as a movement approaches its target — the cerebellar signature, produced by a predictive correction arriving mistimed; distinct from the postural tremor that opens most SCA12 presentations, and from parkinsonian tremor, which is worst at rest. See also *action tremor*. [D1](part-D-sca12/D1-neurons-and-the-cerebellum.md)
+
 **interference** — The suppression of one crossover by another nearby, so double crossovers are rarer than independence predicts; I = 1 − coefficient of coincidence, and the Kosambi function accommodates it where Haldane does not. [Ch 14](part-02-transmission-genetics/14-linkage-and-mapping.md)
+
+**intermediate allele** — A repeat allele too short to cause disease in its carrier but meiotically unstable, so the carrier's children are at risk (HD 27–35 CAG is the canonical range); distinct from a reduced-penetrance allele, which genuinely causes disease in someone who may never live to show it, and from a premutation with a phenotype of its own. See also *premutation*. [D3](part-D-sca12/D3-repeat-expansion-disorders.md)
 
 **interval mapping** — Testing for a QTL at every position *between* markers by weighting genotypes by their probability given the flanking markers, which separates effect size from position. [Ch 32](part-06-quantitative-genetics/32-mapping-quantitative-traits.md)
 
@@ -630,6 +648,8 @@ Every term the curriculum relies on, defined once, with a link to the chapter th
 
 **phenotype** — Any measurable characteristic of an organism; dominance, penetrance and expressivity are all indexed to a *specific* phenotype and assay, not to the allele in general. [Ch 10](part-02-transmission-genetics/10-mendelian-inheritance.md)
 
+**phosphatase** — An enzyme that removes phosphate groups from proteins, erasing what kinases write; the human genome carries 428 Ser/Thr kinases against ~30 Ser/Thr phosphatase catalytic-subunit genes, so phosphatase specificity cannot live in the catalytic subunit and is built combinatorially from targeting subunits instead. See also *PP2A*. [D2](part-D-sca12/D2-kinases-phosphatases-and-pp2a.md)
+
 **Phred quality score** — Q = −10 log₁₀(P_error), so Q20 = 1% error, Q30 = 0.1%, Q40 = 0.01%; an *estimate* whose calibration is itself a modelling claim, and headline platform Q figures are a mode or median over a run. [Ch 41](part-09-genomics/41-data-formats.md) · [Ch 40](part-09-genomics/40-sequencing-technologies.md)
 
 **phylogenetic tree** — A hypothesis about ancestry in which the tips are all contemporary; extant species descend from inferred internal nodes, not from each other. [Ch 34](part-07-molecular-evolution/34-phylogenetics.md)
@@ -652,7 +672,13 @@ Every term the curriculum relies on, defined once, with a link to the chapter th
 
 **posterior probability (phylogenetic)** — The Bayesian support for a clade; a different quantity on a different scale from bootstrap support, routinely much higher on the same data, and calibrated only under a correct model. [Ch 34](part-07-molecular-evolution/34-phylogenetics.md)
 
+**PP2A** — Protein phosphatase 2A: a heterotrimer of scaffold (A), catalytic (C) and regulatory (B) subunits responsible for half or more of cellular Ser/Thr dephosphorylation; the name covers a *family* of ~60–100 holoenzymes distinguished by which of 15 B-subunit genes is bound, not one enzyme — which is why "PP2A activity" without a subunit named is barely a claim. [D2](part-D-sca12/D2-kinases-phosphatases-and-pp2a.md)
+
+**PPP2R2B** — The gene (*PPP2R2B*, HGNC-italicised in prose) at 5q32 encoding Bβ (B55β), a brain-enriched PP2A regulatory subunit with a cytosolic (Bβ1) and a mitochondrially targeted (Bβ2) splice isoform; a CAG repeat in its 5′ region causes SCA12 when expanded. Brain-enriched is not cerebellum-enriched — frontal cortex expresses it roughly threefold higher than cerebellum. [D2](part-D-sca12/D2-kinases-phosphatases-and-pp2a.md)
+
 **PRDM9** — The zinc-finger protein that positions meiotic recombination hotspots in humans and mice; its binding array evolves extremely fast, so human and chimpanzee hotspots barely overlap and the recombination landscape differs between individuals. The same turnover makes it the only hybrid-sterility gene identified in a vertebrate, and a textbook *Dobzhansky–Muller incompatibility*. [Ch 18](part-03-genome-instability/18-recombination-mechanisms.md), [Ch 35A](part-07-molecular-evolution/35A-speciation-and-ecological-genetics.md)
+
+**premutation** — A repeat allele that does not cause the classical disease but is expansion-prone on transmission and may cause a *different* disease of its own — *FMR1* 55–200 CGG causes FXTAS through toxic RNA, a mechanism the methylated, silenced full mutation cannot use; not a synonym for intermediate allele. See also *intermediate allele*. [D3](part-D-sca12/D3-repeat-expansion-disorders.md)
 
 **prime editing** — Editing using a nickase-reverse transcriptase fusion and an extended guide that templates the desired sequence; it writes the edit itself rather than relying on the cell's repair choice. [Ch 38](part-08-methods/38-genome-editing.md)
 
@@ -674,6 +700,8 @@ Every term the curriculum relies on, defined once, with a link to the chapter th
 
 **purifying selection** — Removal of deleterious variants; pervasive, and the reason most mutations never become fixed differences — which is precisely what makes neutral theory a claim about *fixed* differences only. [Ch 27](part-05-population-genetics/27-the-four-forces.md)
 
+**Purkinje cell** — The sole output neuron of the cerebellar cortex: a GABAergic intrinsic pacemaker firing continuously at ~30–150 Hz through one of the largest dendritic arbours in the brain, and a recurring casualty across the spinocerebellar ataxias; everything the cerebellar cortex computes leaves through its inhibitory axon, which is why losing it is ataxia. [D1](part-D-sca12/D1-neurons-and-the-cerebellum.md)
+
 **purine** — A or G, the two-ring bases; the larger of the two size classes, which is why every base pair is one purine against one pyrimidine and the duplex holds a constant width. The bond joining a purine to its sugar is also the one that hydrolyses spontaneously, at ~10⁴ depurinations per cell per day. [Ch 02](part-01-molecular-foundations/02-dna-structure.md)
 
 **PWM (position weight matrix)** — A per-position log-odds model of a binding motif; a genome-wide scan returns on the order of 1,000 false positives per functional site, so motif presence is weak evidence. [Ch 22](part-04-gene-regulation/22-eukaryotic-transcriptional-regulation.md)
@@ -694,6 +722,8 @@ Every term the curriculum relies on, defined once, with a link to the chapter th
 
 **r²** — The squared correlation between two loci treated as 0/1 indicators, D²/(p_A p_a p_B p_b); the LD statistic that sets sample size, because testing a tag rather than the causal variant costs a factor of 1/r² in n. r² = 1 requires the two loci to have *matched* allele frequencies (p_A = p_B), so a common SNP can never perfectly tag a rare one. [Ch 29](part-05-population-genetics/29-linkage-disequilibrium.md)
 
+**RAN translation** — Repeat-associated non-AUG translation: ribosomes initiating inside an expanded repeat with no start codon, in multiple frames and from both strands, so a tract annotated as non-coding yields homopolymeric proteins anyway; demonstrated at the SCA12 locus in cell and iPSC models — in frames the two reporting labs have not reconciled — and in no SCA12 brain. [D3](part-D-sca12/D3-repeat-expansion-disorders.md)
+
 **read alignment** — Placing reads onto a reference by seed-and-extend; the aligner finds the best-scoring placement in a reference that is *not* the source genome, so "best" and "true" come apart wherever the true locus is absent or repeated. [Ch 42](part-09-genomics/42-read-alignment.md)
 
 **recessive** — Describing an allele whose phenotype appears only in the homozygote; usually the by-product of a saturating flux curve, where half the enzyme gives nearly all the flux, rather than of the dominant allele suppressing anything. [Ch 10](part-02-transmission-genetics/10-mendelian-inheritance.md)
@@ -712,7 +742,11 @@ Every term the curriculum relies on, defined once, with a link to the chapter th
 
 **regulatory network** — The graph of transcription factors and targets whose dynamics, not whose individual edges, determine cell identity; identity is an attractor, and it is reversible. [Ch 25](part-04-gene-regulation/25-networks-and-development.md)
 
+**regulatory subunit** — The exchangeable component of a multi-subunit enzyme that supplies substrate choice and cellular address while the catalytic subunit supplies the chemistry; PP2A's B subunits are the type case, and the reason changing the *amount* of one — SCA12's proposed lesion — can redirect an enzyme without touching its catalytic rate. [D2](part-D-sca12/D2-kinases-phosphatases-and-pp2a.md)
+
 **repeat expansion** — Growth of a short tandem repeat beyond a threshold across transmissions, causing disease and producing anticipation; the physical mechanism behind a phenomenon that was once dismissed as pure ascertainment bias. [Ch 16](part-03-genome-instability/16-mutation.md)
+
+**repeat-primed PCR** — A PCR assay pairing one locus-specific flanking primer with one that anneals at random positions inside the repeat, producing a stutter ladder whose extent reveals a long expansion; it detects expansions beyond the sizing range of ordinary flanking PCR but cannot measure them — presence, not size, and a clinical workhorse three decades old. [lab 11](labs/lab-11-repeat-genotyping.md)
 
 **replication fork** — The moving junction where the duplex is unwound and both strands copied; forks collide with transcription, especially head-on, and those collisions are a major source of R-loops, stalling and mutation. [Ch 04](part-01-molecular-foundations/04-dna-replication.md)
 
@@ -744,6 +778,8 @@ Every term the curriculum relies on, defined once, with a link to the chapter th
 
 **Sanger sequencing** — Chain-termination sequencing read by capillary electrophoresis; its enduring value is error **independence** rather than accuracy — a confirmation sharing failure modes with the thing it confirms is worthless. [Ch 40](part-09-genomics/40-sequencing-technologies.md)
 
+**SCA12** — Spinocerebellar ataxia type 12: autosomal dominant action tremor with later ataxia, caused by CAG expansion in the 5′ region of *PPP2R2B*; globally rare but jointly the commonest SCA in Indian referral cohorts through an Agarwal-community founder effect, with a contested pathogenic threshold (≥51 by convention, ≥43 argued) and no established mechanism a quarter-century after gene discovery. [D4](part-D-sca12/D4-sca12-from-repeat-to-phenotype.md) · [D5](part-D-sca12/D5-sca12-population-clinic-therapy.md)
+
 **screen (genetic)** — A systematic search of perturbed individuals or cells for a phenotype; a "saturated" screen has found all the genes findable *by that assay, in that background*, and redundant, essential and pleiotropic genes are structurally invisible to it. [Ch 37](part-08-methods/37-model-organisms-and-screens.md)
 
 **seed (miRNA)** — Nucleotides 2–8 of a miRNA, which dominate target recognition; one specific 7-mer occurs ~1,400 times by chance across the human 3′UTR-ome, so chance matches outnumber real ones. [Ch 24](part-04-gene-regulation/24-rna-based-regulation.md)
@@ -757,6 +793,8 @@ Every term the curriculum relies on, defined once, with a link to the chapter th
 **selection coefficient (s)** — The proportional fitness reduction of a genotype; whether selection or drift dominates is decided by |N_e·s|, the most important inequality in population genetics. [Ch 27](part-05-population-genetics/27-the-four-forces.md)
 
 **selective sweep** — The reduction of diversity around a rapidly rising beneficial allele, leaving long haplotypes and a skewed site frequency spectrum; background selection produces the same reduction chronically, which is why sweeps require an outlier argument. [Ch 33](part-07-molecular-evolution/33-neutral-theory-and-selection-tests.md)
+
+**selective vulnerability** — The death of particular neuronal populations from mutation in a gene expressed everywhere — the central unexplained pattern of neurodegeneration; expression level does not predict it, and SCA12 is a clean example: *PPP2R2B* is highest in frontal cortex, yet Purkinje cells are among the casualties. [D1](part-D-sca12/D1-neurons-and-the-cerebellum.md)
 
 **sex chromosome** — A chromosome carrying a sex-determining switch; the switch is not conserved — presence of a Y makes a mammal male, whereas in *Drosophila* the Y is irrelevant to sex and XXY flies are fertile females. [Ch 13](part-02-transmission-genetics/13-sex-linkage.md)
 
@@ -772,11 +810,15 @@ Every term the curriculum relies on, defined once, with a link to the chapter th
 
 **soft clipping** — Retention in the record of read bases not aligned to the reference; clipping clustered at a single coordinate is the primary short-read evidence for a structural variant, not a sign of a bad read. [Ch 42](part-09-genomics/42-read-alignment.md)
 
+**somatic instability** — Continued change of a repeat tract's length within one person's tissues after conception, producing a mosaic of allele sizes; in postmitotic neurons it is driven by DNA *repair* (MutSβ, OGG1), not replication, and is expansion-biased in the tissues Huntington disease destroys — while the single SCA12 brain studied showed the *least* instability in the cerebellum. [D3](part-D-sca12/D3-repeat-expansion-disorders.md)
+
 **somatic mutation** — A mutation arising in a non-germline cell and therefore not transmitted; every person is a mosaic of somatic lineages, which is the foundation of cancer genomics. [Ch 16](part-03-genome-instability/16-mutation.md)
 
 **spatial transcriptomics** — Measuring transcripts with positional information; capture-based methods give per-*spot* mixtures needing deconvolution, imaging-based methods give per-molecule positions needing segmentation, and neither hands you clean single-cell profiles. [Ch 48](part-10-functional-genomics/48-single-cell-and-spatial.md)
 
 **species concept** — A rule for deciding where one species stops. The three in general use are three different *operations*, not three phrasings: the **biological** concept tests interbreeding (a cross), the **phylogenetic** concept tests diagnosability and ancestry (a tree), the **genotypic-cluster** criterion tests for a deficit of intermediates in sympatry (a histogram). They agree on easy cases and diverge exactly where you needed an answer, because divergence is continuous — so state which you used and report the measurement, not the label. [Ch 35A](part-07-molecular-evolution/35A-speciation-and-ecological-genetics.md)
+
+**spinocerebellar ataxia (SCA)** — The numbered family of autosomal dominant cerebellar ataxias (SCA1 onward, numbered in order of locus mapping); a naming scheme, not a mechanism class — polyglutamine coding expansions, non-coding repeats and ordinary point mutations all carry SCA numbers, so the label locates the phenotype and promises nothing about the molecular crime. [D3](part-D-sca12/D3-repeat-expansion-disorders.md)
 
 **spliceosome** — The RNA–protein machine that removes introns; its catalytic core is **RNA** — U6 snRNA positions the two catalytic magnesiums — while its ~150 proteins scaffold, drive and proofread. [Ch 06](part-01-molecular-foundations/06-rna-processing.md)
 

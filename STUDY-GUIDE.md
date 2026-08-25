@@ -4,8 +4,9 @@ How to actually get through this, and what to do when it stops going in.
 
 ## The shape of the thing
 
-62 chapters, **7 statistics chapters**, 16 problem sets, 11 labs. At a genuine, non-skimming
-pace that is roughly **100–145 hours of work**. It is a full year-long university sequence
+62 chapters, **7 statistics chapters**, **5 optional SCA12-track chapters** (Part D), 17
+problem sets, 13 labs. At a genuine, non-skimming pace the main sequence is roughly
+**100–145 hours of work**; the optional D-track adds about **10 hours** on top (see below). It is a full year-long university sequence
 compressed into a repository, and treating it as a weekend read will not produce third-year
 understanding.
 
@@ -67,10 +68,19 @@ graph LR
 
     S12 --> S34 --> S57 --> S6
 
+    A --> D12["D1 D2<br/>neuron, cerebellum,<br/>PP2A"]
+    C --> D3["D3<br/>repeat-expansion<br/>disorders"]
+    J --> D3
+    D12 --> D45["D4 D5<br/>SCA12"]
+    D3 --> D45
+
     style S12 fill:#eef,stroke:#88a
     style S34 fill:#eef,stroke:#88a
     style S57 fill:#eef,stroke:#88a
     style S6 fill:#eef,stroke:#88a
+    style D12 fill:#fee,stroke:#a88
+    style D3 fill:#fee,stroke:#a88
+    style D45 fill:#fee,stroke:#a88
 ```
 
 The statistics chapters are not all read *between* parts. S1–S2 come before Part 2 begins, but
@@ -92,11 +102,12 @@ between two.
 | [S5](part-S-statistics/S5-variance-and-regression.md), [S7](part-S-statistics/S7-high-dimensional-data.md) | **Ch 28** | *F*<sub>ST</sub> *is* a variance ratio and LD *is* a correlation; Ch 28's PCA/eigenvector argument is unreadable without S7 §5, and S7 §5 needs S5 |
 | [S6](part-S-statistics/S6-likelihood-and-bayes.md) | **Ch 32** | Interval mapping is a finite-mixture likelihood and LOD is a likelihood ratio. S6 itself builds on S3, S4 and S5, so it cannot come earlier |
 
-The full linear order:
+The full linear order — with the optional D-track's insertion points in the same bracket
+notation:
 
 ```
-00 01 · 02–08 · [S1 S2] · 09 10 11 · [S3 S4] · 12 13 14 15 · 16–20 20A · 21–25 25A ·
-26 27 · [S5 S7] · 28 29 · 30 31 · [S6] · 32 · 33 34 35 35A · 36–58
+00 01 · 02–08 · [D1 D2] · [S1 S2] · 09 10 11 · [S3 S4] · 12 13 14 15 · 16–20 20A · 21–25 25A ·
+26 27 · [S5 S7] · 28 29 · 30 31 · [S6] · 32 · 33 34 35 35A · 36–54 · [D3] · 55–58 · [D4 D5]
 ```
 
 **Part 2 carries the heaviest statistics load** — about 1 h 40 m of S3 and S4 between Ch 11 and
@@ -111,6 +122,23 @@ statistics chapter, read that one.
 The tempting shortcut — jumping straight to Part 9 because sequencing and file formats look
 like the "computational" bit — produces someone who can run a pipeline and cannot say what
 the output means. Part 11 in particular is unreadable without Part 5.
+
+### Where the SCA12 track goes
+
+[Part D](part-D-sca12/D1-neurons-and-the-cerebellum.md) is optional, and its five chapters
+have three insertion points rather than one:
+
+| Read | After | Why there and not later |
+|---|---|---|
+| [D1](part-D-sca12/D1-neurons-and-the-cerebellum.md), [D2](part-D-sca12/D2-kinases-phosphatases-and-pp2a.md) | **Ch 08** | Neurobiology and PP2A biochemistry stand on Part 1 alone; read them any time after Ch 08, together or years apart |
+| [D3](part-D-sca12/D3-repeat-expansion-disorders.md) | **Ch 54** | The repeat-disorder taxonomy assumes Ch 16's mutation mechanics, Ch 11's anticipation and Ch 54's rare-disease pipeline; [lab-11](labs/lab-11-repeat-genotyping.md) follows it |
+| [D4](part-D-sca12/D4-sca12-from-repeat-to-phenotype.md), [D5](part-D-sca12/D5-sca12-population-clinic-therapy.md) | **Ch 58** | The disease itself spends nearly everything — population genetics, ACMG, ethics — so it closes the course; [lab-12](labs/lab-12-expression-and-isoforms.md) follows D4, [ps-17](problem-sets/ps-17-repeat-disorders-and-sca12.md) follows D5 |
+
+The cost is about **10 hours**: roughly 5 h of reading (D1–D5 run ~50–75 min each), ~2 h for
+the two labs, and 2–3 h for the problem set. At the steady pace that is two to three extra
+weeks; at the committed pace, one week; at the intensive pace, a long weekend at the end.
+Nothing in the main sequence depends on any of it — the track spends the course's tools on one
+disease rather than adding new prerequisites.
 
 ## Using the practice material
 
@@ -187,7 +215,7 @@ That last one is the point of the whole exercise.
 
 ### The caveat: this is not laboratory competence
 
-**All 11 labs are computational.** They use real public data and real tools, and the skill they
+**All 13 labs are computational.** They use real public data and real tools, and the skill they
 build — taking reads to variants to an interpretation, and knowing what each step can get wrong
 — is a genuine one that a lot of graduates do not have. For a reader who already programs, it is
 also the fastest available route into the subject.
