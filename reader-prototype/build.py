@@ -56,6 +56,10 @@ S_SCHEDULE = {
     "S6": "32",
 }
 
+# A chapter number, anywhere the course writes one: "14", "20A", the
+# statistics track's "S3", the SCA12 track's "D3".
+NUMBER = r"\d+[A-Z]?|S\d|D\d"
+
 KIND_LABEL = {
     "chapter": "Chapter",
     "stat": "Statistics",
@@ -91,24 +95,33 @@ class Doc:
 
 
 def part_label(dirname: str) -> str:
-    m = re.match(r"part-([0-9]+|S)-(.*)$", dirname)
+    m = re.match(r"part-([0-9]+|S|D)-(.*)$", dirname)
     if not m:
         return dirname
     num, rest = m.group(1), m.group(2).replace("-", " ")
     rest = rest[:1].upper() + rest[1:]
     if num == "S":
         return "Statistics track"
+    if num == "D":
+        return "SCA12 track"
     return f"Part {int(num)} — {rest}"
 
 
 def _number_key(number: str | None) -> tuple:
-    """'00' -> (0, ''), '20A' -> (20, 'A') so 20A sorts between 20 and 21."""
+    """'00' -> (0, ''), '20A' -> (20, 'A') so 20A sorts between 20 and 21.
+
+    'D3' -> (10_003, '') — the SCA12 track is a specialisation that reads
+    after the numbered course, not interleaved into it.
+    """
     if not number:
         return (9_999, "")
     m = re.match(r"^(\d+)([A-Z]*)$", number)
-    if not m:
-        return (9_999, number)
-    return (int(m.group(1)), m.group(2))
+    if m:
+        return (int(m.group(1)), m.group(2))
+    m = re.match(r"^D(\d+)$", number)
+    if m:
+        return (10_000 + int(m.group(1)), "")
+    return (9_999, number)
 
 
 def _first_meta_line(md: str) -> str:
@@ -137,7 +150,7 @@ def discover() -> list[Doc]:
             return
         title = m.group(1)
         # "00 — The whole story" -> the part after the em dash is the real title
-        short = re.sub(r"^\s*(?:\d+[A-Z]?|S\d)\s*[—-]\s*", "", title).strip()
+        short = re.sub(rf"^\s*(?:{NUMBER})\s*[—-]\s*", "", title).strip()
         docs.append(
             Doc(
                 rel=rel, kind=kind, title=title, number=number,
@@ -156,7 +169,7 @@ def discover() -> list[Doc]:
         for f in sorted(os.listdir(COURSE / d)):
             if not f.endswith(".md"):
                 continue
-            m = re.match(r"^(\d+[A-Z]?|S\d)-", f)
+            m = re.match(rf"^({NUMBER})-", f)
             number = m.group(1) if m else None
             add(f"{d}/{f}", "stat" if d.endswith("statistics") else "chapter", number, d)
 
@@ -241,7 +254,7 @@ def extract_practice(docs: list[Doc]) -> dict[str, list[dict]]:
             m = re.search(r"^Covers\s+(.+?)\.?$", d.md, re.M)
             if not m:
                 continue
-            refs = [r for r in re.findall(r"\b(?:Ch\s*)?(\d+[A-Z]?|S\d)\b",
+            refs = [r for r in re.findall(rf"\b(?:Ch\s*)?({NUMBER})\b",
                                           re.sub(r"\([^)]*\)", "", m.group(1)))
                     if r in order_of]
             if refs:
@@ -254,7 +267,7 @@ def extract_practice(docs: list[Doc]) -> dict[str, list[dict]]:
             m = re.search(r"^Covers\s+(.+?)\.?$", d.md, re.M)
             if not m:
                 continue
-            refs = [r for r in re.findall(r"\b(?:Ch\s*)?(\d+[A-Z]?|S\d)\b",
+            refs = [r for r in re.findall(rf"\b(?:Ch\s*)?({NUMBER})\b",
                                           re.sub(r"\([^)]*\)", "", m.group(1)))
                     if r in order_of]
             if refs:
@@ -264,14 +277,28 @@ def extract_practice(docs: list[Doc]) -> dict[str, list[dict]]:
                         "why": "rapid recall — keep the part in memory"})
 
         elif d.kind == "lab":
-            head = "\n".join(d.md.splitlines()[:6])
+            # The whole header blockquote, not a fixed line count \u2014 lab-11's
+            # prerequisite list alone runs past six lines.
+            head_lines: list[str] = []
+            for line in d.md.splitlines()[1:]:
+                s = line.strip()
+                if s.startswith(">"):
+                    head_lines.append(s)
+                elif head_lines or s:
+                    break
+            head = "\n".join(head_lines)
             # "Ch 26-29" names a range; the lab is due after its END, not its
             # start. Requiring a "Ch" prefix on every number would silently
             # place lab-07 three chapters early.
             refs = []
             for start, end in re.findall(
-                    r"Ch\s*(\d+[A-Z]?|S\d)(?:\s*[\u2013\u2014-]\s*(\d+[A-Z]?))?", head):
+                    rf"Ch\s*({NUMBER})(?:\s*[\u2013\u2014-]\s*(\d+[A-Z]?))?", head):
                 refs.append(end or start)
+            # D-track prerequisites are written bare \u2014 "[D3 Repeat-expansion
+            # disorders](\u2026)". Bare S-numbers stay ignored: labs cite those
+            # under "Statistics used here", and the labs themselves say those
+            # can be read after the lab, so they must not delay it.
+            refs += re.findall(r"\bD\d\b", head)
             refs = [r for r in refs if r in order_of]
             if refs:
                 attach(max(refs, key=lambda r: order_of[r]),
@@ -755,7 +782,11 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
             return ""
         def tag(d: Doc) -> str:
             n = due_after.get(d.out)
-            return f'<span class="aux-when">after Ch {html.escape(n)}</span>' if n else ""
+            if not n:
+                return ""
+            # Track chapters carry their own letter — "after D3", not "after Ch D3".
+            label = f"Ch {n}" if n[:1].isdigit() else n
+            return f'<span class="aux-when">after {html.escape(label)}</span>'
         lis = "".join(
             f'<li><a href="{d.out}">'
             f'{html.escape(getattr(d, "short_title", d.title))}{tag(d)}</a></li>'
