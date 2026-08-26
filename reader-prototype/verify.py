@@ -24,6 +24,15 @@ from pathlib import Path
 
 MIN_PAGES = 100
 REQUIRED = ["index.html", "404.html", ".nojekyll", "assets/reader.css",
+            "assets/interactions.js", "assets/interactions-foundations.js",
+            "assets/interactions-transmission.js", "assets/interactions-instability.js",
+            "assets/interactions-regulation.js", "assets/interactions-population.js",
+            "assets/interactions-quantitative.js", "assets/interactions-evolution.js",
+            "assets/interactions-methods.js", "assets/interactions-genomics.js",
+            "assets/interactions-human.js", "assets/interactions-advanced-stats.js",
+            "assets/interactions-sca12.js",
+            "assets/interactions-transfer.js",
+            "assets/widgets.js",
             "assets/katex/LICENSE", "assets/mermaid.LICENSE"]
 
 # Regions where markdown-looking characters are legitimate: Python's **kwargs

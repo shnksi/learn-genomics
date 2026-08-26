@@ -1,5 +1,5 @@
 {
-  "_comment": "Bespoke widgets, keyed by source filename stem. The floor widgets — the misconception diagnostic and the recall queue — are added to every chapter automatically and must NOT be listed here. Only Chapter 00 has bespoke widgets; every other chapter runs on the floor alone.",
+  "_comment": "Bespoke widgets, keyed by source filename stem. The floor widgets — the misconception diagnostic and the recall queue — are added to every chapter automatically and must NOT be listed here. Chapter 00 has the original six; objective-mapped waves add Chapters 01–38, S1–S4, and the Ch 43/50 pilots.",
 
   "00-the-whole-story": [
     {
@@ -37,6 +37,829 @@
       "after_heading": "10. The map",
       "title": "What depends on what",
       "note": "Built from the diagram above. Click a part to see what it needs and what needs it."
+    }
+  ],
+
+  "01-chemistry-and-cell-primer": [
+    {
+      "id": "molecular-forces-lab",
+      "after_heading": "5. The part that changes how you think: everything is stochastic",
+      "title": "Molecular forces playground",
+      "note": "Hold the random fixture still while you change binding, burst duration, or an activation barrier."
+    }
+  ],
+
+  "02-dna-structure": [
+    {
+      "id": "dna-geometry-lab",
+      "after_heading": "8. Topology: DNA is a closed object",
+      "title": "DNA geometry and topology bench",
+      "note": "Build a base pair, compare neighbour stacks, then keep the Lk = Tw + Wr books yourself."
+    }
+  ],
+
+  "03-genomes-chromosomes-chromatin": [
+    {
+      "id": "genome-scale-lab",
+      "after_heading": "1. The packaging problem, quantified",
+      "title": "Genome scale zoomer",
+      "note": "Move from one base pair to a nucleus, break tools with repeats, and sample an mtDNA bottleneck."
+    }
+  ],
+
+  "04-dna-replication": [
+    {
+      "id": "replication-fork-lab",
+      "after_heading": "3. The constraint that shapes everything: 5′→3′ only",
+      "title": "Replication fork machine",
+      "note": "Pilot — reverse the fork, rebuild the strands, then test origins and fidelity."
+    },
+    {
+      "id": "replication-transfer-challenge",
+      "after_heading": "3. The constraint that shapes everything: 5′→3′ only",
+      "title": "Replication fork transfer challenge",
+      "note": "Rebuild three unfamiliar fork orientations, then predict the specific consequence of losing primase, ligase, or proofreading.",
+      "objectives": ["ch04-o3"]
+    }
+  ],
+
+  "05-transcription": [
+    {
+      "id": "transcription-engine-lab",
+      "after_heading": "2. Template, coding, and the naming disaster",
+      "title": "Transcription engine",
+      "note": "Reverse the promoter, step the CTD, rewire an enhancer contact, and time a long gene."
+    }
+  ],
+
+  "06-rna-processing": [
+    {
+      "id": "spliceosome-editor-lab",
+      "after_heading": "8. Exon definition, and why donor mutations skip exons",
+      "title": "Spliceosome editor",
+      "note": "Break a splice donor, rebalance exon recognition, and place a stop on the NMD ruler."
+    },
+    {
+      "id": "rna-processing-transfer-challenge",
+      "after_heading": "Worked example: one synonymous base, and a disease",
+      "title": "RNA processing transfer challenge",
+      "note": "Carry three new variants from signal recognition through mature isoform to NMD or truncated protein.",
+      "objectives": ["ch06-o3", "ch06-o5"]
+    }
+  ],
+
+  "07-genetic-code-and-translation": [
+    {
+      "id": "reading-frame-lab",
+      "after_heading": "2. Reading frames",
+      "title": "Ribosome and reading-frame lab",
+      "note": "Read all six frames, switch translation tables, and watch an edit regroup the code."
+    },
+    {
+      "id": "translation-transfer-challenge",
+      "after_heading": "Worked example: four mutations in one small gene",
+      "title": "Translation transfer challenge",
+      "note": "Construct an unfamiliar mRNA, translate it with the correct biological code, and classify the changed coding rule.",
+      "objectives": ["ch07-o1", "ch07-o7"]
+    }
+  ],
+
+  "08-proteins-and-gene-function": [
+    {
+      "id": "protein-fate-lab",
+      "after_heading": "10. Loss, gain, and poison",
+      "title": "Protein fate lab",
+      "note": "Move one side chain through a folded surface, tune turnover, and poison a multimer."
+    }
+  ],
+
+  "09-mitosis-and-meiosis": [
+    {
+      "id": "chromosome-time-lab",
+      "after_heading": "8. Nondisjunction: meiosis I versus meiosis II",
+      "title": "Chromosome time machine",
+      "note": "Scrub the chromosome ledger, trace all four products, and diagnose whether homologs or sisters failed to separate."
+    },
+    {
+      "id": "meiosis-transfer-challenge",
+      "after_heading": "Worked example: diagnosing the meiotic origin of a trisomy",
+      "title": "Meiosis error transfer challenge",
+      "note": "Infer meiosis-I, meiosis-II, or post-zygotic failure from three unfamiliar marker-product patterns.",
+      "objectives": ["ch09-o4", "ch09-o6"]
+    }
+  ],
+
+  "10-mendelian-inheritance": [
+    {
+      "id": "inheritance-probability-lab",
+      "after_heading": "4. Punnett squares, and why to abandon them immediately",
+      "title": "Inheritance probability lab",
+      "note": "Enumerate one cross, replace exponential grids with products, and turn family counts into evidence."
+    }
+  ],
+
+  "11-beyond-mendel": [
+    {
+      "id": "pathway-genetics-lab",
+      "after_heading": "6. Epistasis: pathways generate ratios",
+      "title": "Pathway genetics circuit",
+      "note": "Change the assay, rewire the pathway, and derive each modified ratio from the same genotype classes."
+    }
+  ],
+
+  "12-probability-and-testing": [
+    {
+      "id": "genetic-inference-lab",
+      "after_heading": "3. Chi-square against a genetic hypothesis",
+      "title": "Genetic inference workbench",
+      "note": "Move residuals, replay power with a fixed seed, and watch ascertainment manufacture a false segregation excess."
+    },
+    {
+      "id": "genetic-inference-transfer-challenge",
+      "after_heading": "Worked example: Mendel's dihybrid F₂, and the fit that was too good",
+      "title": "Genetic inference transfer challenge",
+      "note": "Specify degrees of freedom, find the residual driving χ², and make a bounded conclusion on three unseen count tables.",
+      "objectives": ["ch12-o1", "ch12-o2", "ch12-o3"]
+    }
+  ],
+
+  "13-sex-linkage": [
+    {
+      "id": "sex-system-lab",
+      "after_heading": "4. Hemizygosity: what one copy does to Mendel",
+      "title": "Sex-system comparator",
+      "note": "Separate the switch from the chromosome, build X-linked crosses, and compare three dosage solutions."
+    }
+  ],
+
+  "14-linkage-and-mapping": [
+    {
+      "id": "linkage-map-lab",
+      "after_heading": "2. Recombination frequency, and what a centimorgan is",
+      "title": "Genetic map workbench",
+      "note": "Pilot — infer phase and distance from the offspring, then push recombination into its 50% ceiling."
+    },
+    {
+      "id": "linkage-transfer-challenge",
+      "after_heading": "Worked example: a complete three-point testcross",
+      "title": "Three-point mapping transfer challenge",
+      "note": "Reconstruct an unfamiliar map, then diagnose exactly where an incorrect inference or calculation went wrong.",
+      "objectives": ["ch14-o4"]
+    }
+  ],
+
+  "15-pedigrees": [
+    {
+      "id": "pedigree-detective-lab",
+      "after_heading": "3. A decision procedure",
+      "title": "Pedigree detective",
+      "note": "Compare mode likelihoods, update carrier risk with real evidence, and convert pedigree loops into locus-specific risk."
+    },
+    {
+      "id": "pedigree-transfer-challenge",
+      "after_heading": "Worked example: carrier risk in the §1 pedigree, in full",
+      "title": "Pedigree transfer challenge",
+      "note": "Use decisive transmissions rather than silhouettes, then update a relative's risk in three new families.",
+      "objectives": ["ch15-o2", "ch15-o4"]
+    }
+  ],
+
+  "16-mutation": [
+    {
+      "id": "mutation-forensics-lab",
+      "after_heading": "8. Mutation is undirected",
+      "title": "Mutation forensics bench",
+      "note": "Classify a change, reconstruct its spectrum, derive the de novo budget, and replay Luria–Delbrück's decisive variance.",
+      "objectives": ["ch16-o1", "ch16-o2", "ch16-o3", "ch16-o4", "ch16-o5", "ch16-o6", "ch16-o7"]
+    }
+  ],
+
+  "17-dna-repair": [
+    {
+      "id": "repair-triage-lab",
+      "after_heading": "10. Deficiency syndromes, and why mutation rates are heterogeneous",
+      "title": "DNA repair triage",
+      "note": "Route lesions, quantify the residual mutation budget, commit a double-strand break, and expose synthetic lethality.",
+      "objectives": ["ch17-o1", "ch17-o2", "ch17-o3", "ch17-o4", "ch17-o5", "ch17-o6", "ch17-o7"]
+    },
+    {
+      "id": "dna-repair-transfer-challenge",
+      "after_heading": "10. Deficiency syndromes, and why mutation rates are heterogeneous",
+      "title": "DNA repair transfer challenge",
+      "note": "Route three unfamiliar lesion–cell-state–defect combinations into a pathway, failure point, and observable consequence.",
+      "objectives": ["ch17-o2", "ch17-o4", "ch17-o5"]
+    }
+  ],
+
+  "18-recombination-mechanisms": [
+    {
+      "id": "recombination-mechanism-lab",
+      "after_heading": "9. NAHR: homology in the wrong place",
+      "title": "Recombination molecular lab",
+      "note": "Resolve a broken chromosome, bias heteroduplex repair, enforce crossover assurance, and misalign repeated homology.",
+      "objectives": ["ch18-o1", "ch18-o2", "ch18-o3", "ch18-o4", "ch18-o5", "ch18-o6", "ch18-o7"]
+    }
+  ],
+
+  "19-transposable-elements": [
+    {
+      "id": "transposon-lifecycle-lab",
+      "after_heading": "9. Parasite, or raw material?",
+      "title": "Mobile-element lifecycle studio",
+      "note": "Compare element engines, build the molecular scars of TPRT, and test which sequencing assay can see the result.",
+      "objectives": ["ch19-o1", "ch19-o2", "ch19-o3", "ch19-o4", "ch19-o5", "ch19-o6", "ch19-o7"]
+    }
+  ],
+
+  "20-chromosome-abnormalities": [
+    {
+      "id": "chromosome-workbench-lab",
+      "after_heading": "11. Detecting it: a resolution ladder",
+      "title": "Chromosome-scale workbench",
+      "note": "Trade chromosome size for dosage load, enumerate carrier products, trace rescue ancestry, and choose an assay by blind spot.",
+      "objectives": ["ch20-o1", "ch20-o2", "ch20-o3", "ch20-o4", "ch20-o5", "ch20-o6", "ch20-o7"]
+    }
+  ],
+
+  "20A-bacterial-and-phage-genetics": [
+    {
+      "id": "microbial-genetics-lab",
+      "after_heading": "8. Benzer: the gene turns out to be an interval",
+      "title": "Bacterial and phage genetics lab",
+      "note": "Diagnose transfer routes, run two mapping rulers, test plasmid compatibility, and separate phage function from position.",
+      "objectives": ["ch20a-o1", "ch20a-o2", "ch20a-o3", "ch20a-o4", "ch20a-o5", "ch20a-o6", "ch20a-o7"]
+    }
+  ],
+
+  "21-bacterial-regulation": [
+    {
+      "id": "operon-circuit-lab",
+      "after_heading": "5. Merodiploids: how to tell cis from trans",
+      "title": "Operon circuit board",
+      "note": "Multiply lac occupancies, solve cis/trans partial diploids, fold an attenuator, and compare whole-cell controllers.",
+      "objectives": ["ch21-o1", "ch21-o2", "ch21-o3", "ch21-o4", "ch21-o5", "ch21-o6", "ch21-o7"]
+    }
+  ],
+
+  "22-eukaryotic-transcriptional-regulation": [
+    {
+      "id": "enhancer-logic-lab",
+      "after_heading": "9. Condensates and bursting: the stochastic layer",
+      "title": "Enhancer logic studio",
+      "note": "Change 3D constraints, filter millions of motif matches, perturb enhancer grammar, and keep each assay inside its evidence boundary.",
+      "objectives": ["ch22-o1", "ch22-o2", "ch22-o3", "ch22-o4", "ch22-o5", "ch22-o6", "ch22-o7"]
+    }
+  ],
+
+  "23-chromatin-and-epigenetics": [
+    {
+      "id": "epigenetic-memory-lab",
+      "after_heading": "8. Reprogramming: the two erasures",
+      "title": "Epigenetic memory lab",
+      "note": "Remove the initiating signal, follow a read–write loop through divisions, rewire an imprint, and audit inheritance and clock claims.",
+      "objectives": ["ch23-o1", "ch23-o2", "ch23-o3", "ch23-o4", "ch23-o5", "ch23-o6", "ch23-o7"]
+    }
+  ],
+
+  "24-rna-based-regulation": [
+    {
+      "id": "rna-regulation-lab",
+      "after_heading": "11. Translational control and RNA localisation",
+      "title": "RNA regulation workbench",
+      "note": "Price sequence specificity, separate an RNA molecule from its locus, enforce PAM context, and tune message response time.",
+      "objectives": ["ch24-o1", "ch24-o2", "ch24-o3", "ch24-o4", "ch24-o5", "ch24-o6", "ch24-o7"]
+    }
+  ],
+
+  "25-networks-and-development": [
+    {
+      "id": "network-dynamics-lab",
+      "after_heading": "9. Identity is an attractor — and it is reversible",
+      "title": "Regulatory network dynamics studio",
+      "note": "Run feedback and feed-forward motifs, carve a stripe from gradients, reroute Hox identity, and expose buffering under stress.",
+      "objectives": ["ch25-o1", "ch25-o2", "ch25-o3", "ch25-o4", "ch25-o5", "ch25-o6"]
+    }
+  ],
+
+  "25A-developmental-genetics": [
+    {
+      "id": "developmental-genetics-lab",
+      "after_heading": "7. Conditional and inducible alleles: the null is embryonic lethal, now what?",
+      "title": "Developmental genetics lab",
+      "note": "Ablate a fate, classify a cuticle, audit an epistasis claim, enrich a targeted clone, and turn Cre-lox into a lineage recorder.",
+      "objectives": ["ch25a-o1", "ch25a-o2", "ch25a-o3", "ch25a-o4", "ch25a-o5", "ch25a-o6", "ch25a-o7"]
+    }
+  ],
+
+  "26-hardy-weinberg": [
+    {
+      "id": "hardy-weinberg-lab",
+      "after_heading": "8. Departures with names: inbreeding and Wahlund",
+      "title": "Hardy–Weinberg population simplex",
+      "note": "Move an arbitrary genotype mixture through one random-mating generation, break each assumption, diagnose cohort failures, and follow the X instead.",
+      "objectives": ["ch26-o1", "ch26-o2", "ch26-o3", "ch26-o4", "ch26-o5", "ch26-o6", "ch26-o7"]
+    }
+  ],
+
+  "27-the-four-forces": [
+    {
+      "id": "population-forces-lab",
+      "after_heading": "7. Effective population size",
+      "title": "Evolution and effective-size sandbox",
+      "note": "Separate deterministic terms from drift variance, expose dominance, hold Nm fixed, and decide whether selection can see an allele.",
+      "objectives": ["ch27-o1", "ch27-o2", "ch27-o3", "ch27-o4", "ch27-o5", "ch27-o6", "ch27-o7"]
+    }
+  ],
+
+  "28-structure-and-inbreeding": [
+    {
+      "id": "structure-inbreeding-lab",
+      "after_heading": "12. Why unmodelled structure breaks association studies",
+      "title": "Population structure and inbreeding atlas",
+      "note": "Count pedigree loops, read ROH as a clock, pool differentiated populations, and manufacture a false association with more data.",
+      "objectives": ["ch28-o1", "ch28-o2", "ch28-o3", "ch28-o4", "ch28-o5", "ch28-o6", "ch28-o7"]
+    }
+  ],
+
+  "29-linkage-disequilibrium": [
+    {
+      "id": "linkage-disequilibrium-lab",
+      "after_heading": "10. Three consequences you will meet again",
+      "title": "Haplotype and LD laboratory",
+      "note": "Resolve phase, make D/D′/r² disagree, age an association, price a tag SNP, and break imputation with the wrong panel.",
+      "objectives": ["ch29-o1", "ch29-o2", "ch29-o3", "ch29-o4", "ch29-o5", "ch29-o6", "ch29-o7"]
+    },
+    {
+      "id": "ld-transfer-challenge",
+      "after_heading": "Worked example",
+      "title": "LD and haplotype transfer challenge",
+      "note": "Read three new phased tables, make D′ and r² disagree, and convert tagging information into sample-size cost.",
+      "objectives": ["ch29-o1", "ch29-o3", "ch29-o4"]
+    }
+  ],
+
+  "30-quantitative-traits": [
+    {
+      "id": "quantitative-traits-lab",
+      "after_heading": "7. Resemblance between relatives — where the coefficients come from",
+      "title": "Polygenic variance loom",
+      "note": "Build a continuous trait from exact Mendelian classes, threshold liability, keep the full variance ledger, regress one locus into VA and VD, and derive relative covariance.",
+      "objectives": ["ch30-o1", "ch30-o2", "ch30-o3", "ch30-o4", "ch30-o5", "ch30-o6"]
+    }
+  ],
+
+  "31-heritability-and-selection": [
+    {
+      "id": "heritability-selection-lab",
+      "after_heading": "7. Why response stops",
+      "title": "Heritability and selection-response tape",
+      "note": "Separate h² from H² and group means, audit relative and SNP estimators, predict truncation response, and diagnose four plateau mechanisms from interventions.",
+      "objectives": ["ch31-o1", "ch31-o2", "ch31-o3", "ch31-o4", "ch31-o5", "ch31-o6", "ch31-o7"]
+    },
+    {
+      "id": "heritability-transfer-challenge",
+      "after_heading": "Worked example",
+      "title": "Heritability transfer challenge",
+      "note": "Separate within-population variance from mean differences and predict selection response in three changed contexts.",
+      "objectives": ["ch31-o5", "ch31-o7"]
+    }
+  ],
+
+  "32-mapping-quantitative-traits": [
+    {
+      "id": "qtl-mapping-lab",
+      "after_heading": "8. The Beavis effect",
+      "title": "Chromosome and LOD scan bench",
+      "note": "Attenuate a hidden QTL through recombination, split a ghost peak, price cross designs, permute thresholds, expose the Beavis floor, and compare human mapping evidence.",
+      "objectives": ["ch32-o1", "ch32-o2", "ch32-o3", "ch32-o4", "ch32-o5", "ch32-o6", "ch32-o7"]
+    }
+  ],
+
+  "33-neutral-theory-and-selection-tests": [
+    {
+      "id": "selection-inference-lab",
+      "after_heading": "9. Sweeps, haplotypes, and the background-selection confound",
+      "title": "Selection inference laboratory",
+      "note": "Cancel N from the neutral clock, cross the drift barrier, expose distance saturation, normalise dN/dS, reshape the SFS, build an MK table, and distinguish linked-selection signatures.",
+      "objectives": ["ch33-o1", "ch33-o2", "ch33-o3", "ch33-o4", "ch33-o5", "ch33-o6", "ch33-o7"]
+    }
+  ],
+
+  "34-phylogenetics": [
+    {
+      "id": "tree-inference-lab",
+      "after_heading": "10. Gene trees, species trees, and the coalescent",
+      "title": "Tree inference studio",
+      "note": "Rotate without changing topology, audit orthology and alignment, cross the saturation and long-branch boundaries, separate support measures, and watch gene trees coalesce inside a species tree.",
+      "objectives": ["ch34-o1", "ch34-o2", "ch34-o3", "ch34-o4", "ch34-o5", "ch34-o6", "ch34-o7"]
+    }
+  ],
+
+  "35-genome-evolution": [
+    {
+      "id": "genome-evolution-lab",
+      "after_heading": "9. Genome size, junk, and two kinds of pangenome",
+      "title": "Genome evolution theatre",
+      "note": "Leave structural traces of three duplication mechanisms, race adaptive novelty against complementary decay, date a WGD peak, reconcile family trees, and test origin and genome-bulk claims.",
+      "objectives": ["ch35-o1", "ch35-o2", "ch35-o3", "ch35-o4", "ch35-o5", "ch35-o6", "ch35-o7"]
+    }
+  ],
+
+  "35A-speciation-and-ecological-genetics": [
+    {
+      "id": "speciation-conservation-lab",
+      "after_heading": "7. Conservation genetics: spending the machinery of Ch 27 and Ch 28",
+      "title": "Speciation and conservation map",
+      "note": "Apply three species operations, multiply reproductive barriers, grow a DMI snowball, invert a hybrid cline, diagnose local adaptation and outliers, and price sustained genetic rescue.",
+      "objectives": ["ch35a-o1", "ch35a-o2", "ch35a-o3", "ch35a-o4", "ch35a-o5", "ch35a-o6", "ch35a-o7"]
+    }
+  ],
+
+  "36-core-molecular-methods": [
+    {
+      "id": "molecular-methods-lab",
+      "after_heading": "12. Question → method",
+      "title": "Virtual molecular bench",
+      "note": "Move a specimen through amplification, separation, assembly, confirmation, and assay selection while the claim shutter keeps every blind spot visible.",
+      "objectives": ["ch36-o1", "ch36-o2", "ch36-o3", "ch36-o4", "ch36-o5", "ch36-o6", "ch36-o7"]
+    }
+  ],
+
+  "37-model-organisms-and-screens": [
+    {
+      "id": "genetic-screen-lab",
+      "after_heading": "12. Phenotyping, background, and the meaning of \"no phenotype\"",
+      "title": "Genetic screen designer",
+      "note": "Choose the organism as an instrument, breed and saturate a forward screen, map selected meioses, protect pooled coverage, and bound a negative result.",
+      "objectives": ["ch37-o1", "ch37-o2", "ch37-o3", "ch37-o4", "ch37-o5", "ch37-o6", "ch37-o7"]
+    }
+  ],
+
+  "38-genome-editing": [
+    {
+      "id": "genome-editor-lab",
+      "after_heading": "13. Gene drives",
+      "title": "Genome editor simulator",
+      "note": "Separate address from payload, walk the PAM-to-cut runway, let cell state choose repair, audit unseen damage, and keep delivery and governance outside the efficiency score.",
+      "objectives": ["ch38-o1", "ch38-o2", "ch38-o3", "ch38-o4", "ch38-o5", "ch38-o6", "ch38-o7"]
+    }
+  ],
+
+  "39-genome-landscapes": [
+    {
+      "id": "genome-landscape-lab",
+      "after_heading": "8. Why sizes differ: bacteria, streamlining and mutational hazard",
+      "title": "Genome landscape zoomer",
+      "note": "Break the C- and G-value intuitions with real contrasts, budget selected-effect function, make repeat classes fail differently, cross the drift barrier, and expose the NUMT heteroplasmy trap.",
+      "objectives": ["ch39-o1", "ch39-o2", "ch39-o3", "ch39-o4", "ch39-o5", "ch39-o6", "ch39-o7"]
+    }
+  ],
+
+  "40-sequencing-technologies": [
+    {
+      "id": "sequencer-simulator-lab",
+      "after_heading": "10. Choosing a platform: by question, not by preference",
+      "title": "Sequencer simulator",
+      "note": "Follow physical signal into a read, separate molecule consensus from depth, calculate breadth and somatic detection, exhaust a library, and choose an orthogonal confirmation.",
+      "objectives": ["ch40-o1", "ch40-o2", "ch40-o3", "ch40-o4", "ch40-o5", "ch40-o6", "ch40-o7"]
+    }
+  ],
+
+  "41-data-formats": [
+    {
+      "id": "format-coordinate-lab",
+      "after_heading": "8. Builds, liftover, and the chromosome-naming tax",
+      "title": "Format and coordinate debugger",
+      "note": "Trace one molecule through six formats, decode Phred, FLAG, and CIGAR, normalize equivalent alleles, preserve interval length, and reject unsafe build transfers.",
+      "objectives": ["ch41-o1", "ch41-o2", "ch41-o3", "ch41-o4", "ch41-o5", "ch41-o6", "ch41-o7"]
+    },
+    {
+      "id": "formats-transfer-challenge",
+      "after_heading": "Worked example: one SAM record, fully decoded",
+      "title": "Formats and coordinates transfer challenge",
+      "note": "Decode new SAM, BED, FASTQ, and VCF records while preserving coordinates, reference span, and missing-data meaning.",
+      "objectives": ["ch41-o2", "ch41-o3", "ch41-o4", "ch41-o5", "ch41-o7"]
+    }
+  ],
+
+  "42-read-alignment": [
+    {
+      "id": "alignment-workbench-lab",
+      "after_heading": "11. Reading a BAM: health, and failure signatures",
+      "title": "Alignment workbench",
+      "note": "Collapse naive search with an FM interval, derive exact seeds, give gaps biological costs, turn score competition into MAPQ, and separate bias from information limits.",
+      "objectives": ["ch42-o1", "ch42-o2", "ch42-o3", "ch42-o4", "ch42-o5", "ch42-o6", "ch42-o7"]
+    },
+    {
+      "id": "alignment-transfer-challenge",
+      "after_heading": "Worked example: aligning one read, end to end",
+      "title": "Read-alignment transfer challenge",
+      "note": "Resolve or correctly leave unresolved three new repeat, splice, and score-competition alignment cases.",
+      "objectives": ["ch42-o3", "ch42-o4", "ch42-o5"]
+    }
+  ],
+
+  "43-genome-assembly": [
+    {
+      "id": "assembly-graph-lab",
+      "after_heading": "3. De Bruijn graphs, and the Eulerian framing",
+      "title": "Assembly graph lab",
+      "note": "Pilot — walk every edge, change k, and find the point where the data stop determining one genome."
+    },
+    {
+      "id": "assembly-transfer-challenge",
+      "after_heading": "3. De Bruijn graphs, and the Eulerian framing",
+      "title": "Assembly identifiability transfer challenge",
+      "note": "Build three unseen k-mer graphs, count complete walks, and distinguish missing information from incomplete search.",
+      "objectives": ["ch43-o1", "ch43-o3"]
+    }
+  ],
+
+  "44-annotation": [
+    {
+      "id": "annotation-hmm-lab",
+      "after_heading": "9. Quality, and how errors propagate",
+      "title": "Annotation HMM lab",
+      "note": "Keep structural and functional claims apart, decode one coherent gene path, stack transcript evidence, switch annotation releases, and make variant consequence transcript-explicit.",
+      "objectives": ["ch44-o1", "ch44-o2", "ch44-o3", "ch44-o4", "ch44-o5", "ch44-o6", "ch44-o7"]
+    }
+  ],
+
+  "45-reference-genomes-and-pangenomes": [
+    {
+      "id": "pangenome-path-lab",
+      "after_heading": "9. Choosing a reference",
+      "title": "Pangenome path explorer",
+      "note": "Treat reference as an object, price mismatch bias, count graph paths, choose a coordinate invariant, constrain graph search, and expose every cost of switching builds.",
+      "objectives": ["ch45-o1", "ch45-o2", "ch45-o3", "ch45-o4", "ch45-o5", "ch45-o6", "ch45-o7"]
+    }
+  ],
+
+  "46-variant-calling": [
+    {
+      "id": "variant-caller-lab",
+      "after_heading": "14. Callable regions: absence of evidence",
+      "title": "Variant caller bench",
+      "note": "Infer genotype posteriors, assemble local haplotypes, borrow a cohort prior, diagnose artefacts, balance somatic sensitivity against error, and classify every kind of negative result.",
+      "objectives": ["ch46-o1", "ch46-o2", "ch46-o3", "ch46-o4", "ch46-o5", "ch46-o6", "ch46-o7"]
+    },
+    {
+      "id": "variant-calling-transfer-challenge",
+      "after_heading": "Worked example: one site, computed two ways",
+      "title": "Variant-calling transfer challenge",
+      "note": "Infer a clean genotype, reject a biased pileup, and keep an uncovered locus as a no-call across three new cases.",
+      "objectives": ["ch46-o1", "ch46-o4", "ch46-o7"]
+    }
+  ],
+
+  "47-rna-seq": [
+    {
+      "id": "rna-seq-lab",
+      "after_heading": "8. Failure modes, and how each announces itself",
+      "title": "RNA-seq design and analysis lab",
+      "note": "Break and repair a batch design, define the molecule universe, allocate ambiguous isoforms, expose compositional normalization, fit overdispersion, and split bulk state from composition.",
+      "objectives": ["ch47-o1", "ch47-o2", "ch47-o3", "ch47-o4", "ch47-o5", "ch47-o6", "ch47-o7"]
+    }
+  ],
+
+  "48-single-cell-and-spatial": [
+    {
+      "id": "single-cell-atlas-lab",
+      "after_heading": "14. Atlases",
+      "title": "Single-cell atlas lab",
+      "note": "Make two biological stories share one bulk value, trace barcodes and UMIs, diagnose droplets, derive sampling zeros, bend an embedding, restore donor replication, and unmix a spatial spot.",
+      "objectives": ["ch48-o1", "ch48-o2", "ch48-o3", "ch48-o4", "ch48-o5", "ch48-o6", "ch48-o7"]
+    }
+  ],
+
+  "49-epigenome-profiling": [
+    {
+      "id": "epigenome-assay-lab",
+      "after_heading": "9. The caution that governs everything above",
+      "title": "Epigenome assay bench",
+      "note": "Choose a physical measurement, require a peak control, manufacture and remove footprints, audit conversion, decompose bulk methylation, and keep state labels short of function claims.",
+      "objectives": ["ch49-o1", "ch49-o2", "ch49-o3", "ch49-o4", "ch49-o5", "ch49-o6", "ch49-o7"]
+    }
+  ],
+
+  "50-3d-genome": [
+    {
+      "id": "loop-extrusion-lab",
+      "after_heading": "5. Loop extrusion",
+      "title": "Living 3D genome",
+      "note": "Pilot — invert one CTCF site or remove the machinery and read the consequence from the contact map."
+    }
+  ],
+
+  "51-gwas": [
+    {
+      "id": "gwas-failure-lab",
+      "after_heading": "12. Diversity: an equity problem that is also a scientific one",
+      "title": "GWAS failure laboratory",
+      "note": "Project non-additive biology onto dosage, manufacture and remove an ancestry hit, split LD-score slope from intercept, derive the scan threshold, autopsy QC, shrink a winner, and move one tag between populations.",
+      "objectives": ["ch51-o1", "ch51-o2", "ch51-o3", "ch51-o4", "ch51-o5", "ch51-o6", "ch51-o7"]
+    }
+  ],
+
+  "52-association-to-mechanism": [
+    {
+      "id": "locus-mechanism-lab",
+      "after_heading": "13. What this is all for: genetically supported targets",
+      "title": "Locus-to-mechanism evidence board",
+      "note": "Build a credible set from Bayes factors, hit the perfect-LD wall, reweight a fixed likelihood, skip the nearest gene, read coloc correctly, separate perturbation claims, and audit MR assumptions.",
+      "objectives": ["ch52-o1", "ch52-o2", "ch52-o3", "ch52-o4", "ch52-o5", "ch52-o6"]
+    }
+  ],
+
+  "53-polygenic-scores": [
+    {
+      "id": "polygenic-score-clinic",
+      "after_heading": "8. What it is actually good for",
+      "title": "Polygenic score clinic",
+      "note": "Inspect every weighted allele, double-count one LD signal, choose a biological prior, protect the test split, convert rank to calibrated absolute risk, move a score across LD histories, and hold the estimator constant between people and cattle.",
+      "objectives": ["ch53-o1", "ch53-o2", "ch53-o3", "ch53-o4", "ch53-o5", "ch53-o6"]
+    }
+  ],
+
+  "54-rare-variants-and-mendelian-disease": [
+    {
+      "id": "rare-variant-detective",
+      "after_heading": "11. Penetrance at population scale, and what screening must assume",
+      "title": "Rare-variant detective",
+      "note": "Populate the frequency–effect plane, cross three GWAS hard limits, derive inheritance-specific frequency filters, sieve a trio, reject an artefact, phase a candidate pair, choose burden or SKAT, and expose constraint blind spots.",
+      "objectives": ["ch54-o1", "ch54-o2", "ch54-o3", "ch54-o4", "ch54-o5", "ch54-o6"]
+    }
+  ],
+
+  "55-clinical-variant-interpretation": [
+    {
+      "id": "clinical-evidence-classifier",
+      "after_heading": "11. What is coming: ACMG v4",
+      "title": "Clinical evidence classifier",
+      "note": "Keep VUS non-actionable, combine independent signed evidence, expose the Bayesian engine, derive frequency ceilings, count correlated predictors once, calibrate an assay, quantify family evidence, and read ClinVar through time.",
+      "objectives": ["ch55-o1", "ch55-o2", "ch55-o3", "ch55-o4", "ch55-o5", "ch55-o6", "ch55-o7"]
+    },
+    {
+      "id": "clinical-interpretation-transfer-challenge",
+      "after_heading": "Worked example: classifying one variant",
+      "title": "Clinical evidence transfer challenge",
+      "note": "Audit independence, combine signed evidence, preserve the VUS boundary, and reclassify only when a new observation warrants it.",
+      "objectives": ["ch55-o2", "ch55-o3", "ch55-o5", "ch55-o7"]
+    }
+  ],
+
+  "56-cancer-genomics": [
+    {
+      "id": "cancer-evolution-lab",
+      "after_heading": "10. From genome to treatment",
+      "title": "Cancer evolution laboratory",
+      "note": "Evolve a clonal tissue, manufacture a false driver, read selective mutation shapes, derive two hits, resolve tissue origin, mix mutational processes, convert VAF to CCF, sweep resistance, and audit treatment evidence.",
+      "objectives": ["ch56-o1", "ch56-o2", "ch56-o3", "ch56-o4", "ch56-o5", "ch56-o6", "ch56-o7"]
+    }
+  ],
+
+  "57-genomics-in-practice": [
+    {
+      "id": "genomics-practice-lab",
+      "after_heading": "11. Direct-to-consumer testing",
+      "title": "Genomics in practice case room",
+      "note": "Walk a diagnostic case, turn screening accuracy into PPV, connect gene to drug, stop a pathogen tree short of transmission, compare breeding design, update forensic odds, authenticate ancient molecules, unmask composition, and bound an array result.",
+      "objectives": ["ch57-o1", "ch57-o2", "ch57-o3", "ch57-o4", "ch57-o5", "ch57-o6", "ch57-o7"]
+    }
+  ],
+
+  "58-ethics-and-society": [
+    {
+      "id": "genomic-ethics-simulator",
+      "after_heading": "11. Governance and the pacing gap",
+      "title": "Genomic ethics consequence simulator",
+      "note": "Derive uniqueness and kin exposure, compare protection layers and legal gaps, move consent from person to lineage and group, audit ancestry claims, propagate sampling bias, bound embryo selection, and keep governance outside technical accuracy.",
+      "objectives": ["ch58-o1", "ch58-o2", "ch58-o3", "ch58-o4", "ch58-o5", "ch58-o6", "ch58-o7"]
+    }
+  ],
+
+  "S1-probability": [
+    {
+      "id": "probability-workbench",
+      "after_heading": "8. Base rates, or why a 99% test is usually wrong",
+      "title": "Probability workbench",
+      "note": "Enumerate the sample space, turn a test into a Bayes table, and replay the same 500 families."
+    }
+  ],
+
+  "S2-distributions": [
+    {
+      "id": "distribution-zoo",
+      "after_heading": "5. Negative binomial: when the rate itself varies",
+      "title": "Distribution zoo",
+      "note": "Choose a biological generating process and watch its distribution, mean, and variance follow."
+    }
+  ],
+
+  "S3-sampling-and-estimation": [
+    {
+      "id": "sampling-estimation-lab",
+      "after_heading": "7. Sampling error and systematic error",
+      "title": "Repeated-study estimation lab",
+      "note": "Rain repeated estimates around a fixed truth, compare estimator MSE, audit exact interval coverage, choose bootstrap units, and grow biased data.",
+      "objectives": ["s3-o1", "s3-o2", "s3-o3", "s3-o4", "s3-o5", "s3-o6"]
+    }
+  ],
+
+  "S4-hypothesis-testing": [
+    {
+      "id": "hypothesis-testing-lab",
+      "after_heading": "8. The garden of forking paths",
+      "title": "Hypothesis laboratory",
+      "note": "Build the null-to-tail chain, spend degrees of freedom, reverse the conditional with base rates, move power, read scan-wide p-value shapes, and expose the full analysis universe.",
+      "objectives": ["s4-o1", "s4-o2", "s4-o3", "s4-o4", "s4-o5", "s4-o6"]
+    }
+  ],
+
+  "S5-variance-and-regression": [
+    {
+      "id": "regression-causality-lab",
+      "after_heading": "8. Correlation is not causation, done properly",
+      "title": "Regression and causality workbench",
+      "note": "Keep the covariance cross-term, expose zero-correlation dependence, fit and residualise lines, derive regression to the mean, separate odds from risk, and audit every association against its causal alternatives.",
+      "objectives": ["s5-o1", "s5-o2", "s5-o3", "s5-o4", "s5-o5", "s5-o6", "s5-o7"]
+    }
+  ],
+
+  "S6-likelihood-and-bayes": [
+    {
+      "id": "likelihood-landscape-lab",
+      "after_heading": "8. Model selection: AIC, BIC, and what ModelFinder does",
+      "title": "Likelihood landscape laboratory",
+      "note": "Move over a likelihood surface, diagnose boundary estimates, translate evidence units, update a prior without changing the likelihood, distinguish interval meanings, and make AIC and BIC disagree for the right reason.",
+      "objectives": ["s6-o1", "s6-o2", "s6-o3", "s6-o4", "s6-o5", "s6-o6"]
+    },
+    {
+      "id": "likelihood-bayes-transfer-challenge",
+      "after_heading": "Worked example: how far apart are the human and chimpanzee mitochondrial genomes?",
+      "title": "Likelihood and Bayes transfer challenge",
+      "note": "Read a new likelihood, diagnose a boundary interval, and convert evidence plus prior odds into a posterior.",
+      "objectives": ["s6-o1", "s6-o3", "s6-o4", "s6-o5"]
+    }
+  ],
+
+  "S7-high-dimensional-data": [
+    {
+      "id": "high-dimensional-microscope",
+      "after_heading": "8. Mixed models, conceptually",
+      "title": "High-dimensional data microscope",
+      "note": "Choose the protected error object, derive an ancestry-aware effective-test threshold, run BH, decompose inflation, inspect PCA geometry, expose p-greater-than-n and count overdispersion, and square winner's curse.",
+      "objectives": ["s7-o1", "s7-o2", "s7-o3", "s7-o4", "s7-o5", "s7-o6", "s7-o7"]
+    }
+  ],
+
+  "D1-neurons-and-the-cerebellum": [
+    {
+      "id": "neuron-cerebellum-systems-lab",
+      "after_heading": "6. Clinical vocabulary: reading the neurology you'll meet",
+      "title": "Neuron and cerebellum systems laboratory",
+      "note": "Count pacemaker cycles, route excitation and inhibition through the cerebellum, mis-scale an internal model, audit selective-vulnerability headroom, classify tremor by activation, and match outcomes to what they actually measure.",
+      "objectives": ["d1-o1", "d1-o2", "d1-o3", "d1-o4", "d1-o5", "d1-o6", "d1-o7"]
+    }
+  ],
+
+  "D2-kinases-phosphatases-and-pp2a": [
+    {
+      "id": "pp2a-flux-assembly-lab",
+      "after_heading": "6. Why dosage of a regulatory subunit is dangerous",
+      "title": "PP2A flux and assembly laboratory",
+      "note": "Balance kinase and phosphatase flux, build specificity from a shared core, route Bβ isoforms to different addresses, redistribute limiting holoenzyme cores, and turn each uncertain SCA12 claim into a falsifying experiment.",
+      "objectives": ["d2-o1", "d2-o2", "d2-o3", "d2-o4", "d2-o5", "d2-o6"]
+    }
+  ],
+
+  "D3-repeat-expansion-disorders": [
+    {
+      "id": "repeat-expansion-lab",
+      "after_heading": "7. Why this class evaded the pipeline",
+      "title": "Repeat-expansion mechanism laboratory",
+      "note": "Classify repeats by address, expand them through repair in a non-dividing neuron, read modifier direction and allele classes, separate anticipation from bias, derive short-read invisibility, and infer only what a sized pedigree licenses.",
+      "objectives": ["d3-o1", "d3-o2", "d3-o3", "d3-o4", "d3-o5", "d3-o6", "d3-o7"]
+    }
+  ],
+
+  "D4-sca12-from-repeat-to-phenotype": [
+    {
+      "id": "sca12-mechanism-board",
+      "after_heading": "9. The causal chain, with confidence on every arrow",
+      "title": "SCA12 mechanism evidence board",
+      "note": "Orient the repeat across assemblies and strands, report a 44 honestly, eliminate only incompatible mechanism classes, attack each live hypothesis at its weakest joint, separate analogy from direct evidence, and update from stage-specific isoform data.",
+      "objectives": ["d4-o1", "d4-o2", "d4-o3", "d4-o4", "d4-o5", "d4-o6", "d4-o7"]
+    }
+  ],
+
+  "D5-sca12-population-clinic-therapy": [
+    {
+      "id": "sca12-dossier-lab",
+      "after_heading": "6. The capstone: the SCA12 dossier",
+      "title": "SCA12 population, clinic, and therapy dossier",
+      "note": "Prove a founder without inventing a prevalence, route a negative genome to a repeat assay, keep the missing penetrance function inside Bayes, flip therapeutic direction with mechanism, and design studies whose outcomes change the decision.",
+      "objectives": ["d5-o1", "d5-o2", "d5-o3", "d5-o4", "d5-o5", "d5-o6"]
     }
   ]
 }

@@ -601,6 +601,20 @@ def page_template(doc: Doc, body: str, boot: str, nav: dict,
 <script src="assets/katex/katex.min.js"></script>
 <script src="assets/mermaid.min.js"></script>
 <script src="assets/reader.js"></script>
+<script src="assets/interactions.js"></script>
+<script src="assets/interactions-foundations.js"></script>
+<script src="assets/interactions-transmission.js"></script>
+<script src="assets/interactions-instability.js"></script>
+<script src="assets/interactions-regulation.js"></script>
+<script src="assets/interactions-population.js"></script>
+<script src="assets/interactions-quantitative.js"></script>
+<script src="assets/interactions-evolution.js"></script>
+<script src="assets/interactions-methods.js"></script>
+<script src="assets/interactions-genomics.js"></script>
+<script src="assets/interactions-human.js"></script>
+<script src="assets/interactions-advanced-stats.js"></script>
+<script src="assets/interactions-sca12.js"></script>
+<script src="assets/interactions-transfer.js"></script>
 <script src="assets/widgets.js"></script>
 </body>
 </html>
@@ -908,7 +922,16 @@ def main() -> int:
     DIST.mkdir(parents=True, exist_ok=True)
     assets = DIST / "assets"
     assets.mkdir(exist_ok=True)
-    for name in ("reader.css", "reader.js", "widgets.js"):
+    for name in (
+        "reader.css", "reader.js", "interactions.js",
+        "interactions-foundations.js", "interactions-transmission.js",
+        "interactions-instability.js", "interactions-regulation.js",
+        "interactions-population.js", "interactions-quantitative.js",
+        "interactions-evolution.js", "interactions-methods.js",
+        "interactions-genomics.js", "interactions-human.js",
+        "interactions-advanced-stats.js", "interactions-sca12.js",
+        "interactions-transfer.js", "widgets.js",
+    ):
         shutil.copy2(SRC / name, assets / name)
     vendor = ROOT / "vendor" / "mermaid.min.js"
     if vendor.exists():

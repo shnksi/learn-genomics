@@ -117,30 +117,42 @@
       return skip;
     }
 
-    const box = el("div", { class: "predict" });
+    const box = el("div", { class: "predict", "aria-live": "polite" });
     box.append(el("p", { class: "predict-q", html: question }));
     if (hint) box.append(el("p", { class: "predict-hint", html: hint }));
 
     const row = el("div", { class: "btn-row" });
     options.forEach((opt) => {
-      row.append(
-        el("button", {
-          class: "btn predict-opt", type: "button", text: opt.label,
-          onclick: () => {
-            const right = !!opt.correct;
-            Ledger.record(widget, right);
-            box.replaceChildren(
-              el("div", {
-                class: "callout " + (right ? "callout-good" : "callout-bad"),
-                html:
-                  (right ? "<strong>Called it.</strong> " : "<strong>Not quite.</strong> ") +
-                  `You said <strong>${opt.label}</strong>.`,
-              })
-            );
-            onCommit(opt, right, box);
-          },
-        })
-      );
+      const button = el("button", {
+        class: "btn predict-opt", type: "button", text: opt.label,
+      });
+      button.addEventListener("click", () => {
+        const restoreFocus = document.activeElement === button;
+        const right = !!opt.correct;
+        Ledger.record(widget, right);
+        box.replaceChildren(
+          el("div", {
+            class: "callout " + (right ? "callout-good" : "callout-bad"),
+            html:
+              (right ? "<strong>Called it.</strong> " : "<strong>Not quite.</strong> ") +
+              `You said <strong>${opt.label}</strong>.`,
+          })
+        );
+        onCommit(opt, right, box);
+        if (restoreFocus) {
+          const nextControl = box.querySelector("button:not([disabled]), input:not([disabled])") ||
+            host.querySelector(".hero-lab:not([hidden]) button:not([disabled]), " +
+              ".hero-lab:not([hidden]) input:not([disabled]), " +
+              ":scope > :not([hidden]) input:not([disabled])");
+          if (nextControl) {
+            nextControl.focus({ preventScroll: true });
+          } else {
+            box.tabIndex = -1;
+            box.focus({ preventScroll: true });
+          }
+        }
+      });
+      row.append(button);
     });
     box.append(row);
     host.append(box);
@@ -190,7 +202,7 @@
     let done = false;
 
     const stage = el("div");
-    const feedback = el("div", { class: "callout" });
+    const feedback = el("div", { class: "callout", "aria-live": "polite" });
     const keys = el("div", { class: "btn-row", style: "margin-top:.75rem" });
 
     function expected() {
@@ -272,13 +284,13 @@
     }
 
     for (const b of "ACGT") {
-      keys.append(el("button", { class: "btn key-btn", text: b, onclick: () => type(b) }));
+      keys.append(el("button", { class: "btn key-btn", type: "button", text: b, onclick: () => type(b) }));
     }
     keys.append(
-      el("button", { class: "btn", text: "⌫", title: "Backspace", onclick: () => {
+      el("button", { class: "btn", type: "button", text: "⌫", title: "Backspace", "aria-label": "Backspace", onclick: () => {
         typed = typed.slice(0, -1); render();
       }}),
-      el("button", { class: "btn", text: "New sequence", onclick: () => {
+      el("button", { class: "btn", type: "button", text: "New sequence", onclick: () => {
         const n = 8 + rint(3);
         top = Array.from({ length: n }, () => "ACGT"[rint(4)]).join("");
         typed = ""; done = false; render();
@@ -286,6 +298,7 @@
     );
 
     body.tabIndex = 0;
+    body.setAttribute("aria-label", "DNA strand complement editor");
     body.addEventListener("keydown", (e) => {
       const k = e.key.toUpperCase();
       if ("ACGT".includes(k) && k.length === 1) { e.preventDefault(); type(k); }
@@ -311,7 +324,7 @@
 
     const stage = el("div");
     const panel = el("div");
-    const verdict = el("div", { class: "callout" });
+    const verdict = el("div", { class: "callout", "aria-live": "polite" });
 
     const nextBase = (ch) => "ACGT"["ACGT".indexOf(ch) + 1 === 4 ? 0 : "ACGT".indexOf(ch) + 1];
 
@@ -399,24 +412,28 @@
     }
 
     function codonRow(label, seq, opts) {
-      const line = el("div", { class: "seq" });
-      for (let i = 0; i < seq.length; i++) {
-        if (i > 0 && i % 3 === 0) line.append(el("span", { class: "codon-gap" }));
-        const ch = seq[i];
-        const attrs = { class: "cell base base-" + ch, text: ch };
-        if (opts.clickable) {
-          Object.assign(attrs, {
-            role: "button", tabindex: "0",
-            title: `Position ${i + 1} — ${armed ? "predict, then change" : "change"}`,
-            onclick: () => cellClick(i),
-            onkeydown: (e) => {
-              if (e.key === "Enter" || e.key === " ") { e.preventDefault(); cellClick(i); }
-            },
-          });
+      const line = el("div", { class: "seq dogma-sequence" });
+      for (let codonStart = 0; codonStart < seq.length; codonStart += 3) {
+        const codon = el("span", { class: "dogma-codon" });
+        for (let i = codonStart; i < Math.min(codonStart + 3, seq.length); i++) {
+          const ch = seq[i];
+          const attrs = { class: "cell base base-" + ch, text: ch };
+          if (opts.clickable) {
+            Object.assign(attrs, {
+              role: "button", tabindex: "0",
+              title: `Position ${i + 1} — ${armed ? "predict, then change" : "change"}`,
+              "aria-label": `Position ${i + 1}, base ${ch} — ${armed ? "predict, then change" : "change"}`,
+              onclick: () => cellClick(i),
+              onkeydown: (e) => {
+                if (e.key === "Enter" || e.key === " ") { e.preventDefault(); cellClick(i); }
+              },
+            });
+          }
+          const span = el("span", attrs);
+          if (opts.diffAgainst && opts.diffAgainst[i] !== ch) span.classList.add("mutated");
+          codon.append(span);
         }
-        const span = el("span", attrs);
-        if (opts.diffAgainst && opts.diffAgainst[i] !== ch) span.classList.add("mutated");
-        line.append(span);
+        line.append(codon);
       }
       return el("div", { class: "seq-row" }, [
         el("div", { class: "seq-label", text: label }), line,
@@ -424,7 +441,7 @@
     }
 
     function peptideRow(peptide) {
-      const line = el("div", { class: "seq" });
+      const line = el("div", { class: "seq dogma-sequence dogma-peptide" });
       peptide.forEach((aa, i) => {
         const span = el("span", { class: "aa", text: THREE[aa] || "???" });
         if (refPeptide[i] !== aa) span.classList.add("mutated");
@@ -453,14 +470,18 @@
         : "Unmutated. Pick any base — you call the outcome before it happens.";
     }
 
-    const modeRow = el("div", { class: "btn-row", style: "margin-top:.85rem" }, [
-      el("button", { class: "btn", text: "Free play (no prediction)", onclick: (e) => {
+    const modeButton = el("button", {
+      class: "btn", type: "button", text: "Free play (no prediction)", "aria-pressed": "false", onclick: (e) => {
         armed = !armed;
-        e.target.textContent = armed ? "Free play (no prediction)" : "Predict first";
+        e.currentTarget.textContent = armed ? "Free play (no prediction)" : "Predict first";
+        e.currentTarget.setAttribute("aria-pressed", String(!armed));
         panel.replaceChildren();
         render();
-      }}),
-      el("button", { class: "btn", text: "Reset sequence", onclick: () => {
+      },
+    });
+    const modeRow = el("div", { class: "btn-row", style: "margin-top:.85rem" }, [
+      modeButton,
+      el("button", { class: "btn", type: "button", text: "Reset sequence", onclick: () => {
         dna = REFERENCE; panel.replaceChildren(); render();
       }}),
     ]);
@@ -473,21 +494,23 @@
 
   function meiosisShuffle(body) {
     const PAIRS = 23, SEGMENTS = 44, combos = Math.pow(2, PAIRS);
-    const assortment = el("div", { class: "chrom" });
-    const recomb = el("div");
-    const stats = el("div", { class: "readout" });
+    const assortment = el("div", { class: "chrom", role: "img" });
+    const recomb = el("div", { role: "img" });
+    const stats = el("div", { class: "readout", "aria-live": "polite" });
     let made = st().gametes || 0;
 
     function render(draw) {
       assortment.replaceChildren();
+      const maternal = draw.filter(Boolean).length;
+      assortment.setAttribute("aria-label", `Independent assortment selected ${maternal} maternal and ${PAIRS - maternal} paternal homologues across 23 chromosome pairs.`);
       for (const from of draw) {
         assortment.append(el("span", { class: from ? "mat" : "pat",
-          title: from ? "maternal copy" : "paternal copy" }));
+          title: from ? "maternal copy" : "paternal copy", "aria-hidden": "true" }));
       }
       const crossovers = 1 + rint(3);
       const points = Array.from({ length: crossovers }, () => 1 + rint(SEGMENTS - 2))
         .sort((a, b) => a - b);
-      const strip = el("div", { class: "chrom" });
+      const strip = el("div", { class: "chrom", "aria-hidden": "true" });
       let side = draw[0] ? 1 : 0;
       for (let i = 0; i < SEGMENTS; i++) {
         if (points.includes(i)) side = 1 - side;
@@ -498,10 +521,11 @@
           `chromosome 1, at higher resolution — ${crossovers} crossover${crossovers > 1 ? "s" : ""}` }),
         strip
       );
+      recomb.setAttribute("aria-label", `Chromosome 1 recombinant mosaic with ${crossovers} crossover${crossovers > 1 ? "s" : ""} across 44 schematic segments.`);
       stats.replaceChildren(
         stat(fmt(combos), "2²³ whole-chromosome combinations"),
         stat(fmt(made), "gametes you have made"),
-        stat("≈ 0", "chance of ever repeating one")
+        stat("vanishingly small", "chance two gametes match exactly")
       );
     }
 
@@ -527,9 +551,9 @@
         "The top row is <strong>independent assortment</strong> — 2²³ outcomes. The strip below " +
         "is <strong>recombination</strong>, and it is why the chromosome you pass on is a mosaic " +
         "rather than one you were handed. Multiply the two and the number of distinct gametes " +
-        "you can make is, for practical purposes, unbounded." }),
+        "you can make is astronomically large." }),
       el("div", { class: "btn-row", style: "margin-top:.85rem" }, [
-        el("button", { class: "btn btn-primary", text: "Make a gamete", onclick: draw }),
+        el("button", { class: "btn btn-primary", type: "button", text: "Make a gamete", onclick: draw }),
       ])
     );
     draw();
@@ -571,8 +595,8 @@
     const callable = el("input", { type: "range", min: "80", max: "100", step: "1", value: "87" });
     const rateVal = el("span", { class: "val" });
     const callVal = el("span", { class: "val" });
-    const stats = el("div", { class: "readout" });
-    const note = el("div", { class: "callout" });
+    const stats = el("div", { class: "readout", "aria-live": "polite" });
+    const note = el("div", { class: "callout", "aria-live": "polite" });
 
     function render() {
       const r = parseFloat(rate.value) * 1e-8;
@@ -660,9 +684,9 @@
     const popVal = el("span", { class: "val" });
     const selVal = el("span", { class: "val" });
     const startVal = el("span", { class: "val" });
-    const plot = el("div", { class: "plot" });
-    const stats = el("div", { class: "readout" });
-    const note = el("div", { class: "callout" });
+    const plot = el("div", { class: "plot", "aria-live": "polite" });
+    const stats = el("div", { class: "readout", "aria-live": "polite" });
+    const note = el("div", { class: "callout", "aria-live": "polite" });
 
     function oneRun(N, s, p0) {
       const path = [p0];
@@ -728,7 +752,7 @@
           `selection is a bias in a sampling process, not a guarantee.`
         : strongSel
         ? `<strong>Large population, strong selection.</strong> The lines now travel together — ` +
-          `sampling noise scales as 1/2N, so at this size selection dominates and the outcome ` +
+          `sampling standard deviation shrinks as 1/√(2N), so at this size selection dominates and the outcome ` +
           `becomes close to deterministic. This is the regime textbooks draw.`
         : `<strong>Large population, weak selection.</strong> Frequencies barely move in 100 ` +
           `generations. Most molecular evolution looks like this — drift acting on variants that ` +
@@ -773,7 +797,7 @@
 
     const byId = Object.fromEntries(nodes.map((n) => [n.id, n]));
     const grid = el("div", { class: "map-grid" });
-    const detail = el("div", { class: "callout" });
+    const detail = el("div", { class: "callout", "aria-live": "polite" });
     let selected = null;
 
     // Everything upstream, transitively — the real prerequisite set.
@@ -798,6 +822,7 @@
       [...grid.children].forEach((cell) => {
         const cid = cell.dataset.id;
         cell.classList.toggle("is-selected", cid === selected);
+        cell.setAttribute("aria-pressed", String(cid === selected));
         cell.classList.toggle("is-need", needs.has(cid));
         cell.classList.toggle("is-unlock", unlocks.has(cid));
         cell.classList.toggle("is-dim",
@@ -822,7 +847,7 @@
 
     nodes.forEach((n) => {
       grid.append(
-        el("button", { class: "map-cell", type: "button", "data-id": n.id,
+        el("button", { class: "map-cell", type: "button", "data-id": n.id, "aria-pressed": "false",
                        onclick: () => select(n.id) }, [
           el("span", { class: "map-part", text: n.part }),
           el("span", { class: "map-title", text: n.title }),
@@ -1025,6 +1050,18 @@
     "misconception-check": misconceptionCheck,
     "recall-queue": recallQueue,
   };
+
+  // Bespoke chapter labs live in interactions.js so this file can keep owning
+  // the reader-wide floor. Each definition receives the same small authoring
+  // API as the original widgets, while mounting and failure isolation remain
+  // centralised here. The build still emits ordinary scripts for file:// use.
+  const extraDefinitions = window.ReaderInteractionDefinitions || {};
+  for (const [id, build] of Object.entries(extraDefinitions)) {
+    if (typeof build !== "function") continue;
+    REGISTRY[id] = (body) => build({
+      body, el, stat, predict, practice, revisit, Ledger, BOOT, st, fmt,
+    });
+  }
 
   Ledger.mount = document.getElementById("ledger");
   Ledger.render();
