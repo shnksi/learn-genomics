@@ -1,6 +1,6 @@
 # 40 — Sequencing technologies
 
-> **Before this:** [Ch 02](../part-01-molecular-foundations/02-dna-structure.md) · [Ch 04](../part-01-molecular-foundations/04-dna-replication.md) · [Ch 36](../part-08-methods/36-core-molecular-methods.md) · [Ch 39](39-genome-landscapes.md) · **Time:** ~45 min
+> **Before this:** [Ch 02](../part-01-molecular-foundations/02-dna-structure.md) · [Ch 04](../part-01-molecular-foundations/04-dna-replication.md) · [Ch 36](../part-08-methods/36-core-molecular-methods.md) · [Ch 39](39-genome-landscapes.md) · **Time:** ~75 min
 >
 > **Statistics needed:** [S2 Distributions](../part-S-statistics/S2-distributions.md) ·
 > [S3 Sampling and estimation](../part-S-statistics/S3-sampling-and-estimation.md)

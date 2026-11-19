@@ -5,13 +5,13 @@ single source of truth, and the published pages cannot drift from the prose they
 
 ## What gets published
 
-Only `reader-prototype/dist/` — the 117 generated pages and their assets. Everything else in the
+Only `reader-prototype/dist/` — the 126 generated pages and their assets. Everything else in the
 repository (the markdown, the plans, the lab data) is visible on GitHub but is not part of the
 website.
 
 ## It is live
 
-<https://shnksi.github.io/learn-genomics/>
+<https://course.shnksi.com/> (custom domain on GitHub Pages; default URL <https://shnksi.github.io/learn-genomics/> redirects here).
 
 Repository: <https://github.com/shnksi/learn-genomics> (public — required for Pages on a free
 account). Pages source is set to **GitHub Actions**; nothing is served from the branch itself.
@@ -76,11 +76,11 @@ default is to leave them out. Nothing in the reader depends on them.
 
 **To publish them too**, delete the last block of `.gitignore` before your first `git add .`.
 
-**One judgement call left to you.** `REVIEW-STATE.md` and `REVIEW-BRIEF.md` stay included. They
-are the course's own QA record and they name defects that are still open — most substantially
-the statistics-track ordering problem in §A1. That is arguably a virtue in a curriculum that
-advertises how it handles accuracy, but it is a catalogue of known faults, published alongside
-the thing it criticises. Add them to `.gitignore` if you would rather it were not.
+**One judgement call left to you.** `REVIEW-STATE.md` and `REVIEW-BRIEF.md` stay included as the
+course's historical QA record (the defects originally flagged there — including the §A1
+statistics-track ordering problem — have since been resolved; see the status banner at the top of
+`REVIEW-STATE.md`). Add them to `.gitignore` if you would rather omit the archive from the public
+repository.
 
 ## Local preview
 

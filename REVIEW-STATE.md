@@ -1,4 +1,8 @@
-# Review state — paused 2026-08-13
+# Review state — paused 2026-08-13 (archive)
+
+> **Status update:** Historical handoff archive. The defects logged below (§A1 statistics-track
+> scheduling, §B1/§B2, §C1, §C3) have since been resolved on `main` (see `git log` and
+> `STUDY-GUIDE.md`). Retained for audit provenance.
 
 Paused mid-review at the user's request (usage limit). This file is the handoff.
 Read `REVIEW-BRIEF.md` first for what the repo is; this file is what the *review* found and

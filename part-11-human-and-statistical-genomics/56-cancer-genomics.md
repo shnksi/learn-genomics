@@ -4,7 +4,7 @@
 > [Ch 17 — DNA repair](../part-03-genome-instability/17-dna-repair.md) ·
 > [Ch 27 — The four forces](../part-05-population-genetics/27-the-four-forces.md) ·
 > [Ch 46 — Variant calling](../part-10-functional-genomics/46-variant-calling.md) ·
-> **Time:** ~60 min
+> **Time:** ~80 min
 >
 > **Statistics needed:** [S2 Distributions](../part-S-statistics/S2-distributions.md) ·
 > [S4 Hypothesis testing](../part-S-statistics/S4-hypothesis-testing.md) ·

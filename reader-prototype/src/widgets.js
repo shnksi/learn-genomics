@@ -949,20 +949,55 @@
       });
     }
 
+    function findRelevantSection(beliefText) {
+      const toc = BOOT.toc || [];
+      const stop = new Set(["that", "this", "with", "from", "have", "they", "their", "only", "more", "most", "same", "each", "into", "when", "what", "will", "does", "just", "than", "then", "also", "very", "make", "made", "been", "some", "many", "much"]);
+      const words = String(beliefText || "")
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, " ")
+        .split(/\s+/)
+        .filter((w) => w.length >= 4 && !stop.has(w));
+      let best = null, bestScore = 0;
+      for (const h of toc) {
+        const low = h.text.toLowerCase();
+        let score = 0;
+        for (const w of words) if (low.includes(w)) score += 1;
+        if (score > bestScore) { bestScore = score; best = h; }
+      }
+      return bestScore > 0 ? best : null;
+    }
+
+    function retryMissed() {
+      const toRetry = missed.map((m) => rows.indexOf(m)).filter((i) => i >= 0);
+      if (!toRetry.length) return reset();
+      picked = toRetry;
+      index = 0;
+      correct = 0;
+      missed = [];
+      renderQuestion();
+    }
+
     function renderSummary() {
       st({ diagnostic: { score: correct, total: picked.length, at: new Date().toISOString() } });
+      const missedHtml = missed.map((m) => {
+        const sec = findRelevantSection(m.belief);
+        const jump = sec ? ` (<a href="#${sec.id}">${sec.text}</a>)` : "";
+        return `“${m.belief}”${jump}`;
+      }).join("; ");
+
+      const buttons = [];
+      if (missed.length) {
+        buttons.push(el("button", { class: "btn btn-primary", text: `Re-test ${missed.length} missed`, onclick: retryMissed }));
+      }
+      buttons.push(el("button", { class: "btn", text: "Run full check again", onclick: reset }));
+
       stage.replaceChildren(
         el("div", { class: "readout" }, [stat(`${correct}/${picked.length}`, "corrections identified")]),
         el("div", { class: "callout " + (missed.length ? "" : "callout-good"), html:
           missed.length
-            ? `<strong>Worth rereading:</strong> ${missed.map((m) => `“${m.belief}”`).join("; ")}. ` +
-              `In the full reader a miss here would route you back to the section that treats it, ` +
-              `and re-ask in a fortnight.`
-            : "<strong>All five.</strong> In the full reader these would enter the " +
-              "spaced-repetition queue at a long interval rather than being re-asked." }),
-        el("div", { class: "btn-row", style: "margin-top:.75rem" }, [
-          el("button", { class: "btn", text: "Run it again", onclick: reset }),
-        ])
+            ? `<strong>Worth rereading:</strong> ${missedHtml}. Jump back to the section above, or re-test the missed claims now.`
+            : "<strong>All clear.</strong> Every common misconception caught on this pass." }),
+        el("div", { class: "btn-row", style: "margin-top:.75rem" }, buttons)
       );
     }
 
@@ -972,65 +1007,104 @@
 
   /* ── 8. Recall queue ──────────────────────────────────────────────────── */
 
-  const INTERVALS = { again: [10 / 1440, "10 minutes"], hard: [1, "tomorrow"],
-                      good: [3, "in 3 days"], easy: [6, "in 6 days"] };
-
   function recallQueue(body) {
     const items = BOOT.widgets.recall;
     if (!items.length) return;
-    const state = st().recall || {};
+    const SRS = window.ReaderSRS;
     const summary = el("div", { class: "callout" });
 
     function updateSummary() {
       const saved = st().recall || {};
-      const rated = Object.keys(saved).length;
-      const due = Object.values(saved).map((r) => r.due).sort()[0];
+      const entries = Object.values(saved);
+      const rated = entries.length;
+      const dueCount = entries.filter((r) => SRS.isDue(r)).length;
+      const nextDue = entries
+        .filter((r) => !SRS.isDue(r) && r.due)
+        .map((r) => r.due)
+        .sort()[0];
       const led = Ledger.read();
+      const counts = BOOT.courseCounts || {};
+      const recallTotal = counts.recall ? counts.recall.toLocaleString() : items.length;
+      const qbTotal = counts.questionBank ? counts.questionBank.toLocaleString() : "1,300+";
+
       summary.innerHTML =
-        `<strong>${rated} of ${items.length}</strong> rated.` +
-        (due ? ` Next card due ${new Date(due).toLocaleDateString("en-GB",
-          { day: "numeric", month: "short" })}.` : "") +
+        `<strong>${rated} of ${items.length}</strong> rated` +
+        (dueCount ? ` (<strong>${dueCount} due now</strong>).` : ".") +
+        (nextDue ? ` Next review ${SRS.formatDue(nextDue)}.` : "") +
         (led.made ? ` Across this chapter you called <strong>${led.right} of ${led.made}</strong> ` +
           `predictions correctly.` : "") +
-        ` The whole course already contains <strong>475</strong> questions like these plus ` +
-        `<strong>1,219</strong> question-bank pairs. Scheduling them is a delivery decision, ` +
-        `not an authoring one.`;
+        ` Due cards across all <strong>${recallTotal}</strong> check-yourself prompts also appear ` +
+        `on the <a href="index.html">contents page</a> (with <strong>${qbTotal}</strong> additional ` +
+        `question-bank cards available for Anki export).`;
+    }
+
+    function renderCard(card, item, i, forceOpen) {
+      const saved = st().recall || {};
+      const entry = saved[i];
+      const due = SRS.isDue(entry);
+      const active = forceOpen || !entry || due;
+
+      card.replaceChildren();
+      const qLine = el("p", { class: "recall-q", html: `${i + 1}. ${item.question}` });
+      if (entry && due) {
+        qLine.append(" ", el("span", { class: "pill pill-warn", text: "due" }));
+      }
+
+      if (!active) {
+        const repsNote = entry.reps > 1 ? ` · review #${entry.reps}` : "";
+        const meta = el("div", { class: "rate-row" }, [
+          el("span", {
+            class: "scheduled",
+            text: `Rated “${entry.rating}” — next review ${SRS.formatDue(entry.due)}${repsNote}.`,
+          }),
+          el("button", {
+            class: "btn btn-subtle",
+            text: "Review early",
+            onclick: () => renderCard(card, item, i, true),
+          }),
+        ]);
+        card.append(qLine, meta);
+        return;
+      }
+
+      const answer = el("div", { class: "recall-a", html: item.answer, hidden: true });
+      const rateRow = el("div", { class: "rate-row", hidden: true });
+      const status = el("span", { class: "scheduled" });
+      const reveal = el("button", {
+        class: "btn",
+        text: "Show answer",
+        onclick: () => {
+          answer.hidden = false;
+          rateRow.hidden = false;
+          reveal.remove();
+        },
+      });
+
+      rateRow.append(el("span", { class: "rate-label", text: "How did that go?" }));
+      for (const rating of SRS.RATINGS) {
+        const preview = SRS.computeNext(entry, rating);
+        const btn = el("button", {
+          class: "btn",
+          html: `${rating[0].toUpperCase() + rating.slice(1)} <small class="rate-hint">${SRS.formatInterval(preview.interval)}</small>`,
+          onclick: () => {
+            const cur = Object.assign({}, st().recall || {});
+            const next = SRS.computeNext(cur[i], rating);
+            cur[i] = next;
+            st({ recall: cur });
+            status.textContent = `Scheduled ${SRS.formatInterval(next.interval)} (${SRS.formatDue(next.due)}).`;
+            rateRow.querySelectorAll(".btn").forEach((b) => (b.disabled = true));
+            updateSummary();
+          },
+        });
+        rateRow.append(btn);
+      }
+      rateRow.append(status);
+      card.append(qLine, reveal, answer, rateRow);
     }
 
     items.forEach((item, i) => {
       const card = el("div", { class: "recall-card" });
-      const answer = el("div", { class: "recall-a", html: item.answer, hidden: true });
-      const rateRow = el("div", { class: "rate-row", hidden: true });
-      const status = el("span", { class: "scheduled" });
-      const reveal = el("button", { class: "btn", text: "Show answer", onclick: () => {
-        answer.hidden = false; rateRow.hidden = false; reveal.remove();
-      }});
-
-      rateRow.append(el("span", { class: "rate-label", text: "How did that go?" }));
-      for (const [key, [days, label]] of Object.entries(INTERVALS)) {
-        rateRow.append(el("button", { class: "btn", text: key[0].toUpperCase() + key.slice(1),
-          onclick: () => {
-            const saved = st().recall || {};
-            saved[i] = { rating: key, due: new Date(Date.now() + days * 86400000).toISOString() };
-            st({ recall: saved });
-            status.textContent = `Scheduled ${label}.`;
-            rateRow.querySelectorAll(".btn").forEach((b) => (b.disabled = true));
-            updateSummary();
-          }}));
-      }
-      rateRow.append(status);
-
-      if (state[i]) {
-        answer.hidden = false; rateRow.hidden = false;
-        status.textContent = `Rated “${state[i].rating}” — due ${
-          new Date(state[i].due).toLocaleDateString("en-GB", { day: "numeric", month: "short" })}.`;
-        rateRow.querySelectorAll(".btn").forEach((b) => (b.disabled = true));
-      }
-
-      card.append(
-        el("p", { class: "recall-q", html: `${i + 1}. ${item.question}` }),
-        state[i] ? el("span") : reveal, answer, rateRow
-      );
+      renderCard(card, item, i, false);
       body.append(card);
     });
 

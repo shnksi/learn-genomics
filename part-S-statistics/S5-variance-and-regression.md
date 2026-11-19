@@ -22,14 +22,15 @@ variances; what correlation does and does not measure; how to fit, read and dist
 All code in this chapter runs from the repository root — the directory holding `README.md` and
 `.venv` — with `source .venv/bin/activate`, and addresses data as `labs/data/…`. The alignment
 comes from [lab-02](../labs/lab-02-alignment.md); the genotypes, the sample panel and the PCA
-eigenvectors from [lab-07](../labs/lab-07-population-genetics.md). One package this chapter needs
-is not in [lab-00](../labs/lab-00-setup.md)'s base install. Set up once:
+eigenvectors from [lab-07](../labs/lab-07-population-genetics.md). If you are reading the S-track
+before completing those labs, run `python part-S-statistics/setup_s_data.py` to generate matching
+synthetic fallback files in `labs/data/` (existing real lab files are never overwritten). Set up
+once (`statsmodels` is already installed by [lab-00](../labs/lab-00-setup.md)):
 
 ```bash
 cd /path/to/learn-genomics          # the directory holding README.md and .venv
 source .venv/bin/activate
 export PATH="$HOME/bin:$PATH"
-uv pip install statsmodels          # §§4, 6 and 7 need it; lab-00 does not install it
 plink2 --pfile labs/data/chr22_qc --export A --out labs/data/chr22_qc   # 0/1/2 dosage matrix
 ```
 

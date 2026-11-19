@@ -3,7 +3,7 @@
 > **Before this:** [Ch 57 — Genomics in practice](57-genomics-in-practice.md) ·
 > [Ch 53 — Polygenic scores](../part-11-human-and-statistical-genomics/53-polygenic-scores.md) ·
 > [Ch 31 — Heritability and response to selection](../part-06-quantitative-genetics/31-heritability-and-selection.md) ·
-> **Time:** ~55 min
+> **Time:** ~95 min (2 sessions)
 
 This is the last chapter and it is not an appendix. Every problem in it is a real problem with
 real trade-offs, on which competent and decent people disagree. Where the disagreement is
@@ -439,6 +439,10 @@ apheresis, myeloablative conditioning and a transplant unit. The burden is conce
 overwhelmingly in sub-Saharan Africa and India. A therapy whose delivery requirements exceed the
 health-system capacity of the places the disease is concentrated is not, operationally, a cure
 for that disease yet.
+
+> **Suggested stopping point (Session 1 of 2).** §§1–6 cover consent, privacy, clinical reporting,
+> and access. §§7–end shift to ancestry, eugenics, germline editing, and governance — a natural
+> break if you are reading in two sittings.
 
 ## 7. Race, ancestry, and what genetics does not license
 

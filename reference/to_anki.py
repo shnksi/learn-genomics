@@ -18,9 +18,17 @@ Usage
     python reference/to_anki.py question-banks/ --out anki-import.tsv
     python reference/to_anki.py question-banks/qb-part-01.md --out part1.tsv
     python reference/to_anki.py question-banks/ --deck "Genomics::Part 1"
+    python reference/to_anki.py question-banks/ --legacy --out anki-legacy.tsv
+
+By default, answers longer than ``--max-words`` (35) are split into a concise
+core answer in ``Back`` and the extended explanation in a separate ``Notes``
+column (4 columns: ``Front``, ``Back``, ``Notes``, ``Tags``; plus optional
+``Deck``). Pass ``--legacy`` for the original 3-column ``Front / Back / Tags``
+format with the full answer in ``Back``.
 
 Then in Anki: File > Import, choose "Fields separated by: Tab", map field 1 to
-Front and field 2 to Back, and enable "Allow HTML in fields" so the <br> line
+Front, field 2 to Back, field 3 to Notes (optional extra field on your note
+type), field 4 to Tags, and enable "Allow HTML in fields" so the <br> line
 breaks render.
 """
 
@@ -106,7 +114,57 @@ def parse_bank(path: Path) -> list[dict[str, str]]:
     return cards
 
 
-def to_tsv_row(card: dict[str, str], deck: str | None) -> str:
+# Sentence boundary: punctuation followed by whitespace and a sentence starter,
+# avoiding common scientific abbreviations and decimal numbers.
+_SENT_SPLIT = re.compile(
+    r"(?<!\be\.g)(?<!\bi\.e)(?<!\bvs)(?<!\bCh)(?<!\bFig)(?<!\bNo)(?<!\bDr)(?<!\bal)"
+    r"(?<=[.!?])\s+(?=[A-Z0-9(\"`'\[])"
+)
+
+
+def split_atomic_answer(text: str, max_words: int = 35) -> tuple[str, str]:
+    """Split a long answer into a concise core Back and a detailed Notes field.
+
+    Always keeps at least the first full sentence in Back so cards never break
+    mid-thought. Returns ``(back, notes)`` where ``notes`` is empty if the full
+    answer already fits within ``max_words``.
+    """
+    if len(text.split()) <= max_words:
+        return text, ""
+
+    paragraphs = [p.strip() for p in text.split("\n") if p.strip()]
+    first_para = paragraphs[0]
+    rest_paras = paragraphs[1:]
+
+    sentences = _SENT_SPLIT.split(first_para)
+    core: list[str] = [sentences[0]]
+    words = len(sentences[0].split())
+    rest_sents: list[str] = []
+
+    for i, sent in enumerate(sentences[1:], start=1):
+        sw = len(sent.split())
+        if words + sw <= max_words:
+            core.append(sent)
+            words += sw
+        else:
+            rest_sents = sentences[i:]
+            break
+
+    back = " ".join(core).strip()
+    note_parts: list[str] = []
+    if rest_sents:
+        note_parts.append(" ".join(rest_sents).strip())
+    note_parts.extend(rest_paras)
+    return back, "\n".join(note_parts).strip()
+
+
+def to_tsv_row(
+    card: dict[str, str],
+    deck: str | None,
+    *,
+    legacy: bool = False,
+    max_words: int = 35,
+) -> str:
     """Escape for TSV. Anki reads <br> as a line break when HTML is enabled."""
 
     def clean(text: str) -> str:
@@ -114,7 +172,11 @@ def to_tsv_row(card: dict[str, str], deck: str | None) -> str:
         text = text.replace("\t", " ")
         return text.replace("\n", "<br>")
 
-    fields = [clean(card["front"]), clean(card["back"]), card["tags"]]
+    if legacy:
+        fields = [clean(card["front"]), clean(card["back"]), card["tags"]]
+    else:
+        back, notes = split_atomic_answer(card["back"], max_words=max_words)
+        fields = [clean(card["front"]), clean(back), clean(notes), card["tags"]]
     if deck:
         fields.append(deck)
     return "\t".join(fields)
@@ -124,7 +186,18 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("source", type=Path, help="A question bank .md file, or a directory of them")
     parser.add_argument("--out", type=Path, default=Path("anki-import.tsv"))
-    parser.add_argument("--deck", help="Optional deck name, written as a fourth column")
+    parser.add_argument("--deck", help="Optional deck name, written as the final column")
+    parser.add_argument(
+        "--max-words",
+        type=int,
+        default=35,
+        help="Target maximum words in Back before overflowing to Notes (default: 35)",
+    )
+    parser.add_argument(
+        "--legacy",
+        action="store_true",
+        help="Emit the original 3-column Front/Back/Tags format without splitting Notes",
+    )
     args = parser.parse_args(argv)
 
     if args.source.is_dir():
@@ -153,10 +226,14 @@ def main(argv: list[str] | None = None) -> int:
         print("error: parsed 0 cards -- check the Q:/A: format", file=sys.stderr)
         return 1
 
-    rows = [to_tsv_row(c, args.deck) for c in all_cards]
+    rows = [
+        to_tsv_row(c, args.deck, legacy=args.legacy, max_words=args.max_words)
+        for c in all_cards
+    ]
     args.out.write_text("\n".join(rows) + "\n", encoding="utf-8")
 
-    print(f"\nwrote {len(all_cards)} cards to {args.out}", file=sys.stderr)
+    cols = "Front / Back / Tags" if args.legacy else "Front / Back / Notes / Tags"
+    print(f"\nwrote {len(all_cards)} cards ({cols}) to {args.out}", file=sys.stderr)
     print("import into Anki with: fields separated by Tab, 'Allow HTML in fields' on", file=sys.stderr)
     return 0
 

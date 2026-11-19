@@ -150,8 +150,8 @@ genome is not a description of an organism. It is closer to a vast conditional p
 which the running state determines which branches execute — and where the state is itself
 the accumulated product of which branches have executed so far.
 
-Roughly 19,442 human genes encode proteins
-([reference/verified-facts.md](../reference/verified-facts.md)). A given cell type expresses
+About 20,000 human genes encode proteins
+(19,442 in GENCODE Release 50; [reference/verified-facts.md](../reference/verified-facts.md)). A given cell type expresses
 perhaps half of them, at wildly differing levels, and the specific combination *is* the cell
 type. Control is exerted at every stage: whether the DNA is physically accessible, whether
 transcription initiates, how the RNA is processed, how long it survives, whether it is

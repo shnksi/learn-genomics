@@ -1,6 +1,6 @@
 # D2 — Kinases, phosphatases and PP2A
 
-> **Before this:** [Ch 08 Proteins and gene function](../part-01-molecular-foundations/08-proteins-and-gene-function.md) · **Time:** ~60 min
+> **Before this:** [Ch 08 Proteins and gene function](../part-01-molecular-foundations/08-proteins-and-gene-function.md) · **Time:** ~95 min (2 sessions)
 
 This chapter is part of the SCA12 specialisation ([D1](D1-neurons-and-the-cerebellum.md) · [D3](D3-repeat-expansion-disorders.md) · [D4](D4-sca12-from-repeat-to-phenotype.md) · [D5](D5-sca12-population-clinic-therapy.md)). It can be read at any point after Ch 08; nothing later in the main sequence is assumed.
 
@@ -297,6 +297,10 @@ So here is the candidate list for what a B55β holoenzyme does in a neuron, each
 **What the loss-of-function allelic series does and does not settle.** *De novo* **missense** variants in *PPP2R2B* cause a **neurodevelopmental syndrome**, and those variants impair holoenzyme incorporation, mitochondrial localisation, fission induction and DRP1 dephosphorylation (Sandal et al. 2025, *Hum Mol Genet*). Take carefully what that constrains. It establishes in human genetics — not in an overexpression construct — that B55β function is *required*, so too little is a disease as well as too much; that is why [D5](D5-sca12-population-clinic-therapy.md)'s therapy section treats it as the floor under any knockdown dose, and why the target is a dial with damage at both ends. It also corroborates that holoenzyme incorporation, mitochondrial localisation and DRP1 dephosphorylation are genuine activities of the normal protein, since those are the assays the variants failed. What it does **not** do is supply the missing substrate list. It names no further targets, it does not say which of the failed activities carries the neurodevelopmental phenotype, and a developmental syndrome is a different phenotype at a different life stage from adult-onset cerebellar degeneration. It is the cleanest available test of what B55β does in humans, and it still leaves §6's displaced activities without names.
 
 ---
+
+> **Suggested stopping point (Session 1 of 2).** §§1–5 build the PP2A holoenzyme architecture and
+> B55β biology. §6 onward applies it directly to regulatory-subunit dosage toxicity — a clean place
+> to pause and resume fresh.
 
 ## 6. Why dosage of a regulatory subunit is dangerous
 

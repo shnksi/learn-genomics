@@ -4,7 +4,7 @@
 > [Ch 28](../part-05-population-genetics/28-structure-and-inbreeding.md) ·
 > [Ch 29](../part-05-population-genetics/29-linkage-disequilibrium.md) ·
 > [Ch 33](33-neutral-theory-and-selection-tests.md) · [Ch 34](34-phylogenetics.md) ·
-> [Ch 35](35-genome-evolution.md) · **Time:** ~50 min
+> [Ch 35](35-genome-evolution.md) · **Time:** ~80 min
 >
 > **Statistics needed:** [S3 Sampling and estimation](../part-S-statistics/S3-sampling-and-estimation.md) §§2–3, 6 ·
 > [S4 Hypothesis testing](../part-S-statistics/S4-hypothesis-testing.md) §§2, 7

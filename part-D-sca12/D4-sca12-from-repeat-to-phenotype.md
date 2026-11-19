@@ -1,6 +1,6 @@
 # D4 — SCA12 I: from repeat to phenotype
 
-> **Before this:** [D1 — The neuron, the cerebellum and selective vulnerability](D1-neurons-and-the-cerebellum.md) · [D2 — Kinases, phosphatases and PP2A](D2-kinases-phosphatases-and-pp2a.md) · [D3 — Repeat-expansion disorders](D3-repeat-expansion-disorders.md) · [Ch 05 Transcription](../part-01-molecular-foundations/05-transcription.md) · [Ch 06 RNA processing](../part-01-molecular-foundations/06-rna-processing.md) · [Ch 07 The genetic code and translation](../part-01-molecular-foundations/07-genetic-code-and-translation.md) · [Ch 22 Eukaryotic transcriptional regulation](../part-04-gene-regulation/22-eukaryotic-transcriptional-regulation.md) · **Time:** ~75 min
+> **Before this:** [D1 — The neuron, the cerebellum and selective vulnerability](D1-neurons-and-the-cerebellum.md) · [D2 — Kinases, phosphatases and PP2A](D2-kinases-phosphatases-and-pp2a.md) · [D3 — Repeat-expansion disorders](D3-repeat-expansion-disorders.md) · [Ch 05 Transcription](../part-01-molecular-foundations/05-transcription.md) · [Ch 06 RNA processing](../part-01-molecular-foundations/06-rna-processing.md) · [Ch 07 The genetic code and translation](../part-01-molecular-foundations/07-genetic-code-and-translation.md) · [Ch 22 Eukaryotic transcriptional regulation](../part-04-gene-regulation/22-eukaryotic-transcriptional-regulation.md) · **Time:** ~120 min (2 sessions)
 >
 > **Statistics needed:** [S3 Sampling and estimation](../part-S-statistics/S3-sampling-and-estimation.md)
 
@@ -397,6 +397,10 @@ And note the consequence for §3. SCA12 is *not* a polyglutamine disease in the 
 One more caution about secondary sources. A widely used repeat database summarises the SCA12 mechanism in a single line as polyalanine gain of function associated with RAN translation. That line is a **single-citation summary** and it is considerably more confident than the literature underneath it. When a database field and a literature review disagree in confidence, the database field is usually the one that lost the caveats — someone had to fit a mechanism into a string column.
 
 ---
+
+> **Suggested stopping point (Session 1 of 2).** §§1–6 lay out the locus architecture and each
+> competing SCA12 pathogenesis hypothesis. §7 onward synthesises them into the evidence table and
+> causal chain — a good place to pause before the synthesis half.
 
 ## 7. The evidence table: mechanism-hunting as elimination
 

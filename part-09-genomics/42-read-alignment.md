@@ -61,9 +61,10 @@ at 1e9 cmp/s 5.1e9 core-seconds                  ≈ 162 core-years
 ```
 
 That is for *exact* matching, which is not the problem. Do it properly — full dynamic
-programming of each read against the whole reference — and you need 150 × 3.1 × 10⁹ ≈ 4.7 × 10¹¹
-cells per read, 2.9 × 10²⁰ cells in total. Even at 10¹⁰ cells/s with SIMD already applied,
-that's about **900 core-years**.
+programming of each read against both strands of the whole reference — and you need
+2 × 150 × 3.1 × 10⁹ ≈ 9.3 × 10¹¹ cells per read, ~5.8 × 10²⁰ cells in total. Even at
+10¹⁰ cells/s with SIMD already applied, that's about **1,800 core-years** (about 900 core-years
+per strand).
 
 Real aligners do a 30× human genome in the order of a hundred CPU-hours. The gap is four orders
 of magnitude, and it is not constant-factor engineering. It comes from replacing a scan with an

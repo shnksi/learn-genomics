@@ -570,6 +570,8 @@ def page_template(doc: Doc, body: str, boot: str, nav: dict,
     </div>
     <div class="topbar-actions">
       <span id="ledger" class="ledger" hidden></span>
+      <button id="search-btn" class="icon-btn" title="Search course (⌘K or /)"
+              aria-label="Search course">⌕<span class="sr-only">Search</span></button>
       <button id="practice" class="icon-btn" title="Practice mode — no gates, nothing auto-starts"
               aria-pressed="false">⟳<span class="sr-only">Practice mode</span></button>
       <button id="text-size" class="icon-btn" title="Text size">Aa<span class="sr-only">Text size</span></button>
@@ -600,6 +602,7 @@ def page_template(doc: Doc, body: str, boot: str, nav: dict,
 <script id="bootstrap" type="application/json">{boot}</script>
 <script src="assets/katex/katex.min.js"></script>
 <script src="assets/mermaid.min.js"></script>
+<script src="assets/search-index.js" defer></script>
 <script src="assets/reader.js"></script>
 <script src="assets/interactions.js"></script>
 <script src="assets/interactions-foundations.js"></script>
@@ -624,7 +627,8 @@ def page_template(doc: Doc, body: str, boot: str, nav: dict,
 def build_doc(doc: Doc, terms: dict, linkmap: dict, placement: dict,
               nav: dict, images: dict,
               practice: list[dict] | None = None,
-              xref: dict | None = None) -> tuple[str, dict]:
+              xref: dict | None = None,
+              course_counts: dict | None = None) -> tuple[str, dict]:
     md = doc.md
 
     widget_data: dict = {}
@@ -676,12 +680,13 @@ def build_doc(doc: Doc, terms: dict, linkmap: dict, placement: dict,
         "toc": toc,
         "widgets": widget_data,
         "nav": nav,
+        "courseCounts": course_counts or {},
     }, ensure_ascii=False)
 
     return page_template(doc, body, boot, nav, practice), {
         "terms": len(used_terms), "resolved": resolved, "dead": dead,
-        "widgets": [w["id"] for w in placed], "toc": len(toc), "images": n_img,
-        "mentions": mentions,
+        "widgets": [w["id"] for w in placed], "toc": toc, "images": n_img,
+        "mentions": mentions, "recall": widget_data.get("recall", []),
     }
 
 
@@ -728,6 +733,39 @@ def build_404() -> str:
 """
 
 
+# Goal-based study tracks shown as filter tabs on index.html.
+# "core": computational genomics spine (orientation, molecular, regulation,
+#   popgen, statistics, methods, genomics, functional, human, applications).
+# "sca12": exact prerequisite chain listed on D1-D5 plus Part D itself.
+_CORE_PART_PREFIXES = (
+    "part-00-", "part-01-", "part-03-", "part-04-", "part-05-",
+    "part-08-", "part-09-", "part-10-", "part-11-", "part-12-", "part-S-",
+)
+_SCA12_NUMS = {
+    "00", "01", "05", "06", "07", "08", "11", "15", "16", "22",
+    "26", "27", "28", "54", "55", "57", "58", "D1", "D2", "D3", "D4", "D5",
+}
+
+
+def _tracks_for_doc(d: Doc) -> str:
+    """Return space-separated track identifiers for index filtering."""
+    tracks = ["all"]
+    if d.kind in ("chapter", "stat"):
+        if d.part_dir.startswith(_CORE_PART_PREFIXES):
+            tracks.append("core")
+        if (d.number or "") in _SCA12_NUMS:
+            tracks.append("sca12")
+    else:
+        tracks.append("practice")
+        if d.kind in ("lab", "reference"):
+            tracks.append("core")
+        if d.kind == "reference" or any(
+            tok in d.rel for tok in ("lab-11-", "lab-12-", "ps-17-", "qb-part-D")
+        ):
+            tracks.append("sca12")
+    return " ".join(tracks)
+
+
 def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) -> str:
     ordered = sorted([d for d in docs if d.kind in ("chapter", "stat")],
                      key=lambda d: d.order)
@@ -744,12 +782,13 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
         if d.kind == "chapter" and d.part_label != current_part:
             current_part = d.part_label
             if open_list:
-                rows.append("</ol>")
-            rows.append(f'<h2 class="part-head">{html.escape(current_part)}</h2>'
+                rows.append("</ol></section>")
+            rows.append(f'<section class="part-block">'
+                        f'<h2 class="part-head">{html.escape(current_part)}</h2>'
                         f'<ol class="doc-list">')
             open_list = True
         elif not open_list:
-            rows.append('<ol class="doc-list">')
+            rows.append('<section class="part-block"><ol class="doc-list">')
             open_list = True
 
         num = html.escape(d.number or "")
@@ -769,8 +808,9 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
                     f'chapter the published reading order places later">'
                     f'needs {links} &#8599;</span>')
         cls = "doc-row doc-row-stat" if d.kind == "stat" else "doc-row"
+        tracks = _tracks_for_doc(d)
         rows.append(
-            f'<li class="{cls}" data-doc="{d.out.removesuffix(".html")}">'
+            f'<li class="{cls}" data-doc="{d.out.removesuffix(".html")}" data-tracks="{tracks}">'
             f'<a href="{d.out}">'
             f'<span class="doc-num">{num}</span>'
             f'<span class="doc-title">{short}</span>'
@@ -779,7 +819,7 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
             f"</li>"
         )
     if open_list:
-        rows.append("</ol>")
+        rows.append("</ol></section>")
 
     # Where each lab and problem set sits in the reading order, inverted from
     # the same headers the chapter pages use.
@@ -802,7 +842,7 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
             label = f"Ch {n}" if n[:1].isdigit() else n
             return f'<span class="aux-when">after {html.escape(label)}</span>'
         lis = "".join(
-            f'<li><a href="{d.out}">'
+            f'<li data-tracks="{_tracks_for_doc(d)}"><a href="{d.out}">'
             f'{html.escape(getattr(d, "short_title", d.title))}{tag(d)}</a></li>'
             for d in items
         )
@@ -840,6 +880,8 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
       <span class="topbar-meta">zero to third-year · {total_ch} chapters</span>
     </div>
     <div class="topbar-actions">
+      <button id="search-btn" class="icon-btn" title="Search course (⌘K or /)"
+              aria-label="Search course">⌕<span class="sr-only">Search</span></button>
       <button id="practice" class="icon-btn" title="Practice mode — no gates, nothing auto-starts"
               aria-pressed="false">⟳<span class="sr-only">Practice mode</span></button>
       <button id="text-size" class="icon-btn" title="Text size">Aa<span class="sr-only">Text size</span></button>
@@ -854,7 +896,9 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
       <p class="index-lede">A self-contained curriculum from no biology at all to a full
       third-year grounding in classical, molecular and evolutionary genetics — with human and
       computational genomics built on top.</p>
+      <div id="index-actions" class="index-actions"></div>
       <div id="index-summary" class="index-summary"></div>
+      <div id="track-bar" class="track-bar" role="tablist" aria-label="Study tracks"></div>
       <p class="muted"><strong>Read Chapter 00 first.</strong> It tells the whole story at low
       resolution; everything after is a zoom into part of that picture.</p>
     </div>
@@ -865,6 +909,9 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
 
 <div id="toast" class="toast" hidden aria-live="polite"></div>
 <script id="bootstrap" type="application/json">{{"docId":"index","kind":"index"}}</script>
+<script src="assets/katex/katex.min.js"></script>
+<script src="assets/recall-index.js"></script>
+<script src="assets/search-index.js" defer></script>
 <script src="assets/reader.js"></script>
 </body>
 </html>
@@ -948,13 +995,26 @@ def main() -> int:
     if (ROOT / "vendor" / "LICENSES.md").exists():
         shutil.copy2(ROOT / "vendor" / "LICENSES.md", assets / "LICENSES.md")
 
+    course_counts = {
+        "recall": sum(
+            len(render.extract_check_yourself(d.md))
+            for d in docs if d.kind in ("chapter", "stat")
+        ),
+        "questionBank": sum(
+            len(re.findall(r"(?m)^Q:\s+", d.md))
+            for d in docs if d.kind == "question-bank"
+        ),
+    }
+
     total_terms = total_resolved = total_dead = total_widgets = total_mentions = 0
     images: dict[str, Path] = {}
     by_kind: dict[str, int] = {}
+    search_docs: list[dict] = []
+    recall_index: list[dict] = []
 
     for d in docs:
         page, info = build_doc(d, terms, linkmap, placement, nav_of.get(d.rel, {}),
-                               images, practice.get(d.rel), xref)
+                               images, practice.get(d.rel), xref, course_counts)
         (DIST / d.out).write_text(page, encoding="utf-8")
         total_terms += info["terms"]
         total_resolved += info["resolved"]
@@ -962,6 +1022,49 @@ def main() -> int:
         total_widgets += len(info["widgets"])
         total_mentions += info.get("mentions", 0)
         by_kind[d.kind] = by_kind.get(d.kind, 0) + 1
+        search_docs.append({
+            "out": d.out,
+            "num": d.number or "",
+            "title": getattr(d, "short_title", d.title),
+            "fullTitle": d.title,
+            "kind": KIND_LABEL.get(d.kind, d.kind),
+            "part": d.part_label or "",
+            "headings": info["toc"],
+        })
+        if info["recall"]:
+            recall_index.append({
+                "docId": d.out.removesuffix(".html"),
+                "out": d.out,
+                "num": d.number or "",
+                "title": getattr(d, "short_title", d.title),
+                "items": info["recall"],
+            })
+
+    # Static JS data payloads — loaded via <script> so file:// and static hosting
+    # work identically with zero fetch() or bundler dependencies.
+    glossary_out = next(
+        (d.out for d in docs if Path(d.rel).name.lower() == "glossary.md"),
+        "ref-GLOSSARY.html",
+    )
+    search_glossary = [
+        {
+            "term": v["term"],
+            "def": re.sub(r"<[^>]+>", "", v.get("definition", ""))[:220],
+            "out": glossary_out,
+        }
+        for v in sorted(terms.values(), key=lambda x: x["term"].lower())
+    ]
+    search_payload = json.dumps(
+        {"docs": search_docs, "glossary": search_glossary}, ensure_ascii=False
+    ).replace("</", "<\\/")
+    (assets / "search-index.js").write_text(
+        f"window.READER_SEARCH = {search_payload};\n", encoding="utf-8"
+    )
+
+    recall_payload = json.dumps(recall_index, ensure_ascii=False).replace("</", "<\\/")
+    (assets / "recall-index.js").write_text(
+        f"window.READER_RECALL = {recall_payload};\n", encoding="utf-8"
+    )
 
     (DIST / "index.html").write_text(build_index(docs, practice), encoding="utf-8")
     (DIST / "404.html").write_text(build_404(), encoding="utf-8")

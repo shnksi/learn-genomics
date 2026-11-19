@@ -1,6 +1,6 @@
 # D1 — The neuron, the cerebellum and selective vulnerability
 
-> **Before this:** [Ch 01 Chemistry and cell primer](../part-00-orientation/01-chemistry-and-cell-primer.md) · [Ch 08 Proteins and gene function](../part-01-molecular-foundations/08-proteins-and-gene-function.md) · [Ch 16 Mutation](../part-03-genome-instability/16-mutation.md) · **Time:** ~50 min
+> **Before this:** [Ch 01 Chemistry and cell primer](../part-00-orientation/01-chemistry-and-cell-primer.md) · [Ch 08 Proteins and gene function](../part-01-molecular-foundations/08-proteins-and-gene-function.md) · [Ch 16 Mutation](../part-03-genome-instability/16-mutation.md) · **Time:** ~80 min
 
 This chapter is deliberately incomplete, in the same spirit as [Ch 01](../part-00-orientation/01-chemistry-and-cell-primer.md). The rest of this course teaches no neuroscience, yet the D-track ends at a disease of one brain structure — spinocerebellar ataxia type 12, a repeat-expansion disorder that presents as tremor and degrades the cerebellum. You cannot reason about that disease knowing only genetics, and you do not need a neuroscience degree either. This chapter covers the minimum honest neurobiology — what a neuron is as a cell, what the cerebellum's circuit looks like, why damage to it produces the clinical signs it does, and why the central puzzle of neurogenetics is not "what does the gene do?" but "why *these* neurons?" — and then stops.
 

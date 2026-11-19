@@ -18,7 +18,9 @@ a property of an individual, and forgetting the base rate.
 All code in this chapter runs from the repository root — the directory holding `README.md` and
 `.venv` — with `source .venv/bin/activate`, and addresses data as `labs/data/…`. Only §6 reads a
 file from disk, and it is the 1000 Genomes chr22 subset that
-[lab-07](../labs/lab-07-population-genetics.md) builds; everything else is self-contained.
+[lab-07](../labs/lab-07-population-genetics.md) builds; if you have not run the labs yet, run
+`python part-S-statistics/setup_s_data.py` once to generate matching synthetic fallback files in
+`labs/data/` (existing real lab files are never overwritten). Everything else is self-contained.
 
 ## What you'll be able to do
 

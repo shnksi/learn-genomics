@@ -33,6 +33,7 @@ REQUIRED = ["index.html", "404.html", ".nojekyll", "assets/reader.css",
             "assets/interactions-sca12.js",
             "assets/interactions-transfer.js",
             "assets/widgets.js",
+            "assets/search-index.js", "assets/recall-index.js",
             "assets/katex/LICENSE", "assets/mermaid.LICENSE"]
 
 # Regions where markdown-looking characters are legitimate: Python's **kwargs

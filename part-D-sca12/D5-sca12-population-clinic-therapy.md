@@ -1,6 +1,6 @@
 # D5 — SCA12 II: population, clinic, therapy
 
-> **Before this:** [D4 — SCA12 I: from repeat to phenotype](D4-sca12-from-repeat-to-phenotype.md) · [Ch 15 Pedigrees](../part-02-transmission-genetics/15-pedigrees.md) · [Ch 26 Hardy–Weinberg](../part-05-population-genetics/26-hardy-weinberg.md) · [Ch 27 The four forces](../part-05-population-genetics/27-the-four-forces.md) · [Ch 28 Structure and inbreeding](../part-05-population-genetics/28-structure-and-inbreeding.md) · [Ch 55 Clinical variant interpretation](../part-11-human-and-statistical-genomics/55-clinical-variant-interpretation.md) · [Ch 57 Genomics in practice](../part-12-applications-and-ethics/57-genomics-in-practice.md) · [Ch 58 Ethics and society](../part-12-applications-and-ethics/58-ethics-and-society.md) · **Time:** ~60 min
+> **Before this:** [D4 — SCA12 I: from repeat to phenotype](D4-sca12-from-repeat-to-phenotype.md) · [Ch 15 Pedigrees](../part-02-transmission-genetics/15-pedigrees.md) · [Ch 26 Hardy–Weinberg](../part-05-population-genetics/26-hardy-weinberg.md) · [Ch 27 The four forces](../part-05-population-genetics/27-the-four-forces.md) · [Ch 28 Structure and inbreeding](../part-05-population-genetics/28-structure-and-inbreeding.md) · [Ch 55 Clinical variant interpretation](../part-11-human-and-statistical-genomics/55-clinical-variant-interpretation.md) · [Ch 57 Genomics in practice](../part-12-applications-and-ethics/57-genomics-in-practice.md) · [Ch 58 Ethics and society](../part-12-applications-and-ethics/58-ethics-and-society.md) · **Time:** ~130 min (2 sessions)
 >
 > **Statistics needed:** [S1 Probability](../part-S-statistics/S1-probability.md) · [S3 Sampling and estimation](../part-S-statistics/S3-sampling-and-estimation.md) ·
 > [S4 Hypothesis testing](../part-S-statistics/S4-hypothesis-testing.md) · [S5 Variance and regression](../part-S-statistics/S5-variance-and-regression.md) ·
@@ -273,6 +273,10 @@ The appointment goes better when you can say precisely what follows a positive r
 Reproductive options — prenatal diagnosis, preimplantation testing, or neither — are a separate conversation with its own literature and its own objections, and [Ch 58 §8](../part-12-applications-and-ethics/58-ethics-and-society.md) is where this course argues them. The point to carry from [Ch 15 §7](../part-02-transmission-genetics/15-pedigrees.md) is the division of labour: **the clinic supplies the posterior; the family supplies the loss function.**
 
 ---
+
+> **Suggested stopping point (Session 1 of 2).** §§1–3 cover SCA12 population genetics, epidemiology,
+> and clinical genetics. §4 onward shifts to therapeutic strategy and open research questions — a
+> clean halfway break.
 
 ## 4. Therapy: you cannot design the drug until you know the arrow
 

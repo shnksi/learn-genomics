@@ -1,6 +1,6 @@
 # D3 — Repeat-expansion disorders
 
-> **Before this:** [Ch 07 The genetic code](../part-01-molecular-foundations/07-genetic-code-and-translation.md) · [Ch 11 Beyond Mendel](../part-02-transmission-genetics/11-beyond-mendel.md) · [Ch 15 Pedigrees](../part-02-transmission-genetics/15-pedigrees.md) · [Ch 16 Mutation](../part-03-genome-instability/16-mutation.md) · [Ch 54 Rare variants and Mendelian disease](../part-11-human-and-statistical-genomics/54-rare-variants-and-mendelian-disease.md) · **Time:** ~60 min
+> **Before this:** [Ch 07 The genetic code](../part-01-molecular-foundations/07-genetic-code-and-translation.md) · [Ch 11 Beyond Mendel](../part-02-transmission-genetics/11-beyond-mendel.md) · [Ch 15 Pedigrees](../part-02-transmission-genetics/15-pedigrees.md) · [Ch 16 Mutation](../part-03-genome-instability/16-mutation.md) · [Ch 54 Rare variants and Mendelian disease](../part-11-human-and-statistical-genomics/54-rare-variants-and-mendelian-disease.md) · **Time:** ~105 min (2 sessions)
 >
 > **Statistics needed:** [S2 Distributions](../part-S-statistics/S2-distributions.md) ·
 > [S4 Hypothesis testing](../part-S-statistics/S4-hypothesis-testing.md) ·
@@ -295,6 +295,10 @@ The first-order logic comes straight from [Ch 09](../part-02-transmission-geneti
 But do not let the tidy logic own you, because the table refuses to obey it uniformly. Congenital DM1 comes through the *mother* despite paternal jumps being larger — the largest paternal alleles appear to be selected against somewhere in spermatogenesis or transmission, while the maternal germline (and possibly early embryo) permits the giant alleles. *FMR1* expands to full mutation *only* maternally. SCA8 inverts the rule entirely. And §2 told you that replication count cannot be the whole story anyway, since the most dramatic expansion environment in the body is a cell that never replicates. Parent-of-origin bias is real, quantitative and clinically decisive — a father with an *FMR1* premutation and a mother with the same allele give their children categorically different risks — but it is locus-specific empirical knowledge, not a law you can derive once and apply everywhere.
 
 ---
+
+> **Suggested stopping point (Session 1 of 2).** §§1–5 cover repeat instability, somatic expansion,
+> anticipation, and inheritance patterns. §6 onward works through the toxicity mechanisms by class —
+> a natural break for a second sitting.
 
 ## 6. Toxicity mechanisms in depth: one crime per class, one type specimen each
 

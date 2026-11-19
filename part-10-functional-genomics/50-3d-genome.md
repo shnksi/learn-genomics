@@ -1,6 +1,6 @@
 # 50 — The 3D genome
 
-> **Before this:** [Ch 03](../part-01-molecular-foundations/03-genomes-chromosomes-chromatin.md) · [Ch 22](../part-04-gene-regulation/22-eukaryotic-transcriptional-regulation.md) · [Ch 49](49-epigenome-profiling.md) · **Time:** ~55 min
+> **Before this:** [Ch 03](../part-01-molecular-foundations/03-genomes-chromosomes-chromatin.md) · [Ch 22](../part-04-gene-regulation/22-eukaryotic-transcriptional-regulation.md) · [Ch 49](49-epigenome-profiling.md) · **Time:** ~80 min
 
 ## What you'll be able to do
 

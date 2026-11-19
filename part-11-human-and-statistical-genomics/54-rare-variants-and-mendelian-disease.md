@@ -4,7 +4,7 @@
 > [Ch 15 — Pedigrees](../part-02-transmission-genetics/15-pedigrees.md) ·
 > [Ch 16 — Mutation](../part-03-genome-instability/16-mutation.md) ·
 > [Ch 46 — Variant calling](../part-10-functional-genomics/46-variant-calling.md) ·
-> **Time:** ~55 min
+> **Time:** ~80 min
 >
 > **Statistics needed:** [S1 Probability](../part-S-statistics/S1-probability.md) ·
 > [S4 Hypothesis testing](../part-S-statistics/S4-hypothesis-testing.md) ·

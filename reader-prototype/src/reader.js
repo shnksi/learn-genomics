@@ -146,6 +146,344 @@
   }
   syncPractice();
 
+  /* ── Spaced repetition (SM-2 style, shared by chapters & index) ───────── */
+
+  const SRS_RATINGS = ["again", "hard", "good", "easy"];
+
+  const ReaderSRS = {
+    RATINGS: SRS_RATINGS,
+
+    computeNext(prev, rating, now = Date.now()) {
+      const ease0 = typeof prev?.ease === "number" ? prev.ease : 2.5;
+      const prevInt = typeof prev?.interval === "number" ? prev.interval : 0;
+      const reps0 = typeof prev?.reps === "number" ? prev.reps : 0;
+      let interval, ease = ease0, reps = reps0;
+
+      if (rating === "again") {
+        interval = 10 / 1440; // 10 minutes
+        reps = 0;
+        ease = Math.max(1.3, ease0 - 0.2);
+      } else if (rating === "hard") {
+        interval = prevInt > 0 ? Math.max(1, Math.round(prevInt * 1.2)) : 1;
+        reps = reps0 + 1;
+        ease = Math.max(1.3, ease0 - 0.15);
+      } else if (rating === "good") {
+        if (reps0 === 0) interval = 3;
+        else if (reps0 === 1) interval = 7;
+        else interval = Math.max(2, Math.round(Math.max(prevInt, 3) * ease0));
+        reps = reps0 + 1;
+      } else {
+        // easy
+        interval = reps0 === 0
+          ? 6
+          : Math.max(4, Math.round(Math.max(prevInt, 4) * ease0 * 1.3));
+        reps = reps0 + 1;
+        ease = Math.min(3.0, ease0 + 0.15);
+      }
+
+      return {
+        rating,
+        interval,
+        ease: Math.round(ease * 100) / 100,
+        reps,
+        reviewedAt: new Date(now).toISOString(),
+        due: new Date(now + interval * 86400000).toISOString(),
+      };
+    },
+
+    isDue(entry, now = Date.now()) {
+      if (!entry || !entry.due) return false;
+      const t = new Date(entry.due).getTime();
+      return Number.isFinite(t) && t <= now;
+    },
+
+    formatInterval(days) {
+      if (days < 0.05) return "10 min";
+      if (days <= 1.1) return "tomorrow";
+      const d = Math.round(days);
+      return `in ${d} days`;
+    },
+
+    formatDue(iso, now = Date.now()) {
+      if (!iso) return "";
+      const t = new Date(iso).getTime();
+      if (!Number.isFinite(t)) return "";
+      if (t <= now) return "due now";
+      return new Date(t).toLocaleDateString("en-GB", { day: "numeric", month: "short" });
+    },
+
+    dueCards(docsObj, recallIndex, now = Date.now()) {
+      const due = [];
+      for (const ch of recallIndex || []) {
+        const rec = docsObj?.[ch.docId]?.recall;
+        if (!rec) continue;
+        ch.items.forEach((item, idx) => {
+          const entry = rec[idx];
+          if (ReaderSRS.isDue(entry, now)) {
+            due.push({
+              docId: ch.docId,
+              out: ch.out,
+              num: ch.num,
+              title: ch.title,
+              index: idx,
+              question: item.question,
+              answer: item.answer,
+              entry,
+            });
+          }
+        });
+      }
+      due.sort((a, b) => new Date(a.entry.due) - new Date(b.entry.due));
+      return due;
+    },
+  };
+  window.ReaderSRS = ReaderSRS;
+
+  /* ── Maths (available on both index and chapter pages) ────────────────── */
+
+  function typesetMath(root) {
+    const nodes = (root || document).querySelectorAll(
+      ".math-inline:not([data-tex]), .math-display:not([data-tex])"
+    );
+    nodes.forEach((el) => {
+      el.setAttribute("data-tex", "");        // also stops the observer re-entering
+      if (typeof katex === "undefined") {
+        el.classList.add("math-raw");
+        return;
+      }
+      try {
+        katex.render(el.textContent, el, {
+          displayMode: el.classList.contains("math-display"),
+          throwOnError: false,
+          strict: false,
+        });
+      } catch {
+        el.classList.add("math-raw");
+      }
+    });
+  }
+  window.typesetMath = typesetMath;
+  typesetMath(document);
+
+  // Widgets and modals inject rendered chapter HTML after load — observe once.
+  new MutationObserver((records) => {
+    for (const r of records) {
+      for (const node of r.addedNodes) {
+        if (node.nodeType !== 1) continue;
+        if (node.matches?.(".math-inline, .math-display")) typesetMath(node.parentNode);
+        else if (node.querySelector?.(".math-inline, .math-display")) typesetMath(node);
+      }
+    }
+  }).observe(document.body, { childList: true, subtree: true });
+
+  /* ── Global search (Cmd+K / Ctrl+K / /) ───────────────────────────────── */
+
+  function initGlobalSearch() {
+    let modal = null;
+    let input = null;
+    let list = null;
+    let countEl = null;
+    let activeIdx = -1;
+    let prevFocus = null;
+    let currentHits = [];
+
+    function esc(s) {
+      return String(s).replace(/[&<>"']/g, (c) =>
+        ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
+      );
+    }
+
+    function ensureModal() {
+      if (modal) return modal;
+      modal = document.createElement("div");
+      modal.id = "search-modal";
+      modal.className = "modal-backdrop";
+      modal.hidden = true;
+      modal.innerHTML =
+        '<div class="modal-dialog search-dialog" role="dialog" aria-modal="true" aria-label="Search course">' +
+        '  <div class="search-head">' +
+        '    <span class="search-ico" aria-hidden="true">⌕</span>' +
+        '    <input id="search-input" type="search" autocomplete="off" spellcheck="false" ' +
+        '           placeholder="Search chapters, sections, and 434 glossary terms…">' +
+        '    <button type="button" class="icon-btn modal-close" aria-label="Close search">✕</button>' +
+        '  </div>' +
+        '  <div class="search-meta"><span id="search-count"></span><span>↑↓ navigate · ↵ open · Esc close</span></div>' +
+        '  <ul id="search-results" class="search-results" role="listbox"></ul>' +
+        '</div>';
+      document.body.appendChild(modal);
+      input = modal.querySelector("#search-input");
+      list = modal.querySelector("#search-results");
+      countEl = modal.querySelector("#search-count");
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal || e.target.closest(".modal-close")) close();
+      });
+      input.addEventListener("input", () => runSearch(input.value));
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") { e.preventDefault(); close(); return; }
+        if (e.key === "ArrowDown") {
+          e.preventDefault();
+          if (currentHits.length) setActive((activeIdx + 1) % currentHits.length);
+        } else if (e.key === "ArrowUp") {
+          e.preventDefault();
+          if (currentHits.length) setActive((activeIdx - 1 + currentHits.length) % currentHits.length);
+        } else if (e.key === "Enter" && activeIdx >= 0 && currentHits[activeIdx]) {
+          e.preventDefault();
+          window.location.href = currentHits[activeIdx].href;
+        }
+      });
+      return modal;
+    }
+
+    function setActive(i) {
+      activeIdx = i;
+      list.querySelectorAll("li").forEach((li, idx) => {
+        li.classList.toggle("is-active", idx === i);
+        if (idx === i) li.scrollIntoView({ block: "nearest" });
+      });
+    }
+
+    function scoreText(hay, tokens) {
+      const low = hay.toLowerCase();
+      let score = 0;
+      for (const tok of tokens) {
+        const pos = low.indexOf(tok);
+        if (pos === -1) return 0;
+        score += pos === 0 ? 12 : (low[pos - 1] === " " || low[pos - 1] === "-" ? 8 : 4);
+      }
+      return score;
+    }
+
+    function runSearch(raw) {
+      const idx = window.READER_SEARCH;
+      if (!idx) {
+        countEl.textContent = "Search index still loading…";
+        list.innerHTML = "";
+        return;
+      }
+      const q = raw.trim().toLowerCase();
+      const tokens = q.split(/\s+/).filter(Boolean);
+      const hits = [];
+
+      if (!tokens.length) {
+        // Show quick-jump highlights when empty
+        for (const d of idx.docs.slice(0, 12)) {
+          hits.push({
+            score: 1,
+            kind: d.kind,
+            title: (d.num ? `${d.num} · ` : "") + d.title,
+            sub: d.part || d.kind,
+            href: d.out,
+          });
+        }
+        countEl.textContent = `${idx.docs.length} documents · ${idx.glossary.length} glossary terms`;
+      } else {
+        for (const d of idx.docs) {
+          const base = `${d.num} ${d.title} ${d.fullTitle} ${d.part} ${d.kind}`;
+          const s = scoreText(base, tokens);
+          if (s) {
+            hits.push({
+              score: s + 20,
+              kind: d.kind,
+              title: (d.num ? `${d.num} · ` : "") + d.title,
+              sub: d.part || d.kind,
+              href: d.out,
+            });
+          }
+          for (const h of d.headings || []) {
+            const hs = scoreText(`${h.text} ${d.num} ${d.title}`, tokens);
+            if (hs && scoreText(h.text, tokens)) {
+              hits.push({
+                score: hs + 10,
+                kind: "Section",
+                title: h.text,
+                sub: (d.num ? `${d.num} · ` : "") + d.title,
+                href: `${d.out}#${h.id}`,
+              });
+            }
+          }
+        }
+        for (const g of idx.glossary) {
+          const ts = scoreText(g.term, tokens);
+          const ds = ts ? ts + 16 : scoreText(`${g.term} ${g.def}`, tokens);
+          if (ds) {
+            hits.push({
+              score: ds,
+              kind: "Glossary",
+              title: g.term,
+              sub: g.def,
+              href: g.out,
+            });
+          }
+        }
+        hits.sort((a, b) => b.score - a.score);
+        countEl.textContent = `${hits.length} match${hits.length === 1 ? "" : "es"}`;
+      }
+
+      currentHits = hits.slice(0, 30);
+      activeIdx = currentHits.length ? 0 : -1;
+      if (!currentHits.length) {
+        list.innerHTML = '<li class="search-empty">No matching chapters, headings, or glossary terms.</li>';
+        return;
+      }
+      list.innerHTML = currentHits
+        .map(
+          (h, i) =>
+            `<li class="${i === 0 ? "is-active" : ""}" role="option">` +
+            `<a href="${esc(h.href)}">` +
+            `<span class="search-kind">${esc(h.kind)}</span>` +
+            `<span class="search-main"><strong>${esc(h.title)}</strong>` +
+            (h.sub ? `<small>${esc(h.sub)}</small>` : "") +
+            `</span></a></li>`
+        )
+        .join("");
+    }
+
+    function open() {
+      prevFocus = document.activeElement;
+      ensureModal().hidden = false;
+      document.body.classList.add("modal-open");
+      input.value = "";
+      runSearch("");
+      input.focus();
+    }
+
+    function close() {
+      if (!modal || modal.hidden) return;
+      modal.hidden = true;
+      document.body.classList.remove("modal-open");
+      if (prevFocus && typeof prevFocus.focus === "function") prevFocus.focus();
+    }
+
+    const btn = document.getElementById("search-btn");
+    if (btn) btn.addEventListener("click", open);
+
+    document.addEventListener("keydown", (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        if (modal && !modal.hidden) close();
+        else open();
+        return;
+      }
+      if (e.key === "/" && !e.metaKey && !e.ctrlKey && !e.altKey) {
+        const tag = (e.target && e.target.tagName) || "";
+        if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || e.target?.isContentEditable) return;
+        e.preventDefault();
+        open();
+      }
+    });
+  }
+
+  const TRACKS = [
+    { id: "all", label: "All", note: "Complete curriculum in scheduled reading order." },
+    { id: "core", label: "Computational Core", note: "Molecular, regulation, pop-gen, statistics, sequencing, functional & human genomics." },
+    { id: "sca12", label: "SCA12 Sprint", note: "Direct prerequisite spine into Part D (neurobiology, PP2A, repeat expansions & SCA12)." },
+    { id: "practice", label: "Practice & Reference", note: "Problem sets, computational labs, question banks & reference sheets." },
+  ];
+  let reviewModal = null;
+
+  initGlobalSearch();
+
   if (IS_INDEX) {
     renderIndexState();
     return;
@@ -345,49 +683,6 @@
     window.toast(`“${x.dataset.dead}” is not part of this build`);
   });
 
-  /* ── Maths ────────────────────────────────────────────────────────────────
-     The renderer emits the raw TeX inside a span/div and leaves it alone; KaTeX
-     typesets it here. If KaTeX is missing the TeX stays visible as text, which
-     is degraded but still readable — never an empty box.
-     ─────────────────────────────────────────────────────────────────────── */
-
-  function typesetMath(root) {
-    const nodes = (root || document).querySelectorAll(
-      ".math-inline:not([data-tex]), .math-display:not([data-tex])"
-    );
-    nodes.forEach((el) => {
-      el.setAttribute("data-tex", "");        // also stops the observer re-entering
-      if (typeof katex === "undefined") {
-        el.classList.add("math-raw");
-        return;
-      }
-      try {
-        katex.render(el.textContent, el, {
-          displayMode: el.classList.contains("math-display"),
-          throwOnError: false,
-          strict: false,
-        });
-      } catch {
-        el.classList.add("math-raw");
-      }
-    });
-  }
-  window.typesetMath = typesetMath;
-  typesetMath(document);
-
-  // Widgets inject rendered chapter HTML long after this runs — recall answers,
-  // diagnostic options — and that HTML carries maths of its own. Observing is
-  // more reliable than remembering to call typesetMath at every injection site.
-  new MutationObserver((records) => {
-    for (const r of records) {
-      for (const node of r.addedNodes) {
-        if (node.nodeType !== 1) continue;
-        if (node.matches?.(".math-inline, .math-display")) typesetMath(node.parentNode);
-        else if (node.querySelector?.(".math-inline, .math-display")) typesetMath(node);
-      }
-    }
-  }).observe(document.body, { childList: true, subtree: true });
-
   /* ── Mermaid ──────────────────────────────────────────────────────────── */
 
   if (BOOT.nativeMermaid) {
@@ -427,14 +722,265 @@
 
   /* ── Index page ───────────────────────────────────────────────────────── */
 
+  function openReviewModal() {
+    const queue = ReaderSRS.dueCards(Store.docs(), window.READER_RECALL || []);
+    if (!queue.length) {
+      window.toast("No recall cards are due right now.");
+      return;
+    }
+
+    if (!reviewModal) {
+      reviewModal = document.createElement("div");
+      reviewModal.id = "review-modal";
+      reviewModal.className = "modal-backdrop";
+      reviewModal.hidden = true;
+      reviewModal.innerHTML =
+        '<div class="modal-dialog review-dialog" role="dialog" aria-modal="true" aria-label="Due recall review">' +
+        '  <div class="review-head">' +
+        '    <div class="review-progress" id="review-progress"></div>' +
+        '    <button type="button" class="icon-btn modal-close" aria-label="Close review">✕</button>' +
+        '  </div>' +
+        '  <div class="review-body" id="review-body"></div>' +
+        '</div>';
+      document.body.appendChild(reviewModal);
+      reviewModal.addEventListener("click", (e) => {
+        if (e.target === reviewModal || e.target.closest(".modal-close")) closeReview();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && reviewModal && !reviewModal.hidden) closeReview();
+      });
+    }
+
+    let pos = 0;
+    let reviewed = 0;
+    const bodyEl = reviewModal.querySelector("#review-body");
+    const progEl = reviewModal.querySelector("#review-progress");
+
+    function closeReview() {
+      if (!reviewModal || reviewModal.hidden) return;
+      reviewModal.hidden = true;
+      document.body.classList.remove("modal-open");
+      renderIndexState();
+    }
+
+    function renderCard() {
+      if (pos >= queue.length) {
+        progEl.textContent = "Session complete";
+        bodyEl.innerHTML =
+          `<div class="callout callout-good"><strong>Reviewed ${reviewed} card${reviewed === 1 ? "" : "s"}.</strong> ` +
+          `All due recall items are rescheduled.</div>` +
+          `<div class="btn-row" style="margin-top:.85rem"><button type="button" class="btn btn-primary" id="review-done">Done</button></div>`;
+        bodyEl.querySelector("#review-done").addEventListener("click", closeReview);
+        return;
+      }
+
+      const card = queue[pos];
+      const badge = card.num ? (card.num.match(/^\d/) ? `Ch ${card.num}` : card.num) : "";
+      progEl.innerHTML =
+        `<span>Card <strong>${pos + 1}</strong> of ${queue.length}</span>` +
+        `<a class="review-source" href="${card.out}">${badge ? badge + " · " : ""}${card.title} ↗</a>`;
+
+      bodyEl.innerHTML = "";
+      const qEl = document.createElement("div");
+      qEl.className = "recall-q review-q";
+      qEl.innerHTML = card.question;
+
+      const aEl = document.createElement("div");
+      aEl.className = "recall-a";
+      aEl.innerHTML = card.answer;
+      aEl.hidden = true;
+
+      const rateRow = document.createElement("div");
+      rateRow.className = "rate-row";
+      rateRow.hidden = true;
+
+      const label = document.createElement("span");
+      label.className = "rate-label";
+      label.textContent = "Rate recall:";
+      rateRow.appendChild(label);
+
+      for (const rating of ReaderSRS.RATINGS) {
+        const preview = ReaderSRS.computeNext(card.entry, rating);
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "btn";
+        btn.innerHTML =
+          `${rating[0].toUpperCase() + rating.slice(1)} <small class="rate-hint">${ReaderSRS.formatInterval(preview.interval)}</small>`;
+        btn.addEventListener("click", () => {
+          const docState = Store.doc(card.docId);
+          const rec = Object.assign({}, docState.recall || {});
+          rec[card.index] = ReaderSRS.computeNext(rec[card.index], rating);
+          Store.doc(card.docId, { recall: rec });
+          reviewed += 1;
+          pos += 1;
+          renderCard();
+        });
+        rateRow.appendChild(btn);
+      }
+
+      const revealBtn = document.createElement("button");
+      revealBtn.type = "button";
+      revealBtn.className = "btn btn-primary";
+      revealBtn.textContent = "Show answer";
+      revealBtn.addEventListener("click", () => {
+        aEl.hidden = false;
+        rateRow.hidden = false;
+        revealBtn.remove();
+        typesetMath(aEl);
+      });
+
+      bodyEl.append(qEl, revealBtn, aEl, rateRow);
+      typesetMath(qEl);
+    }
+
+    reviewModal.hidden = false;
+    document.body.classList.add("modal-open");
+    renderCard();
+  }
+
+  function exportProgress() {
+    const payload = {
+      app: "learn-genomics-reader",
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      data: Store.all(),
+    };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `learn-genomics-progress-${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+    window.toast("Progress exported as JSON.");
+  }
+
+  function importProgressFile(file) {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const parsed = JSON.parse(String(reader.result || ""));
+        const data = parsed && typeof parsed.data === "object" && parsed.app === "learn-genomics-reader"
+          ? parsed.data
+          : parsed;
+        if (!data || typeof data !== "object" || (data.docs && typeof data.docs !== "object")) {
+          throw new Error("invalid schema");
+        }
+        const existingDocs = Object.keys(Store.docs()).length;
+        if (existingDocs > 0) {
+          const ok = window.confirm(
+            `Replace local progress (${existingDocs} tracked documents) with the imported file?`
+          );
+          if (!ok) return;
+        }
+        Store.save(data);
+        renderIndexState();
+        window.toast("Progress imported.");
+      } catch {
+        window.toast("Could not import progress — file is not a valid reader backup.");
+      }
+    };
+    reader.readAsText(file);
+  }
+
+  function applyTrackFilter(trackId) {
+    const active = TRACKS.some((t) => t.id === trackId) ? trackId : "all";
+    Store.prefs({ track: active });
+
+    const bar = document.getElementById("track-bar");
+    if (bar) {
+      bar.querySelectorAll("[data-track]").forEach((btn) => {
+        const on = btn.dataset.track === active;
+        btn.classList.toggle("is-active", on);
+        btn.setAttribute("aria-selected", String(on));
+      });
+      const noteEl = bar.querySelector(".track-note");
+      const meta = TRACKS.find((t) => t.id === active);
+      if (noteEl && meta) noteEl.textContent = meta.note;
+    }
+
+    document.querySelectorAll(".doc-row, .aux-list li").forEach((li) => {
+      const tracks = (li.dataset.tracks || "all").split(/\s+/);
+      li.hidden = active !== "all" && !tracks.includes(active);
+    });
+
+    document.querySelectorAll(".part-block").forEach((sec) => {
+      const anyVisible = !!sec.querySelector(".doc-row:not([hidden])");
+      sec.hidden = !anyVisible;
+    });
+
+    document.querySelectorAll("section.aux").forEach((sec) => {
+      const anyVisible = !!sec.querySelector(".aux-list li:not([hidden])");
+      sec.hidden = !anyVisible;
+    });
+  }
+
+  function pickContinueTarget(docs, rows) {
+    // 1. Most recently visited unfinished chapter
+    let bestUnfinished = null;
+    let bestDone = null;
+    rows.forEach((row, idx) => {
+      const id = row.dataset.doc;
+      const s = docs[id];
+      if (!s || !s.lastAt) return;
+      const ts = new Date(s.lastAt).getTime();
+      const link = row.querySelector("a");
+      const num = row.querySelector(".doc-num")?.textContent?.trim() || "";
+      const title = row.querySelector(".doc-title")?.textContent?.trim() || "";
+      const item = { idx, href: link?.getAttribute("href") || "", num, title, ts, percent: s.percent || 0 };
+      if (!s.done && (s.percent || 0) > 0) {
+        if (!bestUnfinished || ts > bestUnfinished.ts) bestUnfinished = item;
+      } else if (s.done) {
+        if (!bestDone || ts > bestDone.ts) bestDone = item;
+      }
+    });
+
+    if (bestUnfinished) {
+      const prefix = bestUnfinished.num ? `${bestUnfinished.num} · ` : "";
+      return {
+        href: bestUnfinished.href,
+        label: `Continue ${prefix}${bestUnfinished.title}`,
+        meta: `${bestUnfinished.percent}% read`,
+      };
+    }
+    if (bestDone && rows[bestDone.idx + 1]) {
+      const nextRow = rows[bestDone.idx + 1];
+      const num = nextRow.querySelector(".doc-num")?.textContent?.trim() || "";
+      const title = nextRow.querySelector(".doc-title")?.textContent?.trim() || "";
+      return {
+        href: nextRow.querySelector("a")?.getAttribute("href") || "",
+        label: `Up next: ${num ? num + " · " : ""}${title}`,
+        meta: "next in reading order",
+      };
+    }
+    const first = rows[0];
+    if (first) {
+      return {
+        href: first.querySelector("a")?.getAttribute("href") || "ch-00-the-whole-story.html",
+        label: "Start Chapter 00",
+        meta: "the whole story first",
+      };
+    }
+    return null;
+  }
+
   function renderIndexState() {
     const docs = Store.docs();
-    let read = 0, started = 0, called = 0, right = 0, scheduled = 0;
+    const rows = Array.from(document.querySelectorAll(".doc-row"));
+    let read = 0, started = 0, called = 0, right = 0, scheduled = 0, dueTotal = 0;
+    let nextDueTs = Infinity;
 
-    document.querySelectorAll(".doc-row").forEach((row) => {
+    rows.forEach((row) => {
       const s = docs[row.dataset.doc];
       const slot = row.querySelector("[data-state]");
-      if (!s || !slot) return;
+      if (!slot) return;
+      if (!s) {
+        slot.innerHTML = "";
+        return;
+      }
 
       if (s.done) read += 1;
       else if (s.percent > 3) started += 1;
@@ -442,12 +988,25 @@
         called += s.ledger.made || 0;
         right += s.ledger.right || 0;
       }
-      if (s.recall) scheduled += Object.keys(s.recall).length;
+      let docDue = 0;
+      if (s.recall) {
+        for (const entry of Object.values(s.recall)) {
+          scheduled += 1;
+          if (ReaderSRS.isDue(entry)) {
+            dueTotal += 1;
+            docDue += 1;
+          } else if (entry?.due) {
+            const t = new Date(entry.due).getTime();
+            if (Number.isFinite(t) && t < nextDueTs) nextDueTs = t;
+          }
+        }
+      }
 
       const bits = [];
       if (s.done) bits.push('<span class="pill pill-done">read</span>');
       else if (s.percent > 3) bits.push(`<span class="pill">${s.percent}%</span>`);
       if (s.visits > 1) bits.push(`<span class="pill">×${s.visits}</span>`);
+      if (docDue > 0) bits.push(`<span class="pill pill-warn">${docDue} due</span>`);
       if (s.diagnostic) {
         const d = s.diagnostic;
         const good = d.score === d.total;
@@ -458,12 +1017,94 @@
       slot.innerHTML = bits.join("");
     });
 
+    // Action bar: Continue CTA, Review due cards, Export / Import JSON
+    const actionsEl = document.getElementById("index-actions");
+    if (actionsEl) {
+      const cont = pickContinueTarget(docs, rows);
+      const dueList = ReaderSRS.dueCards(docs, window.READER_RECALL || []);
+      const dueCount = dueList.length;
+
+      actionsEl.innerHTML = "";
+      if (cont && cont.href) {
+        const a = document.createElement("a");
+        a.className = "btn btn-primary index-cta";
+        a.href = cont.href;
+        a.innerHTML = `${cont.label} <span class="cta-meta">${cont.meta}</span>`;
+        actionsEl.appendChild(a);
+      }
+
+      if (dueCount > 0) {
+        const revBtn = document.createElement("button");
+        revBtn.type = "button";
+        revBtn.className = "btn btn-do";
+        revBtn.textContent = `Review ${dueCount} due card${dueCount === 1 ? "" : "s"}`;
+        revBtn.addEventListener("click", openReviewModal);
+        actionsEl.appendChild(revBtn);
+      } else if (scheduled > 0 && Number.isFinite(nextDueTs)) {
+        const nextNote = document.createElement("span");
+        nextNote.className = "pill";
+        nextNote.textContent = `0 due today · next ${ReaderSRS.formatDue(new Date(nextDueTs).toISOString())}`;
+        actionsEl.appendChild(nextNote);
+      }
+
+      const ioWrap = document.createElement("span");
+      ioWrap.className = "index-io";
+
+      const expBtn = document.createElement("button");
+      expBtn.type = "button";
+      expBtn.className = "btn btn-subtle";
+      expBtn.title = "Download local reading progress and recall schedule as JSON";
+      expBtn.textContent = "Export progress";
+      expBtn.addEventListener("click", exportProgress);
+
+      const impInput = document.createElement("input");
+      impInput.type = "file";
+      impInput.accept = "application/json,.json";
+      impInput.hidden = true;
+      impInput.addEventListener("change", () => {
+        importProgressFile(impInput.files?.[0]);
+        impInput.value = "";
+      });
+
+      const impBtn = document.createElement("button");
+      impBtn.type = "button";
+      impBtn.className = "btn btn-subtle";
+      impBtn.title = "Restore reading progress from a previously exported JSON file";
+      impBtn.textContent = "Import";
+      impBtn.addEventListener("click", () => impInput.click());
+
+      ioWrap.append(expBtn, impBtn, impInput);
+      actionsEl.appendChild(ioWrap);
+    }
+
+    // Track filter bar (initialize buttons once)
+    const trackBar = document.getElementById("track-bar");
+    if (trackBar && !trackBar.dataset.ready) {
+      trackBar.dataset.ready = "1";
+      const tabs = document.createElement("div");
+      tabs.className = "track-tabs";
+      for (const t of TRACKS) {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "track-tab";
+        b.role = "tab";
+        b.dataset.track = t.id;
+        b.textContent = t.label;
+        b.addEventListener("click", () => applyTrackFilter(t.id));
+        tabs.appendChild(b);
+      }
+      const note = document.createElement("p");
+      note.className = "track-note";
+      trackBar.append(tabs, note);
+    }
+    applyTrackFilter(Store.prefs().track || "all");
+
     const summary = document.getElementById("index-summary");
     if (!summary) return;
-    if (!read && !started) {
+    if (!read && !started && !scheduled) {
       summary.innerHTML =
         '<p class="muted">Nothing read yet. Progress, diagnostic scores and scheduled ' +
-        "recall cards will appear here as you go — all of it stored in this browser only.</p>";
+        "recall cards will appear here as you go — all of it stored in this browser (and exportable above).</p>";
       return;
     }
     summary.innerHTML =
@@ -474,7 +1115,7 @@
            <span class="stat-key">in progress</span></div>
          <div class="stat"><span class="stat-val">${called ? right + "/" + called : "—"}</span>
            <span class="stat-key">predictions called</span></div>
-         <div class="stat"><span class="stat-val">${scheduled}</span>
+         <div class="stat"><span class="stat-val">${scheduled}${dueTotal ? " (" + dueTotal + " due)" : ""}</span>
            <span class="stat-key">recall cards scheduled</span></div>
        </div>`;
   }
