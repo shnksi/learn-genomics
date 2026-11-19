@@ -517,19 +517,112 @@ FLOOR_WIDGETS = [
 ]
 
 
+FONT_LINKS = (
+    '<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">\n'
+    '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
+    '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
+    '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
+    'family=JetBrains+Mono:wght@400;600;700&'
+    'family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&'
+    'family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">'
+)
+
+FAVICON_SVG = (
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">'
+    '<rect width="32" height="32" rx="8" fill="#0f172a"/>'
+    '<path d="M6 22 C10 22 11 9 14 9 C17 9 18 22 22 22" stroke="#10b981" stroke-width="2.8" fill="none" stroke-linecap="round"/>'
+    '<path d="M10 22 C14 22 15 11 18 11 C21 11 22 22 26 22" stroke="#60a5fa" stroke-width="2.8" fill="none" stroke-linecap="round"/>'
+    '</svg>\n'
+)
+
+_TIME_RE = re.compile(r"\*\*Time:\*\*\s*(?:~)?(\d+)\s*min(?:\s*\((\d+)\s*sessions?\))?", re.IGNORECASE)
+
+
+def _doc_time(doc: Doc) -> str:
+    """Extract a compact reading-time badge (e.g. '45m' or '95m · 2 sessions') from header."""
+    head = "\n".join(doc.md.splitlines()[:20])
+    m = _TIME_RE.search(head)
+    if not m:
+        return ""
+    mins = m.group(1)
+    sess = m.group(2)
+    return f"{mins}m · {sess} sessions" if sess else f"{mins}m"
+
+
+def _doc_domain(doc: Doc) -> str:
+    """Map a document's part directory / kind to a semantic biological accent domain."""
+    if doc.kind == "stat":
+        return "stats"
+    pd = doc.part_dir or ""
+    if pd.startswith(("part-00-", "part-01-")):
+        return "foundations"
+    if pd.startswith(("part-02-", "part-03-")):
+        return "transmission"
+    if pd.startswith(("part-04-", "part-06-")):
+        return "regulation"
+    if pd.startswith(("part-05-", "part-07-")):
+        return "evolution"
+    if pd.startswith(("part-08-", "part-09-", "part-10-")):
+        return "genomics"
+    if pd.startswith(("part-11-", "part-12-")):
+        return "human"
+    if pd.startswith("part-D-"):
+        return "sca12"
+    return "practice"
+
+
+_HERO_CHROMATOGRAM_SVG = """<figure class="hero-visual" aria-hidden="true">
+  <svg class="hero-trace" viewBox="0 0 360 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line class="trace-grid" x1="12" y1="36" x2="348" y2="36"></line>
+    <line class="trace-grid" x1="12" y1="74" x2="348" y2="74"></line>
+    <line class="trace-grid" x1="12" y1="112" x2="348" y2="112"></line>
+    <path class="trace-A" d="M 10 112 C 20 112, 26 26, 36 26 C 46 26, 52 112, 64 112 L 152 112 C 164 112, 170 34, 180 34 C 190 34, 196 112, 208 112 L 350 112"></path>
+    <path class="trace-T" d="M 10 112 L 44 112 C 56 112, 62 32, 72 32 C 82 32, 88 112, 100 112 L 188 112 C 200 112, 206 24, 216 24 C 226 24, 232 112, 244 112 L 296 112 C 308 112, 314 38, 324 38 C 334 38, 340 112, 350 112"></path>
+    <path class="trace-G" d="M 10 112 L 80 112 C 92 112, 98 22, 108 22 C 118 22, 124 112, 136 112 L 224 112 C 236 112, 242 28, 252 28 C 262 28, 268 112, 280 112 L 350 112"></path>
+    <path class="trace-C" d="M 10 112 L 116 112 C 128 112, 134 30, 144 30 C 154 30, 160 112, 172 112 L 260 112 C 272 112, 278 34, 288 34 C 298 34, 304 112, 350 112"></path>
+    <g class="trace-bases">
+      <text class="base-fill-A" x="36" y="133">A</text>
+      <text class="base-fill-T" x="72" y="133">T</text>
+      <text class="base-fill-G" x="108" y="133">G</text>
+      <text class="base-fill-C" x="144" y="133">C</text>
+      <text class="base-fill-A" x="180" y="133">A</text>
+      <text class="base-fill-T" x="216" y="133">T</text>
+      <text class="base-fill-G" x="252" y="133">G</text>
+      <text class="base-fill-C" x="288" y="133">C</text>
+      <text class="base-fill-T" x="324" y="133">T</text>
+    </g>
+  </svg>
+  <figcaption class="hero-caption">
+    <span><i class="dot dot-A"></i>Adenine</span>
+    <span><i class="dot dot-C"></i>Cytosine</span>
+    <span><i class="dot dot-G"></i>Guanine</span>
+    <span><i class="dot dot-T"></i>Thymine</span>
+  </figcaption>
+</figure>"""
+
+
 def page_template(doc: Doc, body: str, boot: str, nav: dict,
                   practice: list[dict] | None = None) -> str:
     prev_link = (f'<a class="pager-prev" href="{nav["prev"]["out"]}">'
-                 f'<span class="pager-dir">Previous</span>'
+                 f'<span class="pager-dir">← Previous</span>'
                  f'<span class="pager-title">{html.escape(nav["prev"]["title"])}</span></a>'
                  if nav.get("prev") else '<span></span>')
     next_link = (f'<a class="pager-next" href="{nav["next"]["out"]}">'
-                 f'<span class="pager-dir">Next</span>'
+                 f'<span class="pager-dir">Next →</span>'
                  f'<span class="pager-title">{html.escape(nav["next"]["title"])}</span></a>'
                  if nav.get("next") else '<span></span>')
 
     kind = KIND_LABEL.get(doc.kind, doc.kind)
     crumb = html.escape(doc.part_label or kind)
+    domain = _doc_domain(doc)
+    read_time = _doc_time(doc)
+    pos_str = f'{nav["position"]} of {nav["total"]}' if nav.get("position") else ""
+    kicker_bits = [f'<span class="domain-chip domain-{domain}">{crumb}</span>']
+    if read_time:
+        kicker_bits.append(f'<span class="kicker-meta">{html.escape(read_time)}</span>')
+    if pos_str:
+        kicker_bits.append(f'<span class="kicker-meta">Chapter {pos_str}</span>')
+    kicker_html = f'<div class="chapter-kicker">{"".join(kicker_bits)}</div>'
 
     # What the course says to do now. Derived, not authored: see extract_practice.
     practice_html = ""
@@ -553,13 +646,15 @@ def page_template(doc: Doc, body: str, boot: str, nav: dict,
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(doc.title)} — Genetics &amp; Genomics</title>
+{FONT_LINKS}
 <link rel="stylesheet" href="assets/katex/katex.min.css">
 <link rel="stylesheet" href="assets/reader.css">
 </head>
-<body>
+<body data-domain="{domain}">
 <a class="skip-link" href="#doc">Skip to content</a>
 
 <header class="topbar">
+  <div class="dna-stripe" aria-hidden="true"></div>
   <div class="topbar-inner">
     <button id="toc-toggle" class="icon-btn" aria-expanded="false" aria-controls="toc"
             title="Contents">☰<span class="sr-only">Contents</span></button>
@@ -570,8 +665,8 @@ def page_template(doc: Doc, body: str, boot: str, nav: dict,
     </div>
     <div class="topbar-actions">
       <span id="ledger" class="ledger" hidden></span>
-      <button id="search-btn" class="icon-btn" title="Search course (⌘K or /)"
-              aria-label="Search course">⌕<span class="sr-only">Search</span></button>
+      <button id="search-btn" class="search-trigger" title="Search course (⌘K or /)"
+              aria-label="Search course"><span class="search-trigger-ico" aria-hidden="true">⌕</span><span class="search-trigger-label">Search</span><kbd>⌘K</kbd></button>
       <button id="practice" class="icon-btn" title="Practice mode — no gates, nothing auto-starts"
               aria-pressed="false">⟳<span class="sr-only">Practice mode</span></button>
       <button id="text-size" class="icon-btn" title="Text size">Aa<span class="sr-only">Text size</span></button>
@@ -587,6 +682,7 @@ def page_template(doc: Doc, body: str, boot: str, nav: dict,
 <div class="layout">
   <nav id="toc" class="toc" aria-label="Contents"></nav>
   <main id="doc" class="chapter">
+{kicker_html}
 {body}
 {practice_html}
     <nav class="pager" aria-label="Chapter navigation">
@@ -781,11 +877,20 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
         # split Part 2 into two identical-looking blocks around S3/S4.
         if d.kind == "chapter" and d.part_label != current_part:
             current_part = d.part_label
+            pdom = _doc_domain(d)
             if open_list:
                 rows.append("</ol></section>")
-            rows.append(f'<section class="part-block">'
-                        f'<h2 class="part-head">{html.escape(current_part)}</h2>'
-                        f'<ol class="doc-list">')
+            rows.append(
+                f'<section class="part-block domain-{pdom}" data-domain="{pdom}">'
+                f'<div class="part-header">'
+                f'<h2 class="part-head"><span class="part-dot" aria-hidden="true"></span>'
+                f'{html.escape(current_part)}</h2>'
+                f'<div class="part-progress" data-part-progress>'
+                f'<span class="part-progress-bar"><span></span></span>'
+                f'<span class="part-progress-text"></span>'
+                f'</div></div>'
+                f'<ol class="doc-list">'
+            )
             open_list = True
         elif not open_list:
             rows.append('<section class="part-block"><ol class="doc-list">')
@@ -793,6 +898,8 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
 
         num = html.escape(d.number or "")
         short = html.escape(getattr(d, "short_title", d.title))
+        rtime = _doc_time(d).split(" · ")[0]
+        time_tag = f'<span class="doc-time">{html.escape(rtime)}</span>' if rtime else ""
 
         # A prerequisite is only worth flagging when the published order has NOT
         # already supplied it. This is REVIEW-STATE.md §A1 made visible: the
@@ -814,6 +921,7 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
             f'<a href="{d.out}">'
             f'<span class="doc-num">{num}</span>'
             f'<span class="doc-title">{short}</span>'
+            f'{time_tag}'
             f'</a>{note}'
             f'<span class="doc-state" data-state></span>'
             f"</li>"
@@ -869,19 +977,21 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Genetics &amp; Genomics — contents</title>
+{FONT_LINKS}
 <link rel="stylesheet" href="assets/katex/katex.min.css">
 <link rel="stylesheet" href="assets/reader.css">
 </head>
 <body class="is-index">
 <header class="topbar">
+  <div class="dna-stripe" aria-hidden="true"></div>
   <div class="topbar-inner">
     <div class="topbar-title">
       <strong>Genetics &amp; Genomics</strong>
-      <span class="topbar-meta">zero to third-year · {total_ch} chapters</span>
+      <span class="topbar-meta">{total_ch} chapters · 13 labs · 17 problem sets</span>
     </div>
     <div class="topbar-actions">
-      <button id="search-btn" class="icon-btn" title="Search course (⌘K or /)"
-              aria-label="Search course">⌕<span class="sr-only">Search</span></button>
+      <button id="search-btn" class="search-trigger" title="Search course (⌘K or /)"
+              aria-label="Search course"><span class="search-trigger-ico" aria-hidden="true">⌕</span><span class="search-trigger-label">Search</span><kbd>⌘K</kbd></button>
       <button id="practice" class="icon-btn" title="Practice mode — no gates, nothing auto-starts"
               aria-pressed="false">⟳<span class="sr-only">Practice mode</span></button>
       <button id="text-size" class="icon-btn" title="Text size">Aa<span class="sr-only">Text size</span></button>
@@ -892,16 +1002,20 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
 
 <div class="layout layout-index">
   <main id="doc" class="chapter index-main">
-    <div class="index-hero">
-      <p class="index-lede">A self-contained curriculum from no biology at all to a full
-      third-year grounding in classical, molecular and evolutionary genetics — with human and
-      computational genomics built on top.</p>
-      <div id="index-actions" class="index-actions"></div>
-      <div id="index-summary" class="index-summary"></div>
-      <div id="track-bar" class="track-bar" role="tablist" aria-label="Study tracks"></div>
-      <p class="muted"><strong>Read Chapter 00 first.</strong> It tells the whole story at low
-      resolution; everything after is a zoom into part of that picture.</p>
-    </div>
+    <section class="index-hero">
+      <div class="hero-copy">
+        <h1 class="hero-title">Genetics &amp; Genomics</h1>
+        <p class="index-lede">A self-contained curriculum from zero biology to a full third-year
+        grounding in classical, molecular and evolutionary genetics — with computational genomics
+        and SCA12 research built on top.</p>
+        <div id="index-actions" class="index-actions"></div>
+        <p class="hero-tip"><strong>Start with Chapter 00</strong> for the whole story at low
+        resolution; everything after zooms into one piece of that map.</p>
+      </div>
+      {_HERO_CHROMATOGRAM_SVG}
+    </section>
+    <div id="index-summary" class="index-summary"></div>
+    <div id="track-bar" class="track-bar" role="tablist" aria-label="Study tracks"></div>
     {''.join(rows)}
     {aux}
   </main>
@@ -1065,6 +1179,7 @@ def main() -> int:
     (assets / "recall-index.js").write_text(
         f"window.READER_RECALL = {recall_payload};\n", encoding="utf-8"
     )
+    (assets / "favicon.svg").write_text(FAVICON_SVG, encoding="utf-8")
 
     (DIST / "index.html").write_text(build_index(docs, practice), encoding="utf-8")
     (DIST / "404.html").write_text(build_404(), encoding="utf-8")

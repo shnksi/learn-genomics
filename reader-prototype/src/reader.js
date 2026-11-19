@@ -907,9 +907,20 @@
       li.hidden = active !== "all" && !tracks.includes(active);
     });
 
+    const docs = Store.docs();
     document.querySelectorAll(".part-block").forEach((sec) => {
-      const anyVisible = !!sec.querySelector(".doc-row:not([hidden])");
-      sec.hidden = !anyVisible;
+      const visRows = Array.from(sec.querySelectorAll(".doc-row:not([hidden])"));
+      sec.hidden = visRows.length === 0;
+      const prog = sec.querySelector("[data-part-progress]");
+      if (prog && visRows.length) {
+        const done = visRows.filter((r) => docs[r.dataset.doc]?.done).length;
+        const pct = Math.round((done / visRows.length) * 100);
+        const fill = prog.querySelector(".part-progress-bar > span");
+        const label = prog.querySelector(".part-progress-text");
+        if (fill) fill.style.width = `${pct}%`;
+        if (label) label.textContent = done ? `${done} / ${visRows.length} read` : `${visRows.length} ch`;
+        prog.classList.toggle("is-complete", done === visRows.length);
+      }
     });
 
     document.querySelectorAll("section.aux").forEach((sec) => {
