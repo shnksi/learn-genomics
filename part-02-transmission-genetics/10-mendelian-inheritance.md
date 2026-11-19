@@ -246,7 +246,7 @@ $$P(k=1) = \binom{4}{1}\left(\tfrac14\right)^1\left(\tfrac34\right)^3 = 4\cdot\f
 
 $$P(k\ge 1) = 1-\left(\tfrac34\right)^4 = \frac{175}{256}\approx 0.68$$
 
-Distinguish **ordered** from **unordered** queries, because they differ by the binomial coefficient. "The first two children affected and the last two not" is $(¼)^2(¾)^2 = 9/256$. "Exactly two of four affected, in any order" is $\binom{4}{2}$ times that, $= 54/256$.
+Distinguish **ordered** from **unordered** queries, because they differ by the binomial coefficient. "The first two children affected and the last two not" is $(\tfrac{1}{4})^2(\tfrac{3}{4})^2 = 9/256$. "Exactly two of four affected, in any order" is $\binom{4}{2}$ times that, $= 54/256$.
 
 Two consequences that matter more than the arithmetic:
 
