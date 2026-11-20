@@ -23,7 +23,9 @@ import sys
 from pathlib import Path
 
 MIN_PAGES = 100
-REQUIRED = ["index.html", "404.html", ".nojekyll", "assets/reader.css",
+REQUIRED = ["index.html", "games.html", "404.html", ".nojekyll", "assets/reader.css",
+            "assets/games.css", "assets/games-core.js", "assets/games-ui.js",
+            "assets/games-ui-advanced.js",
             "assets/interactions.js", "assets/interactions-foundations.js",
             "assets/interactions-transmission.js", "assets/interactions-instability.js",
             "assets/interactions-regulation.js", "assets/interactions-population.js",

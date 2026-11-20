@@ -1,0 +1,1059 @@
+/* ── Genomics Lab Games — Companion Arcade Surface ───────────────────────────
+   Inherits all colour, typography, and dark-mode variables from reader.css.
+   Built for tactile biological manipulation rather than passive reading.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+.games-shell {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 2rem clamp(1rem, 3vw, 2.25rem) 4.5rem;
+}
+
+/* ── Arcade Hero ────────────────────────────────────────────────────────── */
+.arcade-hero {
+  position: relative;
+  padding: 1.75rem 2rem;
+  border-radius: 16px;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.75rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.25rem 2rem;
+  align-items: center;
+}
+
+.arcade-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  border-radius: 16px 16px 0 0;
+  background: linear-gradient(90deg, var(--dna-A), var(--dna-C), var(--dna-G), var(--dna-T));
+}
+
+.arcade-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  font-family: var(--font-ui);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  background: var(--accent-soft);
+  padding: .24rem .62rem;
+  border-radius: 999px;
+  margin-bottom: .65rem;
+}
+
+.arcade-title {
+  font-family: var(--font-body);
+  font-size: clamp(1.75rem, 3.2vw, 2.35rem);
+  font-weight: 600;
+  letter-spacing: -.02em;
+  line-height: 1.12;
+  margin: 0 0 .5rem;
+  color: var(--ink);
+}
+
+.arcade-lede {
+  font-family: var(--font-ui);
+  font-size: .95rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  margin: 0;
+  max-width: 44rem;
+}
+
+.arcade-score-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: .3rem;
+  padding: .9rem 1.15rem;
+  border-radius: 12px;
+  background: var(--paper-sunk);
+  border: 1px solid var(--rule);
+  font-family: var(--font-ui);
+  min-width: 11.5rem;
+}
+
+.arcade-score-num {
+  font-family: var(--font-mono);
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--accent-ink);
+  line-height: 1;
+}
+
+.arcade-score-label {
+  font-size: .78rem;
+  color: var(--ink-faint);
+}
+
+.arcade-meter {
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--rule);
+  overflow: hidden;
+  margin-top: .25rem;
+}
+
+.arcade-meter > span {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--dna-C));
+  transition: width .35s ease;
+}
+
+/* ── Arcade Grid ────────────────────────────────────────────────────────── */
+.arcade-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(19.5rem, 1fr));
+  gap: 1.15rem;
+}
+
+.game-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  padding: 1.35rem 1.4rem;
+  border-radius: 14px;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  box-shadow: var(--shadow);
+  transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease;
+  text-align: left;
+}
+
+.game-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-lg);
+}
+
+.game-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  font-family: var(--font-mono);
+  font-size: .74rem;
+  color: var(--ink-faint);
+}
+
+.game-num {
+  font-weight: 700;
+  color: var(--accent-ink);
+  background: var(--accent-soft);
+  padding: .16rem .5rem;
+  border-radius: 6px;
+}
+
+.game-status-badge {
+  font-family: var(--font-ui);
+  font-size: .72rem;
+  font-weight: 600;
+  padding: .18rem .52rem;
+  border-radius: 999px;
+  background: var(--paper-sunk);
+  color: var(--ink-soft);
+  border: 1px solid var(--rule);
+}
+
+.game-status-badge.is-done {
+  background: var(--good-soft);
+  color: var(--good);
+  border-color: rgba(21, 128, 61, .3);
+}
+
+.game-card h2 {
+  font-family: var(--font-body);
+  font-size: 1.32rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.game-card p {
+  font-family: var(--font-ui);
+  font-size: .87rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.game-chapters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin-top: auto;
+  padding-top: .25rem;
+}
+
+.chapter-pill,
+.chapter-pill:visited {
+  font-family: var(--font-ui);
+  font-size: .72rem;
+  color: var(--ink-soft);
+  background: var(--paper-sunk);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: .18rem .46rem;
+  text-decoration: none;
+  transition: border-color .15s, color .15s;
+}
+
+.chapter-pill:hover {
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.game-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  padding-top: .65rem;
+  border-top: 1px solid var(--rule);
+}
+
+.game-meta {
+  font-family: var(--font-ui);
+  font-size: .76rem;
+  color: var(--ink-faint);
+}
+
+/* ── Buttons ────────────────────────────────────────────────────────────── */
+.g-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  font-family: var(--font-ui);
+  font-size: .84rem;
+  font-weight: 600;
+  padding: .5rem .95rem;
+  border-radius: 9px;
+  border: 1px solid var(--rule-strong);
+  background: var(--paper-raised);
+  color: var(--ink);
+  cursor: pointer;
+  transition: background .14s, border-color .14s, transform .1s, color .14s;
+  text-decoration: none;
+}
+
+.g-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.g-btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.g-btn:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.g-btn-primary,
+.chapter a.g-btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.g-btn-primary:hover:not(:disabled),
+.chapter a.g-btn-primary:hover {
+  filter: brightness(1.07);
+  color: #ffffff;
+}
+
+.g-btn-sm {
+  font-size: .78rem;
+  padding: .34rem .7rem;
+  border-radius: 7px;
+}
+
+.g-btn-chip {
+  font-family: var(--font-mono);
+  font-size: .82rem;
+  font-weight: 700;
+  padding: .36rem .72rem;
+  border-radius: 8px;
+}
+
+.g-btn-chip.is-active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+/* ── Active Game Workbench Shell ────────────────────────────────────────── */
+.game-stage-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .85rem;
+  margin-bottom: 1.15rem;
+}
+
+.game-stage-left {
+  display: flex;
+  align-items: center;
+  gap: .85rem;
+  flex-wrap: wrap;
+}
+
+.game-stage-title {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.15;
+}
+
+.level-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin-bottom: 1.15rem;
+}
+
+.level-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: .42rem;
+  font-family: var(--font-ui);
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .44rem .82rem;
+  border-radius: 999px;
+  border: 1px solid var(--rule);
+  background: var(--paper-raised);
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: border-color .14s, background .14s, color .14s;
+}
+
+.level-tab:hover {
+  border-color: var(--accent);
+}
+
+.level-tab.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+.level-tab.is-solved .lvl-dot {
+  background: var(--good);
+  color: #fff;
+}
+
+.level-tab.is-active .lvl-dot {
+  background: rgba(255, 255, 255, .28);
+  color: #fff;
+}
+
+.lvl-dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 999px;
+  font-size: .68rem;
+  font-family: var(--font-mono);
+  background: var(--paper-sunk);
+  color: var(--ink-faint);
+}
+
+.workbench {
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 1.45rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.wb-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: .75rem 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.wb-header h3 {
+  font-family: var(--font-body);
+  font-size: 1.28rem;
+  margin: 0 0 .3rem;
+  color: var(--ink);
+}
+
+.wb-goal {
+  font-family: var(--font-ui);
+  font-size: .9rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0;
+  max-width: 48rem;
+}
+
+.wb-telemetry {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  gap: .65rem;
+}
+
+.tele-tile {
+  background: var(--paper-sunk);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: .62rem .8rem;
+  display: flex;
+  flex-direction: column;
+  gap: .18rem;
+}
+
+.tele-label {
+  font-family: var(--font-ui);
+  font-size: .7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--ink-faint);
+}
+
+.tele-val {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.tele-val.is-good { color: var(--good); }
+.tele-val.is-bad  { color: var(--bad); }
+.tele-val.is-warn { color: var(--do); }
+
+.wb-feedback {
+  padding: .85rem 1.05rem;
+  border-radius: 11px;
+  font-family: var(--font-ui);
+  font-size: .88rem;
+  line-height: 1.5;
+  border: 1px solid var(--rule);
+  background: var(--paper-sunk);
+  color: var(--ink-soft);
+}
+
+.wb-feedback strong { color: var(--ink); }
+
+.wb-feedback.is-good {
+  background: var(--good-soft);
+  border-color: rgba(21, 128, 61, .35);
+  color: var(--ink);
+}
+
+.wb-feedback.is-bad {
+  background: var(--bad-soft);
+  border-color: rgba(200, 30, 58, .35);
+  color: var(--ink);
+}
+
+.wb-feedback.is-warn {
+  background: var(--do-soft);
+  border-color: rgba(194, 94, 10, .35);
+  color: var(--ink);
+}
+
+.wb-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .65rem;
+}
+
+.wb-chapters-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .45rem;
+  padding-top: .85rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-ui);
+  font-size: .78rem;
+  color: var(--ink-faint);
+}
+
+/* ── Nucleotide Base Chips & Tracks (Games 1, 2, 5) ─────────────────────── */
+.base-A { --b-color: var(--dna-A); }
+.base-T, .base-U { --b-color: var(--dna-T); }
+.base-C { --b-color: var(--dna-C); }
+.base-G { --b-color: var(--dna-G); }
+
+.strand-board {
+  background: var(--paper-sunk);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  overflow-x: auto;
+}
+
+.strand-row {
+  display: flex;
+  align-items: center;
+  gap: .38rem;
+  min-width: max-content;
+}
+
+.strand-end {
+  font-family: var(--font-mono);
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--ink-faint);
+  min-width: 2.1rem;
+  text-align: center;
+}
+
+.base-tile {
+  width: 2.55rem;
+  height: 2.55rem;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 1.02rem;
+  font-weight: 700;
+  border: 1.5px solid var(--rule-strong);
+  background: var(--paper-raised);
+  color: var(--ink);
+  position: relative;
+  user-select: none;
+}
+
+.base-tile.is-colored {
+  border-color: var(--b-color, var(--rule-strong));
+  color: var(--b-color, var(--ink));
+}
+
+.base-tile.is-clickable {
+  cursor: pointer;
+  transition: transform .1s, box-shadow .12s, background .12s;
+}
+
+.base-tile.is-clickable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .09);
+}
+
+.base-tile.is-selected {
+  outline: 2.5px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.base-tile.is-match {
+  background: var(--good-soft);
+  border-color: var(--good);
+  color: var(--good);
+}
+
+.base-tile.is-mismatch {
+  background: var(--bad-soft);
+  border-color: var(--bad);
+  color: var(--bad);
+}
+
+.base-tile.is-empty {
+  border-style: dashed;
+  color: var(--ink-faint);
+}
+
+.bond-row {
+  display: flex;
+  align-items: center;
+  gap: .38rem;
+  margin: .22rem 0;
+  min-width: max-content;
+}
+
+.bond-cell {
+  width: 2.55rem;
+  height: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--ink-faint);
+}
+
+.bond-cell.is-good { color: var(--good); }
+.bond-cell.is-bad  { color: var(--bad); }
+
+.base-palette {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+}
+
+.palette-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-family: var(--font-mono);
+  font-size: .92rem;
+  font-weight: 700;
+  padding: .46rem .95rem;
+  border-radius: 9px;
+  border: 1.5px solid var(--b-color, var(--rule-strong));
+  background: var(--paper-raised);
+  color: var(--b-color, var(--ink));
+  cursor: pointer;
+  transition: transform .1s, background .12s;
+}
+
+.palette-btn:hover {
+  transform: translateY(-1px);
+  background: var(--paper-sunk);
+}
+
+/* ── Peptide & Codon Strip (Game 2) ─────────────────────────────────────── */
+.codon-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin-top: .65rem;
+}
+
+.codon-pill {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .36rem .62rem;
+  border-radius: 9px;
+  border: 1px solid var(--rule);
+  background: var(--paper-raised);
+  min-width: 3.4rem;
+}
+
+.codon-pill .c-tri {
+  font-family: var(--font-mono);
+  font-size: .72rem;
+  color: var(--ink-faint);
+}
+
+.codon-pill .c-aa {
+  font-family: var(--font-ui);
+  font-size: .86rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.codon-pill.aa-start       { border-color: var(--dna-A); background: rgba(16, 185, 129, .1); }
+.codon-pill.aa-hydrophobic { border-color: var(--dna-G); background: rgba(217, 119, 6, .09); }
+.codon-pill.aa-polar       { border-color: var(--dna-C); background: rgba(37, 99, 235, .09); }
+.codon-pill.aa-positive    { border-color: #7c3aed; background: rgba(124, 58, 237, .09); }
+.codon-pill.aa-negative    { border-color: #db2777; background: rgba(219, 39, 119, .09); }
+.codon-pill.aa-stop        { border-color: var(--bad); background: var(--bad-soft); }
+.codon-pill.aa-stop .c-aa  { color: var(--bad); }
+
+.intron-base {
+  opacity: .55;
+  border-style: dotted;
+}
+
+.splice-marker {
+  border-color: var(--do) !important;
+  box-shadow: 0 0 0 2px rgba(194, 94, 10, .25);
+}
+
+/* ── Interactive SVG Pedigree & Diagrams (Games 1, 3, 6) ────────────────── */
+.svg-stage {
+  background: var(--paper-sunk);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: .85rem;
+  overflow-x: auto;
+}
+
+.svg-stage svg {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.ped-node {
+  cursor: pointer;
+}
+
+.ped-node:hover .ped-shape {
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+
+/* ── Wright-Fisher Canvas & Sliders (Game 4) ────────────────────────────── */
+.sim-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(15rem, 1fr);
+  gap: 1.15rem;
+  align-items: start;
+}
+
+.canvas-frame {
+  background: var(--paper-sunk);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: .75rem;
+}
+
+.canvas-frame canvas {
+  width: 100%;
+  height: 290px;
+  display: block;
+  border-radius: 8px;
+}
+
+.control-stack {
+  display: flex;
+  flex-direction: column;
+  gap: .85rem;
+  background: var(--paper-sunk);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.slider-row {
+  display: flex;
+  flex-direction: column;
+  gap: .28rem;
+}
+
+.slider-head {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-ui);
+  font-size: .8rem;
+  color: var(--ink-soft);
+}
+
+.slider-head strong {
+  font-family: var(--font-mono);
+  color: var(--ink);
+}
+
+.slider-row input[type="range"] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+/* ── IGV Alignment & Pileup (Game 5) ────────────────────────────────────── */
+.igv-track {
+  font-family: var(--font-mono);
+  font-size: .86rem;
+  background: var(--paper-sunk);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: .9rem 1rem;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+
+.igv-row {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  min-width: max-content;
+}
+
+.igv-label {
+  width: 5.5rem;
+  flex-shrink: 0;
+  font-size: .72rem;
+  color: var(--ink-faint);
+  font-family: var(--font-ui);
+  font-weight: 600;
+}
+
+.igv-cell {
+  width: 1.48rem;
+  height: 1.55rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: .8rem;
+}
+
+.igv-cell.is-ref   { background: var(--paper-raised); color: var(--ink); border: 1px solid var(--rule); }
+.igv-cell.is-hit   { background: var(--good-soft); color: var(--good); }
+.igv-cell.is-mm    { background: var(--bad-soft); color: var(--bad); }
+.igv-cell.is-del   { background: var(--do-soft); color: var(--do); }
+.igv-cell.is-dim   { opacity: .35; }
+.igv-cell.is-focus { outline: 2px solid var(--accent); }
+
+.vcf-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-ui);
+  font-size: .82rem;
+}
+
+.vcf-table th, .vcf-table td {
+  text-align: left;
+  padding: .52rem .65rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.vcf-table th {
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--ink-faint);
+  background: var(--paper-sunk);
+}
+
+.vcf-table tr.is-filtered {
+  opacity: .32;
+  text-decoration: line-through;
+}
+
+.vcf-table tr.is-winner {
+  background: var(--good-soft);
+}
+
+.vcf-table tr.is-selectable {
+  cursor: pointer;
+}
+
+.vcf-table tr.is-selectable:hover {
+  background: var(--paper-sunk);
+}
+
+.vcf-table tr.is-picked {
+  background: var(--accent-soft);
+  outline: 1.5px solid var(--accent);
+}
+
+/* ── V2 Reference Codon Table Drawer, Progressive Hints & Numeric Inputs ── */
+.codon-drawer {
+  background: var(--paper-sunk);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: .9rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+  gap: .45rem .65rem;
+}
+
+.codon-ref-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .5rem;
+  padding: .3rem .52rem;
+  border-radius: 7px;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  font-family: var(--font-ui);
+  font-size: .76rem;
+}
+
+.codon-ref-item strong {
+  color: var(--ink);
+  min-width: 2.6rem;
+}
+
+.codon-ref-item code {
+  font-family: var(--font-mono);
+  font-size: .7rem;
+  color: var(--ink-soft);
+  text-align: right;
+}
+
+.codon-ref-item.aa-stop strong { color: var(--bad); }
+.codon-ref-item.aa-start strong { color: var(--good); }
+
+.hint-box {
+  padding: .68rem .92rem;
+  border-radius: 9px;
+  background: var(--do-soft);
+  border: 1px dashed rgba(194, 94, 10, .4);
+  font-family: var(--font-ui);
+  font-size: .84rem;
+  color: var(--ink);
+  line-height: 1.48;
+}
+
+.num-field {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  font-family: var(--font-mono);
+  font-size: .9rem;
+  color: var(--ink-soft);
+}
+
+.num-field span {
+  white-space: nowrap;
+}
+
+.num-input {
+  width: 7.2rem;
+  padding: .44rem .62rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--rule-strong);
+  background: var(--paper-raised);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: .92rem;
+  font-weight: 700;
+}
+
+.num-input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  border-color: var(--accent);
+}
+
+/* ── Choice / Triage Grid (used only for genuine system configs & evidence) ─ */
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: .65rem;
+}
+
+.choice-card {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  text-align: left;
+  padding: .8rem .95rem;
+  border-radius: 10px;
+  border: 1.5px solid var(--rule);
+  background: var(--paper-raised);
+  color: var(--ink);
+  cursor: pointer;
+  font-family: var(--font-ui);
+  transition: border-color .14s, background .14s;
+}
+
+.choice-card:hover {
+  border-color: var(--accent);
+}
+
+.choice-card.is-selected {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.choice-card code {
+  font-family: var(--font-mono);
+  font-size: .86rem;
+  font-weight: 700;
+  color: var(--accent-ink);
+}
+
+.choice-card small {
+  font-size: .78rem;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+
+/* ── Index Page Companion Games Strip ───────────────────────────────────── */
+.games-callout {
+  margin: 1.25rem 0 1.6rem;
+  padding: 1.15rem 1.35rem;
+  border-radius: 14px;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.games-callout-copy h2 {
+  font-family: var(--font-body);
+  font-size: 1.18rem;
+  margin: 0 0 .25rem;
+  color: var(--ink);
+}
+
+.games-callout-copy p {
+  font-family: var(--font-ui);
+  font-size: .87rem;
+  margin: 0;
+  color: var(--ink-soft);
+  max-width: 40rem;
+}
+
+/* ── Dark Mode High-Contrast Primary Controls ───────────────────────────── */
+:root[data-theme="dark"] .g-btn-primary,
+:root[data-theme="dark"] .g-btn-primary:hover:not(:disabled),
+:root[data-theme="dark"] .chapter a.g-btn-primary,
+:root[data-theme="dark"] .chapter a.g-btn-primary:hover,
+:root[data-theme="dark"] .level-tab.is-active {
+  color: #042f2e;
+}
+
+:root[data-theme="dark"] .level-tab.is-active .lvl-dot {
+  background: rgba(4, 47, 46, .22);
+  color: #042f2e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .g-btn-primary,
+  :root:not([data-theme="light"]) .g-btn-primary:hover:not(:disabled),
+  :root:not([data-theme="light"]) .level-tab.is-active {
+    color: #042f2e;
+  }
+  :root:not([data-theme="light"]) .level-tab.is-active .lvl-dot {
+    background: rgba(4, 47, 46, .22);
+    color: #042f2e;
+  }
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 780px) {
+  .arcade-hero {
+    grid-template-columns: 1fr;
+    padding: 1.35rem 1.25rem;
+  }
+  .arcade-score-pill {
+    align-items: flex-start;
+  }
+  .sim-grid {
+    grid-template-columns: 1fr;
+  }
+  .workbench {
+    padding: 1.1rem 1rem;
+  }
+}

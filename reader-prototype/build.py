@@ -659,6 +659,7 @@ def page_template(doc: Doc, body: str, boot: str, nav: dict,
     <button id="toc-toggle" class="icon-btn" aria-expanded="false" aria-controls="toc"
             title="Contents">☰<span class="sr-only">Contents</span></button>
     <a class="home-link" href="index.html" title="All contents">Contents</a>
+    <a class="home-link" href="games.html" title="Interactive companion lab games">Lab Games</a>
     <div class="topbar-title">
       <strong>{html.escape(doc.title)}</strong>
       <span class="topbar-meta">{crumb}</span>
@@ -980,6 +981,7 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
 {FONT_LINKS}
 <link rel="stylesheet" href="assets/katex/katex.min.css">
 <link rel="stylesheet" href="assets/reader.css">
+<link rel="stylesheet" href="assets/games.css">
 </head>
 <body class="is-index">
 <header class="topbar">
@@ -987,9 +989,10 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
   <div class="topbar-inner">
     <div class="topbar-title">
       <strong>Genetics &amp; Genomics</strong>
-      <span class="topbar-meta">{total_ch} chapters · 13 labs · 17 problem sets</span>
+      <span class="topbar-meta">{total_ch} chapters · 13 labs · 17 problem sets · 6 lab games</span>
     </div>
     <div class="topbar-actions">
+      <a class="home-link" href="games.html" title="Interactive companion lab games">Lab Games</a>
       <button id="search-btn" class="search-trigger" title="Search course (⌘K or /)"
               aria-label="Search course"><span class="search-trigger-ico" aria-hidden="true">⌕</span><span class="search-trigger-label">Search</span><kbd>⌘K</kbd></button>
       <button id="practice" class="icon-btn" title="Practice mode — no gates, nothing auto-starts"
@@ -1015,6 +1018,13 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
       {_HERO_CHROMATOGRAM_SVG}
     </section>
     <div id="index-summary" class="index-summary"></div>
+    <aside class="games-callout" aria-label="Interactive companion lab games">
+      <div class="games-callout-copy">
+        <h2>Genomics Lab Games · 6 Runnable Simulators</h2>
+        <p>Hands-on companion puzzles for the mechanics best learned by doing: antiparallel DNA &amp; PCR, live ribosome debugging &amp; splicing, SVG pedigrees, Wright–Fisher evolution, read alignment &amp; VCF triage, and SCA12 repeat instability.</p>
+      </div>
+      <a class="g-btn g-btn-primary" href="games.html">Open Lab Games →</a>
+    </aside>
     <div id="track-bar" class="track-bar" role="tablist" aria-label="Study tracks"></div>
     {''.join(rows)}
     {aux}
@@ -1027,6 +1037,75 @@ def build_index(docs: list[Doc], practice: dict[str, list[dict]] | None = None) 
 <script src="assets/recall-index.js"></script>
 <script src="assets/search-index.js" defer></script>
 <script src="assets/reader.js"></script>
+</body>
+</html>
+"""
+
+
+# Companion interactive lab games attached to the chapters whose core mechanics
+# they reinforce. Appears inside "Ready after this chapter" and on games.html.
+COMPANION_GAMES = [
+    ("strand-fork", "Strand & Fork",
+     "Antiparallel pairing, reverse complements, PCR primers & replication forks",
+     {"02", "04", "17", "36"}),
+    ("ribosome-debugger", "Ribosome Debugger",
+     "Live ORF scanning, wobble vs nonsense mutations, frameshift rescue & GU–AG splicing",
+     {"05", "06", "07", "16"}),
+    ("pedigree-lab", "Mendel's Pedigree Lab",
+     "Simulated test crosses, SVG pedigree constraint solving, epistasis & HWE carrier risk",
+     {"10", "11", "13", "15"}),
+    ("drift-arena", "Drift & Selection Arena",
+     "Real-time Wright–Fisher simulations of drift, recessive shielding, overdominance & bottlenecks",
+     {"26", "27", "28", "33"}),
+    ("read-mapper", "Read Mapper & Variant Detective",
+     "Seed-and-extend alignment, CIGAR indels, MAPQ repeat walls, pileups & exome VCF triage",
+     {"40", "42", "46", "54", "55"}),
+    ("sca12-lab", "Repeat Instability & SCA12 Board",
+     "Hairpin slippage, short-read repeat walls & clinical 32–50 CAG gray-zone discipline",
+     {"D3", "D4", "D5"}),
+]
+
+
+def build_games() -> str:
+    """Emit the interactive companion Lab Games arcade page."""
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lab Games — Genetics &amp; Genomics</title>
+{FONT_LINKS}
+<link rel="stylesheet" href="assets/reader.css">
+<link rel="stylesheet" href="assets/games.css">
+</head>
+<body class="is-index">
+<a class="skip-link" href="#games-app">Skip to games</a>
+<header class="topbar">
+  <div class="dna-stripe" aria-hidden="true"></div>
+  <div class="topbar-inner">
+    <a class="home-link" href="index.html" title="All contents">← Contents</a>
+    <div class="topbar-title">
+      <strong>Genomics Lab Games</strong>
+      <span class="topbar-meta">6 interactive engines · 29 challenges</span>
+    </div>
+    <div class="topbar-actions">
+      <button id="search-btn" class="search-trigger" title="Search course (⌘K or /)"
+              aria-label="Search course"><span class="search-trigger-ico" aria-hidden="true">⌕</span><span class="search-trigger-label">Search</span><kbd>⌘K</kbd></button>
+      <button id="text-size" class="icon-btn" title="Text size">Aa<span class="sr-only">Text size</span></button>
+      <button id="theme" class="icon-btn" title="Theme">◐<span class="sr-only">Theme</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="games-app" class="games-shell"></main>
+
+<div id="toast" class="toast" hidden aria-live="polite"></div>
+<script id="bootstrap" type="application/json">{{"docId":"games","kind":"games"}}</script>
+<script src="assets/search-index.js" defer></script>
+<script src="assets/reader.js"></script>
+<script src="assets/games-core.js"></script>
+<script src="assets/games-ui.js"></script>
+<script src="assets/games-ui-advanced.js"></script>
 </body>
 </html>
 """
@@ -1048,6 +1127,16 @@ def main() -> int:
     docs = discover()
     linkmap = build_link_map(docs)
     practice = extract_practice(docs)
+    for d in docs:
+        if d.number:
+            for gid, gtitle, gwhy, chapters in COMPANION_GAMES:
+                if d.number in chapters:
+                    practice.setdefault(d.rel, []).append({
+                        "kind": "Lab game",
+                        "title": gtitle,
+                        "out": f"games.html#{gid}",
+                        "why": gwhy,
+                    })
 
     # Lookup tables for the bare-mention pass.
     xref = {
@@ -1092,6 +1181,7 @@ def main() -> int:
         "interactions-genomics.js", "interactions-human.js",
         "interactions-advanced-stats.js", "interactions-sca12.js",
         "interactions-transfer.js", "widgets.js",
+        "games.css", "games-core.js", "games-ui.js", "games-ui-advanced.js",
     ):
         shutil.copy2(SRC / name, assets / name)
     vendor = ROOT / "vendor" / "mermaid.min.js"
@@ -1182,6 +1272,7 @@ def main() -> int:
     (assets / "favicon.svg").write_text(FAVICON_SVG, encoding="utf-8")
 
     (DIST / "index.html").write_text(build_index(docs, practice), encoding="utf-8")
+    (DIST / "games.html").write_text(build_games(), encoding="utf-8")
     (DIST / "404.html").write_text(build_404(), encoding="utf-8")
 
     # Tell GitHub Pages not to run Jekyll over the output. Without it Jekyll
