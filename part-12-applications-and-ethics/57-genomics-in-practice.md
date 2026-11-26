@@ -62,6 +62,8 @@ The metric that matters is not diagnosis but **change in management**: in publis
 
 ## 3. Screening is not diagnosis: NIPT and the arithmetic
 
+![Why positive predictive value (PPV) depends critically on prior prevalence even for a 99.5% specific screening test like NIPT, paired with pharmacogenomic metaboliser phenotypes translating genotype into clinical dosing.](../figures/fig-57-clinical-screening-ppv.svg)
+
 ### The mechanism
 
 Maternal plasma contains **cell-free DNA** — short, nucleosome-length (~150–200 bp) fragments from dying cells. In pregnancy a portion, the **fetal fraction** *f*, comes from apoptotic **placental trophoblast**; typically *f* ≈ 4–20%, median around 10% at 10–13 weeks. Note what that says: the assay measures the placenta, not the fetus.

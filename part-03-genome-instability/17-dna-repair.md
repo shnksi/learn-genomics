@@ -53,6 +53,8 @@ to a drug that healthy cells shrug off) is a property of *repair*, not of damage
 To correct an error you must detect it and recover the original. Biology has exactly two
 sources of redundancy.
 
+![Lesion-to-pathway map of cellular DNA repair: direct reversal, base excision repair (BER), nucleotide excision repair (NER), mismatch repair (MMR), and the double-strand break fork between error-prone NHEJ and template-guided HR.](../figures/fig-17-dna-repair.svg)
+
 **The complementary strand.** Damage to one strand leaves the other intact: cut out a stretch
 of the damaged strand and re-synthesise from the survivor. Single-strand damage is in
 principle always correctable.
@@ -115,6 +117,8 @@ mark on a repair gene predicting drug response (Hegi et al., *NEJM* 2005;
 BER handles the highest-volume damage. Its signature move is that recognition is **outsourced
 to a family of specialists** — eleven human DNA glycosylases, each recognising one kind of
 damaged base and nothing else. A dispatch table keyed on lesion type.
+
+![Side-by-side comparison of Base Excision Repair (DNA glycosylase + APE1 + Pol β replacing a single damaged base) versus Nucleotide Excision Repair (distortion sensor + TFIIH unwinding + dual XPF/XPG cuts excising a ~27 nt patch around bulky lesions like UV thymine dimers).](../figures/fig-17c-ber-vs-ner.svg)
 
 | Glycosylase | Recognises | Arising from |
 |---|---|---|
@@ -201,6 +205,8 @@ Replication is already accurate: polymerase base selection gives ~10⁻⁴–10�
 and 3'→5' proofreading catches ~99% of those
 ([Ch 04](../part-01-molecular-foundations/04-dna-replication.md)). MMR is the third filter,
 worth another 100–1000-fold. But it faces a problem the other pathways do not:
+
+![Strand discrimination in mismatch repair (MutSα/MutLα scanning to a nascent-strand nick or unmethylated GATC) and the double-strand break commitment fork separating 53BP1/Ku-protected NHEJ from MRN/CtIP-resected homologous recombination.](../figures/fig-17b-mmr-dsb-fork.svg)
 
 ```
                       ↓ replication error

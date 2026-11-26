@@ -127,6 +127,8 @@ simultaneously and read them all with a camera. Throughput becomes (features per
 (cycles) — an optics and surface-density problem, which is exactly the kind of problem that
 scales.
 
+![Molecular reading mechanisms of the four major sequencing platforms: Sanger ddNTP termination, Illumina bridge-amplified reversible-terminator SBS, PacBio SMRT ZMW circular consensus, and Oxford Nanopore ionic-current squiggle decoding.](../figures/fig-40b-sequencing-chemistries.svg)
+
 ### 2.1 Cluster generation
 
 A single fluorophore is too dim to see against background. So each fragment is amplified
@@ -244,6 +246,8 @@ The idea outlives every implementation of it.
 Two changes at once. **No amplification**, so no PCR bias, no PCR duplicates, and any
 chemical modification on the original bases survives to be measured. And **no ensemble**, so
 no dephasing — read length is limited only by how long a molecule you can deliver intact.
+
+![Cutaway illustration of nanopore single-molecule sequencing: a transmembrane protein nanopore (slate blue) spans a synthetic lipid bilayer while a motor helicase (teal) ratchets DNA through the narrow central constriction, modulating the ionic current (glowing cyan ions) in real time.](../figures/art-40-nanopore-sequencing.png)
 
 The price: you are measuring a single molecule, so the raw signal is noisy.
 
@@ -410,6 +414,8 @@ Every nanopore approach fights that constraint.
 
 **All figures Tier C, verified 2026-08-13, ranges deliberately. Specifications move; check
 current ones before designing an experiment.**
+
+![Read-length versus per-read accuracy landscape across Sanger, Illumina short-read, PacBio HiFi, and Oxford Nanopore platforms, together with the Lander–Waterman Poisson curve (*P*(0) = *e*<sup>−*C*</sup>) linking depth to unsequenced fraction.](../figures/fig-40-sequencing-platforms.svg)
 
 | | Sanger | Illumina SBS | PacBio HiFi | Nanopore | Roche SBX |
 |---|---|---|---|---|---|

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 355" width="760" height="355" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="355.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Linear reference bias vs. a pangenome variation graph</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">A single linear reference drops reads carrying non-reference alleles; a pangenome graph encodes all haplotypes as paths</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="712.0" height="110.0" rx="10" fill="#fff1f2" stroke="#e11d48" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#9f1239" text-anchor="start">Linear reference genome (GRCh38): reference bias at structural variants &amp; divergent alleles</text>
+  <line x1="48.0" y1="128.0" x2="712.0" y2="128.0" stroke="#0f172a" stroke-width="3.5" stroke-linecap="round"/>
+  <rect x="280.0" y="114.0" width="130.0" height="28.0" rx="5" fill="#ffffff" stroke="#e11d48" stroke-width="1.6"/>
+  <text x="345.0" y="132.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#9f1239" text-anchor="middle">Ref allele only</text>
+  <text x="380.0" y="164.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#334155" text-anchor="middle">Reads carrying a novel 2 kb insertion or alternate haplotype fail to align or get penalized → systematic reference bias.</text>
+  <rect x="24.0" y="200.0" width="712.0" height="138.0" rx="10" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.2"/>
+  <text x="36.0" y="220.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Pangenome graph (HPRC): shared conserved spine with branching SNP &amp; structural-variant bubbles</text>
+  <rect x="46.0" y="250.0" width="90.0" height="36.0" rx="8" fill="#ffffff" stroke="#0d8a7b" stroke-width="1.4"/>
+  <text x="91.0" y="272.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#085f55" text-anchor="middle">Conserved</text>
+  <path d="M 136 268 C 154 268, 160 238, 186 238" fill="none" stroke="#0d8a7b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 136 268 C 154 268, 160 298, 186 298" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="186.0" y="226.0" width="62.0" height="24.0" rx="12.0" fill="#ffffff" stroke="#0d8a7b" stroke-width="1.2"/>
+  <text x="217.0" y="241.8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="middle">SNP: A</text>
+  <rect x="186.0" y="286.0" width="62.0" height="24.0" rx="12.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="217.0" y="301.8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#1e40af" text-anchor="middle">SNP: G</text>
+  <path d="M 248 238 C 272 238, 278 268, 296 268" fill="none" stroke="#0d8a7b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 248 298 C 272 298, 278 268, 296 268" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="296.0" y="250.0" width="92.0" height="36.0" rx="8" fill="#ffffff" stroke="#0d8a7b" stroke-width="1.4"/>
+  <text x="342.0" y="272.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#085f55" text-anchor="middle">Conserved</text>
+  <path d="M 388 268 C 408 268, 414 236, 444 236" fill="none" stroke="#c25e0a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 388 268 L 594 268" fill="none" stroke="#0d8a7b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="444.0" y="224.0" width="114.0" height="24.0" rx="12.0" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.2"/>
+  <text x="501.0" y="239.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#c25e0a" text-anchor="middle">+2 kb Insertion</text>
+  <path d="M 558 236 C 578 236, 582 268, 594 268" fill="none" stroke="#c25e0a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="594.0" y="250.0" width="118.0" height="36.0" rx="8" fill="#ffffff" stroke="#0d8a7b" stroke-width="1.4"/>
+  <text x="653.0" y="272.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#085f55" text-anchor="middle">Conserved →</text>
+  <text x="380.0" y="326.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#085f55" text-anchor="middle">Every individual&#x27;s haplotype is a walk through the graph — eliminating reference bias across global ancestries.</text>
+</svg>

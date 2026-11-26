@@ -42,6 +42,8 @@ standing equilibrium of that conflict.
 The primary split is the intermediate: RNA or DNA. Copy-and-paste versus cut-and-paste — and
 that is not an analogy, it is the standard vocabulary.
 
+![Mechanisms of mobile DNA: Class I copy-and-paste retrotransposons (autonomous LINE-1 and non-autonomous *Alu* elements transposing via an RNA intermediate) versus Class II cut-and-paste DNA transposons.](../figures/fig-19-transposons.svg)
+
 ```mermaid
 graph TD
     TE["<b>Transposable element</b>"]

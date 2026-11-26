@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="360.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">French-flag morphogen gradients and intercellular signalling relays</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Smooth ligand concentration gradients are decoded into sharp cell-fate stripes via receptor-to-nucleus signalling pathways</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="344.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Positional information: French-flag threshold decoding</text>
+  <line x1="62.0" y1="114.0" x2="62.0" y2="232.0" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="62.0" y1="232.0" x2="342.0" y2="232.0" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="202.0" y="266.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">Position along embryo axis</text>
+  <text x="26.0" y="173.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle" transform="rotate(-90 26.0 173.0)">[Morphogen]</text>
+  <polyline points="62.0,123.4 66.7,128.4 71.3,133.1 76.0,137.6 80.7,141.9 85.3,146.0 90.0,150.0 94.7,153.7 99.3,157.3 104.0,160.7 108.7,163.9 113.3,167.0 118.0,170.0 122.7,172.8 127.3,175.5 132.0,178.1 136.7,180.5 141.3,182.9 146.0,185.1 150.7,187.3 155.3,189.3 160.0,191.3 164.7,193.1 169.3,194.9 174.0,196.6 178.7,198.2 183.3,199.7 188.0,201.2 192.7,202.6 197.3,204.0 202.0,205.2 206.7,206.5 211.3,207.6 216.0,208.7 220.7,209.8 225.3,210.8 230.0,211.8 234.7,212.7 239.3,213.6 244.0,214.4 248.7,215.2 253.3,216.0 258.0,216.7 262.7,217.4 267.3,218.1 272.0,218.7 276.7,219.3 281.3,219.9 286.0,220.4 290.7,221.0 295.3,221.5 300.0,222.0 304.7,222.4 309.3,222.8 314.0,223.3 318.7,223.7 323.3,224.0 328.0,224.4 332.7,224.8 337.3,225.1 342.0,225.4" fill="none" stroke="#0d8a7b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="62.0" y1="173.0" x2="342.0" y2="173.0" stroke="#2563eb" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="4,3"/>
+  <line x1="62.0" y1="208.4" x2="342.0" y2="208.4" stroke="#e11d48" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="4,3"/>
+  <text x="338.0" y="169.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.8" font-weight="700" fill="#1e40af" text-anchor="end">Threshold T₁</text>
+  <text x="338.0" y="204.4" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.8" font-weight="700" fill="#9f1239" text-anchor="end">Threshold T₂</text>
+  <rect x="62.0" y="266.0" width="61.6" height="28.0" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.4"/>
+  <text x="92.8" y="284.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#1e40af" text-anchor="middle">Fate 1</text>
+  <rect x="123.6" y="266.0" width="89.6" height="28.0" rx="8" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.4"/>
+  <text x="168.4" y="284.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="middle">Fate 2</text>
+  <rect x="213.2" y="266.0" width="128.8" height="28.0" rx="8" fill="#fff1f2" stroke="#e11d48" stroke-width="1.4"/>
+  <text x="277.6" y="284.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#9f1239" text-anchor="middle">Fate 3</text>
+  <text x="196.0" y="322.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">Different enhancer affinities read T₁ vs. T₂ → sharp borders!</text>
+  <rect x="388.0" y="72.0" width="348.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="400.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Universal cell-to-cell signalling architecture</text>
+  <rect x="412.0" y="110.0" width="300.0" height="42.0" rx="8" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.5"/>
+  <text x="426.0" y="128.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="700" fill="#c25e0a" text-anchor="start">1. Extracellular ligand</text>
+  <text x="426.0" y="144.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.4" font-weight="500" fill="#334155" text-anchor="start">Wnt, Shh, BMP, FGF, Delta</text>
+  <rect x="412.0" y="166.0" width="300.0" height="42.0" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="426.0" y="184.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="700" fill="#2563eb" text-anchor="start">2. Transmembrane receptor</text>
+  <text x="426.0" y="200.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.4" font-weight="500" fill="#334155" text-anchor="start">Frizzled, Patched, RTK, Notch</text>
+  <rect x="412.0" y="222.0" width="300.0" height="42.0" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="426.0" y="240.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="700" fill="#7c3aed" text-anchor="start">3. Intracellular relay</text>
+  <text x="426.0" y="256.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.4" font-weight="500" fill="#334155" text-anchor="start">Kinase cascade (MAPK) or proteolysis</text>
+  <rect x="412.0" y="278.0" width="300.0" height="42.0" rx="8" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.5"/>
+  <text x="426.0" y="296.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="700" fill="#0d8a7b" text-anchor="start">4. Nuclear TF switch</text>
+  <text x="426.0" y="312.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.4" font-weight="500" fill="#334155" text-anchor="start">β-catenin / Gli / NICD → target genes</text>
+  <line x1="562.0" y1="153.0" x2="562.0" y2="165.0" stroke="#334155" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arr-ink)"/>
+  <line x1="562.0" y1="209.0" x2="562.0" y2="221.0" stroke="#334155" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arr-ink)"/>
+  <line x1="562.0" y1="265.0" x2="562.0" y2="277.0" stroke="#334155" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arr-ink)"/>
+</svg>

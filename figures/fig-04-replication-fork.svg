@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="380.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">The asymmetric DNA replication fork</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">DNA polymerase synthesizes strictly 5′→3′, forcing continuous leading-strand and discontinuous lagging-strand synthesis</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <line x1="480.0" y1="180.0" x2="725.0" y2="180.0" stroke="#0f172a" stroke-width="3.2" stroke-linecap="round"/>
+  <line x1="480.0" y1="210.0" x2="725.0" y2="210.0" stroke="#0f172a" stroke-width="3.2" stroke-linecap="round"/>
+  <line x1="495.0" y1="182.0" x2="495.0" y2="208.0" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="513.0" y1="182.0" x2="513.0" y2="208.0" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="531.0" y1="182.0" x2="531.0" y2="208.0" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="549.0" y1="182.0" x2="549.0" y2="208.0" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="567.0" y1="182.0" x2="567.0" y2="208.0" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="585.0" y1="182.0" x2="585.0" y2="208.0" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="603.0" y1="182.0" x2="603.0" y2="208.0" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="621.0" y1="182.0" x2="621.0" y2="208.0" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="639.0" y1="182.0" x2="639.0" y2="208.0" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="657.0" y1="182.0" x2="657.0" y2="208.0" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="675.0" y1="182.0" x2="675.0" y2="208.0" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="693.0" y1="182.0" x2="693.0" y2="208.0" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="711.0" y1="182.0" x2="711.0" y2="208.0" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="728.0" y="175.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#0f172a" text-anchor="end">5′</text>
+  <text x="728.0" y="226.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#0f172a" text-anchor="end">3′</text>
+  <text x="605.0" y="162.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#334155" text-anchor="middle">Parental duplex</text>
+  <polygon points="446.0,195.0 488.0,166.0 488.0,224.0" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2" stroke-linejoin="round"/>
+  <text x="472.0" y="199.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#7c3aed" text-anchor="middle">Hel</text>
+  <text x="565.0" y="244.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#7c3aed" text-anchor="middle">Helicase unwinds →</text>
+  <path d="M 480 180 C 420 180, 390 118, 340 118 L 40 118" fill="none" stroke="#0f172a" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="32.0" y="114.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#0f172a" text-anchor="start">3′</text>
+  <line x1="48.0" y1="140.0" x2="412.0" y2="140.0" stroke="#0d8a7b" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arr-teal)"/>
+  <text x="48.0" y="158.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="700" fill="#085f55" text-anchor="start">5′</text>
+  <text x="225.0" y="100.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="middle">Leading strand — continuous 5′→3′ synthesis</text>
+  <ellipse cx="422.0" cy="140.0" rx="18.0" ry="13.0" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.8"/>
+  <text x="422.0" y="144.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#085f55" text-anchor="middle">Pol</text>
+  <path d="M 480 210 C 420 210, 390 278, 340 278 L 40 278" fill="none" stroke="#0f172a" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="32.0" y="294.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#0f172a" text-anchor="start">5′</text>
+  <text x="220.0" y="314.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#c25e0a" text-anchor="middle">Lagging strand — discontinuous Okazaki fragments (5′→3′ away from fork)</text>
+  <line x1="412.0" y1="256.0" x2="394.0" y2="256.0" stroke="#e11d48" stroke-width="4.2" stroke-linecap="round"/>
+  <line x1="392.0" y1="256.0" x2="326.0" y2="256.0" stroke="#c25e0a" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arr-amber)"/>
+  <text x="418.0" y="252.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#e11d48" text-anchor="start">RNA primer</text>
+  <line x1="306.0" y1="256.0" x2="288.0" y2="256.0" stroke="#e11d48" stroke-width="4.2" stroke-linecap="round"/>
+  <line x1="286.0" y1="256.0" x2="206.0" y2="256.0" stroke="#c25e0a" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arr-amber)"/>
+  <text x="256.0" y="244.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#c25e0a" text-anchor="middle">Okazaki fragment</text>
+  <line x1="186.0" y1="256.0" x2="168.0" y2="256.0" stroke="#e11d48" stroke-width="4.2" stroke-linecap="round"/>
+  <line x1="166.0" y1="256.0" x2="86.0" y2="256.0" stroke="#c25e0a" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arr-amber)"/>
+  <rect x="168.0" y="232.0" width="54.0" height="18.0" rx="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="195.0" y="244.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#1e40af" text-anchor="middle">Ligase</text>
+  <rect x="24.0" y="336.0" width="712.0" height="30.0" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="40.0" y="355.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="start">Key constraint: dNTPs add ONLY to a free 3′-OH → fork moves right while lagging polymerase synthesizes leftward in chunks.</text>
+</svg>

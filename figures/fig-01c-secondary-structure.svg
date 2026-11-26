@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 375" width="760" height="375" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="375.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Protein secondary structure: α-helix, β-sheet, and DNA major-groove fit</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Local backbone H-bonds form 12 Å α-helices and pleated β-sheets — the exact width needed to read DNA&#x27;s major groove</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="224.0" height="280.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">α-Helix (right-handed spiral)</text>
+  <path d="M 96 128 C 96 112, 176 112, 176 128" fill="none" stroke="#e0f5f2" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 96 128 C 96 142, 176 142, 176 128" fill="none" stroke="#0d8a7b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="114.0" y1="134.0" x2="114.0" y2="154.0" stroke="#c25e0a" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <line x1="158.0" y1="134.0" x2="158.0" y2="154.0" stroke="#c25e0a" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <path d="M 96 156 C 96 140, 176 140, 176 156" fill="none" stroke="#e0f5f2" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 96 156 C 96 170, 176 170, 176 156" fill="none" stroke="#0d8a7b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="114.0" y1="162.0" x2="114.0" y2="182.0" stroke="#c25e0a" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <line x1="158.0" y1="162.0" x2="158.0" y2="182.0" stroke="#c25e0a" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <path d="M 96 184 C 96 168, 176 168, 176 184" fill="none" stroke="#e0f5f2" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 96 184 C 96 198, 176 198, 176 184" fill="none" stroke="#0d8a7b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="114.0" y1="190.0" x2="114.0" y2="210.0" stroke="#c25e0a" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <line x1="158.0" y1="190.0" x2="158.0" y2="210.0" stroke="#c25e0a" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <path d="M 96 212 C 96 196, 176 196, 176 212" fill="none" stroke="#e0f5f2" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 96 212 C 96 226, 176 226, 176 212" fill="none" stroke="#0d8a7b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="114.0" y1="218.0" x2="114.0" y2="238.0" stroke="#c25e0a" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <line x1="158.0" y1="218.0" x2="158.0" y2="238.0" stroke="#c25e0a" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <path d="M 96 240 C 96 224, 176 224, 176 240" fill="none" stroke="#e0f5f2" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 96 240 C 96 254, 176 254, 176 240" fill="none" stroke="#0d8a7b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="94.0" y1="272.0" x2="178.0" y2="272.0" stroke="#0f172a" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="94.0" y1="267.0" x2="94.0" y2="277.0" stroke="#0f172a" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="178.0" y1="267.0" x2="178.0" y2="277.0" stroke="#0f172a" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="136.0" y="288.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="700" fill="#085f55" text-anchor="middle">~12 Å diameter</text>
+  <text x="136.0" y="310.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">Backbone H-bonds (i → i+4)</text>
+  <text x="136.0" y="324.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">3.6 residues/turn · R-groups out</text>
+  <rect x="264.0" y="72.0" width="224.0" height="280.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="276.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">β-Sheet (extended strands)</text>
+  <rect x="296.0" y="114.0" width="24.0" height="112.0" rx="3" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.8"/>
+  <polygon points="288.0,226.0 328.0,226.0 308.0,248.0" fill="#c25e0a" stroke="#c25e0a" stroke-width="1" stroke-linejoin="round"/>
+  <text x="308.0" y="268.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700" fill="#c25e0a" text-anchor="middle">N → C</text>
+  <rect x="364.0" y="136.0" width="24.0" height="112.0" rx="3" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.8"/>
+  <polygon points="356.0,136.0 396.0,136.0 376.0,114.0" fill="#c25e0a" stroke="#c25e0a" stroke-width="1" stroke-linejoin="round"/>
+  <text x="376.0" y="268.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700" fill="#c25e0a" text-anchor="middle">C ← N</text>
+  <rect x="432.0" y="114.0" width="24.0" height="112.0" rx="3" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.8"/>
+  <polygon points="424.0,226.0 464.0,226.0 444.0,248.0" fill="#c25e0a" stroke="#c25e0a" stroke-width="1" stroke-linejoin="round"/>
+  <text x="444.0" y="268.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700" fill="#c25e0a" text-anchor="middle">N → C</text>
+  <line x1="322.0" y1="148.0" x2="362.0" y2="148.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <line x1="390.0" y1="148.0" x2="430.0" y2="148.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <line x1="322.0" y1="174.0" x2="362.0" y2="174.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <line x1="390.0" y1="174.0" x2="430.0" y2="174.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <line x1="322.0" y1="200.0" x2="362.0" y2="200.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <line x1="390.0" y1="200.0" x2="430.0" y2="200.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <line x1="322.0" y1="220.0" x2="362.0" y2="220.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <line x1="390.0" y1="220.0" x2="430.0" y2="220.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <text x="376.0" y="298.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">Inter-strand backbone H-bonds</text>
+  <text x="376.0" y="312.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">Antiparallel (shown) or parallel</text>
+  <text x="376.0" y="326.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">Rigid core of many domains</text>
+  <rect x="504.0" y="72.0" width="232.0" height="280.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="516.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Why 12 Å matters: DNA reading</text>
+  <path d="M 538 106 C 538 106, 616 122, 616 154 C 616 186, 538 202, 538 202" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 538 202 C 538 202, 574 214, 574 234 C 574 254, 538 266, 538 266" fill="none" stroke="#e11d48" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="576.0" cy="154.0" r="22.0" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="2.4"/>
+  <text x="576.0" y="151.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="middle">α-helix</text>
+  <text x="576.0" y="164.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700" fill="#085f55" text-anchor="middle">12 Å</text>
+  <text x="630.0" y="146.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1e40af" text-anchor="start">Major groove</text>
+  <text x="630.0" y="160.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="500" fill="#1e40af" text-anchor="start">~22 Å wide</text>
+  <text x="630.0" y="174.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#085f55" text-anchor="start">Fits helix cleanly!</text>
+  <text x="596.0" y="230.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#9f1239" text-anchor="start">Minor groove</text>
+  <text x="596.0" y="244.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="500" fill="#9f1239" text-anchor="start">~12 Å (too narrow)</text>
+  <text x="620.0" y="294.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">Side chains on the recognition</text>
+  <text x="620.0" y="308.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">helix read base-pair edges in</text>
+  <text x="620.0" y="322.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">the major groove (Ch 02 §5).</text>
+</svg>

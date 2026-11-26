@@ -93,6 +93,8 @@ most of it is not specification at all.
 
 Information flows in a canonical direction:
 
+![End-to-end map of molecular genetics: information flows from DNA storage through regulated transcription and translation into folded proteins, while replication, recombination, and mutation generate the variation acted on by evolution and disease.](../figures/fig-00-whole-story.svg)
+
 ```mermaid
 graph LR
     DNA["DNA<br/><i>storage</i>"] -->|transcription| RNA["RNA<br/><i>working copy</i>"]

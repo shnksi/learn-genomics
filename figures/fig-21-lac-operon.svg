@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 365" width="760" height="365" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="365.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">The E. coli lac operon: a two-input biological AND gate</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">High transcription requires BOTH lactose present (removes LacI repressor) AND glucose absent (activates CAP–cAMP)</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <line x1="36.0" y1="108.0" x2="724.0" y2="108.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+  <rect x="46.0" y="90.0" width="62.0" height="36.0" rx="5" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/>
+  <text x="77.0" y="112.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#64748b" text-anchor="middle">lacI</text>
+  <rect x="126.0" y="90.0" width="54.0" height="36.0" rx="5" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="153.0" y="112.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#2563eb" text-anchor="middle">CAP</text>
+  <rect x="184.0" y="90.0" width="52.0" height="36.0" rx="5" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.6"/>
+  <text x="210.0" y="112.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#0d8a7b" text-anchor="middle">P</text>
+  <rect x="240.0" y="90.0" width="48.0" height="36.0" rx="5" fill="#fff1f2" stroke="#e11d48" stroke-width="1.6"/>
+  <text x="264.0" y="112.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#e11d48" text-anchor="middle">O</text>
+  <rect x="298.0" y="90.0" width="128.0" height="36.0" rx="5" fill="#ecfdf5" stroke="#15803d" stroke-width="1.6"/>
+  <text x="362.0" y="112.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#15803d" text-anchor="middle">lacZ (β-gal)</text>
+  <rect x="434.0" y="90.0" width="128.0" height="36.0" rx="5" fill="#ecfdf5" stroke="#15803d" stroke-width="1.6"/>
+  <text x="498.0" y="112.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#15803d" text-anchor="middle">lacY (permease)</text>
+  <rect x="570.0" y="90.0" width="128.0" height="36.0" rx="5" fill="#ecfdf5" stroke="#15803d" stroke-width="1.6"/>
+  <text x="634.0" y="112.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#15803d" text-anchor="middle">lacA</text>
+  <text x="77.0" y="82.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="500" fill="#64748b" text-anchor="middle">trans repressor</text>
+  <text x="210.0" y="82.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="500" fill="#9f1239" text-anchor="middle">cis promoter/operator</text>
+  <rect x="24.0" y="152.0" width="712.0" height="38.0" rx="7" fill="#fff1f2" stroke="#e11d48" stroke-width="1.3"/>
+  <text x="42.0" y="175.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0f172a" text-anchor="start">Glucose HIGH</text>
+  <text x="168.0" y="175.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0f172a" text-anchor="start">Lactose ABSENT</text>
+  <text x="320.0" y="175.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="start">CAP off · LacI BOUND</text>
+  <rect x="562.0" y="158.0" width="158.0" height="26.0" rx="13.0" fill="#ffffff" stroke="#e11d48" stroke-width="1.2"/>
+  <text x="641.0" y="174.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#e11d48" text-anchor="middle">OFF (basal)</text>
+  <rect x="24.0" y="198.0" width="712.0" height="38.0" rx="7" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.3"/>
+  <text x="42.0" y="221.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0f172a" text-anchor="start">Glucose LOW</text>
+  <text x="168.0" y="221.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0f172a" text-anchor="start">Lactose ABSENT</text>
+  <text x="320.0" y="221.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="start">CAP bound · LacI BOUND</text>
+  <rect x="562.0" y="204.0" width="158.0" height="26.0" rx="13.0" fill="#ffffff" stroke="#c25e0a" stroke-width="1.2"/>
+  <text x="641.0" y="220.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#c25e0a" text-anchor="middle">OFF (repressed)</text>
+  <rect x="24.0" y="244.0" width="712.0" height="38.0" rx="7" fill="#eff6ff" stroke="#2563eb" stroke-width="1.3"/>
+  <text x="42.0" y="267.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0f172a" text-anchor="start">Glucose HIGH</text>
+  <text x="168.0" y="267.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0f172a" text-anchor="start">Lactose PRESENT</text>
+  <text x="320.0" y="267.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="start">CAP off · LacI released</text>
+  <rect x="562.0" y="250.0" width="158.0" height="26.0" rx="13.0" fill="#ffffff" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="641.0" y="266.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#2563eb" text-anchor="middle">LOW (weak Pol)</text>
+  <rect x="24.0" y="290.0" width="712.0" height="38.0" rx="7" fill="#ecfdf5" stroke="#15803d" stroke-width="1.3"/>
+  <text x="42.0" y="313.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0f172a" text-anchor="start">Glucose LOW</text>
+  <text x="168.0" y="313.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0f172a" text-anchor="start">Lactose PRESENT</text>
+  <text x="320.0" y="313.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="start">CAP–cAMP bound · LacI off</text>
+  <rect x="562.0" y="296.0" width="158.0" height="26.0" rx="13.0" fill="#ffffff" stroke="#15803d" stroke-width="1.2"/>
+  <text x="641.0" y="312.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#15803d" text-anchor="middle">HIGH (1000× ON!)</text>
+  <text x="380.0" y="350.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">Mutant check: Oᶜ (operator constitutive) acts strictly in cis; lacI⁻ acts in trans (rescued by a second lacI⁺ copy).</text>
+</svg>

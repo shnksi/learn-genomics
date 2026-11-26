@@ -31,6 +31,8 @@ That structure is not random, and the way this was established should be familia
 
 ## 2. Motifs are circuits, and you already know most of them
 
+![Core regulatory circuit motifs — negative autoregulation (speed and noise damping), toggle switch (bistable cell-fate memory), coherent feed-forward loop (persistence filter), and morphogen gradients reading concentration thresholds into sharp spatial boundaries.](../figures/fig-25-network-motifs.svg)
+
 ### Negative autoregulation: a speed and noise fix
 
 A gene whose product represses its own promoter. Over **40% of *E. coli* transcription factors** do this. Two consequences, both derivable.
@@ -108,6 +110,8 @@ The **oscillator** needs negative feedback plus delay plus nonlinearity. Elowitz
 ## 3. Waddington's landscape, and where it breaks
 
 Waddington drew development as a ball rolling down a surface of branching valleys: trajectories are valleys, decisions are ridges between them, and the shape of the surface is set by the genes — he drew guy-ropes underneath, pegged to genes, tensioning the sheet. It remains the most useful picture in the field.
+
+![Three-dimensional Waddington epigenetic landscape: a pluripotent stem cell at the summit rolls down bifurcating valleys carved by gene-regulatory network attractors into stable, terminally differentiated cell-fate basins.](../figures/art-25-waddington-landscape.png)
 
 Its limits are worth stating precisely, because it is frequently over-read:
 
@@ -202,6 +206,8 @@ What that demonstrates is the important part:
 ## 7. Signalling pathways: the intercellular layer
 
 Once cells are membrane-bounded, network state has to cross between them. Animal development uses a remarkably short list of pathways to do it — essentially the same handful, reused everywhere.
+
+![French-flag threshold decoding converting a continuous morphogen gradient into sharp gene-expression domains, paired with the four-step intercellular signalling architecture shared across Wnt, Hedgehog, Notch, BMP, and RTK/MAPK pathways.](../figures/fig-25b-morphogen-signaling.svg)
 
 | Pathway | Signal | Transduction, in one line | Typical developmental use |
 |---|---|---|---|

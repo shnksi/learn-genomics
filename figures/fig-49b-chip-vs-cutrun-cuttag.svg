@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 355" width="760" height="355" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="355.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">ChIP-seq vs. CUT&amp;RUN vs. CUT&amp;Tag: why tethered enzymes cut background noise</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Instead of shearing the whole genome and pulling down sticky fragments, tethered nucleases cut or tag ONLY where the TF sits</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="76.0" width="224.0" height="212.0" rx="8" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.4"/>
+  <text x="136.0" y="96.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#c25e0a" text-anchor="middle">ChIP-seq (classic)</text>
+  <text x="136.0" y="112.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">1. Crosslink whole genome</text>
+  <text x="136.0" y="126.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">2. Sonicate ALL DNA randomly</text>
+  <text x="136.0" y="140.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">3. Antibody pulldown + wash</text>
+  <text x="136.0" y="154.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">4. End-repair &amp; ligate adapters</text>
+  <text x="136.0" y="168.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">Needs 10⁶–10⁷ cells · noisy</text>
+  <text x="136.0" y="182.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">background (needs Input ctrl)</text>
+  <rect x="268.0" y="76.0" width="224.0" height="212.0" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.4"/>
+  <text x="380.0" y="96.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#2563eb" text-anchor="middle">CUT&amp;RUN (pA-MNase)</text>
+  <text x="380.0" y="112.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">1. Intact unfixed nuclei on beads</text>
+  <text x="380.0" y="126.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">2. Antibody binds target TF/mark</text>
+  <text x="380.0" y="140.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">3. Protein A–MNase docks + Ca²⁺</text>
+  <text x="380.0" y="154.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">4. Cuts ONLY local TF footprint!</text>
+  <text x="380.0" y="168.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">Needs 10³–10⁵ cells · 10× higher</text>
+  <text x="380.0" y="182.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">signal-to-noise · tiny reads</text>
+  <rect x="512.0" y="76.0" width="224.0" height="212.0" rx="8" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.4"/>
+  <text x="624.0" y="96.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0d8a7b" text-anchor="middle">CUT&amp;Tag (pA-Tn5)</text>
+  <text x="624.0" y="112.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">1. Intact nuclei + antibody</text>
+  <text x="624.0" y="126.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">2. Protein A–Tn5 transposase</text>
+  <text x="624.0" y="140.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">   pre-loaded with NGS adapters</text>
+  <text x="624.0" y="154.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">3. Mg²⁺ triggers direct cut+tag!</text>
+  <text x="624.0" y="168.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">Works down to SINGLE CELLS!</text>
+  <text x="624.0" y="182.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">Bias: slight open-chromatin pref.</text>
+  <rect x="24.0" y="302.0" width="712.0" height="36.0" rx="7" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="380.0" y="324.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="700" fill="#0f172a" text-anchor="middle">Core physics: keeping the genome intact and cutting ONLY at the bound antibody eliminates ~90% of off-target DNA reads.</text>
+</svg>

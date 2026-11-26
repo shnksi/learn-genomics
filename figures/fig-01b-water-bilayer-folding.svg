@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="360.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">The hydrophobic effect drives membranes and protein folding</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Water maximizes its H-bond network by excluding nonpolar chains into lipid bilayers and buried protein cores</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="348.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Amphipathic phospholipids self-assemble into a bilayer</text>
+  <text x="198.0" y="108.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1e40af" text-anchor="middle">Aqueous exterior (polar H₂O)</text>
+  <circle cx="58.0" cy="134.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 55 143 Q 51 162, 55 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 61 143 Q 65 162, 61 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="86.0" cy="134.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 83 143 Q 79 162, 83 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 89 143 Q 93 162, 89 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="114.0" cy="134.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 111 143 Q 107 162, 111 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 117 143 Q 121 162, 117 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="142.0" cy="134.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 139 143 Q 135 162, 139 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 145 143 Q 149 162, 145 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="170.0" cy="134.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 167 143 Q 163 162, 167 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 173 143 Q 177 162, 173 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="198.0" cy="134.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 195 143 Q 191 162, 195 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 201 143 Q 205 162, 201 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="226.0" cy="134.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 223 143 Q 219 162, 223 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 229 143 Q 233 162, 229 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="254.0" cy="134.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 251 143 Q 247 162, 251 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 257 143 Q 261 162, 257 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="282.0" cy="134.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 279 143 Q 275 162, 279 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 285 143 Q 289 162, 285 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="310.0" cy="134.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 307 143 Q 303 162, 307 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 313 143 Q 317 162, 313 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="338.0" cy="134.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 335 143 Q 331 162, 335 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 341 143 Q 345 162, 341 180" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="58.0" cy="240.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 55 231 Q 51 212, 55 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 61 231 Q 65 212, 61 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="86.0" cy="240.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 83 231 Q 79 212, 83 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 89 231 Q 93 212, 89 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="114.0" cy="240.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 111 231 Q 107 212, 111 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 117 231 Q 121 212, 117 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="142.0" cy="240.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 139 231 Q 135 212, 139 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 145 231 Q 149 212, 145 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="170.0" cy="240.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 167 231 Q 163 212, 167 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 173 231 Q 177 212, 173 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="198.0" cy="240.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 195 231 Q 191 212, 195 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 201 231 Q 205 212, 201 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="226.0" cy="240.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 223 231 Q 219 212, 223 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 229 231 Q 233 212, 229 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="254.0" cy="240.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 251 231 Q 247 212, 251 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 257 231 Q 261 212, 257 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="282.0" cy="240.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 279 231 Q 275 212, 279 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 285 231 Q 289 212, 285 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="310.0" cy="240.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 307 231 Q 303 212, 307 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 313 231 Q 317 212, 313 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="338.0" cy="240.0" r="9.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <path d="M 335 231 Q 331 212, 335 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 341 231 Q 345 212, 341 194" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="52.0" y="178.0" width="292.0" height="18.0" rx="4" fill="#fff3e5" stroke="none" stroke-width="1.2" opacity="0.7"/>
+  <text x="198.0" y="191.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#c25e0a" text-anchor="middle">Hydrophobic core (water excluded)</text>
+  <text x="198.0" y="272.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1e40af" text-anchor="middle">Aqueous cytosol (polar H₂O)</text>
+  <text x="198.0" y="298.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#334155" text-anchor="middle">Polar phosphate heads face water;</text>
+  <text x="198.0" y="312.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#334155" text-anchor="middle">nonpolar fatty-acid tails pack inside → selective barrier.</text>
+  <rect x="388.0" y="72.0" width="348.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="400.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Hydrophobic collapse folds a polypeptide in water</text>
+  <text x="562.0" y="108.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#64748b" text-anchor="middle">Unfolded chain (ordered water cages around nonpolar side chains)</text>
+  <path d="M 418 142 Q 454 114, 492 142 T 566 142 T 640 142 T 706 138" fill="none" stroke="#334155" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="436.0" cy="134.0" r="6.5" fill="#c25e0a" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="468.0" cy="128.0" r="6.5" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="506.0" cy="148.0" r="6.5" fill="#c25e0a" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="542.0" cy="146.0" r="6.5" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="578.0" cy="134.0" r="6.5" fill="#c25e0a" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="612.0" cy="142.0" r="6.5" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="648.0" cy="138.0" r="6.5" fill="#c25e0a" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="684.0" cy="142.0" r="6.5" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+  <line x1="562.0" y1="162.0" x2="562.0" y2="188.0" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arr-teal)"/>
+  <text x="632.0" y="178.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#085f55" text-anchor="start">ΔS(water) &gt; 0</text>
+  <circle cx="562.0" cy="242.0" r="46.0" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.8"/>
+  <circle cx="562.0" cy="242.0" r="24.0" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.4" opacity="0.9"/>
+  <circle cx="552.0" cy="236.0" r="5.5" fill="#c25e0a" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="568.0" cy="232.0" r="5.5" fill="#c25e0a" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="558.0" cy="248.0" r="5.5" fill="#c25e0a" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="572.0" cy="248.0" r="5.5" fill="#c25e0a" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="560.0" cy="239.0" r="5.5" fill="#c25e0a" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="602.0" cy="242.0" r="5.5" fill="#2563eb" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="590.3" cy="270.3" r="5.5" fill="#2563eb" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="562.0" cy="282.0" r="5.5" fill="#2563eb" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="533.7" cy="270.3" r="5.5" fill="#2563eb" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="522.0" cy="242.0" r="5.5" fill="#2563eb" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="533.7" cy="213.7" r="5.5" fill="#2563eb" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="562.0" cy="202.0" r="5.5" fill="#2563eb" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="590.3" cy="213.7" r="5.5" fill="#2563eb" stroke="#ffffff" stroke-width="1"/>
+  <text x="448.0" y="238.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="700" fill="#1e40af" text-anchor="middle">Polar shell</text>
+  <text x="448.0" y="252.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="500" fill="#334155" text-anchor="middle">(faces H₂O)</text>
+  <text x="674.0" y="238.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="700" fill="#c25e0a" text-anchor="middle">Hydrophobic</text>
+  <text x="674.0" y="252.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="500" fill="#334155" text-anchor="middle">buried core</text>
+  <text x="562.0" y="314.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="600" fill="#085f55" text-anchor="middle">Same driving force builds both membranes and folded proteins.</text>
+</svg>

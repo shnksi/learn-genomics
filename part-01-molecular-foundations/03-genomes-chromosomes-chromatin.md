@@ -30,6 +30,8 @@ Everything in this chapter follows from those three. The packaging is hierarchic
 
 Start with the numbers, because the standard framing ("2 m into 6 μm!") points at the wrong difficulty.
 
+![Compaction of ~2 metres of human nuclear DNA into a ~10 µm nucleus — from naked 2 nm B-DNA and 147 bp nucleosomes to irregular chromatin fibres, cohesin-extruded TAD loops, euchromatin/heterochromatin compartments, and mitotic chromosomes — alongside the compositional breakdown of the human genome.](../figures/fig-03-chromatin-hierarchy.svg)
+
 A diploid human cell holds 6.2 × 10⁹ bp. B-form DNA rises 0.34 nm per base pair, so the contour length is
 
 ```
@@ -63,6 +65,8 @@ The third constraint sets the extreme. At metaphase, chromosome 1 becomes a rod 
 ## 2. The nucleosome
 
 The first level of packaging is a spool.
+
+![Three-dimensional structure of the eukaryotic nucleosome core particle: ~147 bp of double-stranded DNA wrapped 1.65 left-handed turns around the eight-subunit histone octamer (pairs of H2A, H2B, H3, and H4) with flexible N-terminal histone tails protruding outward carrying epigenetic modifications.](../figures/art-03-nucleosome-octamer.png)
 
 An octamer of **histone** proteins — two copies each of **H2A, H2B, H3 and H4**, assembled as one (H3·H4)₂ tetramer flanked by two H2A·H2B dimers — forms a squat disc about 11 nm across and 5.5 nm high. **147 bp of DNA wraps around it in ~1.65 left-handed superhelical turns.** That unit is the nucleosome core particle, and it is the most abundant protein–DNA complex on Earth.
 
@@ -132,6 +136,8 @@ Loop extrusion is worth naming now because it recurs: the cohesin complex grabs 
 ## 4. Chromosome anatomy and the karyotype
 
 A linear chromosome needs exactly three kinds of functional element to persist through division: **origins of replication** (start copying here), a **centromere** (a handle to pull on), and **telomeres** (ends that are not breaks). Supply those three to a piece of yeast DNA and it behaves as a chromosome; omit any one and it is lost.
+
+![Replicated metaphase chromosome anatomy (sister chromatids, p and q arms, centromere, telomeres, and G-bands), centromere classifications, and decoding cytogenetic coordinates such as 5q32 (the *PPP2R2B* locus).](../figures/fig-03b-chromosome-anatomy.svg)
 
 **Centromere.** Visible as the primary constriction; the site where the kinetochore assembles and spindle microtubules attach ([Ch 09](../part-02-transmission-genetics/09-mitosis-and-meiosis.md)). Human centromeres are built on **alpha satellite** DNA: a 171 bp monomer, monomers grouped into chromosome-specific higher-order repeats, and those tandemly reiterated into arrays spanning roughly 0.1–5 Mb.
 

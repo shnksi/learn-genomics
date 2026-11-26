@@ -68,6 +68,8 @@ people, every biallelic SNV in a 1 Mb region. Note the deliberate choice of file
 has already been Hardy–Weinberg-filtered at p < 10⁻⁶, so testing HWE on it would be circular.
 The raw VCF has not, and it needs no external tools to read.
 
+![Null (*H*₀) and alternative (*H*₁) sampling distributions displaying Type I error (*α*), Type II error (*β*), and statistical power (1 − *β*) as complementary areas divided by the critical threshold.](../figures/fig-S4-hypothesis-errors.svg)
+
 ```bash
 cd /path/to/learn-genomics   # the directory holding README.md and .venv
 source .venv/bin/activate

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="360.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Cancer as somatic Darwinian evolution: clonal fishplot and Knudson&#x27;s two-hit model</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Tumors evolve through sequential driver mutations, branching subclones, and therapy-selected resistant relapse</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="712.0" height="162.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Clonal evolution from normal cell → primary tumor → drug bottleneck → resistant relapse</text>
+  <polygon points="48.0,162.0 160.0,120.0 380.0,106.0 480.0,156.0 706.0,114.0 706.0,212.0 480.0,174.0 380.0,216.0 160.0,204.0 48.0,168.0" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="200.0,134.0 380.0,118.0 445.0,160.0 380.0,170.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5" stroke-linejoin="round"/>
+  <polygon points="300.0,186.0 380.0,198.0 480.0,168.0 706.0,126.0 706.0,206.0 480.0,174.0" fill="#fff1f2" stroke="#e11d48" stroke-width="1.8" stroke-linejoin="round"/>
+  <line x1="480.0" y1="114.0" x2="480.0" y2="224.0" stroke="#c25e0a" stroke-width="2" stroke-linecap="round" stroke-dasharray="4,3"/>
+  <text x="480.0" y="108.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#c25e0a" text-anchor="middle">Targeted therapy</text>
+  <text x="124.0" y="162.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="middle">Driver 1</text>
+  <text x="124.0" y="174.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="middle">(trunk)</text>
+  <text x="320.0" y="148.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="700" fill="#1e40af" text-anchor="middle">Sensitive subclone</text>
+  <text x="606.0" y="172.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#9f1239" text-anchor="middle">Resistant clone expands</text>
+  <rect x="24.0" y="248.0" width="344.0" height="92.0" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.4"/>
+  <text x="196.0" y="268.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#1e40af" text-anchor="middle">Tumor suppressors (Knudson two-hit)</text>
+  <text x="196.0" y="284.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#334155" text-anchor="middle">Need BOTH copies knocked out (recessive at cell level).</text>
+  <text x="196.0" y="298.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#334155" text-anchor="middle">Hereditary (RB1, BRCA1): born with Hit 1 → early onset.</text>
+  <text x="196.0" y="312.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#334155" text-anchor="middle">Sporadic: needs two independent somatic hits → late onset.</text>
+  <rect x="392.0" y="248.0" width="344.0" height="92.0" rx="8" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.4"/>
+  <text x="564.0" y="268.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#c25e0a" text-anchor="middle">Oncogenes (single-hit gain of function)</text>
+  <text x="564.0" y="284.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#334155" text-anchor="middle">One activating mutation (e.g. KRAS G12D, BRAF V600E)</text>
+  <text x="564.0" y="298.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#334155" text-anchor="middle">locks signaling ON — dominant at the cellular level.</text>
+  <text x="564.0" y="312.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#334155" text-anchor="middle">Most mutations in a tumor (&gt;95%) are neutral passengers!</text>
+</svg>

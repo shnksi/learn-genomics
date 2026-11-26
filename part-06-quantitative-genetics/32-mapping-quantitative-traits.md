@@ -171,6 +171,8 @@ hypothetical QTL along the interval between two flanking markers, at every posit
 computing the conditional distribution of the unobserved QTL genotype given the observed
 flanking marker genotypes and the two recombination fractions *r*₁, *r*₂ that *z* implies.
 
+![Quantitative trait locus (QTL) interval mapping LOD profile across a chromosome with a permutation-derived genome-wide threshold, plus the contrast between wide F₂ linkage intervals and fine GWAS LD resolution.](../figures/fig-32-qtl-mapping.svg)
+
 > **Statistics:** likelihood, maximum likelihood, and the likelihood-ratio scale that a LOD score
 > reports are covered in [S6](../part-S-statistics/S6-likelihood-and-bayes.md) §§3–4.
 

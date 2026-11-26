@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="360.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">High-dimensional genomics: Benjamini–Hochberg FDR and geometric PCA</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">BH controls expected false discovery proportion across thousands of genes; PCA rotates onto orthogonal maximum-variance axes</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="344.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Benjamini–Hochberg (FDR q = 0.10) vs. Bonferroni</text>
+  <line x1="68.0" y1="120.0" x2="68.0" y2="286.0" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="68.0" y1="286.0" x2="346.0" y2="286.0" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="68.0" y1="286.0" x2="68.0" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="68.0" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">1</text>
+  <line x1="207.0" y1="286.0" x2="207.0" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="207.0" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">10</text>
+  <line x1="346.0" y1="286.0" x2="346.0" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="346.0" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">20</text>
+  <line x1="63.0" y1="286.0" x2="68.0" y2="286.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="69.0" y1="286.0" x2="346.0" y2="286.0" stroke="#e2e8f0" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="60.0" y="289.5" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">0</text>
+  <line x1="63.0" y1="203.0" x2="68.0" y2="203.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="69.0" y1="203.0" x2="346.0" y2="203.0" stroke="#e2e8f0" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="60.0" y="206.5" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">0.05</text>
+  <line x1="63.0" y1="120.0" x2="68.0" y2="120.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="69.0" y1="120.0" x2="346.0" y2="120.0" stroke="#e2e8f0" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="60.0" y="123.5" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">0.10</text>
+  <text x="207.0" y="320.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">Sorted rank i (out of m = 20 tests)</text>
+  <text x="32.0" y="203.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle" transform="rotate(-90 32.0 203.0)">p-value</text>
+  <line x1="68.0" y1="286.0" x2="346.0" y2="120.0" stroke="#0d8a7b" stroke-width="2.0" stroke-linecap="round" stroke-dasharray="5,3"/>
+  <text x="340.0" y="134.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="700" fill="#085f55" text-anchor="end">BH line (i/m)·q</text>
+  <line x1="68.0" y1="281.9" x2="346.0" y2="281.9" stroke="#e11d48" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="340.0" y="276.9" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#9f1239" text-anchor="end">Bonferroni (α/m)</text>
+  <circle cx="68.0" cy="284.3" r="3.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <circle cx="82.6" cy="282.7" r="3.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <circle cx="97.3" cy="272.7" r="3.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <circle cx="111.9" cy="262.8" r="3.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <circle cx="126.5" cy="251.1" r="3.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <circle cx="141.2" cy="239.5" r="3.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <circle cx="155.8" cy="213.0" r="3.8" fill="#64748b" stroke="none" stroke-width="1.5"/>
+  <circle cx="170.4" cy="199.7" r="3.8" fill="#64748b" stroke="none" stroke-width="1.5"/>
+  <circle cx="185.1" cy="184.7" r="3.8" fill="#64748b" stroke="none" stroke-width="1.5"/>
+  <circle cx="199.7" cy="166.5" r="3.8" fill="#64748b" stroke="none" stroke-width="1.5"/>
+  <circle cx="214.3" cy="148.2" r="3.8" fill="#64748b" stroke="none" stroke-width="1.5"/>
+  <circle cx="228.9" cy="128.3" r="3.8" fill="#64748b" stroke="none" stroke-width="1.5"/>
+  <text x="150.0" y="189.7" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="700" fill="#085f55" text-anchor="start">6 BH discoveries</text>
+  <text x="150.0" y="201.7" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="700" fill="#085f55" text-anchor="start">(only 2 pass Bonf.)</text>
+  <rect x="392.0" y="72.0" width="344.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="404.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">PCA: rotating correlated axes onto orthogonal PC1 &amp; PC2</text>
+  <line x1="430.0" y1="212.0" x2="700.0" y2="212.0" stroke="#cbd5e1" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="564.0" y1="114.0" x2="564.0" y2="310.0" stroke="#cbd5e1" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="498.9" cy="255.7" r="3.8" fill="#2563eb" stroke="none" stroke-width="1.5" opacity="0.75"/>
+  <circle cx="503.6" cy="230.5" r="3.8" fill="#2563eb" stroke="none" stroke-width="1.5" opacity="0.75"/>
+  <circle cx="530.0" cy="246.0" r="3.8" fill="#2563eb" stroke="none" stroke-width="1.5" opacity="0.75"/>
+  <circle cx="532.9" cy="221.7" r="3.8" fill="#2563eb" stroke="none" stroke-width="1.5" opacity="0.75"/>
+  <circle cx="552.8" cy="229.3" r="3.8" fill="#2563eb" stroke="none" stroke-width="1.5" opacity="0.75"/>
+  <circle cx="553.9" cy="201.5" r="3.8" fill="#2563eb" stroke="none" stroke-width="1.5" opacity="0.75"/>
+  <circle cx="580.2" cy="217.0" r="3.8" fill="#2563eb" stroke="none" stroke-width="1.5" opacity="0.75"/>
+  <circle cx="583.2" cy="192.7" r="3.8" fill="#2563eb" stroke="none" stroke-width="1.5" opacity="0.75"/>
+  <circle cx="603.9" cy="197.6" r="3.8" fill="#2563eb" stroke="none" stroke-width="1.5" opacity="0.75"/>
+  <circle cx="607.8" cy="175.1" r="3.8" fill="#2563eb" stroke="none" stroke-width="1.5" opacity="0.75"/>
+  <circle cx="631.3" cy="185.3" r="3.8" fill="#2563eb" stroke="none" stroke-width="1.5" opacity="0.75"/>
+  <circle cx="636.3" cy="169.0" r="3.8" fill="#2563eb" stroke="none" stroke-width="1.5" opacity="0.75"/>
+  <circle cx="536.1" cy="206.4" r="3.8" fill="#2563eb" stroke="none" stroke-width="1.5" opacity="0.75"/>
+  <circle cx="602.5" cy="211.9" r="3.8" fill="#2563eb" stroke="none" stroke-width="1.5" opacity="0.75"/>
+  <line x1="482.8" y1="255.2" x2="655.8" y2="163.2" stroke="#0d8a7b" stroke-width="2.4" stroke-linecap="round" marker-end="url(#arr-teal)"/>
+  <line x1="583.7" y1="249.1" x2="540.5" y2="167.9" stroke="#c25e0a" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arr-amber)"/>
+  <text x="652.3" y="157.1" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="700" fill="#085f55" text-anchor="middle">PC1 (max variance)</text>
+  <text x="537.7" y="158.6" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="700" fill="#c25e0a" text-anchor="end">PC2 ⊥ PC1</text>
+  <text x="564.0" y="326.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">PC1 captures ancestry in GWAS or cell type in scRNA-seq.</text>
+</svg>

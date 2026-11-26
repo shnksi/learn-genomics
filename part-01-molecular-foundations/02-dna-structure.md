@@ -29,6 +29,8 @@ The double helix is not a static ladder. It is a stressed, flexible, locally bre
 
 A **nucleotide** has three parts: a nitrogenous base, a five-carbon sugar, and a phosphate.
 
+![Numbered deoxyribonucleotide monomer (1′–5′ ring carbons, 5′-phosphate, reactive 3′-OH nucleophile, and the 2′-H versus 2′-OH difference separating stable DNA from reactive RNA) alongside two-ring purines (A, G) and single-ring pyrimidines (C, T, U).](../figures/fig-02b-nucleotide-monomer.svg)
+
 The **sugar** is 2'-deoxyribose. Its carbons are numbered 1' to 5' — primed, so they never collide with the numbering of the base's ring atoms. Three positions matter:
 
 | Position | What is attached | Why you care |
@@ -50,6 +52,8 @@ Thymine is uracil with a methyl group at position 5. That methyl is not decorati
 ## 2. The polymer: why direction is chemistry, not convention
 
 Nucleotides link through **phosphodiester bonds**: one phosphate bridges the 3'-OH of one sugar and the 5'-OH of the next.
+
+![Antiparallel DNA polarity (5′→3′ versus 3′→5′) and Watson–Crick base-pair geometry: every purine–pyrimidine pair (A=T with two hydrogen bonds, G≡C with three) spans an identical ~10.8 Å C1′–C1′ width to maintain a uniform helix.](../figures/fig-02-dna-polarity-pairing.svg)
 
 ```
  5' end
@@ -120,6 +124,8 @@ GC-rich DNA melts at a higher temperature not because of the third hydrogen bond
 
 Because the two glycosidic bonds emerge from the same side of each base pair rather than diametrically opposite, the backbones are unevenly spaced around the helix. B-DNA therefore has a **major groove** (~22 Å wide, ~8.5 Å deep) and a **minor groove** (~12 Å wide, ~7.5 Å deep).
 
+![Three-dimensional B-form DNA double helix illustrating the antiparallel sugar-phosphate backbones (slate and amber ribbons), planar nitrogenous base pairs stacked inside the hydrophobic core, and alternating wide major and narrow minor grooves.](../figures/art-02-dna-helix.png)
+
 This is not cosmetic. The edges of the bases are exposed in both grooves, and a protein can hydrogen-bond to them without melting the duplex. But only one groove carries enough information. Writing D = donor, A = acceptor, M = methyl, H = non-polar hydrogen, reading across each pair:
 
 ```
@@ -143,6 +149,8 @@ The minor groove cannot tell A·T from T·A, or G·C from C·G. The major groove
 ## 6. B, A and Z
 
 B-DNA is the physiological form. It is not the only one.
+
+![Helical conformations of B-DNA, A-DNA (and dsRNA), and left-handed Z-DNA, paired with the four-character major-groove hydrogen-bond code (donor/acceptor/methyl pattern) that distinguishes every base pair without opening the duplex.](../figures/fig-02c-dna-forms-grooves.svg)
 
 | | **B-DNA** | **A-DNA** | **Z-DNA** |
 |---|---|---|---|
@@ -186,6 +194,8 @@ Test it. **5'-GCGCATATGC-3'** and **5'-GACTGACTGC-3'** share a composition (3 G,
 ## 8. Topology: DNA is a closed object
 
 Take a circular double helix — a plasmid, a bacterial chromosome, or a eukaryotic chromatin loop anchored at both ends. Its **linking number** `Lk`, the number of times one strand passes through the closed loop formed by the other, is an integer and cannot change without breaking a strand.
+
+![DNA supercoiling topology (*Lk* = *Tw* + *Wr*) regulated by topoisomerases I and II, plus four biologically critical non-B DNA structures formed at repeats: hairpins/cruciforms, G-quadruplexes, slipped CAG hairpins, and R-loops.](../figures/fig-02d-dna-topology-nonb.svg)
 
 ```
   Lk  =  Tw  +  Wr

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 355" width="760" height="355" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="355.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Spliceosome chemistry: two transesterifications and the intron lariat</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Because every broken phosphodiester bond is exchanged 1-for-1 for a new one, the chemistry itself costs zero net ATP</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="224.0" height="262.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Step 1: 2′-OH attacks 5′ splice site</text>
+  <rect x="40.0" y="146.0" width="54.0" height="24.0" rx="4" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.6"/>
+  <text x="67.0" y="162.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="middle">Exon 1</text>
+  <line x1="94.0" y1="158.0" x2="178.0" y2="158.0" stroke="#334155" stroke-width="2.4" stroke-linecap="round"/>
+  <rect x="178.0" y="146.0" width="54.0" height="24.0" rx="4" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="205.0" y="162.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#1e40af" text-anchor="middle">Exon 2</text>
+  <text x="104.0" y="148.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700" fill="#e11d48" text-anchor="start">GU</text>
+  <text x="162.0" y="148.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700" fill="#e11d48" text-anchor="start">AG</text>
+  <circle cx="144.0" cy="158.0" r="10.0" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.6"/>
+  <text x="144.0" y="161.5" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#c25e0a" text-anchor="middle">A</text>
+  <text x="144.0" y="184.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700" fill="#c25e0a" text-anchor="middle">2′-OH</text>
+  <path d="M 138 172 Q 116 206, 98 168" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr-amber)"/>
+  <text x="136.0" y="232.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">Branch-point adenine&#x27;s 2′-OH</text>
+  <text x="136.0" y="247.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">attacks the 5′ GU phosphate,</text>
+  <text x="136.0" y="262.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">cleaving Exon 1 and forming</text>
+  <text x="136.0" y="277.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">a 2′–5′ lariat bond.</text>
+  <rect x="268.0" y="72.0" width="224.0" height="262.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="280.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Step 2: Exon 1 attacks 3′ splice site</text>
+  <rect x="284.0" y="154.0" width="54.0" height="24.0" rx="4" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.6"/>
+  <text x="311.0" y="170.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="middle">Exon 1</text>
+  <text x="348.0" y="170.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700" fill="#085f55" text-anchor="start">3′-OH</text>
+  <circle cx="394.0" cy="134.0" r="20.0" fill="none" stroke="#c25e0a" stroke-width="2.2"/>
+  <line x1="394.0" y1="154.0" x2="424.0" y2="166.0" stroke="#c25e0a" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="394.0" y="137.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.8" font-weight="700" fill="#c25e0a" text-anchor="middle">Lariat</text>
+  <rect x="424.0" y="154.0" width="54.0" height="24.0" rx="4" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="451.0" y="170.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#1e40af" text-anchor="middle">Exon 2</text>
+  <path d="M 358 178 Q 390 206, 422 174" fill="none" stroke="#0d8a7b" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr-teal)"/>
+  <text x="380.0" y="232.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">Free 3′-OH of Exon 1 attacks</text>
+  <text x="380.0" y="247.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">the 3′ AG splice junction,</text>
+  <text x="380.0" y="262.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">covalently ligating Exon 1</text>
+  <text x="380.0" y="277.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">directly onto Exon 2.</text>
+  <rect x="512.0" y="72.0" width="224.0" height="262.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="524.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Products: Mature mRNA + Lariat</text>
+  <rect x="544.0" y="132.0" width="72.0" height="26.0" rx="4" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.8"/>
+  <text x="580.0" y="149.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#085f55" text-anchor="middle">Exon 1</text>
+  <rect x="616.0" y="132.0" width="72.0" height="26.0" rx="4" fill="#eff6ff" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="652.0" y="149.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1e40af" text-anchor="middle">Exon 2</text>
+  <text x="624.0" y="174.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="700" fill="#085f55" text-anchor="middle">Seamless coding junction</text>
+  <circle cx="608.0" cy="210.0" r="18.0" fill="#fff3e5" stroke="#c25e0a" stroke-width="2"/>
+  <line x1="626.0" y1="210.0" x2="666.0" y2="210.0" stroke="#c25e0a" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="624.0" y="244.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#c25e0a" text-anchor="middle">Excised intron lariat (degraded)</text>
+  <text x="624.0" y="276.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">ATP is spent ONLY by RNA</text>
+  <text x="624.0" y="291.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">helicases for proofreading and</text>
+  <text x="624.0" y="306.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">spliceosome remodelling.</text>
+</svg>

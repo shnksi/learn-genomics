@@ -93,6 +93,8 @@ parents' genotypes — which is §6, and a different thing entirely.
 
 The setup, which is the part worth being pedantic about:
 
+![Chi-square goodness-of-fit distributions for df = 1, 2, and 3 showing the α = 0.05 rejection threshold alongside a worked 3:1 monohybrid test contrasting observed counts against Mendelian expectation.](../figures/fig-12-chi-square-testing.svg)
+
 ```mermaid
 graph TD
     H["<b>Genetic hypothesis</b><br/>e.g. two unlinked loci,<br/>both fully dominant"]

@@ -83,6 +83,8 @@ That sentence is the whole of §6, and the whole of SCA12's leading hypothesis. 
 
 ## 3. PP2A: one name, sixty to a hundred possible holoenzymes
 
+![Structure of the heterotrimeric PP2A holoenzyme: the horseshoe-shaped HEAT-repeat scaffold subunit A (slate blue), the globular catalytic subunit C (amber) housing two active-site metal ions, and the seven-bladed β-propeller regulatory subunit B55β encoded by *PPP2R2B* (teal), which governs substrate specificity and subcellular targeting.](../figures/art-D2-pp2a-holoenzyme.png)
+
 ### 3.1 The heterotrimer
 
 PP2A is not an enzyme. PP2A is a *family of heterotrimers* assembled from three kinds of subunit:
@@ -143,6 +145,8 @@ It also explains why the okadaic-acid literature is less useful than it looks. O
 ---
 
 ## 4. *PPP2R2B* and its two isoforms
+
+![Combinatorial specificity of the PP2A heterotrimer (A + C + swappable B regulatory subunits) and the two alternative N-terminal isoforms encoded by *PPP2R2B*: cytoplasmic Bβ1 versus mitochondrially targeted Bβ2 regulating Drp1-mediated fission.](../figures/fig-D2-pp2a-switch.svg)
 
 ### 4.1 The gene
 
@@ -305,6 +309,8 @@ So here is the candidate list for what a B55β holoenzyme does in a neuron, each
 ## 6. Why dosage of a regulatory subunit is dangerous
 
 This is the load-bearing section. SCA12's leading hypothesis *assumes* that an expanded CAG tract acting as a *cis* element raises *PPP2R2B* transcription, raising B55β protein, and holds that *more of a PP2A regulatory subunit is pathogenic*. Whether that is plausible depends entirely on an argument we can now build — and on two assumptions we should expose rather than smuggle: that the rise is real and in that direction (§6.3), and that the A–C core is the scarce resource (§6.3 again).
+
+![PP2A holoenzyme subunit competition: because ~20 regulatory B subunits compete for the same finite pool of A–C core dimers, overexpressing *PPP2R2B* (B55β/Bβ2) simultaneously drives excess activity on its own substrates while starving rival B55α and B56 holoenzymes.](../figures/fig-D2b-pp2a-subunit-competition.svg)
 
 ### 6.1 The argument, in four steps
 

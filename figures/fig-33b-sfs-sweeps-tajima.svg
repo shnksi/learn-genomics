@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="360.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Site Frequency Spectrum (SFS), Tajima&#x27;s D, and selective sweeps</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Selection and demography leave distinct footprints in allele frequencies and local heterozygosity along a chromosome</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="224.0" height="148.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Neutral (Tajima&#x27;s D ≈ 0)</text>
+  <line x1="40.0" y1="184.0" x2="232.0" y2="184.0" stroke="#334155" stroke-width="1.3" stroke-linecap="round"/>
+  <rect x="46.0" y="115.6" width="24.7" height="68.4" rx="3" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.4"/>
+  <rect x="75.7" y="149.4" width="24.7" height="34.6" rx="3" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.4"/>
+  <rect x="105.3" y="161.0" width="24.7" height="23.0" rx="3" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.4"/>
+  <rect x="135.0" y="166.7" width="24.7" height="17.3" rx="3" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.4"/>
+  <rect x="164.7" y="170.3" width="24.7" height="13.7" rx="3" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.4"/>
+  <rect x="194.3" y="172.5" width="24.7" height="11.5" rx="3" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.4"/>
+  <text x="136.0" y="206.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#0d8a7b" text-anchor="middle">1/i singleton decay</text>
+  <rect x="268.0" y="72.0" width="224.0" height="148.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="280.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Sweep / Growth (D &lt; 0)</text>
+  <line x1="284.0" y1="184.0" x2="476.0" y2="184.0" stroke="#334155" stroke-width="1.3" stroke-linecap="round"/>
+  <rect x="290.0" y="112.0" width="24.7" height="72.0" rx="3" fill="#fff1f2" stroke="#e11d48" stroke-width="1.4"/>
+  <rect x="319.7" y="169.6" width="24.7" height="14.4" rx="3" fill="#fff1f2" stroke="#e11d48" stroke-width="1.4"/>
+  <rect x="349.3" y="176.8" width="24.7" height="7.2" rx="3" fill="#fff1f2" stroke="#e11d48" stroke-width="1.4"/>
+  <rect x="379.0" y="179.7" width="24.7" height="4.3" rx="3" fill="#fff1f2" stroke="#e11d48" stroke-width="1.4"/>
+  <rect x="408.7" y="181.1" width="24.7" height="2.9" rx="3" fill="#fff1f2" stroke="#e11d48" stroke-width="1.4"/>
+  <rect x="438.3" y="181.8" width="24.7" height="2.2" rx="3" fill="#fff1f2" stroke="#e11d48" stroke-width="1.4"/>
+  <text x="380.0" y="206.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#e11d48" text-anchor="middle">Excess rare singletons!</text>
+  <rect x="512.0" y="72.0" width="224.0" height="148.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="524.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Balancing / Bottleneck (D &gt; 0)</text>
+  <line x1="528.0" y1="184.0" x2="720.0" y2="184.0" stroke="#334155" stroke-width="1.3" stroke-linecap="round"/>
+  <rect x="534.0" y="161.0" width="24.7" height="23.0" rx="3" fill="#eff6ff" stroke="#2563eb" stroke-width="1.4"/>
+  <rect x="563.7" y="153.8" width="24.7" height="30.2" rx="3" fill="#eff6ff" stroke="#2563eb" stroke-width="1.4"/>
+  <rect x="593.3" y="132.2" width="24.7" height="51.8" rx="3" fill="#eff6ff" stroke="#2563eb" stroke-width="1.4"/>
+  <rect x="623.0" y="129.3" width="24.7" height="54.7" rx="3" fill="#eff6ff" stroke="#2563eb" stroke-width="1.4"/>
+  <rect x="652.7" y="151.6" width="24.7" height="32.4" rx="3" fill="#eff6ff" stroke="#2563eb" stroke-width="1.4"/>
+  <rect x="682.3" y="162.4" width="24.7" height="21.6" rx="3" fill="#eff6ff" stroke="#2563eb" stroke-width="1.4"/>
+  <text x="624.0" y="206.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#2563eb" text-anchor="middle">Excess intermediate alleles</text>
+  <rect x="24.0" y="232.0" width="712.0" height="114.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="252.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Genetic hitchhiking: a hard selective sweep carves a trough of zero diversity around the selected site</text>
+  <line x1="64.0" y1="326.0" x2="700.0" y2="326.0" stroke="#334155" stroke-width="1.3" stroke-linecap="round"/>
+  <line x1="64.0" y1="270.0" x2="64.0" y2="326.0" stroke="#334155" stroke-width="1.3" stroke-linecap="round"/>
+  <text x="44.0" y="298.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">π</text>
+  <polyline points="64.0,276.7 70.4,276.7 76.7,276.7 83.1,276.7 89.4,276.7 95.8,276.7 102.2,276.7 108.5,276.7 114.9,276.7 121.2,276.7 127.6,276.7 134.0,276.7 140.3,276.7 146.7,276.7 153.0,276.7 159.4,276.7 165.8,276.7 172.1,276.8 178.5,276.8 184.8,276.8 191.2,276.9 197.6,276.9 203.9,277.0 210.3,277.2 216.6,277.3 223.0,277.6 229.4,277.9 235.7,278.3 242.1,278.8 248.4,279.5 254.8,280.3 261.2,281.3 267.5,282.5 273.9,284.0 280.2,285.7 286.6,287.7 293.0,289.9 299.3,292.4 305.7,295.2 312.0,298.1 318.4,301.1 324.8,304.3 331.1,307.5 337.5,310.6 343.8,313.5 350.2,316.2 356.6,318.5 362.9,320.5 369.3,321.9 375.6,322.7 382.0,323.0 388.4,322.7 394.7,321.9 401.1,320.5 407.4,318.5 413.8,316.2 420.2,313.5 426.5,310.6 432.9,307.5 439.2,304.3 445.6,301.1 452.0,298.1 458.3,295.2 464.7,292.4 471.0,289.9 477.4,287.7 483.8,285.7 490.1,284.0 496.5,282.5 502.8,281.3 509.2,280.3 515.6,279.5 521.9,278.8 528.3,278.3 534.6,277.9 541.0,277.6 547.4,277.3 553.7,277.2 560.1,277.0 566.4,276.9 572.8,276.9 579.2,276.8 585.5,276.8 591.9,276.8 598.2,276.7 604.6,276.7 611.0,276.7 617.3,276.7 623.7,276.7 630.0,276.7 636.4,276.7 642.8,276.7 649.1,276.7 655.5,276.7 661.8,276.7 668.2,276.7 674.6,276.7 680.9,276.7 687.3,276.7 693.6,276.7 700.0,276.7" fill="none" stroke="#0d8a7b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="382.0" cy="323.2" r="5.5" fill="#e11d48" stroke="none" stroke-width="1.5"/>
+  <text x="382.0" y="285.7" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#9f1239" text-anchor="middle">Beneficial mutation sweeps → drags linked neutral variants to fixation</text>
+  <text x="134.0" y="272.2" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.8" font-weight="500" fill="#085f55" text-anchor="start">Normal background π</text>
+  <text x="690.0" y="339.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.8" font-weight="500" fill="#64748b" text-anchor="end">Genomic position (recombination restores π away from sweep)</text>
+</svg>

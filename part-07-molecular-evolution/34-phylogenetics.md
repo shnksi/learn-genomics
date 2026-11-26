@@ -118,6 +118,8 @@ Two sequences are **homologous** if they descend from a common ancestral sequenc
 is binary — there is no "70% homologous"; you mean 70% *identical*. Homologs come in two
 kinds, distinguished by the event at their common ancestor:
 
+![Rooted phylogenetic tree anatomy (taxa, internal nodes, clades, and outgroup) paired with a gene tree showing how speciation creates orthologs while gene duplication creates paralogs.](../figures/fig-34-phylogenetics.svg)
+
 | | Divergence event | What the gene tree records |
 |---|---|---|
 | **Orthologs** | Speciation | The history of the *species* |

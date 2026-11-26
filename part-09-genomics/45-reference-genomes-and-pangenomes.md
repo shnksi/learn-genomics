@@ -130,6 +130,8 @@ Now the part that is not merely technical. **The magnitude of the bias scales wi
 
 The pangenome move is to stop choosing. Represent many haplotypes at once, collapsing what they share and branching where they differ.
 
+![From a single linear reference (causing reference-allele mapping bias and missing population insertions) to a pangenome variation graph encoding SNPs, structural insertions, and multi-haplotype paths across diverse ancestries.](../figures/fig-45-pangenome-graph.svg)
+
 **A variation graph** is a directed graph in which nodes carry sequence, edges carry adjacency, and **paths (or walks) are haplotypes**. A position is not an integer but an address: `(node, offset, orientation)`.
 
 ```mermaid

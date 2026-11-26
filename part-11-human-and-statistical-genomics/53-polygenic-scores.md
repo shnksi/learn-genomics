@@ -222,6 +222,8 @@ a score built from common variants cannot explain more variance than common vari
 Well-powered traits now reach roughly 60–80% of that ceiling in the ancestry they were
 trained in.
 
+![Polygenic risk score (PRS) distributions showing why case and control bell curves substantially overlap despite strong odds ratios in the tails, alongside the steep drop in transferability across non-training genetic ancestries.](../figures/fig-53-polygenic-scores.svg)
+
 For a disease, use the liability-threshold model. Let $S$ be the standardised score and
 $\rho^2$ the fraction of **liability** variance it explains, so $L = \rho S + \sqrt{1-\rho^2}\,U$
 with $U \sim \mathcal{N}(0,1)$ independent. With prevalence $K$, threshold $T = \Phi^{-1}(1-K)$,

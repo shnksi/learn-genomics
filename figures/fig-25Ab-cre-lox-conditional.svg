@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="360.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Conditional knockouts with Cre-loxP: bypassing embryonic lethality</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Crossing a &#x27;floxed&#x27; gene line with a tissue-specific or tamoxifen-inducible Cre line deletes the gene only in one organ or age</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="344.0" height="108.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Line 1: &#x27;Floxed&#x27; target gene (normal everywhere)</text>
+  <line x1="48.0" y1="134.0" x2="344.0" y2="134.0" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round"/>
+  <rect x="64.0" y="122.0" width="46.0" height="24.0" rx="4" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.5"/>
+  <text x="87.0" y="138.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#085f55" text-anchor="middle">Ex 1</text>
+  <polygon points="126.0,124.0 126.0,144.0 144.0,134.0" fill="#e11d48" stroke="#e11d48" stroke-width="1" stroke-linejoin="round"/>
+  <rect x="152.0" y="120.0" width="74.0" height="28.0" rx="4" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.8"/>
+  <text x="189.0" y="138.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#c25e0a" text-anchor="middle">Exon 2</text>
+  <polygon points="234.0,124.0 234.0,144.0 252.0,134.0" fill="#e11d48" stroke="#e11d48" stroke-width="1" stroke-linejoin="round"/>
+  <rect x="268.0" y="122.0" width="46.0" height="24.0" rx="4" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.5"/>
+  <text x="291.0" y="138.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#085f55" text-anchor="middle">Ex 3</text>
+  <text x="189.0" y="166.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="500" fill="#334155" text-anchor="middle">loxP sites sit in introns → normal mRNA splicing!</text>
+  <rect x="392.0" y="72.0" width="344.0" height="108.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="404.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Line 2: Tissue-specific Cre driver (e.g. Pcp2-Cre)</text>
+  <line x1="416.0" y1="134.0" x2="712.0" y2="134.0" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round"/>
+  <rect x="438.0" y="120.0" width="126.0" height="28.0" rx="4" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="501.0" y="138.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#1e40af" text-anchor="middle">Purkinje promoter</text>
+  <rect x="574.0" y="120.0" width="114.0" height="28.0" rx="4" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.8"/>
+  <text x="631.0" y="138.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#7c3aed" text-anchor="middle">Cre (or CreERᵀ²)</text>
+  <text x="564.0" y="166.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="500" fill="#334155" text-anchor="middle">Cre expressed ONLY in cerebellar Purkinje cells (+ tamoxifen)</text>
+  <line x1="260.0" y1="184.0" x2="200.0" y2="212.0" stroke="#0d8a7b" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arr-teal)"/>
+  <line x1="500.0" y1="184.0" x2="560.0" y2="212.0" stroke="#e11d48" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arr-rose)"/>
+  <rect x="24.0" y="216.0" width="344.0" height="124.0" rx="8" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.4"/>
+  <text x="196.0" y="236.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#085f55" text-anchor="middle">Heart, liver, embryo (Cre OFF → gene INTACT)</text>
+  <text x="196.0" y="252.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.6" font-weight="500" fill="#334155" text-anchor="middle">No Cre recombinase present.</text>
+  <text x="196.0" y="266.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.6" font-weight="500" fill="#334155" text-anchor="middle">Exon 2 stays in place → normal protein made.</text>
+  <text x="196.0" y="280.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.6" font-weight="500" fill="#334155" text-anchor="middle">Embryo survives to adulthood cleanly!</text>
+  <rect x="392.0" y="216.0" width="344.0" height="124.0" rx="8" fill="#fff1f2" stroke="#e11d48" stroke-width="1.4"/>
+  <text x="564.0" y="236.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#9f1239" text-anchor="middle">Cerebellar Purkinje cells (Cre ON → KNOCKOUT!)</text>
+  <text x="564.0" y="252.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.6" font-weight="500" fill="#334155" text-anchor="middle">Cre recombines the two direct loxP sites,</text>
+  <text x="564.0" y="266.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.6" font-weight="500" fill="#334155" text-anchor="middle">popping Exon 2 out as a circular DNA loop.</text>
+  <text x="564.0" y="280.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.6" font-weight="500" fill="#334155" text-anchor="middle">Frameshift knockout ONLY in target neurons!</text>
+</svg>

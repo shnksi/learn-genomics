@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 365" width="760" height="365" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="365.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Beyond Mendel: dominance spectra and two-gene epistasis</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Modified 9:3:3:1 ratios diagnose how two enzymes or receptors sit in the same biochemical pathway</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="346.0" height="118.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Single-locus heterozygote phenotypes</text>
+  <rect x="42.0" y="106.0" width="92.0" height="24.0" rx="12.0" fill="#fff1f2" stroke="#e11d48" stroke-width="1.2"/>
+  <text x="88.0" y="121.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#9f1239" text-anchor="middle">Incomplete</text>
+  <text x="146.0" y="122.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#0f172a" text-anchor="start">RR (red) × rr (white) → Rr (pink)</text>
+  <rect x="42.0" y="144.0" width="92.0" height="24.0" rx="12.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="88.0" y="159.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1e40af" text-anchor="middle">Codominance</text>
+  <text x="146.0" y="160.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#0f172a" text-anchor="start">IᴬIᴮ expresses BOTH A &amp; B sugars</text>
+  <rect x="390.0" y="72.0" width="346.0" height="118.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="402.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Same genotype, different clinical outcomes</text>
+  <text x="406.0" y="114.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#085f55" text-anchor="start">Incomplete penetrance:</text>
+  <text x="546.0" y="114.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="start">fraction with trait &lt; 100%</text>
+  <text x="406.0" y="144.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#c25e0a" text-anchor="start">Variable expressivity:</text>
+  <text x="546.0" y="144.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="start">severity varies widely</text>
+  <text x="406.0" y="172.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#64748b" text-anchor="start">Both reflect background genes + environment.</text>
+  <rect x="24.0" y="206.0" width="712.0" height="142.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="226.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Two-gene biochemical pathway explaining epistatic F₂ ratios</text>
+  <rect x="46.0" y="246.0" width="116.0" height="48.0" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="104.0" y="266.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Precursor</text>
+  <text x="104.0" y="282.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">(colorless)</text>
+  <line x1="164.0" y1="270.0" x2="232.0" y2="270.0" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arr-teal)"/>
+  <text x="198.0" y="258.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#085f55" text-anchor="middle">Gene A</text>
+  <rect x="236.0" y="246.0" width="128.0" height="48.0" rx="8" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.4"/>
+  <text x="300.0" y="266.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#c25e0a" text-anchor="middle">Intermediate</text>
+  <text x="300.0" y="282.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">(brown / colorless)</text>
+  <line x1="366.0" y1="270.0" x2="434.0" y2="270.0" stroke="#7c3aed" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arr-purple)"/>
+  <text x="400.0" y="258.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#7c3aed" text-anchor="middle">Gene B</text>
+  <rect x="438.0" y="246.0" width="116.0" height="48.0" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.4"/>
+  <text x="496.0" y="266.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#7c3aed" text-anchor="middle">Pigment</text>
+  <text x="496.0" y="282.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">(black / purple)</text>
+  <text x="574.0" y="246.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#334155" text-anchor="start">Recessive epistasis (9:3:4):</text>
+  <text x="574.0" y="261.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#334155" text-anchor="start">aa blocks step 1 → masks B.</text>
+  <text x="574.0" y="291.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#334155" text-anchor="start">Complementary (9:7):</text>
+  <text x="574.0" y="306.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#334155" text-anchor="start">Need BOTH A– and B–.</text>
+  <text x="300.0" y="326.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a" text-anchor="middle">Blocking step 1 (aa) makes step 2 (B vs b) invisible — that is epistasis.</text>
+</svg>

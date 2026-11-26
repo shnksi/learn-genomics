@@ -385,6 +385,8 @@ Every "the data strongly support tree A over tree B" is silent about tree C.
 [S1](./S1-probability.md) introduced Bayes' theorem for events. The same identity, with a
 parameter in place of the event:
 
+![Log-likelihood curve with maximum-likelihood estimate (MLE) and likelihood-ratio drop, paired with Bayesian updating where multiplying a Beta prior by binomial data produces a sharper posterior distribution.](../figures/fig-S6-likelihood-bayes.svg)
+
 ```
                  P(D | θ) · P(θ)          likelihood × prior
    P(θ | D)  =  ──────────────────   =   ────────────────────

@@ -451,6 +451,8 @@ which is *not* the same as the frame — sign errors here shift entire protein t
 
 Two conventions exist, they disagree, and no file announces which it uses.
 
+![Genomics file pipeline (FASTQ → BAM/CRAM → VCF + BED/GTF) and the critical off-by-one coordinate rule: BED uses 0-based half-open intervals `[start, end)` whereas VCF, SAM, and GFF/GTF use 1-based closed coordinates `[start, end]`.](../figures/fig-41-data-formats-coords.svg)
+
 The clean way to see it is that they number **different things**:
 
 ```

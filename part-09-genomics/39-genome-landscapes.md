@@ -52,6 +52,8 @@ sequence and expensive in explanation.
 The **C-value** is the DNA content of one haploid set, historically measured in picograms and
 now in base pairs. Human 1C ≈ 3.1 Gb.
 
+![The C-value paradox across six orders of magnitude of genome size — showing that protein-coding gene count plateaus around ~20,000 in animals while transposable-element expansion drives dramatic genome-size variation.](../figures/fig-39-genome-landscapes.svg)
+
 | Organism | Haploid genome | Protein-coding genes |
 |---|---|---|
 | *Carsonella ruddii* (insect endosymbiont) | ~0.16 Mb | ~180 |

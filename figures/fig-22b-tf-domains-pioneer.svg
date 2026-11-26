@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 355" width="760" height="355" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="355.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Modular transcription factors and pioneer opening of closed chromatin</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">TFs separate DNA recognition (DBD) from effector recruitment (AD); pioneer factors unlock nucleosomal DNA for settler TFs</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="346.0" height="264.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Two separable modules (proven by domain-swap)</text>
+  <rect x="58.0" y="126.0" width="118.0" height="46.0" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="117.0" y="146.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1e40af" text-anchor="middle">DNA-Binding</text>
+  <text x="117.0" y="161.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#1e40af" text-anchor="middle">Domain (DBD)</text>
+  <line x1="176.0" y1="149.0" x2="218.0" y2="149.0" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+  <rect x="218.0" y="126.0" width="124.0" height="46.0" rx="10" fill="#fff3e5" stroke="#c25e0a" stroke-width="2"/>
+  <text x="280.0" y="146.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#c25e0a" text-anchor="middle">Activation</text>
+  <text x="280.0" y="161.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#c25e0a" text-anchor="middle">Domain (AD, IDR)</text>
+  <line x1="48.0" y1="198.0" x2="224.0" y2="198.0" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round"/>
+  <rect x="86.0" y="188.0" width="62.0" height="20.0" rx="3" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.4"/>
+  <text x="117.0" y="202.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="middle">Motif</text>
+  <line x1="280.0" y1="174.0" x2="280.0" y2="204.0" stroke="#c25e0a" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arr-amber)"/>
+  <rect x="218.0" y="208.0" width="124.0" height="24.0" rx="12.0" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.2"/>
+  <text x="280.0" y="223.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#085f55" text-anchor="middle">Mediator / p300 / Pol II</text>
+  <text x="197.0" y="258.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">Classic DBD folds: Homeodomain (HTH), Zinc Finger,</text>
+  <text x="197.0" y="273.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">bZIP (leucine zipper), bHLH — all insert an α-helix</text>
+  <text x="197.0" y="288.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">into DNA&#x27;s major groove. Swap DBDs → new target!</text>
+  <rect x="388.0" y="72.0" width="348.0" height="264.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="400.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Pioneer TF unlocks closed chromatin for settler TFs</text>
+  <text x="406.0" y="110.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#9f1239" text-anchor="start">Closed chromatin (inaccessible to ordinary TFs):</text>
+  <circle cx="442.0" cy="160.0" r="19.0" fill="#f8fafc" stroke="#334155" stroke-width="1.8"/>
+  <text x="442.0" y="164.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="500" fill="#64748b" text-anchor="middle">Nuc</text>
+  <circle cx="514.0" cy="160.0" r="19.0" fill="#f8fafc" stroke="#334155" stroke-width="1.8"/>
+  <text x="514.0" y="164.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="500" fill="#64748b" text-anchor="middle">Nuc</text>
+  <circle cx="586.0" cy="160.0" r="19.0" fill="#f8fafc" stroke="#334155" stroke-width="1.8"/>
+  <text x="586.0" y="164.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="500" fill="#64748b" text-anchor="middle">Nuc</text>
+  <circle cx="658.0" cy="160.0" r="19.0" fill="#f8fafc" stroke="#334155" stroke-width="1.8"/>
+  <text x="658.0" y="164.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="500" fill="#64748b" text-anchor="middle">Nuc</text>
+  <line x1="412.0" y1="160.0" x2="690.0" y2="160.0" stroke="#0f172a" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+  <rect x="478.0" y="120.0" width="74.0" height="20.0" rx="10.0" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.2"/>
+  <text x="515.0" y="133.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.8" font-weight="700" fill="#7c3aed" text-anchor="middle">Pioneer TF</text>
+  <line x1="562.0" y1="184.0" x2="562.0" y2="206.0" stroke="#0d8a7b" stroke-width="2.0" stroke-linecap="round" marker-end="url(#arr-teal)"/>
+  <text x="640.0" y="199.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#085f55" text-anchor="start">SWI/SNF remodeller</text>
+  <text x="406.0" y="224.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="start">Open nucleosome-free region (ATAC-seq peak):</text>
+  <circle cx="432.0" cy="268.0" r="20.0" fill="#f8fafc" stroke="#334155" stroke-width="1.8"/>
+  <circle cx="690.0" cy="268.0" r="20.0" fill="#f8fafc" stroke="#334155" stroke-width="1.8"/>
+  <line x1="452.0" y1="268.0" x2="670.0" y2="268.0" stroke="#0d8a7b" stroke-width="3" stroke-linecap="round"/>
+  <rect x="474.0" y="240.0" width="58.0" height="20.0" rx="10.0" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.2"/>
+  <text x="503.0" y="253.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#7c3aed" text-anchor="middle">Pioneer</text>
+  <rect x="540.0" y="240.0" width="58.0" height="20.0" rx="10.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="569.0" y="253.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#1e40af" text-anchor="middle">Settler 1</text>
+  <rect x="606.0" y="240.0" width="58.0" height="20.0" rx="10.0" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.2"/>
+  <text x="635.0" y="253.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#c25e0a" text-anchor="middle">Settler 2</text>
+  <text x="562.0" y="312.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.4" font-weight="500" fill="#334155" text-anchor="middle">e.g. FOXA1, OCT4, SOX2 initiate cell-fate programmes.</text>
+</svg>

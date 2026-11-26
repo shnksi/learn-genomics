@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="360.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Neutral theory cancellation and molecular tests of selection (dN / dS)</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Under neutrality, population size cancels out of the substitution rate (k = 2Nμ × 1/2N = μ), powering the molecular clock</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="712.0" height="64.0" rx="10" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.5"/>
+  <text x="380.0" y="96.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" font-weight="700" fill="#085f55" text-anchor="middle">Substitution rate   k  =  (2 N μ new mutations/gen)  ×  (1 / 2N fixation prob)  =  μ</text>
+  <text x="380.0" y="120.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">Population size N cancels exactly for strictly neutral mutations — divergence ticks at the mutation rate μ.</text>
+  <rect x="24.0" y="156.0" width="224.0" height="184.0" rx="10" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.5"/>
+  <text x="136.0" y="180.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0d8a7b" text-anchor="middle">Purifying selection</text>
+  <rect x="58.0" y="190.0" width="156.0" height="24.0" rx="12.0" fill="#ffffff" stroke="#0d8a7b" stroke-width="1.2"/>
+  <text x="136.0" y="205.8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="700" fill="#0d8a7b" text-anchor="middle">ω = dN / dS  &lt;  1</text>
+  <text x="136.0" y="238.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#0f172a" text-anchor="middle">Non-synonymous changes hurt</text>
+  <text x="136.0" y="255.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#0f172a" text-anchor="middle">function and are purged.</text>
+  <text x="136.0" y="272.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#0f172a" text-anchor="middle">Typical protein core: ω ≈ 0.05–0.2</text>
+  <text x="136.0" y="289.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#0f172a" text-anchor="middle">(Most of every proteome!)</text>
+  <rect x="268.0" y="156.0" width="224.0" height="184.0" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="380.0" y="180.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#2563eb" text-anchor="middle">Neutral evolution</text>
+  <rect x="302.0" y="190.0" width="156.0" height="24.0" rx="12.0" fill="#ffffff" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="380.0" y="205.8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="700" fill="#2563eb" text-anchor="middle">ω = dN / dS  ≈  1</text>
+  <text x="380.0" y="238.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#0f172a" text-anchor="middle">Amino-acid changes have zero</text>
+  <text x="380.0" y="255.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#0f172a" text-anchor="middle">fitness effect; fix at same rate</text>
+  <text x="380.0" y="272.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#0f172a" text-anchor="middle">as synonymous sites.</text>
+  <text x="380.0" y="289.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#0f172a" text-anchor="middle">Example: pseudogenes, introns</text>
+  <rect x="512.0" y="156.0" width="224.0" height="184.0" rx="10" fill="#fff1f2" stroke="#e11d48" stroke-width="1.5"/>
+  <text x="624.0" y="180.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#e11d48" text-anchor="middle">Positive / adaptive</text>
+  <rect x="546.0" y="190.0" width="156.0" height="24.0" rx="12.0" fill="#ffffff" stroke="#e11d48" stroke-width="1.2"/>
+  <text x="624.0" y="205.8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="700" fill="#e11d48" text-anchor="middle">ω = dN / dS  &gt;  1</text>
+  <text x="624.0" y="238.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#0f172a" text-anchor="middle">Amino-acid replacements favored</text>
+  <text x="624.0" y="255.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#0f172a" text-anchor="middle">and driven rapidly to fixation.</text>
+  <text x="624.0" y="272.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#0f172a" text-anchor="middle">Example: viral surface epitopes,</text>
+  <text x="624.0" y="289.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.2" font-weight="500" fill="#0f172a" text-anchor="middle">immune MHC, host–pathogen arms</text>
+</svg>

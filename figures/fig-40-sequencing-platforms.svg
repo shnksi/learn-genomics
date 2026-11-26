@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="360.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Sequencing platforms: the read-length vs. accuracy landscape</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Short reads dominate raw cost-per-base; long reads (HiFi &amp; Nanopore) span repeats, phase haplotypes, and read methylation directly</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <line x1="84.0" y1="92.0" x2="84.0" y2="286.0" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="84.0" y1="286.0" x2="464.0" y2="286.0" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="84.0" y1="286.0" x2="84.0" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="84.0" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">100 bp</text>
+  <line x1="209.4" y1="286.0" x2="209.4" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="209.4" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">1 kb</text>
+  <line x1="338.6" y1="286.0" x2="338.6" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="338.6" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">10 kb</text>
+  <line x1="464.0" y1="286.0" x2="464.0" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="464.0" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">100 kb+</text>
+  <line x1="79.0" y1="286.0" x2="84.0" y2="286.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="85.0" y1="286.0" x2="464.0" y2="286.0" stroke="#e2e8f0" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="76.0" y="289.5" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">90%</text>
+  <line x1="79.0" y1="189.0" x2="84.0" y2="189.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="85.0" y1="189.0" x2="464.0" y2="189.0" stroke="#e2e8f0" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="76.0" y="192.5" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">95%</text>
+  <line x1="79.0" y1="92.0" x2="84.0" y2="92.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="85.0" y1="92.0" x2="464.0" y2="92.0" stroke="#e2e8f0" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="76.0" y="95.5" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">99.9%+</text>
+  <text x="274.0" y="320.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">Read length (log₁₀ bp)</text>
+  <text x="48.0" y="189.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle" transform="rotate(-90 48.0 189.0)">Single-read accuracy</text>
+  <circle cx="106.8" cy="103.6" r="30.0" fill="#eff6ff" stroke="#2563eb" stroke-width="2" opacity="0.9"/>
+  <text x="106.8" y="101.6" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#2563eb" text-anchor="middle">Illumina SBS</text>
+  <text x="106.8" y="115.6" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="500" fill="#334155" text-anchor="middle">150–300 bp</text>
+  <circle cx="186.6" cy="99.8" r="26.0" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="2" opacity="0.9"/>
+  <text x="186.6" y="97.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#0d8a7b" text-anchor="middle">Sanger</text>
+  <text x="186.6" y="111.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="500" fill="#334155" text-anchor="middle">700–1k bp</text>
+  <circle cx="353.8" cy="107.5" r="34.0" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2" opacity="0.9"/>
+  <text x="353.8" y="105.5" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#7c3aed" text-anchor="middle">PacBio HiFi</text>
+  <text x="353.8" y="119.5" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="500" fill="#334155" text-anchor="middle">15–25 kb</text>
+  <circle cx="418.4" cy="146.3" r="38.0" fill="#fff3e5" stroke="#c25e0a" stroke-width="2" opacity="0.9"/>
+  <text x="418.4" y="144.3" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#c25e0a" text-anchor="middle">Oxford Nanopore</text>
+  <text x="418.4" y="158.3" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="500" fill="#334155" text-anchor="middle">10 kb–Mb</text>
+  <rect x="486.0" y="82.0" width="250.0" height="224.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="498.0" y="102.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">How each platform reads DNA</text>
+  <text x="500.0" y="118.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#085f55" text-anchor="start">Sanger:</text>
+  <text x="500.0" y="134.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#334155" text-anchor="start">ddNTP chain termination</text>
+  <text x="500.0" y="162.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#1e40af" text-anchor="start">Illumina:</text>
+  <text x="500.0" y="178.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#334155" text-anchor="start">Reversible fluorescent terminators</text>
+  <text x="500.0" y="206.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#7c3aed" text-anchor="start">PacBio HiFi:</text>
+  <text x="500.0" y="222.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#334155" text-anchor="start">Circular consensus ZMW polymerase</text>
+  <text x="500.0" y="250.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#c25e0a" text-anchor="start">Nanopore:</text>
+  <text x="500.0" y="266.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#334155" text-anchor="start">Ionic current drop through protein pore</text>
+</svg>

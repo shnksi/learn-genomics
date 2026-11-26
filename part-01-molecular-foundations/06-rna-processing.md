@@ -46,6 +46,8 @@ coding, resolved at run time.**
 
 ## 1. The pipeline
 
+![Co-transcriptional eukaryotic mRNA maturation (5′ m⁷G cap, intron removal via two transesterifications and a lariat intermediate, and 3′ cleavage/polyadenylation) and how alternative splicing expands one gene into multiple protein isoforms.](../figures/fig-06-rna-processing.svg)
+
 ```mermaid
 graph LR
     A["nascent pre-mRNA<br/><i>Pol II, ~20 nt out</i>"] -->|capping| B["m7G cap"]
@@ -166,6 +168,8 @@ geometry of §8, and the order in which the polymerase emits the sequence.
 the 5′ splice site. The exon1–intron bond breaks; a bond forms between the intron's first
 nucleotide and the branch A's 2′ position. That **2′–5′ linkage** is a branch in an otherwise
 linear molecule, making the intron a **lariat**.
+
+![Two-step transesterification chemistry of pre-mRNA splicing: the branch-point adenine's 2′-OH attacks the 5′ GU splice site to form a 2′–5′ lariat intermediate, freeing Exon 1's 3′-OH to attack the 3′ AG junction and ligate the exons at zero net chemical ATP cost.](../figures/fig-06b-splicing-chemistry.svg)
 
 **Step 2 — exon ligation.** Exon 1 now has a free 3′-hydroxyl. It attacks the phosphate at the
 3′ splice site. The exons join; the lariat is released, debranched, degraded.

@@ -275,6 +275,8 @@ Model a finite population as **Wright–Fisher**: *N* diploid individuals produc
 infinite gamete pool at frequency *p*, and the next generation is 2*N* gametes sampled from it
 with replacement. Then the count of *A*₂ alleles is Binomial(2*N*, *p*), and
 
+![Simulated Wright–Fisher genetic drift trajectories in a small (*N* = 25) versus large (*N* = 500) population, paired with the effective-selection boundary |*N*<sub>e</sub>*s*| deciding whether selection or drift dominates allele fate.](../figures/fig-27-four-forces-drift.svg)
+
 ```
 E[p'] = p                        Var(p') = p(1 − p)/(2N)
 ```
@@ -452,6 +454,8 @@ The consequences are large and not intuitive:
 ## 7. Effective population size
 
 Everything above used *N* as if it were the number of organisms. It is not. Define:
+
+![Why effective population size *N*<sub>e</sub> is governed by the harmonic mean across generations: a single bottleneck at *N* = 50 collapses *N*<sub>e</sub> to 293 even when census size sits at 10,000 in every other generation.](../figures/fig-27b-effective-pop-size.svg)
 
 > ***N*<sub>e</sub> is the size of an ideal Wright–Fisher population that would experience the
 > same rate of drift as the population in question.**

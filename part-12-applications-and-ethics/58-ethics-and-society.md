@@ -360,6 +360,8 @@ being of European genetic ancestry** — a group comprising about **16%** of the
 further 2.8% recorded as African American or Afro-Caribbean, against a sub-Saharan African
 population that is roughly 15% of the world's.
 
+![Two structural challenges in genomic medicine: familial re-identification through shared DNA segments (rendering genomes inherently non-anonymisable) and the stark Eurocentric GWAS representation gap that degrades clinical equity.](../figures/fig-58-genomic-privacy.svg)
+
 Watch the denominator in that first figure, because it is easy to get wrong in the direction that
 flatters your argument. 16% is the world share of people of European *ancestry*, which includes
 the European-descended populations of the Americas and Oceania that most of the 88% was recruited

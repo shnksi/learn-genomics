@@ -79,6 +79,8 @@ One allele, one molecular lesion, four dominance verdicts. Dominance is not a pr
 
 A diploid individual carries at most two alleles. A *population* can carry any number. Nothing in Mendel's model constrains this, and the classical three-allele ABO system shows two different dominance relationships living inside one locus.
 
+![Molecular basis of ABO blood types: *I*<sup>A</sup> and *I*<sup>B</sup> encode active glycosyltransferases adding distinct sugars to the H-antigen (codominant), whereas *i* is a 1-bp frameshift null leaving bare H-antigen (recessive).](../figures/fig-11b-abo-molecular.svg)
+
 The *ABO* gene sits at 9q34.2 and encodes a **glycosyltransferase** — an enzyme that attaches a sugar to a precursor carbohydrate (the H antigen) already sitting on the red-cell surface. Carbohydrate identity tags, exactly as flagged in [Ch 01](../part-00-orientation/01-chemistry-and-cell-primer.md).
 
 | Allele (classical) | Modern | Enzyme | Sugar added | Antigen |
@@ -144,6 +146,8 @@ The genomics consequence, which will matter repeatedly: because pleiotropy is ub
 ## 6. Epistasis: pathways generate ratios
 
 **Epistasis** is the phenomenon that the phenotypic effect of one locus depends on the genotype at another. Classically (Bateson) it means *masking*: locus A hides what locus B is doing.
+
+![How molecular mechanisms reshape the classic 9:3:3:1 dihybrid ratio: incomplete dominance and codominance at one locus, essential-gene recessive lethality (2:1), and recessive (9:3:4) versus duplicate recessive (9:7) epistasis in two-step biochemical pathways.](../figures/fig-11-beyond-mendel.svg)
 
 A warning before the ratios. Fisher's *statistical* epistasis — a non-zero interaction term when you regress phenotype on genotypes — is a different object with the same name. A biochemically obvious masking relationship can produce no interaction term under one scale and a large one under another. The two senses coincide only sometimes. [Ch 30](../part-06-quantitative-genetics/30-quantitative-traits.md) takes this apart; for now, keep the words separate in your head.
 

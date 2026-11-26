@@ -89,6 +89,8 @@ pregnancy loss.**
 
 ## 3. Three failure modes, and how to tell them apart
 
+![Meiotic nondisjunction in Meiosis I versus Meiosis II generating trisomic and monosomic gametes, alongside the major structural chromosome rearrangements (deletion, duplication, inversion, and reciprocal translocation).](../figures/fig-20-chromosome-rearrangements.svg)
+
 ```mermaid
 graph TD
     A["Bivalent on the MI spindle"] -->|"homologues fail to separate"| MI["<b>MI nondisjunction</b><br/>gamete gets one chromatid<br/>from <i>each</i> homologue"]
@@ -194,6 +196,8 @@ The live-born population is a selected 1%, much of it cryptically mosaic. Statem
 
 ## 6. The maternal age effect, derived
 
+![Mechanistic basis of the maternal age effect in Trisomy 21: human oocytes arrest in Prophase I before birth without replenishing cohesin rings, so 20–45 years of cohesin erosion destabilise chiasmata and drive exponential Meiosis I nondisjunction after age 35.](../figures/fig-20c-maternal-age-cohesin.svg)
+
 | Maternal age | Approx. live-birth risk of trisomy 21 |
 |---|---|
 | 20 | ~1 in 1,500 |
@@ -246,6 +250,8 @@ which rescues the embryo and creates the hazard in §10).
   ([Ch 56](../part-11-human-and-statistical-genomics/56-cancer-genomics.md)).
 
 ## 8. Structural rearrangements and their meiotic behaviour
+
+![Meiotic pairing geometries of structural rearrangements: an inversion heterozygote forms an inversion loop (where crossovers create dicentric/acentric or duplicated/deleted chromatids), while a reciprocal translocation forms a cross-shaped quadrivalent segregating via balanced alternate or unbalanced adjacent-1 modes.](../figures/fig-20b-meiotic-rearrangements.svg)
 
 | Type | What changed | Carrier | Meiotic hazard |
 |---|---|---|---|

@@ -55,6 +55,8 @@ duplicates are retained differently from single-gene duplicates.
 Ohno's 1970 framing: a duplicate is a spare part, freed from selective constraint, on which
 evolution can experiment. Three outcomes.
 
+![Evolutionary fates following gene duplication — pseudogenisation (nonfunctionalisation), subfunctionalisation (partitioning ancestral enhancers/functions), neofunctionalisation (new function), and dosage conservation.](../figures/fig-35-genome-evolution.svg)
+
 ```mermaid
 graph TD
     D["duplicate pair<br/>born redundant"]

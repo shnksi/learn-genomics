@@ -97,6 +97,8 @@ at something near the size of the compressed text.
 
 ## 3. The Burrows–Wheeler transform and the FM-index
 
+![Burrows–Wheeler Transform (BWT) and LF-mapping enabling *O*(*m*) exact seed lookup in the FM-index, followed by seed-and-extend dynamic programming to tolerate SNPs and indels.](../figures/fig-42-bwt-fm-index.svg)
+
 ### Building it
 
 The BWT is a reversible permutation of a string. Append a terminator `$` that sorts before every
@@ -587,6 +589,8 @@ Mitigations, in increasing order of ambition:
 ## 11. Reading a BAM: health, and failure signatures
 
 What a healthy human short-read WGS alignment looks like:
+
+![Four visual BAM alignment QC signatures: clean versus adapter-contaminated insert-size distributions, aligned soft-clip cliffs marking structural breakpoints, PCR duplicate stacks, and MAPQ = 0 repeat blackouts.](../figures/fig-42b-bam-qc-signatures.svg)
 
 | Metric | Expected | Reads as |
 |---|---|---|

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="360.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Strand discrimination in MMR and the DSB repair commitment fork</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">MMR uses strand nicks to identify the newly synthesized copy; 5′ end resection commits a double-strand break to HR over NHEJ</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="348.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Mismatch Repair (MMR): which strand is wrong?</text>
+  <line x1="48.0" y1="124.0" x2="348.0" y2="124.0" stroke="#0f172a" stroke-width="2.8" stroke-linecap="round"/>
+  <text x="44.0" y="114.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#0f172a" text-anchor="start">Template (parental — intact)</text>
+  <line x1="48.0" y1="152.0" x2="134.0" y2="152.0" stroke="#0d8a7b" stroke-width="2.8" stroke-linecap="round"/>
+  <line x1="146.0" y1="152.0" x2="348.0" y2="152.0" stroke="#0d8a7b" stroke-width="2.8" stroke-linecap="round"/>
+  <text x="140.0" y="170.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#9f1239" text-anchor="middle">Nick!</text>
+  <circle cx="240.0" cy="138.0" r="12.0" fill="#fff1f2" stroke="#e11d48" stroke-width="1.8"/>
+  <text x="240.0" y="141.5" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#9f1239" text-anchor="middle">G:T</text>
+  <rect x="200.0" y="178.0" width="86.0" height="22.0" rx="11.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="243.0" y="192.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#1e40af" text-anchor="middle">MutSα / MutLα</text>
+  <line x1="200.0" y1="189.0" x2="150.0" y2="166.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arr-blue)"/>
+  <text x="198.0" y="224.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.4" font-weight="500" fill="#334155" text-anchor="middle">1. MutSα detects G:T distortion, recruits MutLα.</text>
+  <text x="198.0" y="239.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.4" font-weight="500" fill="#334155" text-anchor="middle">2. Scans to nearest nick (eukaryotes) or unmethylated</text>
+  <text x="198.0" y="254.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.4" font-weight="500" fill="#334155" text-anchor="middle">   GATC (E. coli MutH) → marks NEW strand.</text>
+  <text x="198.0" y="269.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.4" font-weight="500" fill="#334155" text-anchor="middle">3. Exo1 excises patch past mismatch; Pol δ refills.</text>
+  <text x="198.0" y="284.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.4" font-weight="500" fill="#334155" text-anchor="middle">Loss of MLH1/MSH2 → Lynch syndrome (MSI-high).</text>
+  <rect x="388.0" y="72.0" width="348.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="400.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Double-strand break: the end-resection fork</text>
+  <rect x="496.0" y="108.0" width="132.0" height="26.0" rx="13.0" fill="#fff1f2" stroke="#e11d48" stroke-width="1.2"/>
+  <text x="562.0" y="124.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#9f1239" text-anchor="middle">DSB (broken duplex)</text>
+  <line x1="530.0" y1="136.0" x2="468.0" y2="168.0" stroke="#c25e0a" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arr-amber)"/>
+  <line x1="594.0" y1="136.0" x2="656.0" y2="168.0" stroke="#0d8a7b" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arr-teal)"/>
+  <rect x="402.0" y="172.0" width="154.0" height="148.0" rx="8" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.4"/>
+  <text x="479.0" y="192.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#c25e0a" text-anchor="middle">NHEJ (all phases)</text>
+  <text x="479.0" y="208.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">Ku70/80 + 53BP1</text>
+  <text x="479.0" y="222.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">block resection</text>
+  <text x="479.0" y="236.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">Fast direct ligation</text>
+  <text x="479.0" y="250.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">Often leaves small</text>
+  <text x="479.0" y="264.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">indels (knockouts!)</text>
+  <rect x="568.0" y="172.0" width="154.0" height="148.0" rx="8" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.4"/>
+  <text x="645.0" y="192.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#085f55" text-anchor="middle">HR (S / G2 only)</text>
+  <text x="645.0" y="208.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">MRN + CtIP resect</text>
+  <text x="645.0" y="222.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">5′→3′ ssDNA tails</text>
+  <text x="645.0" y="236.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">BRCA1/2 load Rad51</text>
+  <text x="645.0" y="250.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">Uses sister chromatid</text>
+  <text x="645.0" y="264.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">Error-free copy!</text>
+</svg>

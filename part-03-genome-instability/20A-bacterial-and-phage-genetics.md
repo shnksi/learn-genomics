@@ -66,6 +66,8 @@ zero background*: plate on minimal medium and only cells that acquired the wild-
 colonies. You screen 10⁹ events on one dish. (Reversion is the control everyone forgets — a *his*⁻
 strain throws a few colonies anyway, so plate each parent alone at the same density.)
 
+![The three mechanisms of horizontal gene transfer in bacteria: uptake of naked DNA (transformation), unidirectional F/Hfr pilus transfer enabling time-of-entry mapping (conjugation), and bacteriophage-mediated gene transfer (generalised and specialised transduction).](../figures/fig-20a-bacterial-genetics.svg)
+
 **A phage is scored as a plaque.** Spread ~10⁸ bacteria in soft agar to grow an opaque **lawn**,
 add a few phage, and each one that lyses its host releases progeny that infect the neighbours. The
 hole in the lawn — a **plaque** — is a clone descended from one particle, and its size, edge and
@@ -135,6 +137,8 @@ biases uptake toward conspecific DNA, which is the DNA most likely to recombine 
 **Lederberg and Tatum, 1946** mixed two multiply-auxotrophic *E. coli* K-12 strains and
 recovered prototrophs at about one in 10⁷; neither parent alone did. Davis's U-tube then showed
 the process needed contact.
+
+![Interrupted-mating Hfr × F⁻ conjugation: linear DNA transfer from *oriT* at a constant rate converts blending time directly into a circular *E. coli* genetic map measured in minutes.](../figures/fig-20Ab-hfr-time-of-entry.svg)
 
 **The F factor.** Donor capability rides on a conjugative plasmid, the fertility or **F factor**
 — 99,159 bp, one copy per chromosome, about a third of it the *tra* region encoding the pilus

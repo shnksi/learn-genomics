@@ -159,6 +159,8 @@ Richer models add parameters in the bias–variance trade-off of [S3](../part-S-
 
 In a protein-coding sequence the genetic code partitions changes into two classes ([Ch 07](../part-01-molecular-foundations/07-genetic-code-and-translation.md)): **synonymous** (no amino-acid change, mostly invisible to selection) and **nonsynonymous** (amino-acid changing, visible). The synonymous class is the internal control: same locus, same mutational environment, same alignment, same multiple-hit correction.
 
+![Neutral theory's rate cancellation (*k* = *μ*), Jukes–Cantor multiple-hit saturation correcting observed divergence, and the *d*<sub>N</sub>/*d*<sub>S</sub> (*ω*) scale separating purifying selection, neutrality, and positive selection.](../figures/fig-33-neutral-theory.svg)
+
 **Site counting is the whole trick.** You cannot compare raw counts of the two kinds of change, because the code does not offer them equally. Take the leucine codon `TTA`:
 
 ```
@@ -196,6 +198,8 @@ Four caveats, and they matter more than the definition:
 ## 7. The site frequency spectrum, and Tajima's *D*
 
 Everything about within-population variation compresses into one object. For a sample of *n* sequences, let **ξ<sub>i</sub>** be the number of segregating sites at which the derived allele appears in exactly *i* copies, *i* = 1 … *n*−1. That vector is the **site frequency spectrum** (SFS). Without an outgroup to identify the ancestral allele you get the **folded** SFS, which merges *i* and *n*−*i*.
+
+![Site frequency spectra under neutrality (*D* ≈ 0), selective sweep or population growth (excess rare singletons, *D* < 0), and balancing selection or bottleneck (*D* > 0), paired with the local diversity trough (*π*) carved by a hard selective sweep.](../figures/fig-33b-sfs-sweeps-tajima.svg)
 
 Under the standard neutral model — constant size, no selection, infinite sites — the coalescent gives a strikingly simple expectation:
 

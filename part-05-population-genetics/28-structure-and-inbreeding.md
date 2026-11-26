@@ -270,6 +270,8 @@ pedigree tells you the mean; only the genome tells you the draw.
 Now the other scale. Suppose *k* subpopulations, each internally in perfect Hardy–Weinberg, with
 allele frequencies *p*ᵢ and weights *w*ᵢ. You pool them and treat the result as one population.
 
+![How identity by descent (*F*) shifts heterozygotes into homozygotes without changing allele frequencies, and how pooling two differentiated subpopulations produces an excess of homozygotes (the Wahlund effect) measured by *F*<sub>ST</sub>.](../figures/fig-28-structure-inbreeding.svg)
+
 Let *p̄* = Σ*w*ᵢ*p*ᵢ and Var(*p*) = Σ*w*ᵢ*p*ᵢ² − *p̄*². Then the pooled heterozygote frequency is
 
 Σ*w*ᵢ·2*p*ᵢ*q*ᵢ = 2𝔼[*p*(1−*p*)] = 2(𝔼[*p*] − 𝔼[*p*²]) = 2(*p̄* − *p̄*² − Var(*p*))

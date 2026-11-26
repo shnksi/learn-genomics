@@ -217,6 +217,8 @@ For a screen, FWER is the wrong target. If 1,000 of your 20,000 genes are genuin
 expressed, controlling the probability of *any* error at 5% discards most of them. You would rather
 say: give me a list, and guarantee that on average no more than 5% of it is junk.
 
+![Benjamini–Hochberg step-up FDR control compared against strict Bonferroni correction on ordered *p*-values, paired with a geometric view of PCA rotating correlated high-dimensional axes onto orthogonal principal components.](../figures/fig-S7-multiple-testing-pca.svg)
+
 That is the **false discovery rate**, E[V/R] — expected proportion of false positives *among
 rejections*. The Benjamini–Hochberg step-up procedure achieves it. Sort the p-values ascending,
 find the largest *k* with *p*<sub>(k)</sub> ≤ *k q / m*, and reject everything up to it:

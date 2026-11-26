@@ -134,6 +134,8 @@ From here the broken chromatid is copying sequence it did not previously have.
 
 Everything above is shared. The branch comes now.
 
+![Double-strand break repair by homologous recombination: 5′→3′ resection, Rad51-mediated strand invasion into the D-loop, and the choice between synthesis-dependent strand annealing (non-crossover) and double Holliday junction resolution (crossover or non-crossover with gene conversion).](../figures/fig-18-homologous-recombination.svg)
+
 **SDSA — synthesis-dependent strand annealing.** The extended invading strand is stripped
 back out of the D-loop by a helicase and anneals to the ssDNA on the other side of the
 break. Gaps fill in, ends ligate. The two duplexes were never covalently joined, so
@@ -399,6 +401,8 @@ contains millions of repeated sequences with high identity — segmental
 duplications, ~1.1 million *Alu* elements, ~46% transposable-element-derived sequence
 ([verified facts](../reference/verified-facts.md)). The alignment step cannot always tell an
 allelic copy from a paralogous one.
+
+![Non-allelic homologous recombination (NAHR) between segmental duplications: direct flanking repeats generate reciprocal microdeletions and microduplications (e.g. 22q11.2, CMT1A), whereas inverted repeats flip the intervening segment into a balanced inversion.](../figures/fig-18b-nahr-rearrangements.svg)
 
 **Non-allelic homologous recombination** is recombination between two repeats that are
 similar in sequence but not at the same locus. The requirement is a few hundred base pairs

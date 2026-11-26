@@ -70,6 +70,8 @@ degree of freedom has been silently filled in.
 
 ## 2. Deriving it
 
+![Hardy–Weinberg genotype frequencies (*p*², 2*pq*, *q*²) as a function of allele frequency *p*: heterozygosity peaks at 0.5 when *p* = 0.5, while for rare recessive alleles (*q* = 0.01) carriers outnumber affected homozygotes by roughly 200 to 1.](../figures/fig-26-hardy-weinberg.svg)
+
 ### From random union of gametes
 
 Assume gametes unite at random with respect to genotype at this locus. A zygote's maternal

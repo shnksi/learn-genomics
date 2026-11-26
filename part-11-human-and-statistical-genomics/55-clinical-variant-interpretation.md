@@ -161,6 +161,8 @@ Strong like two Moderate, one Moderate like two Supporting. That is not a coinci
 Tavtigian and colleagues asked whether the rules above quantise an actual model, and found that
 they do — to a remarkable degree.
 
+![The ACMG/AMP five-tier clinical classification scale reformulated as Bayesian posterior probability of pathogenicity, showing how supporting, moderate, strong, and very-strong evidence tiers shift prior odds into Pathogenic or Benign bands.](../figures/fig-55-acmg-bayesian.svg)
+
 > **Statistics:** the odds form of Bayes — prior odds × likelihood ratio = posterior odds — is
 > covered in [S6](../part-S-statistics/S6-likelihood-and-bayes.md) §4–5, and
 > [S6 §7.3](../part-S-statistics/S6-likelihood-and-bayes.md) runs this exact reconstruction in

@@ -61,6 +61,8 @@ The 50 bp boundary is a technological artefact, not a biological one — it is r
 
 Substitutions split into two classes by chemistry. Purines (A, G) have two fused rings; pyrimidines (C, T) have one.
 
+![Transition (purine↔purine, pyrimidine↔pyrimidine) versus transversion substitutions and the six coding-sequence mutation consequences: silent, missense, nonsense, frameshift, splice-site disruption, and repeat expansion.](../figures/fig-16-mutation-types.svg)
+
 - **Transition** — purine→purine or pyrimidine→pyrimidine. A↔G, C↔T.
 - **Transversion** — purine↔pyrimidine. The other eight.
 
@@ -106,6 +108,8 @@ Treating synonymous variants as a null class is a modelling convenience — usua
 ## 5. Where spontaneous mutations come from
 
 No mutagen required. Five processes account for most of it.
+
+![Four primary endogenous mutation mechanisms: cytosine deamination (C→U, recognised as foreign), 5-methylcytosine deamination (5mC→T, creating CpG mutation hotspots), spontaneous depurination, and polymerase slippage on tandem repeats.](../figures/fig-16b-spontaneous-lesions.svg)
 
 ```mermaid
 graph TD

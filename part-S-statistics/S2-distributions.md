@@ -461,6 +461,8 @@ variance-component estimation in [S5](./S5-variance-and-regression.md)).
 This is the distribution that RNA-seq forced on genomics, and the reason is biological, not
 mathematical.
 
+![The four core probability distributions of genetics and genomics — Binomial (inheritance counts), Poisson (mean = variance baseline for sequencing depth), Normal (polygenic sums), and Negative Binomial (overdispersed RNA-seq counts).](../figures/fig-S2-distributions.svg)
+
 Sequencing a library is Poisson sampling: given a gene's true fraction of the transcript pool,
 the read count is Poisson. So counts across **technical** replicates — the same library, sequenced
 twice — really are Poisson. But **biological** replicates are different cultures, different mice,

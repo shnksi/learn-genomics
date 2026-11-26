@@ -59,6 +59,8 @@ The canonical long-range element is the ZRS, which drives *SHH* in the developin
 
 Three properties define an enhancer operationally, and all three were shocks when found:
 
+![Long-range eukaryotic transcriptional activation: distal enhancers bound by cell-type-specific transcription factors loop through 3D space via Mediator to contact the core promoter and RNA Pol II, bounded by CTCF insulators.](../figures/fig-22-eukaryotic-enhancer.svg)
+
 1. **Position independence** — it works upstream, downstream, or inside an intron of its target or of a neighbour.
 2. **Orientation independence** — flip it and it still works. Promoters are not like this; they are directional.
 3. **Distance tolerance** — tens of kb routinely, up to ~1 Mb in cases like *SHH*.
@@ -98,6 +100,8 @@ The honest statement for 2026: given an enhancer's sequence and the promoters in
 ## 5. Transcription factors are two separable modules
 
 A sequence-specific transcription factor has, at minimum, a **DNA-binding domain** (DBD) that recognises a short sequence and an **activation** (or repression) **domain** that recruits machinery. The two are on the same polypeptide and are otherwise almost independent.
+
+![Modular transcription-factor design (separable DNA-binding and transactivation domains) alongside pioneer transcription factors binding closed nucleosomal DNA to recruit chromatin remodellers and open enhancers for settler TFs.](../figures/fig-22b-tf-domains-pioneer.svg)
 
 Human TFs (1,639 of them) fall into 25 DBD families, dominated by a few:
 

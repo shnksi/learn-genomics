@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="360.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Dobzhansky–Muller incompatibilities and hybrid-zone clines</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Reproductive isolation evolves without either lineage ever crossing a fitness valley; cline width measures selection vs. dispersal</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="344.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Dobzhansky–Muller two-locus incompatibility</text>
+  <rect x="134.0" y="108.0" width="124.0" height="44.0" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="196.0" y="128.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">Ancestral: aa bb</text>
+  <text x="196.0" y="144.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">Viable</text>
+  <line x1="160.0" y1="154.0" x2="114.0" y2="194.0" stroke="#0d8a7b" stroke-width="2" stroke-linecap="round" marker-end="url(#arr-teal)"/>
+  <line x1="232.0" y1="154.0" x2="278.0" y2="194.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" marker-end="url(#arr-blue)"/>
+  <rect x="46.0" y="198.0" width="134.0" height="48.0" rx="8" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.4"/>
+  <text x="113.0" y="218.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#085f55" text-anchor="middle">Lineage 1: AA bb</text>
+  <text x="113.0" y="234.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">Fix A (viable)</text>
+  <rect x="212.0" y="198.0" width="134.0" height="48.0" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.4"/>
+  <text x="279.0" y="218.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#1e40af" text-anchor="middle">Lineage 2: aa BB</text>
+  <text x="279.0" y="234.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">Fix B (viable)</text>
+  <line x1="128.0" y1="248.0" x2="168.0" y2="278.0" stroke="#e11d48" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arr-rose)"/>
+  <line x1="264.0" y1="248.0" x2="224.0" y2="278.0" stroke="#e11d48" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arr-rose)"/>
+  <rect x="106.0" y="280.0" width="180.0" height="46.0" rx="8" fill="#fff1f2" stroke="#e11d48" stroke-width="1.4"/>
+  <text x="196.0" y="300.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#9f1239" text-anchor="middle">Hybrid: Aa Bb (A + B clash!)</text>
+  <text x="196.0" y="316.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">Sterile / inviable</text>
+  <rect x="388.0" y="72.0" width="348.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="400.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Geographic hybrid-zone cline: width w ≈ σ / √s</text>
+  <line x1="442.0" y1="118.0" x2="442.0" y2="280.0" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="442.0" y1="280.0" x2="712.0" y2="280.0" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="442.0" y1="280.0" x2="442.0" y2="285.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="442.0" y="297.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">-100</text>
+  <line x1="577.0" y1="280.0" x2="577.0" y2="285.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="577.0" y="297.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="712.0" y1="280.0" x2="712.0" y2="285.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="712.0" y="297.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">+100</text>
+  <line x1="437.0" y1="280.0" x2="442.0" y2="280.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="443.0" y1="280.0" x2="712.0" y2="280.0" stroke="#e2e8f0" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="434.0" y="283.5" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">0</text>
+  <line x1="437.0" y1="199.0" x2="442.0" y2="199.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="443.0" y1="199.0" x2="712.0" y2="199.0" stroke="#e2e8f0" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="434.0" y="202.5" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">0.5</text>
+  <line x1="437.0" y1="118.0" x2="442.0" y2="118.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="443.0" y1="118.0" x2="712.0" y2="118.0" stroke="#e2e8f0" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="434.0" y="121.5" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">1</text>
+  <text x="577.0" y="314.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">Geographic transect (km)</text>
+  <text x="406.0" y="199.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle" transform="rotate(-90 406.0 199.0)">Allele freq p</text>
+  <polyline points="442.0,279.4 445.4,279.3 448.8,279.2 452.1,279.1 455.5,279.0 458.9,278.8 462.2,278.6 465.6,278.4 469.0,278.2 472.4,277.9 475.8,277.6 479.1,277.3 482.5,276.8 485.9,276.4 489.2,275.9 492.6,275.3 496.0,274.6 499.4,273.8 502.8,272.9 506.1,271.9 509.5,270.7 512.9,269.4 516.2,267.9 519.6,266.3 523.0,264.4 526.4,262.3 529.8,260.0 533.1,257.4 536.5,254.6 539.9,251.4 543.2,248.0 546.6,244.2 550.0,240.1 553.4,235.8 556.8,231.2 560.1,226.2 563.5,221.1 566.9,215.8 570.2,210.3 573.6,204.7 577.0,199.0 580.4,193.3 583.8,187.7 587.1,182.2 590.5,176.9 593.9,171.8 597.2,166.8 600.6,162.2 604.0,157.9 607.4,153.8 610.8,150.0 614.1,146.6 617.5,143.4 620.9,140.6 624.2,138.0 627.6,135.7 631.0,133.6 634.4,131.7 637.8,130.1 641.1,128.6 644.5,127.3 647.9,126.1 651.2,125.1 654.6,124.2 658.0,123.4 661.4,122.7 664.8,122.1 668.1,121.6 671.5,121.2 674.9,120.7 678.2,120.4 681.6,120.1 685.0,119.8 688.4,119.6 691.8,119.4 695.1,119.2 698.5,119.0 701.9,118.9 705.2,118.8 708.6,118.7 712.0,118.6" fill="none" stroke="#e11d48" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="625.6" y="153.6" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="700" fill="#e11d48" text-anchor="start">Strong s (narrow w)</text>
+  <polyline points="442.0,257.0 445.4,256.1 448.8,255.2 452.1,254.2 455.5,253.2 458.9,252.2 462.2,251.2 465.6,250.1 469.0,249.0 472.4,247.8 475.8,246.6 479.1,245.4 482.5,244.2 485.9,242.9 489.2,241.6 492.6,240.3 496.0,238.9 499.4,237.5 502.8,236.1 506.1,234.7 509.5,233.2 512.9,231.7 516.2,230.1 519.6,228.6 523.0,227.0 526.4,225.3 529.8,223.7 533.1,222.0 536.5,220.4 539.9,218.6 543.2,216.9 546.6,215.2 550.0,213.4 553.4,211.7 556.8,209.9 560.1,208.1 563.5,206.3 566.9,204.5 570.2,202.6 573.6,200.8 577.0,199.0 580.4,197.2 583.8,195.4 587.1,193.5 590.5,191.7 593.9,189.9 597.2,188.1 600.6,186.3 604.0,184.6 607.4,182.8 610.8,181.1 614.1,179.4 617.5,177.6 620.9,176.0 624.2,174.3 627.6,172.7 631.0,171.0 634.4,169.4 637.8,167.9 641.1,166.3 644.5,164.8 647.9,163.3 651.2,161.9 654.6,160.5 658.0,159.1 661.4,157.7 664.8,156.4 668.1,155.1 671.5,153.8 674.9,152.6 678.2,151.4 681.6,150.2 685.0,149.0 688.4,147.9 691.8,146.8 695.1,145.8 698.5,144.8 701.9,143.8 705.2,142.8 708.6,141.9 712.0,141.0" fill="none" stroke="#0d8a7b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="625.6" y="234.6" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="700" fill="#0d8a7b" text-anchor="start">Weak s (wide w)</text>
+</svg>

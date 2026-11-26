@@ -238,6 +238,8 @@ parental haplotype and its *B* allele from the other — independent draws, so
 $\Pr(AB) = p_A p_B$. Recombination does not change allele frequencies, so $p_A$ and $p_B$ are
 constant. Therefore:
 
+![Exponential decay of linkage disequilibrium (*r*²) with recombination distance and generations, showing why African populations have shorter LD blocks than bottlenecked out-of-Africa populations and how recombination hotspots carve genomes into haplotype blocks.](../figures/fig-29-ld-decay.svg)
+
 $$p_{AB}(t+1) = (1-c)\,p_{AB}(t) + c\,p_Ap_B$$
 
 Subtract $p_Ap_B$ from both sides:

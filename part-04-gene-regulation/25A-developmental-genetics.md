@@ -181,6 +181,8 @@ of homozygous mutant *mothers* — and in a pedigree the inheritance looks lagge
 [Chapter 25 §6](25-networks-and-development.md) covers colinearity and the selector concept. Two
 points belong here because they are genetics rather than regulation.
 
+![Vertebrate embryo body plan illustrating segmented somites along the dorsal axis, pharyngeal arches, emerging limb buds, and nested anterior–posterior expression domains (green → teal → blue → amber → rose) reflecting spatial collinearity of *Hox* genes.](../figures/art-25a-embryo-patterning.png)
+
 **Homeosis separates "build a structure" from "which structure".** Ed Lewis's analysis of the
 bithorax complex (*Nature* 276:565, 1978) showed that removing its function transforms the third
 thoracic segment into a copy of the second — halteres become wings, giving a four-winged fly.
@@ -208,6 +210,8 @@ single-gene knockout systematically understates what the gene does.**
 
 Single mutants tell you a gene is *required*. They cannot tell you the *order*: two genes both
 needed for a structure, both mutants lacking it, identical information either way.
+
+![The *Drosophila* anterior–posterior segmentation hierarchy (maternal morphogens → gap → pair-rule → segment-polarity → *Hox* selectors) and epistasis logic for ordering two genes in a developmental signalling pathway.](../figures/fig-25a-developmental-genetics.svg)
 
 Double mutants can order them, and the reason is almost embarrassing once written down.
 
@@ -436,6 +440,8 @@ International Mouse Phenotyping Consortium reported **410 lethal** lines and **1
 ones — about **23%** and **11%**, so roughly **a third of null alleles never produce a healthy
 adult homozygote** (Dickinson et al., *Nature* 537:508, 2016). For those genes a straight knockout
 answers "is it essential?" and then stops.
+
+![Conditional gene knockout using Cre-loxP: crossing a floxed target line with a tissue-specific or tamoxifen-inducible Cre driver leaves the gene intact across the embryo while excising the critical exon selectively in one target cell type (such as Purkinje neurons).](../figures/fig-25Ab-cre-lox-conditional.svg)
 
 Two distinct failure modes need different fixes. If the animal **dies before the tissue of
 interest exists**, you must restrict in **space** — delete in one lineage only. If the animal

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="360.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Linkage disequilibrium (LD) decay by ancestry and haplotype blocks</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Recombination breaks down r² over generations: older African populations show steeper LD decay than bottlenecked European ones</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="412.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">LD decay: r² vs. physical distance (kb)</text>
+  <line x1="78.0" y1="120.0" x2="78.0" y2="286.0" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="78.0" y1="286.0" x2="414.0" y2="286.0" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="78.0" y1="286.0" x2="78.0" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="78.0" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">0</text>
+  <line x1="162.0" y1="286.0" x2="162.0" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="162.0" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">50</text>
+  <line x1="246.0" y1="286.0" x2="246.0" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="246.0" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">100</text>
+  <line x1="330.0" y1="286.0" x2="330.0" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="330.0" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">150</text>
+  <line x1="414.0" y1="286.0" x2="414.0" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="414.0" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">200</text>
+  <line x1="73.0" y1="286.0" x2="78.0" y2="286.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="79.0" y1="286.0" x2="414.0" y2="286.0" stroke="#e2e8f0" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="70.0" y="289.5" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">0.0</text>
+  <line x1="73.0" y1="203.0" x2="78.0" y2="203.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="79.0" y1="203.0" x2="414.0" y2="203.0" stroke="#e2e8f0" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="70.0" y="206.5" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">0.5</text>
+  <line x1="73.0" y1="120.0" x2="78.0" y2="120.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="79.0" y1="120.0" x2="414.0" y2="120.0" stroke="#e2e8f0" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="70.0" y="123.5" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">1.0</text>
+  <text x="246.0" y="320.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">Physical distance between SNPs (kb)</text>
+  <text x="42.0" y="203.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle" transform="rotate(-90 42.0 203.0)">Mean LD (r²)</text>
+  <polyline points="78.0,136.6 82.2,142.6 86.4,148.4 90.6,153.9 94.8,159.2 99.0,164.3 103.2,169.1 107.4,173.8 111.6,178.2 115.8,182.5 120.0,186.6 124.2,190.5 128.4,194.3 132.6,197.8 136.8,201.3 141.0,204.6 145.2,207.7 149.4,210.8 153.6,213.6 157.8,216.4 162.0,219.1 166.2,221.6 170.4,224.1 174.6,226.4 178.8,228.6 183.0,230.8 187.2,232.8 191.4,234.8 195.6,236.7 199.8,238.5 204.0,240.2 208.2,241.8 212.4,243.4 216.6,244.9 220.8,246.4 225.0,247.8 229.2,249.1 233.4,250.4 237.6,251.6 241.8,252.8 246.0,253.9 250.2,255.0 254.4,256.0 258.6,257.0 262.8,257.9 267.0,258.8 271.2,259.7 275.4,260.5 279.6,261.3 283.8,262.1 288.0,262.8 292.2,263.5 296.4,264.2 300.6,264.8 304.8,265.4 309.0,266.0 313.2,266.6 317.4,267.1 321.6,267.6 325.8,268.1 330.0,268.6 334.2,269.1 338.4,269.5 342.6,269.9 346.8,270.3 351.0,270.7 355.2,271.1 359.4,271.4 363.6,271.7 367.8,272.1 372.0,272.4 376.2,272.7 380.4,273.0 384.6,273.2 388.8,273.5 393.0,273.7 397.2,274.0 401.4,274.2 405.6,274.4 409.8,274.6 414.0,274.8" fill="none" stroke="#2563eb" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="78.0,139.9 82.2,157.5 86.4,173.0 90.6,186.5 94.8,198.3 99.0,208.7 103.2,217.9 107.4,225.8 111.6,232.9 115.8,239.0 120.0,244.4 124.2,249.1 128.4,253.2 132.6,256.9 136.8,260.1 141.0,262.8 145.2,265.3 149.4,267.4 153.6,269.3 157.8,271.0 162.0,272.4 166.2,273.7 170.4,274.8 174.6,275.8 178.8,276.6 183.0,277.4 187.2,278.0 191.4,278.6 195.6,279.1 199.8,279.5 204.0,279.9 208.2,280.3 212.4,280.6 216.6,280.8 220.8,281.1 225.0,281.3 229.2,281.4 233.4,281.6 237.6,281.7 241.8,281.8 246.0,281.9 250.2,282.0 254.4,282.1 258.6,282.2 262.8,282.2 267.0,282.3 271.2,282.3 275.4,282.4 279.6,282.4 283.8,282.5 288.0,282.5 292.2,282.5 296.4,282.5 300.6,282.5 304.8,282.6 309.0,282.6 313.2,282.6 317.4,282.6 321.6,282.6 325.8,282.6 330.0,282.6 334.2,282.6 338.4,282.6 342.6,282.6 346.8,282.6 351.0,282.7 355.2,282.7 359.4,282.7 363.6,282.7 367.8,282.7 372.0,282.7 376.2,282.7 380.4,282.7 384.6,282.7 388.8,282.7 393.0,282.7 397.2,282.7 401.4,282.7 405.6,282.7 409.8,282.7 414.0,282.7" fill="none" stroke="#0d8a7b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="218.0" y="193.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#1e40af" text-anchor="start">EUR (longer LD blocks)</text>
+  <text x="188.0" y="259.4" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#085f55" text-anchor="start">AFR (faster decay → sharper fine-mapping)</text>
+  <rect x="454.0" y="72.0" width="282.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="466.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Why genotypes lose haplotype phase</text>
+  <rect x="470.0" y="108.0" width="250.0" height="44.0" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="595.0" y="134.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">Observed diploid genotype: Aa Bb</text>
+  <line x1="540.0" y1="154.0" x2="520.0" y2="184.0" stroke="#0d8a7b" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arr-teal)"/>
+  <line x1="650.0" y1="154.0" x2="670.0" y2="184.0" stroke="#c25e0a" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arr-amber)"/>
+  <rect x="470.0" y="188.0" width="118.0" height="62.0" rx="8" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.4"/>
+  <text x="529.0" y="208.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#085f55" text-anchor="middle">Cis (coupling)</text>
+  <text x="529.0" y="224.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">A———B</text>
+  <text x="529.0" y="238.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">a———b</text>
+  <rect x="602.0" y="188.0" width="118.0" height="62.0" rx="8" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.4"/>
+  <text x="661.0" y="208.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#c25e0a" text-anchor="middle">Trans (repulsion)</text>
+  <text x="661.0" y="224.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">A———b</text>
+  <text x="661.0" y="238.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">a———B</text>
+  <text x="595.0" y="278.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#334155" text-anchor="middle">Same unphased genotype, different</text>
+  <text x="595.0" y="293.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#334155" text-anchor="middle">haplotypes! Statistical phasing or</text>
+  <text x="595.0" y="308.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#334155" text-anchor="middle">long reads recover which alleles sit</text>
+  <text x="595.0" y="323.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#334155" text-anchor="middle">on the same physical chromosome.</text>
+</svg>

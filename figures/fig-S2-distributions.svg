@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 385" width="760" height="385" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="385.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">The four workhorse distributions of genetics and genomics</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Each distribution reflects a physical generating mechanism — match the assay physics before picking a model</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="70.0" width="346.0" height="144.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="90.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Binomial(n=16, p=0.25) · Crosses &amp; read counts</text>
+  <line x1="52.0" y1="192.0" x2="346.0" y2="192.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <rect x="56.0" y="188.3" width="16.0" height="3.7" rx="2" fill="#0d8a7b" stroke="none" stroke-width="1.2"/>
+  <rect x="78.0" y="172.1" width="16.0" height="19.9" rx="2" fill="#0d8a7b" stroke="none" stroke-width="1.2"/>
+  <rect x="100.0" y="142.2" width="16.0" height="49.8" rx="2" fill="#0d8a7b" stroke="none" stroke-width="1.2"/>
+  <rect x="122.0" y="114.5" width="16.0" height="77.5" rx="2" fill="#0d8a7b" stroke="none" stroke-width="1.2"/>
+  <rect x="144.0" y="108.0" width="16.0" height="84.0" rx="2" fill="#0d8a7b" stroke="none" stroke-width="1.2"/>
+  <rect x="166.0" y="124.8" width="16.0" height="67.2" rx="2" fill="#0d8a7b" stroke="none" stroke-width="1.2"/>
+  <rect x="188.0" y="150.9" width="16.0" height="41.1" rx="2" fill="#0d8a7b" stroke="none" stroke-width="1.2"/>
+  <rect x="210.0" y="172.4" width="16.0" height="19.6" rx="2" fill="#0d8a7b" stroke="none" stroke-width="1.2"/>
+  <rect x="232.0" y="184.7" width="16.0" height="7.3" rx="2" fill="#0d8a7b" stroke="none" stroke-width="1.2"/>
+  <rect x="254.0" y="189.8" width="16.0" height="2.2" rx="2" fill="#0d8a7b" stroke="none" stroke-width="1.2"/>
+  <rect x="276.0" y="191.5" width="16.0" height="0.5" rx="2" fill="#0d8a7b" stroke="none" stroke-width="1.2"/>
+  <rect x="298.0" y="191.9" width="16.0" height="0.1" rx="2" fill="#0d8a7b" stroke="none" stroke-width="1.2"/>
+  <rect x="320.0" y="192.0" width="16.0" height="0.0" rx="2" fill="#0d8a7b" stroke="none" stroke-width="1.2"/>
+  <text x="148.0" y="114.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="500" fill="#334155" text-anchor="start">μ = np = 4,  Var = np(1−p)</text>
+  <rect x="390.0" y="70.0" width="346.0" height="144.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="402.0" y="90.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1e40af" text-anchor="start">Poisson(λ) · Sequencing depth &amp; rare mutations</text>
+  <line x1="418.0" y1="192.0" x2="712.0" y2="192.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <rect x="418.0" y="151.4" width="8.0" height="40.6" rx="2" fill="#2563eb" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="438.0" y="110.8" width="8.0" height="81.2" rx="2" fill="#2563eb" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="458.0" y="110.8" width="8.0" height="81.2" rx="2" fill="#2563eb" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="478.0" y="137.9" width="8.0" height="54.1" rx="2" fill="#2563eb" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="498.0" y="164.9" width="8.0" height="27.1" rx="2" fill="#2563eb" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="518.0" y="181.2" width="8.0" height="10.8" rx="2" fill="#2563eb" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="538.0" y="188.4" width="8.0" height="3.6" rx="2" fill="#2563eb" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="558.0" y="191.0" width="8.0" height="1.0" rx="2" fill="#2563eb" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="578.0" y="191.7" width="8.0" height="0.3" rx="2" fill="#2563eb" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="598.0" y="191.9" width="8.0" height="0.1" rx="2" fill="#2563eb" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="618.0" y="192.0" width="8.0" height="0.0" rx="2" fill="#2563eb" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="638.0" y="192.0" width="8.0" height="0.0" rx="2" fill="#2563eb" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="658.0" y="192.0" width="8.0" height="0.0" rx="2" fill="#2563eb" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="678.0" y="192.0" width="8.0" height="0.0" rx="2" fill="#2563eb" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="426.0" y="191.3" width="8.0" height="0.7" rx="2" fill="#7c3aed" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="446.0" y="187.5" width="8.0" height="4.5" rx="2" fill="#7c3aed" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="466.0" y="178.6" width="8.0" height="13.4" rx="2" fill="#7c3aed" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="486.0" y="165.2" width="8.0" height="26.8" rx="2" fill="#7c3aed" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="506.0" y="151.8" width="8.0" height="40.2" rx="2" fill="#7c3aed" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="526.0" y="143.8" width="8.0" height="48.2" rx="2" fill="#7c3aed" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="546.0" y="143.8" width="8.0" height="48.2" rx="2" fill="#7c3aed" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="566.0" y="150.7" width="8.0" height="41.3" rx="2" fill="#7c3aed" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="586.0" y="161.0" width="8.0" height="31.0" rx="2" fill="#7c3aed" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="606.0" y="171.3" width="8.0" height="20.7" rx="2" fill="#7c3aed" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="626.0" y="179.6" width="8.0" height="12.4" rx="2" fill="#7c3aed" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="646.0" y="185.2" width="8.0" height="6.8" rx="2" fill="#7c3aed" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="666.0" y="188.6" width="8.0" height="3.4" rx="2" fill="#7c3aed" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <rect x="686.0" y="190.4" width="8.0" height="1.6" rx="2" fill="#7c3aed" stroke="none" stroke-width="1.2" opacity="0.82"/>
+  <text x="548.0" y="114.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="start">λ=2 (blue) vs λ=6 (purple) · Var = μ</text>
+  <rect x="24.0" y="226.0" width="346.0" height="144.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="246.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#c25e0a" text-anchor="start">Negative Binomial vs. Poisson (same μ=8) · RNA-seq</text>
+  <line x1="52.0" y1="348.0" x2="346.0" y2="348.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <polyline points="52.0,347.8 65.5,346.6 79.0,342.4 92.5,333.0 106.0,317.9 119.5,299.9 133.0,283.9 146.5,274.7 160.0,274.7 173.5,282.9 187.0,295.9 200.5,310.1 214.0,322.7 227.5,332.5 241.0,339.1 254.5,343.3 268.0,345.6 281.5,346.9 295.0,347.5 308.5,347.8 322.0,347.9 335.5,348.0" fill="none" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="52.0,327.0 65.5,314.4 79.0,307.7 92.5,305.0 106.0,305.0 119.5,306.7 133.0,309.5 146.5,312.8 160.0,316.3 173.5,319.8 187.0,323.2 200.5,326.4 214.0,329.2 227.5,331.8 241.0,334.1 254.5,336.2 268.0,338.0 281.5,339.5 295.0,340.8 308.5,341.9 322.0,342.9 335.5,343.7" fill="none" stroke="#c25e0a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="172.0" y="268.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#c25e0a" text-anchor="start">NB (wide tail, Var=μ+μ²/θ)</text>
+  <text x="172.0" y="284.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#1e40af" text-anchor="start">Poisson (too narrow!)</text>
+  <rect x="390.0" y="226.0" width="346.0" height="144.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="402.0" y="246.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#9f1239" text-anchor="start">Normal(μ, σ²) · Sums of many small effects</text>
+  <line x1="418.0" y1="348.0" x2="712.0" y2="348.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="523.0,348.0 523.0,299.6 527.2,294.8 531.4,290.1 535.6,285.5 539.8,281.4 544.0,277.6 548.2,274.3 552.4,271.7 556.6,269.8 560.8,268.6 565.0,268.2 569.2,268.6 573.4,269.8 577.6,271.7 581.8,274.3 586.0,277.6 590.2,281.4 594.4,285.5 598.6,290.1 602.8,294.8 607.0,299.6 607.0,348.0" fill="#fff1f2" stroke="none" stroke-width="1.4" stroke-linejoin="round"/>
+  <polyline points="418.0,347.8 422.2,347.8 426.4,347.7 430.6,347.5 434.8,347.3 439.0,347.1 443.2,346.8 447.4,346.4 451.6,345.9 455.8,345.3 460.0,344.5 464.2,343.5 468.4,342.3 472.6,340.9 476.8,339.2 481.0,337.2 485.2,334.9 489.4,332.2 493.6,329.2 497.8,325.8 502.0,322.1 506.2,318.1 510.4,313.7 514.6,309.2 518.8,304.4 523.0,299.6 527.2,294.8 531.4,290.1 535.6,285.5 539.8,281.4 544.0,277.6 548.2,274.3 552.4,271.7 556.6,269.8 560.8,268.6 565.0,268.2 569.2,268.6 573.4,269.8 577.6,271.7 581.8,274.3 586.0,277.6 590.2,281.4 594.4,285.5 598.6,290.1 602.8,294.8 607.0,299.6 611.2,304.4 615.4,309.2 619.6,313.7 623.8,318.1 628.0,322.1 632.2,325.8 636.4,329.2 640.6,332.2 644.8,334.9 649.0,337.2 653.2,339.2 657.4,340.9 661.6,342.3 665.8,343.5 670.0,344.5 674.2,345.3 678.4,345.9 682.6,346.4 686.8,346.8 691.0,347.1 695.2,347.3 699.4,347.5 703.6,347.7 707.8,347.8 712.0,347.8" fill="none" stroke="#e11d48" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="565.0" y="322.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#9f1239" text-anchor="middle">68% (±1σ)</text>
+  <text x="565.0" y="274.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">95% within ±1.96σ</text>
+</svg>

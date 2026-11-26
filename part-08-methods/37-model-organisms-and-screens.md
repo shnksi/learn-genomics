@@ -109,6 +109,8 @@ thousand of them on nine agar plates and then trace the defect to a single named
 
 You need to break genes at a tunable rate and in a recoverable way.
 
+![Forward genetics (phenotype → mutant → causal gene) versus reverse genetics (gene → targeted edit → phenotype), and how suppressor versus enhancer modifier screens map interacting genes around a focal mutation.](../figures/fig-37-screens-epistasis.svg)
+
 | Mutagen | Lesion produced | Why you'd choose it | Cost |
 |---|---|---|---|
 | **EMS** | Alkylates guanine; almost all G:C→A:T transitions | Dense point mutations; produces an **allelic series** — nulls, partial-function hypomorphs, temperature-sensitives | The lesion carries no tag; you must map it |

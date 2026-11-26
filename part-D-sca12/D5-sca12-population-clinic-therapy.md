@@ -92,6 +92,8 @@ Rare-disease geography is population history. A "rare" disease is rare *in the p
 
 ## 2. Diagnosis: why a negative genome is not an answer
 
+![SCA12 molecular diagnostic readouts compared: standard flanking PCR suffers allelic dropout of expanded repeats (appearing falsely homozygous), repeat-primed PCR (RP-PCR) reveals a diagnostic 3-bp sawtooth tail proving expansion, and long-read sequencing spans the entire repeat tract to capture exact size, interruptions, and methylation.](../figures/fig-D5b-rppcr-sawtooth-longread.svg)
+
 ### 2.1 Derive the failure, do not memorise it
 
 Short-read whole-genome sequencing of the 1000 Genomes 30× kind produces **150 bp paired-end reads**. To measure a repeat by sequence, a read must contain the whole repeat plus enough unique flanking sequence at both ends to anchor it. Count:
@@ -279,6 +281,8 @@ Reproductive options — prenatal diagnosis, preimplantation testing, or neither
 > clean halfway break.
 
 ## 4. Therapy: you cannot design the drug until you know the arrow
+
+![Diagnostic blind spot of standard short-read WGS at expanded *PPP2R2B* repeats (requiring repeat-primed PCR or long reads) and the therapeutic decision tree showing why knocking down versus preserving *PPP2R2B* depends on resolving the causal arrow.](../figures/fig-D5-sca12-clinic-therapy.svg)
 
 ### 4.1 Start from what is actually there
 

@@ -79,6 +79,8 @@ data did.
 
 The move that made short-read assembly tractable: stop treating reads as the unit.
 
+![De Bruijn graph genome assembly (*k*-mers as edges between (*k*−1)-mer nodes) and the three canonical graph artefacts: dead-end tips from sequencing errors, bubbles from heterozygous SNPs, and collapsed loops from repeats longer than *k*.](../figures/fig-43-de-bruijn-assembly.svg)
+
 Chop every read into all its overlapping substrings of length *k* (**k-mers**). Build a graph
 whose **nodes are (k−1)-mers** and whose **edges are k-mers**: the k-mer `ACGT` is an edge from
 node `ACG` to node `CGT`. A reconstruction now uses every k-mer once, so it is an **Eulerian

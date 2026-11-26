@@ -46,6 +46,8 @@ to come apart.
 Every amino acid has the same backbone. What differs is one **side chain**. The backbone
 provides the chain; the side chains provide all the chemistry.
 
+![The 20 genetically encoded amino acids organised by side-chain chemistry (nonpolar aliphatic, aromatic, polar uncharged, positively charged basic, negatively charged acidic, and structural specialists Gly, Pro, and Cys).](../figures/fig-08b-amino-acid-classes.svg)
+
 | Class | Residues | Side-chain chemistry | What it buys you |
 |---|---|---|---|
 | **Nonpolar aliphatic** | Ala (A), Val (V), Leu (L), Ile (I), Met (M) | saturated hydrocarbon | Buried in the core — the hydrophobic effect's raw material |
@@ -75,6 +77,8 @@ downstream RNA structure ([Ch 07](07-genetic-code-and-translation.md)). The alph
 quite closed.
 
 ## 2. Four levels
+
+![Tertiary fold of a globular protein in ribbon representation: α-helices (teal), β-strands assembled into a central sheet (amber), connecting loops (slate), and a bound small-molecule ligand (coral) nestled inside the active-site pocket.](../figures/art-08-protein-folding.png)
 
 | Level | What it is | Determined by |
 |---|---|---|
@@ -127,6 +131,8 @@ and let it refold in a test tube with nothing else present. It recovered full ca
 The conclusion, worth a Nobel Prize in 1972: **all the information specifying the
 three-dimensional structure is in the amino acid sequence.** The native state is the
 thermodynamic minimum and folding is spontaneous.
+
+![Three-dimensional protein-folding energy funnel: diverse unfolded polypeptide chains at the wide high-entropy rim descend a rugged free-energy landscape — occasionally pausing in local kinetic traps rescued by chaperones — to settle into the single compact native fold at the deep narrow minimum.](../figures/art-08-folding-funnel.png)
 
 Cyrus Levinthal showed why that cannot be taken literally. Give a 100-residue protein just three
 accessible backbone conformations per residue: 3¹⁰⁰ ≈ 5 × 10⁴⁷ states. Sample each in 10⁻¹³ s,
@@ -195,6 +201,8 @@ the enzyme binds that strained configuration at the top of the barrier — a tra
 intermediate, which would sit in an energy well and have a finite lifetime — more tightly than it
 binds either substrate or product, and that differential binding energy is the rate enhancement.
 
+![The four hierarchical levels of protein structure and how mutations map to distinct functional mechanisms: loss of function (haploinsufficiency), dominant negative poisoning of multimers, and gain of function.](../figures/fig-08-protein-levels-and-effects.svg)
+
 **Binding surfaces.** Protein–protein interfaces typically bury 1,200–2,000 Å², but binding
 energy is not spread evenly over them. A few **hotspot** residues contribute most of the affinity
 — which is why a handful of interface mutations abolish binding and most do nothing.
@@ -239,6 +247,8 @@ repeat hydroxylated — roughly half of all its prolines — by a vitamin-C-depe
 triple helix is unstable at body temperature. Scurvy is a post-translational modification failure.
 
 ## 7. Degradation, and the two-sided ledger
+
+![Cutaway structural illustration of the 26S proteasome: a misfolded protein tagged with a chain of gold ubiquitin spheres enters the upper 19S regulatory cap (amber), is unfolded and threaded through the four-ring 20S catalytic barrel (teal/slate), and emerges below as short cleaved peptides.](../figures/art-08-proteasome-autophagy.png)
 
 ```mermaid
 graph LR

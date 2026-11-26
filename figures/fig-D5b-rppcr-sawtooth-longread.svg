@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="360.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">SCA12 diagnostics: flanking PCR vs. RP-PCR sawtooth vs. long reads</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Large GC-rich CAG tracts fail flanking PCR (allelic dropout); RP-PCR gives a 3-bp sawtooth while long reads size every base</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="224.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">1. Flanking PCR (allelic dropout)</text>
+  <line x1="44.0" y1="224.0" x2="228.0" y2="224.0" stroke="#334155" stroke-width="1.3" stroke-linecap="round"/>
+  <polygon points="78.0,224.0 88.0,132.0 98.0,224.0" fill="#eff6ff" stroke="#2563eb" stroke-width="2" stroke-linejoin="round"/>
+  <text x="88.0" y="122.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="700" fill="#1e40af" text-anchor="middle">10 CAG</text>
+  <polygon points="164.0,224.0 174.0,178.0 184.0,224.0" fill="none" stroke="#e11d48" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="3,2"/>
+  <text x="174.0" y="168.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#9f1239" text-anchor="middle">55 CAG?</text>
+  <text x="174.0" y="206.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="500" fill="#9f1239" text-anchor="middle">(fails!)</text>
+  <text x="136.0" y="256.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">Only 1 peak appears → looks</text>
+  <text x="136.0" y="270.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">falsely homozygous (10/10)!</text>
+  <text x="136.0" y="284.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">Never stop at a single-peak</text>
+  <text x="136.0" y="298.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">flanking PCR result.</text>
+  <rect x="268.0" y="72.0" width="224.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="280.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">2. RP-PCR (sawtooth stutter)</text>
+  <line x1="288.0" y1="224.0" x2="472.0" y2="224.0" stroke="#334155" stroke-width="1.3" stroke-linecap="round"/>
+  <polyline points="294.0,224.0 300.0,224.0 304.0,138.0 308.0,224.0 311.0,224.0 315.0,149.2 319.0,224.0 322.0,224.0 326.0,159.0 330.0,224.0 333.0,224.0 337.0,167.5 341.0,224.0 344.0,224.0 348.0,174.9 352.0,224.0 355.0,224.0 359.0,181.3 363.0,224.0 366.0,224.0 370.0,186.9 374.0,224.0 377.0,224.0 381.0,191.7 385.0,224.0 388.0,224.0 392.0,195.9 396.0,224.0 399.0,224.0 403.0,199.6 407.0,224.0 410.0,224.0 414.0,202.8 418.0,224.0 421.0,224.0 425.0,205.6 429.0,224.0 432.0,224.0 436.0,208.0 440.0,224.0 443.0,224.0 447.0,210.1 451.0,224.0" fill="none" stroke="#c25e0a" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="380.0" y="126.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#c25e0a" text-anchor="middle">3-bp sawtooth tail!</text>
+  <text x="380.0" y="256.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">Repeat primer anneals at every</text>
+  <text x="380.0" y="270.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">CAG → proves expansion exists</text>
+  <text x="380.0" y="284.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">(rules out homozygosity), but</text>
+  <text x="380.0" y="298.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">cannot size very long tracts.</text>
+  <rect x="512.0" y="72.0" width="224.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="524.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">3. Long-read WGS / targeted</text>
+  <rect x="532.0" y="128.0" width="184.0" height="14.0" rx="3" fill="#eff6ff" stroke="#2563eb" stroke-width="1.4"/>
+  <rect x="584.0" y="128.0" width="28.0" height="14.0" rx="2" fill="#0d8a7b" stroke="none" stroke-width="1.2"/>
+  <text x="624.0" y="118.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.8" font-weight="700" fill="#1e40af" text-anchor="middle">Allele 1: 10 CAG (normal)</text>
+  <rect x="532.0" y="174.0" width="184.0" height="14.0" rx="3" fill="#fff1f2" stroke="#e11d48" stroke-width="1.4"/>
+  <rect x="566.0" y="174.0" width="102.0" height="14.0" rx="2" fill="#e11d48" stroke="none" stroke-width="1.2"/>
+  <text x="624.0" y="164.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.8" font-weight="700" fill="#9f1239" text-anchor="middle">Allele 2: 55 CAG + interruptions!</text>
+  <text x="624.0" y="210.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#085f55" text-anchor="middle">Single reads span flank-to-flank</text>
+  <text x="624.0" y="256.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">Gives exact repeat length,</text>
+  <text x="624.0" y="270.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">somatic length mosaicism,</text>
+  <text x="624.0" y="284.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">sequence interruptions, AND</text>
+  <text x="624.0" y="298.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">native CpG methylation!</text>
+</svg>

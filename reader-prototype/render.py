@@ -508,7 +508,19 @@ def render_blocks(lines: list[str]) -> str:
             para.append(s)
             i += 1
         if para:
-            out.append(f"<p>{render_inline(' '.join(para))}</p>")
+            joined = " ".join(para)
+            img_only = re.fullmatch(r"!\[(.*)\]\(([^)\s]+)\)", joined)
+            if img_only:
+                alt, src = img_only.group(1), img_only.group(2)
+                plain_alt = re.sub(r"<[^>]+>", "", alt).replace("*", "").replace("`", "")
+                cap = f"<figcaption>{render_inline(alt)}</figcaption>" if alt.strip() else ""
+                out.append(
+                    f'<figure class="course-figure">'
+                    f'<img src="{html.escape(src)}" alt="{html.escape(plain_alt)}" loading="lazy">'
+                    f"{cap}</figure>"
+                )
+            else:
+                out.append(f"<p>{render_inline(joined)}</p>")
         else:
             i += 1
 

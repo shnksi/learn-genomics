@@ -73,6 +73,8 @@ a fetal neuron.
 
 Write the additive model over the *m* variants in the region, on standardised genotypes:
 
+![From GWAS hit to causal mechanism: LD turns one causal SNP into a wide peak of correlated variants, statistical fine-mapping assigns posterior inclusion probabilities (PIPs) into a 95% credible set, and colocalisation plus chromatin looping link the variant to its target gene.](../figures/fig-52-finemapping-coloc.svg)
+
 $$y = \mathbf{X}\boldsymbol{\beta} + \epsilon, \qquad \mathbf{X}^\top\mathbf{X}/n = \mathbf{R}$$
 
 **R** is the LD matrix from [Ch 29](../part-05-population-genetics/29-linkage-disequilibrium.md), and

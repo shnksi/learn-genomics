@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 355" width="760" height="355" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="355.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">The whole story across four biological scales</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">From base-pair chemistry to cellular phenotype, populations, and sequencing data</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="78.0" width="166.0" height="178.0" rx="10" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.6"/>
+  <rect x="24.0" y="78.0" width="166.0" height="30.0" rx="8" fill="#0d8a7b" stroke="none" stroke-width="1.2"/>
+  <text x="107.0" y="98.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">1. Genome (DNA)</text>
+  <circle cx="40.0" cy="130.0" r="3.5" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <text x="51.0" y="134.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="start">3.1 Gb sequence</text>
+  <circle cx="40.0" cy="160.0" r="3.5" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <text x="51.0" y="164.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="start">20,000 protein genes</text>
+  <circle cx="40.0" cy="190.0" r="3.5" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <text x="51.0" y="194.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="start">98.5% non-coding</text>
+  <circle cx="40.0" cy="220.0" r="3.5" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <text x="51.0" y="224.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="start">Mutations &amp; repeats</text>
+  <line x1="192.0" y1="166.0" x2="226.0" y2="166.0" stroke="#334155" stroke-width="2.0" stroke-linecap="round" marker-end="url(#arr-ink)"/>
+  <rect x="206.0" y="78.0" width="166.0" height="178.0" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <rect x="206.0" y="78.0" width="166.0" height="30.0" rx="8" fill="#2563eb" stroke="none" stroke-width="1.2"/>
+  <text x="289.0" y="98.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">2. Regulation &amp; RNA</text>
+  <circle cx="222.0" cy="130.0" r="3.5" fill="#2563eb" stroke="none" stroke-width="1.5"/>
+  <text x="233.0" y="134.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="start">Enhancers &amp; chromatin</text>
+  <circle cx="222.0" cy="160.0" r="3.5" fill="#2563eb" stroke="none" stroke-width="1.5"/>
+  <text x="233.0" y="164.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="start">Transcription (Pol II)</text>
+  <circle cx="222.0" cy="190.0" r="3.5" fill="#2563eb" stroke="none" stroke-width="1.5"/>
+  <text x="233.0" y="194.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="start">Splicing &amp; isoforms</text>
+  <circle cx="222.0" cy="220.0" r="3.5" fill="#2563eb" stroke="none" stroke-width="1.5"/>
+  <text x="233.0" y="224.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="start">Translation → Protein</text>
+  <line x1="374.0" y1="166.0" x2="408.0" y2="166.0" stroke="#334155" stroke-width="2.0" stroke-linecap="round" marker-end="url(#arr-ink)"/>
+  <rect x="388.0" y="78.0" width="166.0" height="178.0" rx="10" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.6"/>
+  <rect x="388.0" y="78.0" width="166.0" height="30.0" rx="8" fill="#c25e0a" stroke="none" stroke-width="1.2"/>
+  <text x="471.0" y="98.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">3. Cell &amp; Organism</text>
+  <circle cx="404.0" cy="130.0" r="3.5" fill="#c25e0a" stroke="none" stroke-width="1.5"/>
+  <text x="415.0" y="134.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="start">Proteins build traits</text>
+  <circle cx="404.0" cy="160.0" r="3.5" fill="#c25e0a" stroke="none" stroke-width="1.5"/>
+  <text x="415.0" y="164.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="start">Meiosis &amp; segregation</text>
+  <circle cx="404.0" cy="190.0" r="3.5" fill="#c25e0a" stroke="none" stroke-width="1.5"/>
+  <text x="415.0" y="194.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="start">Linkage &amp; recombination</text>
+  <circle cx="404.0" cy="220.0" r="3.5" fill="#c25e0a" stroke="none" stroke-width="1.5"/>
+  <text x="415.0" y="224.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="start">Development &amp; disease</text>
+  <line x1="556.0" y1="166.0" x2="590.0" y2="166.0" stroke="#334155" stroke-width="2.0" stroke-linecap="round" marker-end="url(#arr-ink)"/>
+  <rect x="570.0" y="78.0" width="166.0" height="178.0" rx="10" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.6"/>
+  <rect x="570.0" y="78.0" width="166.0" height="30.0" rx="8" fill="#7c3aed" stroke="none" stroke-width="1.2"/>
+  <text x="653.0" y="98.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">4. Population &amp; Data</text>
+  <circle cx="586.0" cy="130.0" r="3.5" fill="#7c3aed" stroke="none" stroke-width="1.5"/>
+  <text x="597.0" y="134.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="start">Drift, selection, LD</text>
+  <circle cx="586.0" cy="160.0" r="3.5" fill="#7c3aed" stroke="none" stroke-width="1.5"/>
+  <text x="597.0" y="164.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="start">Sequencing reads</text>
+  <circle cx="586.0" cy="190.0" r="3.5" fill="#7c3aed" stroke="none" stroke-width="1.5"/>
+  <text x="597.0" y="194.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="start">GWAS, scRNA, 3D Hi-C</text>
+  <circle cx="586.0" cy="220.0" r="3.5" fill="#7c3aed" stroke="none" stroke-width="1.5"/>
+  <text x="597.0" y="224.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#0f172a" text-anchor="start">Clinical inference</text>
+  <rect x="24.0" y="274.0" width="712.0" height="62.0" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="380.0" y="294.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0f172a" text-anchor="middle">How the curriculum zooms into this pipeline</text>
+  <rect x="38.0" y="304.0" width="218.0" height="22.0" rx="11.0" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.2"/>
+  <text x="147.0" y="318.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#085f55" text-anchor="middle">Parts 1–3: Molecular &amp; Inheritance</text>
+  <rect x="276.0" y="304.0" width="218.0" height="22.0" rx="11.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="385.0" y="318.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1e40af" text-anchor="middle">Parts 4–7: Regulation, Pop &amp; Evol</text>
+  <rect x="514.0" y="304.0" width="218.0" height="22.0" rx="11.0" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.2"/>
+  <text x="623.0" y="318.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#c25e0a" text-anchor="middle">Parts 8–12 + D: Genomics &amp; SCA12</text>
+</svg>

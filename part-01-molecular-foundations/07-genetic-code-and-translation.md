@@ -75,6 +75,8 @@ Three further properties. **Non-overlapping**: base 4 belongs to codon 2 and not
 
 Double-stranded DNA can be read in **six frames**: three offsets on each strand. A translator that doesn't know which is real must produce all six.
 
+![Ribosomal translation elongation across the A, P, and E sites, reading-frame shifts caused by single-base insertions, and wobble base-pairing at the third codon position explaining why the 64-codon genetic code tolerates synonymous third-base changes.](../figures/fig-07-translation-ribosome.svg)
+
 ```
         1         2
         123456789012345678901
@@ -104,6 +106,8 @@ Now the calculation underwriting all ORF-finding ([Ch 44](../part-09-genomics/44
 ## 3. Wobble: why the third base is cheap
 
 In every four-codon family the third base is irrelevant; in every two-codon family it matters only as pyrimidine-versus-purine. Why systematically the third?
+
+![Transfer RNA cloverleaf architecture (separating the 3′-CCA amino-acid acceptor stem from the anticodon loop), third-position wobble pairing rules (including three-way inosine recognition), and aminoacyl-tRNA synthetase fidelity.](../figures/fig-07b-trna-wobble.svg)
 
 Because of how a tRNA reads it. The **anticodon** is three bases — numbered 34, 35, 36 — pairing antiparallel with the codon:
 

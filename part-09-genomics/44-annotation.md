@@ -74,6 +74,8 @@ Which is exactly what an HMM gives you.
 Model the genome as a sequence of hidden states emitting observed bases. The parse *is* the
 state path.
 
+![Eukaryotic gene-finding Hidden Markov Model traversing intergenic, start, exon, splice-site, intron, and stop states, integrated with empirical RNA-seq splice junctions and protein homology evidence.](../figures/fig-44-gene-finding-hmm.svg)
+
 ```mermaid
 graph LR
     IG["intergenic"] --> P["promoter / 5'UTR"]

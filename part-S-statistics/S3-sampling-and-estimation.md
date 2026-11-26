@@ -362,6 +362,8 @@ pooled dataset about 2% too small, and far worse in more structured samples.
 An estimate plus a standard error gives an interval. The standard 95% **Wald** interval is
 *p̂* ± 1.96·SE.
 
+![Frequentist 95% confidence intervals across 20 repeated samples (most bracketing the true parameter *θ*, occasional misses) alongside the 1/√*n* narrowing of the standard error of the mean.](../figures/fig-S3-sampling-ci.svg)
+
 What does 95% mean? Here is the experiment, run on the real data: draw 100 samples of 50 EUR
 individuals, build the interval each time, and count how many contain the value we defined as truth.
 

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="360.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Standard error shrinks as σ / √n, and what a 95% confidence interval means</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Across repeated random samples, ~95% of computed intervals cover the fixed true parameter μ (the interval is random, not μ)</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="344.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Population (SD = σ) vs. Sample mean (SE = σ/√n)</text>
+  <line x1="52.0" y1="120.0" x2="52.0" y2="286.0" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="52.0" y1="286.0" x2="342.0" y2="286.0" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="197.0" y="320.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">Value</text>
+  <text x="16.0" y="203.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle" transform="rotate(-90 16.0 203.0)">Density</text>
+  <polyline points="52.0,285.9 55.6,285.8 59.2,285.8 62.9,285.7 66.5,285.6 70.1,285.5 73.8,285.3 77.4,285.1 81.0,284.9 84.6,284.6 88.2,284.2 91.9,283.8 95.5,283.3 99.1,282.6 102.8,281.9 106.4,281.0 110.0,279.9 113.6,278.7 117.2,277.3 120.9,275.8 124.5,274.1 128.1,272.1 131.8,270.0 135.4,267.7 139.0,265.3 142.6,262.7 146.2,259.9 149.9,257.1 153.5,254.2 157.1,251.3 160.8,248.4 164.4,245.5 168.0,242.8 171.6,240.3 175.2,237.9 178.9,235.8 182.5,234.1 186.1,232.7 189.8,231.7 193.4,231.0 197.0,230.8 200.6,231.0 204.2,231.7 207.9,232.7 211.5,234.1 215.1,235.8 218.8,237.9 222.4,240.3 226.0,242.8 229.6,245.5 233.2,248.4 236.9,251.3 240.5,254.2 244.1,257.1 247.7,259.9 251.4,262.7 255.0,265.3 258.6,267.7 262.2,270.0 265.9,272.1 269.5,274.1 273.1,275.8 276.8,277.3 280.4,278.7 284.0,279.9 287.6,281.0 291.2,281.9 294.9,282.6 298.5,283.3 302.1,283.8 305.8,284.2 309.4,284.6 313.0,284.9 316.6,285.1 320.2,285.3 323.9,285.5 327.5,285.6 331.1,285.7 334.8,285.8 338.4,285.8 342.0,285.9" fill="none" stroke="#64748b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="52.0,286.0 55.6,286.0 59.2,286.0 62.9,286.0 66.5,286.0 70.1,286.0 73.8,286.0 77.4,286.0 81.0,286.0 84.6,286.0 88.2,286.0 91.9,286.0 95.5,286.0 99.1,286.0 102.8,286.0 106.4,286.0 110.0,286.0 113.6,286.0 117.2,286.0 120.9,286.0 124.5,286.0 128.1,286.0 131.8,286.0 135.4,286.0 139.0,285.9 142.6,285.9 146.2,285.7 149.9,285.2 153.5,284.2 157.1,282.4 160.8,279.1 164.4,273.5 168.0,264.7 171.6,251.9 175.2,234.8 178.9,213.8 182.5,190.4 186.1,167.0 189.8,146.9 193.4,133.2 197.0,128.3 200.6,133.2 204.2,146.9 207.9,167.0 211.5,190.4 215.1,213.8 218.8,234.8 222.4,251.9 226.0,264.7 229.6,273.5 233.2,279.1 236.9,282.4 240.5,284.2 244.1,285.2 247.7,285.7 251.4,285.9 255.0,285.9 258.6,286.0 262.2,286.0 265.9,286.0 269.5,286.0 273.1,286.0 276.8,286.0 280.4,286.0 284.0,286.0 287.6,286.0 291.2,286.0 294.9,286.0 298.5,286.0 302.1,286.0 305.8,286.0 309.4,286.0 313.0,286.0 316.6,286.0 320.2,286.0 323.9,286.0 327.5,286.0 331.1,286.0 334.8,286.0 338.4,286.0 342.0,286.0" fill="none" stroke="#0d8a7b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="268.0" y="239.5" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="700" fill="#64748b" text-anchor="start">Population (σ)</text>
+  <text x="230.0" y="143.2" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="700" fill="#085f55" text-anchor="start">Sample mean x̄ (SE = σ/√n)</text>
+  <rect x="388.0" y="72.0" width="348.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="400.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">16 repeated 95% confidence intervals around true μ</text>
+  <line x1="562.0" y1="102.0" x2="562.0" y2="314.0" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="4,3"/>
+  <text x="562.0" y="330.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#0f172a" text-anchor="middle">True μ (fixed)</text>
+  <line x1="510.0" y1="112.0" x2="578.0" y2="112.0" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="544.0" cy="112.0" r="2.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="540.0" y1="124.8" x2="608.0" y2="124.8" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="574.0" cy="124.8" r="2.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="520.0" y1="137.6" x2="588.0" y2="137.6" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="554.0" cy="137.6" r="2.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="552.0" y1="150.4" x2="620.0" y2="150.4" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="586.0" cy="150.4" r="2.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="498.0" y1="163.2" x2="566.0" y2="163.2" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="532.0" cy="163.2" r="2.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="534.0" y1="176.0" x2="602.0" y2="176.0" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="568.0" cy="176.0" r="2.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="574.0" y1="188.8" x2="642.0" y2="188.8" stroke="#e11d48" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="608.0" cy="188.8" r="2.8" fill="#e11d48" stroke="none" stroke-width="1.5"/>
+  <text x="648.0" y="192.3" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#9f1239" text-anchor="start">miss!</text>
+  <line x1="514.0" y1="201.6" x2="582.0" y2="201.6" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="548.0" cy="201.6" r="2.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="546.0" y1="214.4" x2="614.0" y2="214.4" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="580.0" cy="214.4" r="2.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="506.0" y1="227.2" x2="574.0" y2="227.2" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="540.0" cy="227.2" r="2.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="536.0" y1="240.0" x2="604.0" y2="240.0" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="570.0" cy="240.0" r="2.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="524.0" y1="252.8" x2="592.0" y2="252.8" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="558.0" cy="252.8" r="2.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="556.0" y1="265.6" x2="624.0" y2="265.6" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="590.0" cy="265.6" r="2.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="512.0" y1="278.4" x2="580.0" y2="278.4" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="546.0" cy="278.4" r="2.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="538.0" y1="291.2" x2="606.0" y2="291.2" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="572.0" cy="291.2" r="2.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="502.0" y1="304.0" x2="570.0" y2="304.0" stroke="#0d8a7b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="536.0" cy="304.0" r="2.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+</svg>

@@ -79,6 +79,8 @@ Sequence the sheared chromatin *without* the immunoprecipitation ("input"), or w
 
 The successor idea inverts the logic. Instead of fragmenting everything and then selecting 0.1% of it, **only fragment near the target in the first place.**
 
+![Protocol comparison of ChIP-seq (whole-genome sonication + antibody pulldown) versus tethered-enzyme methods CUT&RUN (pA-MNase local excision) and CUT&Tag (pA-Tn5 direct adapter tagmentation) in intact nuclei.](../figures/fig-49b-chip-vs-cutrun-cuttag.svg)
+
 Permeabilised, unfixed nuclei are immobilised on beads. The primary antibody diffuses in and binds its target *in situ*. Then a fusion protein — protein A (or A/G) joined to micrococcal nuclease in **CUT&RUN**, or to hyperactive Tn5 transposase in **CUT&Tag** — is added; protein A binds the antibody's constant region, parking the enzyme beside the target. The enzyme is held inactive until you supply its cofactor (Ca²⁺ for MNase, Mg²⁺ for Tn5), so cutting happens only where the antibody is, and only within a short tether radius.
 
 ```
@@ -163,6 +165,8 @@ The cross-correlation curve deserves a picture, because it has two peaks and onl
 ## 4. Accessibility
 
 The question: which DNA is *not* wrapped on a nucleosome or otherwise occluded — a cheap, antibody-free proxy for "something regulatory is here". About three-quarters of the genome is on an octamer at any moment ([Ch 03](../part-01-molecular-foundations/03-genomes-chromosomes-chromatin.md)). The remainder is overwhelmingly linker, which is *not* accessible either — nucleosome-depleted regions at active promoters and enhancers are only ~1–3% of the genome, and those are what ATAC-seq and DNase-seq actually report. That 1–3% is where the interesting minority lives.
+
+![Aligned multi-omic epigenome browser tracks across an active gene: ATAC-seq open chromatin peaks, sharp promoter H3K4me3, distal enhancer H3K27ac, CTCF boundary ChIP/CUT&Tag signal, and hypomethylated CpG islands.](../figures/fig-49-epigenome-tracks.svg)
 
 | Assay | Mechanism | Readout | Note |
 |---|---|---|---|

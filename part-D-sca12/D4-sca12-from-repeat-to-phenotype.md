@@ -227,6 +227,8 @@ And a dosage datum with a sample size of two: Srivastava 2017 identified one hom
 
 D3 gave you the mechanism classes with their type specimens. Take each in turn and ask whether SCA12 fits. This is elimination, and it is worth doing slowly, because the residue is the interesting part.
 
+![Architecture of the *PPP2R2B* 5′ CAG repeat locus (normal 7–31 vs pathogenic ~43–78+ repeats) and five candidate mechanisms actively tested in SCA12: promoter dosage dysregulation, Bβ1/Bβ2 isoform shift, RNA foci toxicity, antisense/RAN translation, and somatic repeat expansion.](../figures/fig-D4-sca12-locus-hypotheses.svg)
+
 **Class I — coding repeats: polyglutamine protein gain of function + aggregation (type specimen: *HTT*).** Requires the repeat to be inside a reading frame. The SCA12 repeat is in the 5′ region: in the canonical transcript it is **not translated as polyglutamine**. Nor is there indirect evidence for a polyQ product in tissue — the one neuropathology series of record found ubiquitin-positive intranuclear inclusions that stained for **none** of expanded polyglutamine, α-synuclein, tau or TDP-43. Four negatives, four hypotheses narrowed. **Eliminated as the canonical mechanism** — with a caveat §6 will supply.
 
 **Class II — loss of function via silencing and methylation (type specimen: *FMR1* full mutation).** Requires the expansion to shut the gene down. The reporter data say the opposite: promoter activity *increases* with repeat length. **Eliminated as stated** — though see §8, where a single brain showed increased methylation and lower expression in the cerebellum specifically, which is exactly the sort of result that stops an elimination from being clean.
@@ -312,6 +314,8 @@ What D4 adds is the consequence. **The cerebellar component of SCA12 is not expl
 ---
 
 ## 5. Hypothesis B — the Bβ2 mitochondrial route
+
+![Mitochondrial dynamics in Hypothesis B of SCA12. Left: a healthy elongated, branching mitochondrial network with intact cristae. Right: outer-membrane recruitment of PP2A/Bβ2 promotes Drp1 assembly into a constricting helical fission collar (coral-amber), pinching mitochondria into small fragmented spheres that compromise neuronal ATP and Ca²⁺ buffering.](../figures/art-D4-mitochondria-fission.png)
 
 ### The claim
 

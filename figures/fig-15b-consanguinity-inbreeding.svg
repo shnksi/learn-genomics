@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 355" width="760" height="355" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="355.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Consanguinity and computing the inbreeding coefficient F by path counting</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">First-cousin marriage creates two closed loops through shared grandparents: F = Σ (½)ⁿ = (½)⁵ + (½)⁵ = 1/16</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="360.0" height="264.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">First-cousin pedigree loop (shared ancestors A₁, A₂)</text>
+  <rect x="144.0" y="108.0" width="24.0" height="24.0" rx="3" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="2"/>
+  <text x="156.0" y="124.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="middle">A₁</text>
+  <circle cx="236.0" cy="120.0" r="12.0" fill="#fff3e5" stroke="#c25e0a" stroke-width="2"/>
+  <text x="236.0" y="124.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#c25e0a" text-anchor="middle">A₂</text>
+  <line x1="168.0" y1="120.0" x2="224.0" y2="120.0" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="196.0" y1="120.0" x2="196.0" y2="148.0" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="130.0" y1="148.0" x2="262.0" y2="148.0" stroke="#0d8a7b" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="130.0" y1="148.0" x2="130.0" y2="168.0" stroke="#0d8a7b" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="262.0" y1="148.0" x2="262.0" y2="168.0" stroke="#0d8a7b" stroke-width="2.4" stroke-linecap="round"/>
+  <rect x="118.0" y="168.0" width="24.0" height="24.0" rx="3" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="2"/>
+  <text x="130.0" y="184.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="middle">B₁</text>
+  <circle cx="262.0" cy="180.0" r="12.0" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="2"/>
+  <text x="262.0" y="184.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="middle">B₂</text>
+  <circle cx="72.0" cy="180.0" r="11.0" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <line x1="83.0" y1="180.0" x2="118.0" y2="180.0" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <rect x="310.0" y="169.0" width="22.0" height="22.0" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <line x1="274.0" y1="180.0" x2="310.0" y2="180.0" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="130.0" y1="192.0" x2="130.0" y2="224.0" stroke="#0d8a7b" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="262.0" y1="192.0" x2="262.0" y2="224.0" stroke="#0d8a7b" stroke-width="2.4" stroke-linecap="round"/>
+  <rect x="118.0" y="224.0" width="24.0" height="24.0" rx="3" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="130.0" y="240.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#1e40af" text-anchor="middle">C₁</text>
+  <circle cx="262.0" cy="236.0" r="12.0" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="262.0" y="240.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#1e40af" text-anchor="middle">C₂</text>
+  <line x1="142.0" y1="233.0" x2="250.0" y2="233.0" stroke="#e11d48" stroke-width="2.0" stroke-linecap="round"/>
+  <line x1="142.0" y1="239.0" x2="250.0" y2="239.0" stroke="#e11d48" stroke-width="2.0" stroke-linecap="round"/>
+  <text x="196.0" y="227.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#9f1239" text-anchor="middle">Consanguineous</text>
+  <line x1="196.0" y1="239.0" x2="196.0" y2="274.0" stroke="#e11d48" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="196.0" cy="288.0" r="14.0" fill="#fff1f2" stroke="#e11d48" stroke-width="2.2"/>
+  <text x="196.0" y="292.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#9f1239" text-anchor="middle">I</text>
+  <text x="196.0" y="322.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="middle">Loop: C₁ — B₁ — A₁ — B₂ — C₂ (5 nodes!)</text>
+  <rect x="402.0" y="72.0" width="334.0" height="264.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="414.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Path formula: F = Σ (½)ⁿ (n = individuals in loop)</text>
+  <rect x="418.0" y="108.0" width="302.0" height="106.0" rx="8" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.4"/>
+  <text x="569.0" y="128.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#085f55" text-anchor="middle">Step-by-step for first cousins</text>
+  <text x="569.0" y="144.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">1. Loop via A₁: C₁ → B₁ → A₁ → B₂ → C₂ (n = 5)</text>
+  <text x="569.0" y="158.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">   Contribution = (½)⁵ = 1/32</text>
+  <text x="569.0" y="172.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">2. Loop via A₂: C₁ → B₁ → A₂ → B₂ → C₂ (n = 5)</text>
+  <text x="569.0" y="186.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">   Contribution = (½)⁵ = 1/32</text>
+  <text x="569.0" y="200.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">Total F = 1/32 + 1/32 = 1/16 = 6.25% IBD!</text>
+  <rect x="418.0" y="228.0" width="302.0" height="96.0" rx="8" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.4"/>
+  <text x="569.0" y="248.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#c25e0a" text-anchor="middle">Why rare recessive risk jumps dramatically</text>
+  <text x="569.0" y="264.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">Homozygote risk = q²(1−F) + qF.</text>
+  <text x="569.0" y="278.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">For q = 0.001 (1 in 1,000 allele):</text>
+  <text x="569.0" y="292.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">Unrelated: q² = 1 in 1,000,000</text>
+  <text x="569.0" y="306.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.3" font-weight="500" fill="#334155" text-anchor="middle">First cousins: ≈ q/16 = 1 in 16,000 (63× higher!)</text>
+</svg>

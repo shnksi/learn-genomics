@@ -39,6 +39,8 @@ Put a number on the first row now, because it recurs. A miRNA recognises targets
 
 microRNAs were found in *C. elegans* — *lin-4* in 1993, *let-7* in 2000 — and dismissed as a worm curiosity until *let-7* proved conserved across bilaterians. Victor Ambros and Gary Ruvkun took the 2024 Nobel Prize in Physiology or Medicine for the work.
 
+![Post-transcriptional silencing by small RNAs: nuclear Drosha cleavage and cytoplasmic Dicer processing load a guide strand into Argonaute/RISC, where partial 3′-UTR seed matching triggers repression and decay (miRNA) while near-perfect pairing induces direct Ago2 cleavage (siRNA).](../figures/fig-24-rna-regulation.svg)
+
 ```mermaid
 graph TD
     A["pri-miRNA<br/>Pol II transcript, capped + polyadenylated<br/>kilobases, hairpin embedded"]
@@ -163,6 +165,8 @@ That is the strongest support for the **RNA world hypothesis**: a stage where RN
 ## 10. CRISPR as bacterial adaptive immunity
 
 Repeat arrays interrupted by unique spacers were noticed in *E. coli* in 1987 and made sense in 2005, when three groups independently saw that the spacers matched phage and plasmid sequences. In 2007 a dairy-industry study of *Streptococcus thermophilus* supplied the causal version: challenge the bacterium with phage, survivors have acquired a new spacer from that phage, and deleting the spacer restores sensitivity. Adaptive immunity with heritable, sequence-encoded memory, in a prokaryote — present in roughly 40% of sequenced bacterial genomes and 85–90% of archaeal ones.
+
+![The three natural stages of bacterial CRISPR-Cas adaptive immunity (Adaptation via Cas1–Cas2, Expression into mature crRNAs, and PAM-gated Interference) alongside the chronological repeat–spacer CRISPR array.](../figures/fig-24b-crispr-bacterial-immunity.svg)
 
 **1. Adaptation.** Cas1–Cas2 acts as an integrase, capturing a ~30–40 bp **protospacer** from invading DNA and inserting it at the leader-proximal end of the array. Always that end, so the array is an **append-only, chronologically ordered log of past infections, newest first** — and the spacers matching currently circulating phage sit where they are transcribed most. Protospacer choice is PAM-guided, guaranteeing the acquired spacer will be usable.
 

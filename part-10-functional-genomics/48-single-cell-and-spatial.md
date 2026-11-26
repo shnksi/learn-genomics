@@ -43,6 +43,8 @@ zeros, the fragile clustering, the abused embeddings — descends from that one 
 A tissue containing proliferating cells (type A) and quiescent stroma (type B). Gene *MKI67*
 sits at 100 units per cell in A and 20 in B.
 
+![Why bulk RNA-seq confounds cell-type composition with cell-intrinsic expression changes — and how single-cell transcriptomics resolves distinct cell states in UMAP space while exposing sparse UMI counts and dropout.](../figures/fig-48-single-cell-confound.svg)
+
 | | Composition | Bulk value |
 |---|---|---|
 | Control | 60% A / 40% B | 0.6(100) + 0.4(20) = **68** |
@@ -62,6 +64,8 @@ tissue. Bulk co-expression networks are, to a first approximation, cell-composit
 ## 2. Measuring one cell at a time
 
 Three isolation strategies, each a different point on the same trade-off.
+
+![Microfluidic droplet encapsulation for single-cell RNA-seq: individual cells (teal, blue, rose) and barcoded hydrogel beads coated with capture oligos (amber) meet flanking oil streams to pinch off nanolitre water-in-oil droplets — yielding mostly empty droplets, single-cell/single-bead captures, and occasional doublets governed by Poisson loading.](../figures/art-48-single-cell-droplets.png)
 
 **Plate-based (full-length).** Sort one cell per well, build a full-length library per well.
 Hundreds to low thousands of cells; hundreds of thousands of reads each; coverage across the
@@ -509,6 +513,8 @@ Dissociation destroys position. It also biases composition — cell types differ
 how well they survive being pulled out of a tissue — so the loss is not only of coordinates
 but of the denominator. Spatial methods keep the tissue intact and split into two families
 that make opposite trade-offs.
+
+![Two paradigms of spatial transcriptomics. Left: array-based spatial capture (such as Visium), where a tissue section overlays a hexagonal grid of spatially barcoded capture spots on glass. Right: subcellular in-situ imaging (such as MERFISH or Xenium), resolving individual fluorescently barcoded mRNA molecules directly inside mapped cell boundaries.](../figures/art-48-spatial-transcriptomics.png)
 
 **Imaging / in situ.** Fluorescent probes are hybridised to chosen transcripts over multiple
 rounds, each transcript species assigned an error-correcting binary code across rounds

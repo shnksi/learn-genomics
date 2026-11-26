@@ -52,6 +52,8 @@ like a rate problem.
 Biological molecules are built from a small alphabet: **carbon, hydrogen, oxygen, nitrogen,
 phosphorus, sulfur** — plus ions like sodium, potassium, magnesium and calcium.
 
+![Bond energy hierarchy (covalent bonds holding polymers together versus individually weak non-covalent interactions that enable reversible folding and recognition) and the four biological macromolecule classes.](../figures/fig-01-chemistry-macromolecules.svg)
+
 Two kinds of connection matter:
 
 **Covalent bonds** — atoms sharing electrons. Strong and long-lived at body temperature, and
@@ -76,6 +78,8 @@ an enzyme releasing product — is non-covalent. Anything that has to persist is
 
 Water is polar: the oxygen pulls electron density from the hydrogens, leaving the molecule
 with a slightly negative end and a slightly positive end. Consequences that recur constantly:
+
+![The hydrophobic effect in aqueous cells: water maximises its own hydrogen-bond network by pushing nonpolar chains together — driving both phospholipid bilayer self-assembly and the hydrophobic collapse that folds proteins.](../figures/fig-01b-water-bilayer-folding.svg)
 
 **Polar and charged molecules dissolve; non-polar ones don't.** Water forms favourable
 interactions with the former and not the latter.
@@ -178,6 +182,10 @@ structure**. The α-helix's width is not trivia — it is why a protein can push
 wider of DNA's two grooves and read the sequence there
 ([Ch 02 §5](../part-01-molecular-foundations/02-dna-structure.md)).
 
+![Geometric dimensions of α-helices (~12 Å, *i* → *i*+4 backbone H-bonds, 3.6 residues per turn) and pleated β-sheets, illustrating why a 12 Å recognition α-helix fits cleanly into DNA's ~22 Å major groove but cannot fit into the ~12 Å minor groove.](../figures/fig-01c-secondary-structure.svg)
+
+![Protein secondary structure and DNA recognition. Left: right-handed α-helix (~12 Å diameter) stabilised by vertical backbone hydrogen bonds. Centre: three-strand antiparallel β-sheet linked by inter-strand hydrogen bonds. Right: an α-helix nestled snugly inside the wide major groove of a DNA double helix.](../figures/art-01-alpha-beta-groove.png)
+
 **Shape is function.** A protein works by having a surface complementary to its partner. This
 is why a single amino acid change can abolish function (if it disrupts the fold or the active
 site) or do nothing at all (if it sits on the surface pointing at nothing) — a fact that
@@ -199,6 +207,8 @@ identity tags — including the ABO blood group system you'll meet in
 ## 4. The cell
 
 Two architectures.
+
+![Cutaway eukaryotic animal cell showing the central nucleus with chromatin and nucleolus (teal), ribosome-studded rough endoplasmic reticulum and smooth ER tubules (blue), stacked Golgi apparatus with budding vesicles (amber), cristae-filled mitochondria (dark teal), spherical lysosomes (coral), and cytoskeletal filaments.](../figures/art-01-eukaryotic-cell.png)
 
 **Prokaryotes** (bacteria and archaea) — no nucleus. One circular chromosome sitting in the
 cytoplasm. Transcription and translation happen in the same space, simultaneously: ribosomes

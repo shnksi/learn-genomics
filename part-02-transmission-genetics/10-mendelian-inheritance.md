@@ -106,6 +106,8 @@ Note what the 3:1 costs you: the phenotype is a **lossy projection** of the geno
 
 The Punnett square lays out one parent's gametes on each axis and fills the cells:
 
+![Mendel's laws derived as factored probabilities: a monohybrid Aa × Aa cross gives 1:2:1 genotypes (3:1 phenotypes), and independent assortment of unlinked loci lets multi-locus crosses multiply directly instead of expanding giant Punnett grids.](../figures/fig-10-mendel-segregation.svg)
+
 |  | **A** (½) | **a** (½) |
 |---|---|---|
 | **A** (½) | *AA* ¼ | *Aa* ¼ |

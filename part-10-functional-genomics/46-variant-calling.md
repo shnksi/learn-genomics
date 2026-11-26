@@ -54,6 +54,8 @@ Eight observations. Three say T. The naive answer is "37.5% alt, call it heteroz
 
 Fix a biallelic site with reference allele **R** and candidate alternate **A**. The latent variable is the genotype *G* ∈ {RR, RA, AA}. The data are *D* = {(*b*ᵢ, *q*ᵢ)}, base calls and Phred qualities.
 
+![Variant calling from an aligned read pileup: integrating base qualities and read alleles into genotype likelihoods *P*(*D* | *G*) for 0/0, 0/1, and 1/1, and why local haplotype reassembly outperforms column-by-column calling near indels.](../figures/fig-46-variant-calling.svg)
+
 The quality score *is* an error probability: εᵢ = 10^(−*q*ᵢ/10). Q30 means ε = 0.001; Q10 means ε = 0.1. That single fact is what makes this a probabilistic problem rather than a counting one.
 
 For a **haploid template allele** *X*, the emission model is as simple as it gets:
@@ -124,6 +126,8 @@ Neither fixes misalignment. That needs §4.
 ## 4. Haplotype-based calling and local reassembly
 
 Here is the failure mode that motivated the redesign of every serious germline caller.
+
+![Why naive column-by-column pileups emit false SNPs near indels (soft-clipped or misaligned read ends), and how GATK HaplotypeCaller resolves the true indel cleanly by assembling a local De Bruijn graph and scoring reads with a Pair-HMM.](../figures/fig-46b-local-reassembly.svg)
 
 ```
 true sample haplotype:   ...ACGT  CACACACACA        TTGA...      (2 CA units deleted)
@@ -253,6 +257,8 @@ Its limits are equally sharp. It says nothing about *which* calls are wrong, and
 ## 10. Structural variants
 
 By convention an SV is a rearrangement of >50 bp: deletion, duplication, insertion, inversion, translocation, and combinations thereof. They are a different problem, not a harder version of the same one, for one structural reason: **the variant is larger than the read.** You never observe it; you infer it from indirect signatures.
+
+![Detecting structural variants from short-read WGS by combining read depth, discordant paired-end insert/orientation signatures, and split reads pinpointing exact 1-bp breakpoints across deletions, duplications, inversions, and translocations.](../figures/fig-46c-sv-read-signatures.svg)
 
 ```
 DELETION

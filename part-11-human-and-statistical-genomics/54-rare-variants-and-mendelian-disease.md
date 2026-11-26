@@ -35,6 +35,8 @@ That reframing explains why the methods look nothing like GWAS. You do not scan 
 
 Every disease-associated variant sits somewhere on a plane: population frequency on one axis, effect size on the other. The plane is not uniformly populated, and its shape dictates study design.
 
+![The allele-frequency versus effect-size spectrum (from ultra-rare high-penetrance Mendelian variants to common small-effect GWAS alleles) paired with the clinical trio-exome filtering funnel from ~50,000 raw variants to a single causal candidate.](../figures/fig-54-allelic-architecture.svg)
+
 | Frequency class | Typical effect | Mechanism of discovery | Illustrative |
 |---|---|---|---|
 | Common, MAF > 5% | OR 1.01–1.2, or ~0.01–0.05 SD | GWAS on arrays + imputation | the several hundred thousand loci in the GWAS Catalog |

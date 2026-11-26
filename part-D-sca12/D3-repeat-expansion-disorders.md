@@ -34,6 +34,8 @@ The second theme is that a repeat allele is not a fixed thing you inherit and ke
 
 Do not memorise the tables that follow. Read them the way you would read a well-organised codebase: the organising principle is the content. The principle here is **mechanism class**, and there are six of them — I, II, II′, III, IV and V, where II′ is a variant on its neighbour and V is the awkward case this track is heading towards.
 
+![Mechanistic taxonomy of repeat-expansion disorders by gene location (5′-UTR, coding polyQ, intron, 3′-UTR) and the somatic instability loop driven by DNA slip-outs processed by mismatch-repair complexes (MSH2/MSH3).](../figures/fig-D3-repeat-expansions.svg)
+
 ### 1.1 Class I — coding repeats: the polyglutamine (and polyalanine, and polyglycine) disorders
 
 The repeat is inside an exon, in frame, and is translated. CAG reads as glutamine, so an expanded CAG tract becomes an expanded polyglutamine (polyQ) tract in the protein, which misfolds and aggregates — a gain of toxic function ([Ch 08 §10](../part-01-molecular-foundations/08-proteins-and-gene-function.md) gives the loss/gain/poison framework; [Ch 08 §8](../part-01-molecular-foundations/08-proteins-and-gene-function.md) the folding background).
@@ -126,6 +128,8 @@ This is not sloppiness to be cleaned up; it is what the underlying biology looks
 ## 2. Instability mechanics: beyond slippage
 
 [Ch 16 §9](../part-03-genome-instability/16-mutation.md) gave you slippage and the positive feedback; this section is what it left out. Take the slippage mechanism as read — misalignment of repetitive strands during synthesis — and ask the two questions Ch 16 could not answer: *why do some motifs expand and not others*, and *how does a repeat expand in a cell that never replicates its DNA again?*
+
+![Molecular engine of somatic CAG repeat expansion: slipped-out CAG·CAG hairpins are bound and stabilised by MutSβ (MSH2–MSH3), causing MutLγ (MLH1–MLH3) to nick the opposite strand so gap-filling locks in net repeat lengthening in post-mitotic neurons.](../figures/fig-D3b-cag-hairpin-mmr.svg)
 
 ### Why motifs differ: secondary structure
 

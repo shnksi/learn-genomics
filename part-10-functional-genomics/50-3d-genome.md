@@ -32,6 +32,8 @@ That gives you counts. Counts over pairs of genomic bins give you a matrix. And 
 
 The protocol is fixed for the first four steps and differs only in the last:
 
+![Five-step Hi-C proximity ligation workflow — formaldehyde crosslinking, restriction digestion, biotin end-fill, proximity blunt ligation, and streptavidin pulldown — turning 3D nuclear contacts into chimeric paired-end sequencing reads.](../figures/fig-50b-hic-assay.svg)
+
 1. **Crosslink.** Formaldehyde, on living cells, typically 10 minutes. It forms methylene bridges between amine groups on proteins and, less efficiently, between protein and DNA. The bridge itself spans about 2 Å, but crosslinks chain through protein–protein networks, so the effective capture radius is on the order of tens of nanometres and is not precisely known. This is the first thing that makes "contact" a fuzzy word.
 2. **Digest.** A restriction enzyme cuts the crosslinked chromatin. A 6-cutter such as HindIII gives ~4 kb fragments; a 4-cutter such as DpnII/MboI gives a few hundred bp. Micro-C replaces the enzyme with MNase, which chews to nucleosomes.
 3. **Ligate under dilute conditions**, or — better — **inside the intact nucleus**. Either way the intent is that ligation reports proximity rather than concentration. *In situ* ligation, which keeps nuclei intact rather than lysing them into solution, cut the random-ligation background substantially and is now standard.
@@ -135,6 +137,8 @@ Binned matrices live in **`.cool`/`.mcool`** (HDF5, sparse upper-triangular COO)
 
 ## 4. Four levels, largest to smallest
 
+![Cutaway eukaryotic nucleus showing the nuclear envelope pierced by nuclear pores, the fibrous nuclear lamina mesh at the periphery, distinct non-overlapping chromosome territories (coloured chromatin fibres), and an extruded chromatin loop held at its base by a cohesin ring.](../figures/art-50-3d-nucleus.png)
+
 | Level | Scale | How it shows up in the matrix | What makes it |
 |---|---|---|---|
 | **Chromosome territories** | whole chromosomes | cis contacts overwhelmingly exceed trans | polymer confinement + limited mixing after mitosis |
@@ -188,6 +192,8 @@ Calling loops is a local-enrichment test, and the local part is what matters. Na
 ## 5. Loop extrusion
 
 The mechanism that explains TADs, loops and the convergence rule at once.
+
+![Reading a Hi-C contact heatmap (triangular TAD squares and corner loop dots) directly from the loop-extrusion mechanism: cohesin reels chromatin through its ring until stalled by convergently oriented CTCF motifs.](../figures/fig-50-hic-tad-loops.svg)
 
 **Cohesin** is a ring-shaped SMC complex (SMC1, SMC3, RAD21, and a STAG/SA subunit) with ATPase activity. Loaded onto chromatin by **NIPBL** and removed by **WAPL**, it engages the fibre and reels it through, progressively enlarging a loop:
 

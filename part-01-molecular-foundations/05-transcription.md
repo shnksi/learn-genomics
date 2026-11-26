@@ -38,6 +38,8 @@ Inside the enzyme sits the **transcription bubble**: ~12–14 bp held unwound, c
 
 The polymerase physically reads one strand — the **template**. The RNA is complementary to it, and therefore *identical to the other strand* with U for T. That untouched strand is the one everyone writes down, because it reads like the product.
 
+![RNA polymerase transcription bubble showing the relationship between the 5′→3′ coding (non-template) strand, the 3′→5′ template strand, and the nascent 5′→3′ RNA transcript, plus bacterial σ-factor promoters versus eukaryotic Pol II pre-initiation complexes.](../figures/fig-05-transcription-bubble.svg)
+
 | Strand actually read | Strand the RNA resembles |
 |---|---|
 | template | coding |
@@ -121,6 +123,8 @@ stateDiagram-v2
 ## 4. Bacterial termination: two mechanisms, both derivable
 
 **Intrinsic (Rho-independent).** The nascent RNA carries a GC-rich inverted repeat followed immediately by 7–9 uridines. The hairpin is GC-rich so it folds fast and holds; the U-tract means the polymerase's grip on the template at that moment is **7–9 rU:dA pairs, the weakest base-paired hybrid that exists**. The hairpin forms at the exit channel and tugs the transcript backwards while the grip is at its minimum. It lets go. Neither feature alone suffices: hairpin without U-tract gives a pause, U-tract without hairpin gives a slow patch.
+
+![Bacterial Rho-independent termination (a nascent GC-rich RNA hairpin stalling RNA polymerase over a weak rU:dA hybrid) contrasted with eukaryotic Pol II pre-initiation complex assembly (TFIID/TBP, TFIIB, TFIIH helicase, and CTD phosphorylation).](../figures/fig-05b-termination-and-pic.svg)
 
 **Rho-dependent.** Rho is a hexameric ATP-driven 5'→3' RNA translocase. It loads at a **rut** site — C-rich, G-poor, unstructured, and crucially *not covered by ribosomes* — then chases the polymerase and prises the hybrid apart on catching a paused enzyme.
 

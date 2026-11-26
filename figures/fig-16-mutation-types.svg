@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="360.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Mutation types: transitions vs. transversions and coding consequences</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Transitions (purine↔purine, pyrimidine↔pyrimidine) occur ~2× more often despite 2× fewer possible paths</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="260.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Transitions (2) vs Transversions (4)</text>
+  <text x="154.0" y="114.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#085f55" text-anchor="middle">Purines (2 rings)</text>
+  <text x="154.0" y="304.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1e40af" text-anchor="middle">Pyrimidines (1 ring)</text>
+  <line x1="116.0" y1="146.0" x2="192.0" y2="146.0" stroke="#0d8a7b" stroke-width="2.6" stroke-linecap="round" marker-end="url(#arr-teal)"/>
+  <line x1="192.0" y1="146.0" x2="116.0" y2="146.0" stroke="#0d8a7b" stroke-width="2.6" stroke-linecap="round" marker-end="url(#arr-teal)"/>
+  <line x1="116.0" y1="260.0" x2="192.0" y2="260.0" stroke="#0d8a7b" stroke-width="2.6" stroke-linecap="round" marker-end="url(#arr-teal)"/>
+  <line x1="192.0" y1="260.0" x2="116.0" y2="260.0" stroke="#0d8a7b" stroke-width="2.6" stroke-linecap="round" marker-end="url(#arr-teal)"/>
+  <text x="154.0" y="136.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="middle">Transition</text>
+  <text x="154.0" y="280.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="middle">Transition</text>
+  <line x1="92.0" y1="168.0" x2="92.0" y2="238.0" stroke="#e11d48" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <line x1="216.0" y1="168.0" x2="216.0" y2="238.0" stroke="#e11d48" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <line x1="110.0" y1="164.0" x2="198.0" y2="242.0" stroke="#e11d48" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <line x1="198.0" y1="164.0" x2="110.0" y2="242.0" stroke="#e11d48" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="154.0" y="206.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#9f1239" text-anchor="middle">Transversions</text>
+  <circle cx="92.0" cy="146.0" r="20.0" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="92.0" y="151.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#10b981" text-anchor="middle">A</text>
+  <circle cx="216.0" cy="146.0" r="20.0" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <text x="216.0" y="151.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#d97706" text-anchor="middle">G</text>
+  <circle cx="92.0" cy="260.0" r="20.0" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="92.0" y="265.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#2563eb" text-anchor="middle">C</text>
+  <circle cx="216.0" cy="260.0" r="20.0" fill="#fff1f2" stroke="#e11d48" stroke-width="2"/>
+  <text x="216.0" y="265.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#e11d48" text-anchor="middle">T</text>
+  <text x="154.0" y="326.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#334155" text-anchor="middle">CpG deamination (5mC → T) drives Ti/Tv ≈ 2.1</text>
+  <rect x="304.0" y="72.0" width="432.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="316.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Coding-sequence consequences of substitutions &amp; indels</text>
+  <rect x="318.0" y="108.0" width="88.0" height="24.0" rx="12.0" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.2"/>
+  <text x="362.0" y="123.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#0d8a7b" text-anchor="middle">Wild type</text>
+  <text x="418.0" y="124.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="700" fill="#0f172a" text-anchor="start">AUG  UUC  CAG  GGA</text>
+  <text x="566.0" y="124.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#334155" text-anchor="start">Met - Phe - Gln - Gly</text>
+  <rect x="318.0" y="152.0" width="88.0" height="24.0" rx="12.0" fill="#ecfdf5" stroke="#15803d" stroke-width="1.2"/>
+  <text x="362.0" y="167.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#15803d" text-anchor="middle">Synonymous</text>
+  <text x="418.0" y="168.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="700" fill="#0f172a" text-anchor="start">AUG  UUU  CAG  GGA</text>
+  <text x="566.0" y="168.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#334155" text-anchor="start">Met - Phe - Gln - Gly  (same aa)</text>
+  <rect x="318.0" y="196.0" width="88.0" height="24.0" rx="12.0" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="362.0" y="211.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#2563eb" text-anchor="middle">Missense</text>
+  <text x="418.0" y="212.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="700" fill="#0f172a" text-anchor="start">AUG  UUC  CUG  GGA</text>
+  <text x="566.0" y="212.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#334155" text-anchor="start">Met - Phe - Leu - Gly  (1 aa swap)</text>
+  <rect x="318.0" y="240.0" width="88.0" height="24.0" rx="12.0" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.2"/>
+  <text x="362.0" y="255.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#c25e0a" text-anchor="middle">Nonsense</text>
+  <text x="418.0" y="256.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="700" fill="#0f172a" text-anchor="start">AUG  UUC  UAG  GGA</text>
+  <text x="566.0" y="256.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#334155" text-anchor="start">Met - Phe - STOP  (NMD / truncated)</text>
+  <rect x="318.0" y="284.0" width="88.0" height="24.0" rx="12.0" fill="#fff1f2" stroke="#e11d48" stroke-width="1.2"/>
+  <text x="362.0" y="299.8" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#e11d48" text-anchor="middle">Frameshift</text>
+  <text x="418.0" y="300.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="700" fill="#0f172a" text-anchor="start">AUG  UUC  AGG  GA...</text>
+  <text x="566.0" y="300.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#334155" text-anchor="start">Met - Phe - Arg - ...  (all shifted)</text>
+</svg>

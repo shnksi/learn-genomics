@@ -110,6 +110,8 @@ constant charge-to-mass ratio. Protein methods spend effort recreating what DNA 
 The problem: you hold one copy of a 500 bp locus embedded in 3.1 Gb of irrelevant sequence, and
 you need ~10¹² copies of that locus and nothing else.
 
+![The three-step PCR thermal cycle (denaturation, primer annealing, Taq extension) driving 2<sup>*n*</sup> exponential amplification, coupled with agarose gel electrophoresis separating DNA fragments logarithmically by length.](../figures/fig-36-pcr-and-gel.svg)
+
 Two primers — short synthetic oligonucleotides complementary to the flanks, pointing inward —
 plus a polymerase, plus thermal cycling:
 
@@ -263,6 +265,8 @@ quantification.
 
 The problem: obtain unlimited identical copies of a *defined* construct, and get a cell to
 express it.
+
+![Restriction-enzyme sticky-end cloning into a selectable plasmid vector (origin of replication + antibiotic resistance gene) paired with real-time qPCR amplification curves showing how each 2-fold dilution shifts the threshold cycle *C*<sub>t</sub> by 1 cycle.](../figures/fig-36b-cloning-qpcr.svg)
 
 **Restriction enzymes** are a bacterial immune system: they cleave incoming phage DNA at short
 recognition sites, while the host methylates its own copies of those sites to spare them — self

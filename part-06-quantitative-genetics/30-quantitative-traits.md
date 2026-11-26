@@ -60,6 +60,8 @@ distributions and correlations between relatives of about ½ for parent–offspr
 concluded inheritance was blending. The **Mendelians** (Bateson, de Vries) had discrete
 factors, clean ratios, and no account of height.
 
+![Fisher's synthesis: adding independent Mendelian loci rapidly converts discrete genotypes into a bell-shaped continuous phenotype distribution, whose variance decomposes into additive (*V*<sub>A</sub>), dominance (*V*<sub>D</sub>), interaction (*V*<sub>I</sub>), and environmental (*V*<sub>E</sub>) components.](../figures/fig-30-quantitative-traits.svg)
+
 Both were right about their data. The resolution — Fisher's 1918 paper *The Correlation
 between Relatives on the Supposition of Mendelian Inheritance*, the paper that coined the
 word **variance** — was to show that the biometricians' observations were a *consequence* of

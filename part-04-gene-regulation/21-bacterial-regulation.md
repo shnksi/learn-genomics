@@ -155,6 +155,8 @@ Glucose is a better carbon source, so a cell offered both sugars eats glucose fi
 then eats lactose — **diauxic growth**, two exponential phases with a lag between. The pause
 is the operon being built.
 
+![The *lac* operon as a biological AND gate: high transcription requires both lactose present (releasing the LacI repressor from the operator) and glucose absent (raising cAMP so CAP–cAMP activates RNA polymerase recruitment).](../figures/fig-21-lac-operon.svg)
+
 Two mechanisms enforce the preference, and neither involves glucose binding anything in the
 *lac* system. The signal is **the act of transporting glucose**.
 
@@ -278,6 +280,8 @@ nowhere else, so its visibility depends on what genes are downstream *of it*.
 Five genes — *trpE*, *trpD*, *trpC*, *trpB*, *trpA* — encoding the enzymes that synthesise
 tryptophan. The logic is inverted relative to *lac*: this operon should run **unless**
 tryptophan is already available.
+
+![Transcriptional attenuation in the bacterial *trp* leader: low tryptophan stalls the ribosome on tandem UGG codons so mRNA regions 2–3 form an antiterminator loop; high tryptophan lets the ribosome mask region 2 so regions 3–4 snap into a Rho-independent terminator.](../figures/fig-21b-trp-attenuation.svg)
 
 TrpR, the repressor, cannot bind DNA on its own. Tryptophan binds it and *enables* DNA
 binding. Tryptophan is a **corepressor**.

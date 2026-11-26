@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="360.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">The allelic architecture spectrum: allele frequency vs. effect size</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Purifying selection empties the upper-right corner; GWAS sees the lower-right while sequencing/pedigrees hunt the upper-left</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <line x1="84.0" y1="88.0" x2="84.0" y2="286.0" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="84.0" y1="286.0" x2="550.0" y2="286.0" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="121.3" y1="286.0" x2="121.3" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="121.3" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">0.01%</text>
+  <line x1="237.8" y1="286.0" x2="237.8" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="237.8" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">0.1%</text>
+  <line x1="354.3" y1="286.0" x2="354.3" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="354.3" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">1%</text>
+  <line x1="466.1" y1="286.0" x2="466.1" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="466.1" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">10%</text>
+  <line x1="531.4" y1="286.0" x2="531.4" y2="291.0" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="531.4" y="303.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="middle">50%</text>
+  <line x1="79.0" y1="262.2" x2="84.0" y2="262.2" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="85.0" y1="262.2" x2="550.0" y2="262.2" stroke="#e2e8f0" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="76.0" y="265.7" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">1.1×</text>
+  <line x1="79.0" y1="196.9" x2="84.0" y2="196.9" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="85.0" y1="196.9" x2="550.0" y2="196.9" stroke="#e2e8f0" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="76.0" y="200.4" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">2×</text>
+  <line x1="79.0" y1="131.6" x2="84.0" y2="131.6" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="85.0" y1="131.6" x2="550.0" y2="131.6" stroke="#e2e8f0" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="76.0" y="135.1" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">10×</text>
+  <line x1="79.0" y1="97.9" x2="84.0" y2="97.9" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="85.0" y1="97.9" x2="550.0" y2="97.9" stroke="#e2e8f0" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3,3"/>
+  <text x="76.0" y="101.4" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">100×</text>
+  <text x="317.0" y="320.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">Minor Allele Frequency (log scale)</text>
+  <text x="48.0" y="187.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle" transform="rotate(-90 48.0 187.0)">Effect size / Odds Ratio</text>
+  <ellipse cx="158.6" cy="119.7" rx="64.0" ry="28.0" fill="#fff1f2" stroke="#e11d48" stroke-width="1.8"/>
+  <text x="158.6" y="115.7" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#9f1239" text-anchor="middle">Mendelian rare</text>
+  <text x="158.6" y="133.5" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="500" fill="#334155" text-anchor="middle">(WES/WGS, SCA12)</text>
+  <ellipse cx="289.0" cy="179.1" rx="72.0" ry="28.0" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.8"/>
+  <text x="289.0" y="175.1" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#c25e0a" text-anchor="middle">Low-freq intermediate</text>
+  <text x="289.0" y="192.9" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="500" fill="#334155" text-anchor="middle">(BRCA2, APOE ε4)</text>
+  <ellipse cx="456.8" cy="250.4" rx="74.0" ry="26.0" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.8"/>
+  <text x="456.8" y="246.4" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#085f55" text-anchor="middle">Common GWAS hits</text>
+  <text x="456.8" y="264.2" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="500" fill="#334155" text-anchor="middle">(OR 1.05–1.3)</text>
+  <rect x="354.3" y="95.9" width="181.7" height="71.3" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <text x="445.2" y="125.6" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#64748b" text-anchor="middle">EMPTY CORNER</text>
+  <text x="445.2" y="139.6" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#64748b" text-anchor="middle">Purifying selection</text>
+  <text x="445.2" y="153.6" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#64748b" text-anchor="middle">purges common</text>
+  <text x="445.2" y="167.6" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#64748b" text-anchor="middle">severe alleles</text>
+  <rect x="102.6" y="210.8" width="177.1" height="63.4" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <text x="191.2" y="238.5" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#64748b" text-anchor="middle">Low statistical power</text>
+  <text x="191.2" y="252.5" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#64748b" text-anchor="middle">(rare + small effect:</text>
+  <text x="191.2" y="266.5" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#64748b" text-anchor="middle">hard to detect)</text>
+  <rect x="568.0" y="84.0" width="168.0" height="204.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="580.0" y="104.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Discovery tools</text>
+  <text x="580.0" y="118.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#334155" text-anchor="start">Upper-left:</text>
+  <text x="580.0" y="134.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#334155" text-anchor="start">• Pedigree / trio WGS</text>
+  <text x="580.0" y="150.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#334155" text-anchor="start">• Gene burden tests</text>
+  <text x="580.0" y="166.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#334155" text-anchor="start">• Repeat-primed PCR</text>
+  <text x="580.0" y="198.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#334155" text-anchor="start">Lower-right:</text>
+  <text x="580.0" y="214.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#334155" text-anchor="start">• SNP array GWAS</text>
+  <text x="580.0" y="230.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="500" fill="#334155" text-anchor="start">• Biobank N &gt; 100k</text>
+</svg>

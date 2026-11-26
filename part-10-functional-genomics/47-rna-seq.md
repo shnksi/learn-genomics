@@ -236,6 +236,8 @@ differential expression.** Go to transcript level when the question is genuinely
 
 Three distinct problems get conflated under one word.
 
+![Bulk RNA-seq workflow from reads to a count matrix, illustrating why library-size and composition-aware normalisation (DESeq2 median-of-ratios) prevents highly expressed genes from distorting differential-expression volcano plots.](../figures/fig-47-rnaseq-pipeline.svg)
+
 **Depth.** Sample A got 40M reads, sample B got 20M. Trivially fixable by scaling — and this is
 the only part most people think normalisation is.
 

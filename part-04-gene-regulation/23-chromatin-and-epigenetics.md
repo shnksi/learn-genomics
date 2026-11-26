@@ -58,6 +58,8 @@ Two consequences do all the work.
 
 ## 3. Histone modifications, and the "code" that isn't
 
+![Chromatin state transitions driven by writers, erasers, and readers: open, acetylated, unmethylated euchromatin (H3K4me3/H3K27ac) versus compacted, CpG-methylated heterochromatin (H3K9me3/H3K27me3), plus semi-conservative DNMT1 methylation maintenance.](../figures/fig-23-epigenetics-chromatin.svg)
+
 ### Acetylation is mechanistically direct
 
 Lysine carries a positive charge at physiological pH, and that charge is part of what binds the histone octamer to DNA's polyanionic backbone ([Ch 01](../part-00-orientation/01-chemistry-and-cell-primer.md)). Acetylation transfers an acetyl group onto the lysine ε-amino group and **neutralises the charge**. Histone–DNA affinity drops, higher-order folding is destabilised, and the region opens. This is the one histone modification whose effect you can derive from electrostatics alone.
@@ -168,6 +170,8 @@ CpG islands are the exception precisely because they are the regions kept *unmet
 ## 6. Genomic imprinting
 
 For most genes you express both parental copies. For roughly **150** human genes, expression depends on **which parent the allele came from** — one copy is silenced, deterministically, by parental origin. This is a flat contradiction of Mendel: reciprocal crosses are not equivalent.
+
+![Parent-of-origin imprinting at the *IGF2*/*H19* locus: an unmethylated maternal ICR binds CTCF to insulate *IGF2* from the shared enhancer, whereas paternal ICR methylation blocks CTCF so the enhancer loops to activate *IGF2*.](../figures/fig-23b-imprinting-igf2-h19.svg)
 
 The mark lives at an **imprinting control region** (ICR), a differentially methylated region whose methylation is established in the germline — in oogenesis or in spermatogenesis, according to sex — and which then survives the post-fertilisation reprogramming wave (§8) because ZFP57/TRIM28 specifically protects it.
 

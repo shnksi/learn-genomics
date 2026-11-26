@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 365" width="760" height="365" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="365.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Meiotic pairing geometries of inversions and reciprocal translocations</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Heterozygotes must contort into inversion loops or cross-shaped quadrivalents to pair homologously — causing unbalanced gametes</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="344.0" height="272.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Inversion heterozygote: meiotic inversion loop</text>
+  <path d="M 48 164 L 136 164 C 136 106, 252 106, 252 164 L 340 164" fill="none" stroke="#0d8a7b" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 48 182 L 146 182 C 146 124, 242 124, 242 182 L 340 182" fill="none" stroke="#c25e0a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="72.0" y="154.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="start">A  B</text>
+  <text x="194.0" y="114.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700" fill="#0f172a" text-anchor="middle">C — D — E (paired)</text>
+  <text x="308.0" y="154.0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#085f55" text-anchor="start">F  G</text>
+  <circle cx="194.0" cy="134.0" r="11.0" fill="#fff1f2" stroke="#e11d48" stroke-width="1.6"/>
+  <text x="194.0" y="137.5" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#9f1239" text-anchor="middle">✕</text>
+  <rect x="40.0" y="206.0" width="312.0" height="122.0" rx="8" fill="#fff1f2" stroke="#e11d48" stroke-width="1.4"/>
+  <text x="196.0" y="226.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="700" fill="#9f1239" text-anchor="middle">Crossover inside an inversion loop is lethal to gametes</text>
+  <text x="196.0" y="242.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.1" font-weight="500" fill="#334155" text-anchor="middle">• Paracentric (centromere outside loop):</text>
+  <text x="196.0" y="256.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.1" font-weight="500" fill="#334155" text-anchor="middle">  produces 1 dicentric bridge + 1 acentric fragment!</text>
+  <text x="196.0" y="270.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.1" font-weight="500" fill="#334155" text-anchor="middle">• Pericentric (centromere inside loop):</text>
+  <text x="196.0" y="284.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.1" font-weight="500" fill="#334155" text-anchor="middle">  produces chromatids with duplications + deletions.</text>
+  <text x="196.0" y="298.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.1" font-weight="500" fill="#334155" text-anchor="middle">→ Inversions act as &#x27;crossover suppressors&#x27; (supergenes).</text>
+  <rect x="388.0" y="72.0" width="348.0" height="272.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="400.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Reciprocal translocation: cross-shaped quadrivalent</text>
+  <line x1="480.0" y1="158.0" x2="554.0" y2="158.0" stroke="#0d8a7b" stroke-width="4" stroke-linecap="round"/>
+  <line x1="554.0" y1="158.0" x2="554.0" y2="112.0" stroke="#0d8a7b" stroke-width="4" stroke-linecap="round"/>
+  <line x1="570.0" y1="112.0" x2="570.0" y2="158.0" stroke="#0d8a7b" stroke-width="4" stroke-linecap="round"/>
+  <line x1="570.0" y1="158.0" x2="644.0" y2="158.0" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <line x1="480.0" y1="174.0" x2="554.0" y2="174.0" stroke="#0d8a7b" stroke-width="4" stroke-linecap="round"/>
+  <line x1="554.0" y1="174.0" x2="554.0" y2="220.0" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <line x1="570.0" y1="220.0" x2="570.0" y2="174.0" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <line x1="570.0" y1="174.0" x2="644.0" y2="174.0" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <text x="470.0" y="169.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="700" fill="#085f55" text-anchor="end">N1</text>
+  <text x="654.0" y="169.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="700" fill="#1e40af" text-anchor="start">N2</text>
+  <text x="562.0" y="106.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="700" fill="#085f55" text-anchor="middle">T1</text>
+  <text x="562.0" y="234.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="700" fill="#1e40af" text-anchor="middle">T2</text>
+  <rect x="404.0" y="240.0" width="316.0" height="88.0" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.4"/>
+  <text x="562.0" y="260.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1e40af" text-anchor="middle">Two main Meiosis I segregation modes</text>
+  <text x="562.0" y="276.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">• Alternate (N1+N2 vs T1+T2): 100% balanced gametes!</text>
+  <text x="562.0" y="290.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">• Adjacent-1 (N1+T2 vs T1+N2): partial trisomy + monosomy</text>
+  <text x="562.0" y="304.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">  → recurrent miscarriage or congenital anomaly.</text>
+</svg>

@@ -82,6 +82,8 @@ III-2, the consultand, is not obligate anything. Her carrier probability is what
 
 Every signature below is *derived* from the transmission rules. Derive them once and the summary table becomes redundant.
 
+![Diagnostic pedigree signatures for the five classical modes of single-gene inheritance: autosomal dominant, autosomal recessive, X-linked recessive, X-linked dominant, and mitochondrial (strictly maternal transmission).](../figures/fig-15-pedigree-modes.svg)
+
 **Autosomal dominant.** One copy suffices; the locus is autosomal, so sex is irrelevant to both having it and passing it. Therefore: every affected person has an affected parent (unless the variant is de novo — §4); the trait appears in every generation — **vertical** transmission; **male-to-male transmission occurs**, which is the observation that kills X-linkage; affected × unaffected gives 1/2 affected regardless of sex. Huntington disease (*HTT*), achondroplasia (*FGFR3*), Marfan syndrome (*FBN1*), familial hypercholesterolaemia (*LDLR*).
 
 **Autosomal recessive.** Two copies required, and heterozygotes are silent, so the allele travels invisibly. Therefore: affected individuals cluster *within* a sibship and generations are skipped — **horizontal**, not vertical; carrier × carrier gives 1/4 affected, and 2/3 of the unaffected children are carriers; sexes affected equally; and **consanguinity is enriched** among the parents, the more so the rarer the disease (§6 quantifies it). Cystic fibrosis (*CFTR*), sickle cell disease (*HBB*), phenylketonuria (*PAH*), spinal muscular atrophy (*SMN1*).
@@ -218,6 +220,8 @@ The worked example runs the full machinery on the §1 pedigree.
 ## 6. Consanguinity and the coefficient of inbreeding
 
 Consanguinity creates no disease alleles. It raises the probability that the two alleles an offspring carries at a locus are **identical by descent** (IBD) — copies of one physical ancestral allele — and so raises the probability of homozygosity for whatever rare recessive alleles the family already carried. The **coefficient of inbreeding** *F* is exactly that probability.
+
+![Computing the inbreeding coefficient *F* from a first-cousin pedigree loop: summing (½)<sup>*n*</sup> over the two five-individual paths through shared grandparents A₁ and A₂ yields *F* = 1/16, multiplying rare autosomal-recessive disease risk sharply.](../figures/fig-15b-consanguinity-inbreeding.svg)
 
 Compute it by path counting. For every closed loop through a common ancestor *A* of the individual's two parents:
 

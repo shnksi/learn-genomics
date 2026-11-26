@@ -28,6 +28,8 @@ Copying a genome looks like it should be the easy part: separate the two complem
 
 Base pairing implies that each strand can template the other. It does not tell you what happens to the parental strands. Three models were live in the 1950s:
 
+![Meselson–Stahl ¹⁵N/¹⁴N density-gradient bands across two generations proving semiconservative replication, alongside the three multiplicative fidelity filters (base selection × 3′→5′ proofreading × MMR) achieving ~10⁻¹⁰ errors per base.](../figures/fig-04b-meselson-stahl-fidelity.svg)
+
 | Model | After one round of copying, each daughter duplex is… |
 |---|---|
 | **Conservative** | Either both-old or both-new. The parental duplex survives intact |
@@ -141,6 +143,8 @@ Count them. Replicating a 6.2 Gb diploid genome means synthesising 1.24 × 10¹�
 
 ## 4. The machinery at the fork
 
+![Asymmetric DNA replication fork: because all DNA polymerases extend strictly 5′→3′, the leading strand is synthesised continuously toward the advancing helicase while the lagging strand is built discontinuously as RNA-primed Okazaki fragments joined by DNA ligase.](../figures/fig-04-replication-fork.svg)
+
 | Component | Bacteria | Eukaryotes | Job — and what fails without it |
 |---|---|---|---|
 | **Helicase** | DnaB (5′→3′ on lagging template) | CMG: Cdc45–MCM2-7–GINS (3′→5′ on leading template) | Breaks the base pairs ahead of the fork. Without it, nothing opens |
@@ -218,6 +222,10 @@ Sanity-check against the pinned germline rate: ~10⁻¹⁰ per base per division
 ## 7. The ends of linear chromosomes
 
 Circular bacterial chromosomes have no ends and no problem. Linear ones do.
+
+![Three-dimensional view of the telomerase ribonucleoprotein extending a chromosome end: double-stranded telomeric DNA enters from the left, its 3′ single-stranded overhang docks inside the cutaway catalytic cleft of the TERT reverse transcriptase (slate-teal), and pairs with the internal TERC RNA template (amber) to synthesise new hexamer repeats.](../figures/art-04-telomerase.png)
+
+![The end-replication problem and telomerase rescue: removing the terminal lagging-strand RNA primer leaves an unfillable 5′ gap that shortens linear chromosomes each division unless telomerase extends the 3′ template overhang using its internal TERC RNA.](../figures/fig-04c-telomere-end-replication.svg)
 
 The last Okazaki fragment on a chromosome is primed some distance from the terminus. When its RNA primer is removed, the resulting gap cannot be filled, because filling it needs a 3′-OH on the far side — which would belong to a fragment primed off the end of the molecule.
 

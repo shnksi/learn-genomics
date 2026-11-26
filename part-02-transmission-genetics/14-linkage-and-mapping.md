@@ -174,6 +174,8 @@ Cross a triply heterozygous parent to a triply homozygous recessive tester. Scor
 progeny. There are $2^3 = 8$ classes, in four reciprocal pairs, and the pairs sort themselves
 by frequency:
 
+![Three-point testcross logic (identifying the middle locus by comparing parental versus rarest double-crossover classes) and Haldane's mapping function showing why observed recombination frequency saturates asymptotically at 50%.](../figures/fig-14-linkage-mapping.svg)
+
 ```mermaid
 graph TD
     A["8 phenotype classes<br/>sorted by count"] --> B["Two <b>most</b> frequent<br/>= parental (non-crossover)<br/>→ reveals the F1's phase"]
@@ -200,6 +202,8 @@ residual bias is what mapping functions correct.
 
 Every design so far counts gametes: one product per meiosis, dropped into a pool of millions, and
 you rebuild the meiosis statistically from the aggregate. Fungi let you skip the rebuilding.
+
+![Fungal tetrad analysis distinguishing Parental Ditype (PD), Tetratype (T, single crossover), and Non-Parental Ditype (NPD, four-strand double crossover) asci directly within a single meiosis.](../figures/fig-14b-tetrad-analysis.svg)
 
 In *Saccharomyces cerevisiae* and *Neurospora crassa* the four haploid products of one meiosis
 stay together inside a sac, the **ascus**. Dissect it, plate the spores separately, and you have

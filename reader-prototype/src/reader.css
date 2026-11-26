@@ -225,6 +225,38 @@ body {
 
 .chapter { max-width: var(--measure); padding: 2.5rem 0 0; overflow-x: hidden; }
 
+.course-figure {
+  margin: 1.75rem 0;
+  padding: .9rem;
+  background: #ffffff;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+.course-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.course-figure figcaption {
+  margin-top: .75rem;
+  padding-top: .6rem;
+  border-top: 1px solid #e2e8f0;
+  font-family: var(--font-ui);
+  font-size: .84rem;
+  line-height: 1.5;
+  color: #334155;
+}
+:root[data-theme="dark"] .course-figure {
+  border-color: var(--rule-strong);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .course-figure {
+    border-color: var(--rule-strong);
+  }
+}
+
 @media (max-width: 60rem) {
   .layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .toc {

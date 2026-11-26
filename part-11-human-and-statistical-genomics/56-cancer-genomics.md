@@ -56,6 +56,8 @@ The clinical stakes of the germline/somatic split are large. A somatic *BRCA1* m
 
 Normal tissue is not a passive background. A colonic crypt is maintained by a handful of stem cells competing neutrally for niche positions; drift alone converts a crypt to monoclonality within years. Normal oesophagus and skin in middle-aged people are patchworks of clones carrying *NOTCH1* and *TP53* mutations, some covering square centimetres. **Positively selected somatic mutations in cancer genes are the normal state of normal tissue.**
 
+![Somatic Darwinian evolution in cancer: a clonal fishplot tracing truncal driver acquisition, branching subclones, and therapy-selected resistant relapse, contrasted with Knudson's two-hit tumour-suppressor versus single-hit oncogene logic.](../figures/fig-56-cancer-evolution.svg)
+
 That reframes the question. Cancer is not "a cell acquired a driver". Drivers are acquired constantly and almost never produce a tumour. Cancer is the rare trajectory in which enough capabilities accumulate in one lineage, in an order that works, for the clone to escape the constraints that hold ordinary clones in place.
 
 The **hallmarks** framework (Hanahan and Weinberg 2000, extended 2011, revisited as *Hallmarks of Cancer: New Dimensions*, 2022) enumerates those capabilities: sustained proliferative signalling, evasion of growth suppressors, resistance to cell death, replicative immortality, angiogenesis, invasion and metastasis, metabolic reprogramming and immune evasion, with genome instability and tumour-promoting inflammation as *enabling* characteristics, and phenotypic plasticity, non-mutational epigenetic reprogramming, polymorphic microbiomes and senescent cells added in 2022.
@@ -117,6 +119,8 @@ The three are complementary because they key on different consequences of select
 ## 4. Oncogenes and tumour suppressors — readable off a picture
 
 Two classes, distinguished by the *direction* of the functional change, with a mechanical consequence that is visible in a mutation diagram at a glance.
+
+![Diagnostic somatic mutation lollipop plots: activating oncogenes (*KRAS*, *BRAF*) display sharp missense hotspot towers at 1–2 codons with almost no truncations, whereas tumour suppressors (*RB1*, *APC*) show scattered nonsense, frameshift, and splice-site loss-of-function mutations across the entire coding sequence.](../figures/fig-56b-oncogene-vs-tsg-lollipops.svg)
 
 | | Oncogene | Tumour suppressor |
 |---|---|---|
@@ -219,6 +223,8 @@ Penetrance is high but not complete and not a constant. Prospective cohort estim
 ## 7. Mutational signatures: reading causes off the genome
 
 [Ch 16](../part-03-genome-instability/16-mutation.md) §10 set up the encoding: each somatic single-base substitution is assigned to one of **96 channels** — 6 substitution classes referenced to the pyrimidine of the pair (C>A, C>G, C>T, T>A, T>C, T>G) × 4 possible 5′ neighbours × 4 possible 3′ neighbours. Pyrimidine referencing is not cosmetic: in an unstranded assay you cannot tell which strand carried the lesion, so C>T and G>A are the same observation.
+
+![Four canonical COSMIC 96-channel trinucleotide mutational signatures fingerprinting endogenous ageing (SBS1 CpG C>T), UV light (SBS7a/b dipyrimidine C>T), tobacco smoke (SBS4 C>A), and homologous-recombination deficiency (SBS3 flat spectrum predicting PARP-inhibitor sensitivity).](../figures/fig-56c-mutational-signatures.svg)
 
 Stack *G* tumours into a 96 × *G* count matrix **M** and factorise:
 

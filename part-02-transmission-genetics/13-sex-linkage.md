@@ -205,6 +205,8 @@ repaired from its own mirror image.
 A male is **hemizygous** for X-linked loci — one allele, no partner. Everything distinctive
 about sex linkage falls out of that.
 
+![Reciprocal crosses for an X-linked recessive trait — illustrating why affected fathers transmit the allele to all daughters and no sons (criss-cross inheritance) — together with random X-chromosome inactivation (Lyonisation) in mammalian females.](../figures/fig-13-sex-linkage.svg)
+
 **Dominance stops applying.** Dominance is a statement about the heterozygote. A hemizygous male
 has no heterozygote to describe, so an X-linked "recessive" allele is fully expressed in him. The
 recessive/dominant labels for X-linked loci are really statements about females only.
@@ -291,6 +293,8 @@ inherits them.
 
 Y degeneration created a stoichiometry problem — two of them, in fact, and they are worth keeping
 apart, because only one of them has been solved.
+
+![Human X versus Y chromosome architecture (pseudoautosomal pairing regions PAR1/PAR2 and *SRY*) paired with random embryonic X-inactivation via *XIST* lncRNA producing clonal Barr-body mosaicism.](../figures/fig-13b-x-inactivation-par.svg)
 
 - **Between the sexes.** Males ended up with one dose of ~800 X-linked genes, females with two.
 - **Between X and autosomes.** That single active X sits against two doses of everything

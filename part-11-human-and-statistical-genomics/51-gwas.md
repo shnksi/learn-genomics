@@ -190,6 +190,8 @@ The intercept is not a confounding oracle. It rises with **sample overlap** betw
 
 Bonferroni over *M* independent tests at family-wise error 0.05 gives α = 0.05/*M*, so the whole question is *M* — and the naive answer, the number of variants on the array, is wrong in both directions. Too large, because adjacent variants are near-duplicates and a block of 40 markers in tight LD is not 40 tests. Too small, because the array proxies for everything it tags, including variants you did not genotype. The right quantity is the number of **effectively independent tests** in the genome's common-variant space, $M_{\text{eff}}$ — a property of the population's LD structure, not of your chip.
 
+![Reading GWAS diagnostics: a Manhattan plot marking the genome-wide significance threshold (*p* = 5 × 10⁻⁸) paired with QQ plots distinguishing true polygenic signal from uncalibrated population stratification.](../figures/fig-51-gwas-manhattan-qq.svg)
+
 > **Statistics:** the family-wise error rate, and why Bonferroni's guarantee survives arbitrary
 > dependence between tests, are covered in
 > [S7 §2](../part-S-statistics/S7-high-dimensional-data.md).

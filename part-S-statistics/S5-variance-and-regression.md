@@ -320,6 +320,8 @@ sometimes erase the relationship. Plot first.
 Fit *y* ≈ *b*₀ + *b*₁*x* by choosing the coefficients that minimise Σ(*y*ᵢ − *b*₀ − *b*₁*x*ᵢ)².
 Differentiating and setting to zero gives the closed form, which is again just covariance:
 
+![Ordinary least squares regression minimising squared vertical residuals (top-left) contrasted with correlation *r* = 0 nonlinear structure and Simpson's paradox demonstrating why controlling for confounders reverses naive slopes.](../figures/fig-S5-variance-regression.svg)
+
 ```
 b₁ = Cov(x, y) / Var(x)          b₀ = ȳ − b₁ x̄
 ```

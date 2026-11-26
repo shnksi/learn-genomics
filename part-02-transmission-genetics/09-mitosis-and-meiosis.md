@@ -114,6 +114,8 @@ cycle of which mitosis is under an hour; the rest is **interphase** — G1, S, G
 durations as a teaching approximation: they vary enormously by cell type. A cleaving embryo
 can cycle in under 30 minutes; a hepatocyte may not divide for a year.)
 
+![The eukaryotic cell cycle as a guarded state machine (G1 → S → G2 → M, plus quiescent G0) controlled by three hard checkpoints: G1/S restriction (RB/p53), G2/M DNA-damage guard (ATM/ATR), and the M-phase spindle assembly checkpoint.](../figures/fig-09c-cell-cycle-checkpoints.svg)
+
 ```mermaid
 graph LR
     G1["<b>G1</b><br/>growth · 2c"] -->|"restriction point<br/>mitogens? size?<br/>DNA intact?"| S["<b>S</b><br/>replication<br/>2c → 4c"]
@@ -166,6 +168,8 @@ other, modulo somatic mutation. That "modulo" becomes the whole of
 
 ## 4. Meiosis: replicate once, divide twice
 
+![Side-by-side comparison of mitosis (equational division producing two genetically identical 2n daughters) and meiosis (homologue pairing, crossing over, and reductional division in Meiosis I followed by sister-chromatid separation in Meiosis II to yield four distinct 1n gametes).](../figures/fig-09-mitosis-vs-meiosis.svg)
+
 ```mermaid
 graph TD
     A["<b>Primary spermatocyte / oocyte</b><br/>2n 4c — 46 chromosomes, 92 chromatids<br/><i>homologs paired as 23 bivalents</i>"]
@@ -200,6 +204,8 @@ them, no bivalent.
 
 Prophase I is not a stage so much as a programme, and it can last decades (§10). Its
 sub-stages:
+
+![Prophase I crossing over across a four-chromatid bivalent: physical chiasma formation between two non-sister chromatids tethers homologous chromosomes for faithful Meiosis I segregation while producing two parental and two recombinant gametes.](../figures/fig-09b-prophase1-crossover.svg)
 
 | Sub-stage | Event |
 |---|---|

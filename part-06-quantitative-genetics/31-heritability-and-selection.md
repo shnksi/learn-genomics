@@ -347,6 +347,8 @@ adding a new kind of variant. ([Ch 51](../part-11-human-and-statistical-genomics
 Select parents whose mean phenotype exceeds the population mean by the **selection
 differential** S. What is the offspring mean?
 
+![Narrow-sense heritability *h*² visualised both as the midparent–offspring regression slope and in the breeder's equation (*R* = *h*²*S*), predicting evolutionary response to truncation selection.](../figures/fig-31-heritability-selection.svg)
+
 Regress breeding value on phenotype. The slope is Cov(A,P)/V_P = V_A/V_P = h², so
 
 ```

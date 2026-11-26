@@ -30,6 +30,8 @@ And one more fact sets up the whole track: the genes behind neurodegenerative di
 
 ## 1. The neuron: a cell type pushed to extremes
 
+![Cellular anatomy of neural signalling. Left: a multipolar neuron with its branching dendritic tree, soma and nucleus, myelinated axon segments separated by nodes of Ranvier, and axon terminals. Right: cutaway chemical synapse showing neurotransmitter vesicles fusing at the presynaptic active zone and activating postsynaptic ion-channel receptors.](../figures/art-D1-neuron-synapse.png)
+
 ### Postmitotic — a state, not a fate
 
 Mature neurons in the mammalian central nervous system have exited the cell cycle and essentially never divide again. Three consequences follow immediately, and each rewrites a chapter you have already read.
@@ -69,6 +71,8 @@ The brain's disproportionate energy consumption — ~2% of mass, ~20% of oxygen,
 
 You need exactly enough electrophysiology to read a sentence like "Purkinje cells are intrinsic pacemakers with simple-spike rates of tens of hertz" — no more. Here it is.
 
+![Action potential waveform (voltage-gated Na⁺ influx, K⁺ efflux, and refractory undershoot) linked to presynaptic Ca²⁺-triggered vesicle release and the extraordinary metabolic and Ca²⁺-buffering demands placed on cerebellar Purkinje neurons.](../figures/fig-D1b-action-potential-synapse.svg)
+
 **The resting potential.** A neuron is a bag of salty water inside a bag of differently-salty water, with the membrane holding the difference. The Na⁺/K⁺-ATPase burns ATP to pump 3 Na⁺ out for every 2 K⁺ in, building concentration gradients; K⁺ leak channels then let K⁺ trickle back out down its gradient, leaving unbalanced negative charge behind. The steady state — the **resting membrane potential** — sits near −70 mV in a typical neuron, with an honest range of −40 to −90 mV across cell types. The sign convention is load-bearing: the number is the potential of the inside relative to the outside, and a textbook that says "the resting potential is 70 mV" has dropped the minus sign that carries the physics.
 
 **The action potential.** A neural impulse is not a signal travelling along a wire. It is a regenerative, self-propagating collapse and restoration of the resting gradient: voltage-gated Na⁺ channels open and depolarise the membrane, K⁺ channels open and repolarise it, and the disturbance renews itself as it moves. The whole event lasts about 1 ms at any given point. Nothing about it is free — every spike lets ions run downhill, and the pump must push every one of them back up at 1 ATP per 3 Na⁺. This is where §1's energy bill is paid.
@@ -82,6 +86,8 @@ That is all the electrophysiology this track needs. What we have *not* covered �
 ---
 
 ## 3. The cerebellum
+
+![Anatomy of the human cerebellum and its cortex. Left: sagittal section through the cerebellar folia and branching white-matter arbor vitae attached to the brainstem. Right: the three cortical layers — densely packed granule cells (amber) below, a single-cell layer of Purkinje somas (teal) in the middle, and each Purkinje neuron's vast planar dendritic arbor receiving parallel and climbing-fibre inputs in the molecular layer above.](../figures/art-D1-cerebellum-purkinje.png)
 
 ### The headline number
 
@@ -166,6 +172,8 @@ The two accounts divide the labour rather than compete: the internal-model accou
 
 Here is the puzzle that organises everything downstream in this track.
 
+![Signal flow through the cerebellar microcircuit — parallel-fibre and climbing-fibre excitation converging onto the sole cortical output neuron, the GABAergic Purkinje cell — and why extreme metabolic, Ca²⁺, and dendritic demands make Purkinje neurons selectively vulnerable.](../figures/fig-D1-cerebellar-circuit.svg)
+
 Nearly every gene implicated in an inherited neurodegenerative disease is expressed broadly — often in every neuron, often in every tissue. Yet each disease kills a specific, reproducible subset of neurons. *HTT* is expressed essentially everywhere; Huntington disease destroys striatal medium spiny neurons first. And the gene this track is heading toward, *PPP2R2B*, is expressed across the whole brain — cerebral cortex included, and in bulk data *more* highly there than in cerebellum — yet SCA12 presents as a cerebellar-plus syndrome ([D4](D4-sca12-from-repeat-to-phenotype.md) takes up that specific, awkward expression story in detail).
 
 So expression pattern does not predict the pattern of death. Something about particular neurons makes them fall first to an insult their neighbours also carry. That property is called **selective vulnerability**, and the honest position is that for most diseases — including every spinocerebellar ataxia — we do not know what it is. What exists is a set of candidate explanations (the framing here follows the two standard reviews, Saxena & Caroni 2011 and Fu, Hardy & Duff 2018), none proven, not mutually exclusive:
@@ -187,6 +195,8 @@ Note the shape of all four arguments: each takes a universal cellular process an
 ## 5. The neurodegeneration mechanism toolbox
 
 Neurodegeneration is not one mechanism. It is a family of interacting failure modes, and any given disease engages several. This section is a reference taxonomy: later chapters ([D3](D3-repeat-expansion-disorders.md), [D4](D4-sca12-from-repeat-to-phenotype.md)) will point back into it by number rather than re-explaining. For each entry: what it is, the key evidence, and the trap to avoid.
+
+![The neuronal proteostasis triad — chaperone refolding, the ubiquitin–proteasome system (UPS) for soluble monomers, and autophagy/mitophagy for large aggregates and damaged mitochondria — and how saturation triggers selective neuronal loss.](../figures/fig-D1c-proteostasis-toolbox.svg)
 
 ### 5.1 Proteostasis and aggregation
 

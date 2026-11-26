@@ -72,6 +72,8 @@ The asymptotics matter more than the constant factor. Editing *N* targets costs 
 
 CRISPR is a bacterial adaptive immune system: fragments of past invaders are stored as spacers in a genomic array, transcribed, and used to guide a nuclease against matching sequence. Two RNAs are involved naturally — a **crRNA** carrying the spacer and a **tracrRNA** that scaffolds the protein — and the engineering step was fusing them into one **single-guide RNA (sgRNA)**.
 
+![CRISPR-Cas9 programmable DNA cleavage (sgRNA spacer + NGG PAM → DSB repaired by NHEJ indels or HDR templating) alongside nickase-based base editing and prime editing that install precise edits without double-strand breaks.](../figures/fig-38-crispr-editing.svg)
+
 **The PAM is the self/non-self test.** *Streptococcus pyogenes* Cas9 (SpCas9) will not cut unless the target is immediately followed by `NGG`. The bacterium's own CRISPR array contains the spacer sequence but *not* the adjacent PAM, so Cas9 cannot cut the array that encodes it. Without the PAM, a CRISPR system is an autoimmune disease. For us, the PAM is a constraint on the addressable space: `NGG` occurs about once every 8 bp on average across both strands, so most positions are reachable but not all.
 
 Recognition is ordered and directional. Cas9 collides with DNA constantly and interrogates only PAMs; on finding one it locally melts the duplex and tries to zipper the guide onto the target strand starting from the PAM-proximal end. Mismatches near the PAM (the **seed**, roughly the PAM-proximal 8–12 nt) abort the process; mismatches at the far end often do not. A complete **R-loop** — guide RNA paired to the target strand, displaced non-target strand looped out — licenses the two nuclease domains, HNH and RuvC, to cut one strand each, producing a **blunt cut 3 bp upstream of the PAM**.
@@ -121,6 +123,8 @@ A second class of risk is invisible to standard assays. A single cut can produce
 ## 6. dCas9: targeting as an API
 
 Inactivate both nuclease domains (D10A + H840A) and Cas9 becomes **dCas9** — a programmable DNA-binding protein with a payload slot. This decouples *which locus* from *what to do there*.
+
+![Catalytically inactive dCas9 (D10A + H840A) repurposed as a programmable genomic address bus recruiting KRAB (CRISPRi), VP64/p300 (CRISPRa), DNMT3A/TET1 (epigenome editing), or GFP/APEX2 (live imaging and locus proteomics).](../figures/fig-38b-dcas9-api.svg)
 
 | Fusion | Effect | Why it is used |
 |---|---|---|

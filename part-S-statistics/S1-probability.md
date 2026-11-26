@@ -312,6 +312,8 @@ and in a pedigree the unknowns are genotypes, not future coin flips.
 The derivation is three lines and is worth doing once, because the theorem is not a new principle
 — it is the definition of conditional probability read in both directions.
 
+![Probability tree and Bayesian update table for genetic counselling: starting from a 1/2 prior carrier risk, observing three unaffected sons updates the posterior probability of being a carrier via the likelihood ratio.](../figures/fig-S1-probability-bayes.svg)
+
 ```
 (1)  P(A | B) = P(A ∩ B) / P(B)          definition
 (2)  P(A ∩ B) = P(B | A) · P(A)          the same definition, rearranged

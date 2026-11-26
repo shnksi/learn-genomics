@@ -184,6 +184,8 @@ individual case studies, with the comparative pattern consistent with it rather 
 Intrinsic postzygotic isolation looks impossible before you do the bookkeeping, and the
 impossibility is the interesting part.
 
+![How two-locus Dobzhansky–Muller incompatibilities evolve intrinsic hybrid sterility without either lineage crossing a fitness valley, paired with a tension-zone allele-frequency cline balancing dispersal against selection.](../figures/fig-35a-speciation-cline.svg)
+
 **The problem is a fitness valley.** Write the ancestral genotype `aabb` and suppose the
 combination that kills a hybrid is `A` with `B`. For one population to reach `AABB` on its own it
 must pass through living individuals carrying both — and by hypothesis that combination kills, so
