@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="360.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Two cellular architectures: Prokaryotes vs. Eukaryotes</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Whether DNA sits open in the cytoplasm or behind a nuclear envelope shapes how transcription, splicing, and translation work</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="344.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Prokaryote (~1–5 µm · no nucleus)</text>
+  <rect x="54.0" y="108.0" width="284.0" height="114.0" rx="52" fill="#ffffff" stroke="#0d8a7b" stroke-width="2.6"/>
+  <rect x="62.0" y="116.0" width="268.0" height="98.0" rx="44" fill="#e0f5f2" stroke="#c25e0a" stroke-width="1.4"/>
+  <path d="M 102 162 C 110 132, 160 132, 174 156 C 188 180, 146 198, 122 184 C 98 170, 134 136, 166 146 C 194 156, 176 196, 144 192" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="138.0" y="132.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.8" font-weight="700" fill="#1e40af" text-anchor="middle">Nucleoid (1 circular chr)</text>
+  <line x1="174.0" y1="162.0" x2="266.0" y2="162.0" stroke="#e11d48" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="198.0" cy="162.0" r="7.5" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.6"/>
+  <circle cx="224.0" cy="162.0" r="7.5" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.6"/>
+  <circle cx="250.0" cy="162.0" r="7.5" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.6"/>
+  <text x="230.0" y="146.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.4" font-weight="700" fill="#c25e0a" text-anchor="middle">Ribosomes on nascent</text>
+  <text x="230.0" y="184.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.4" font-weight="700" fill="#9f1239" text-anchor="middle">mRNA (coupled!)</text>
+  <circle cx="294.0" cy="166.0" r="12.0" fill="none" stroke="#7c3aed" stroke-width="2"/>
+  <text x="294.0" y="192.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.2" font-weight="700" fill="#7c3aed" text-anchor="middle">Plasmid</text>
+  <text x="196.0" y="248.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">• No nuclear membrane, no organelles, no splicing.</text>
+  <text x="196.0" y="264.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">• Transcription &amp; translation happen SIMULTANEOUSLY</text>
+  <text x="196.0" y="280.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">  in the same cytoplasm (enables trp attenuation!).</text>
+  <text x="196.0" y="296.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">• Compact circular genome (~0.5–10 Mb, dense genes).</text>
+  <rect x="392.0" y="72.0" width="344.0" height="268.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="404.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Eukaryote (~10–100 µm · membrane-bound nucleus)</text>
+  <ellipse cx="564.0" cy="166.0" rx="144.0" ry="58.0" fill="#ffffff" stroke="#0d8a7b" stroke-width="2.4"/>
+  <ellipse cx="504.0" cy="166.0" rx="62.0" ry="38.0" fill="#eff6ff" stroke="#2563eb" stroke-width="2.0" stroke-dasharray="6,3"/>
+  <text x="504.0" y="152.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#1e40af" text-anchor="middle">Nucleus</text>
+  <text x="504.0" y="166.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.2" font-weight="500" fill="#334155" text-anchor="middle">DNA → pre-mRNA</text>
+  <text x="504.0" y="179.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.2" font-weight="700" fill="#1e40af" text-anchor="middle">→ Cap/Splice/PolyA</text>
+  <line x1="566.0" y1="166.0" x2="608.0" y2="166.0" stroke="#e11d48" stroke-width="2.0" stroke-linecap="round" marker-end="url(#arr-rose)"/>
+  <text x="587.0" y="156.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.2" font-weight="700" fill="#9f1239" text-anchor="middle">Export</text>
+  <rect x="612.0" y="146.0" width="76.0" height="40.0" rx="6" fill="#fff3e5" stroke="#c25e0a" stroke-width="1.5"/>
+  <text x="650.0" y="162.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.8" font-weight="700" fill="#c25e0a" text-anchor="middle">Cytoplasm</text>
+  <text x="650.0" y="176.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="500" fill="#334155" text-anchor="middle">Translation</text>
+  <ellipse cx="638.0" cy="204.0" rx="24.0" ry="10.0" fill="#e0f5f2" stroke="#0d8a7b" stroke-width="1.4"/>
+  <text x="566.0" y="208.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.2" font-weight="600" fill="#085f55" text-anchor="middle">Mitochondria (mtDNA)</text>
+  <text x="564.0" y="248.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">• Nuclear envelope separates transcription (inside)</text>
+  <text x="564.0" y="264.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">  from translation (outside) → inserts RNA processing!</text>
+  <text x="564.0" y="280.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">• Linear chromosomes wrapped in chromatin + organelles.</text>
+  <text x="564.0" y="296.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="500" fill="#334155" text-anchor="middle">• Large genomes (~10 Mb–100 Gb) with introns &amp; enhancers.</text>
+</svg>

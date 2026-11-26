@@ -28,6 +28,18 @@ PLACEMENTS: list[tuple[str, str, str, str]] = [
     (
         "part-00-orientation/01-chemistry-and-cell-primer.md",
         "4. The cell",
+        "fig-01d-prokaryote-vs-eukaryote.svg",
+        "Side-by-side comparison of prokaryotic and eukaryotic cellular architectures: in prokaryotes, a single circular chromosome sits open in the cytoplasm where transcription and translation happen simultaneously, whereas the eukaryotic nuclear envelope separates transcription and RNA processing inside the nucleus from translation in the cytoplasm.",
+    ),
+    (
+        "part-00-orientation/01-chemistry-and-cell-primer.md",
+        "4. The cell",
+        "art-01-prokaryotic-cell.png",
+        "Cutaway prokaryotic bacterial cell (rod-shaped bacillus) with no nucleus or membrane-bound organelles: deep-teal outer cell wall/capsule with pili and flagellum, amber plasma membrane, a single tangled circular nucleoid chromosome floating freely in the cytoplasm, a small circular plasmid ring (amber), free cytoplasmic ribosomes, and ribosomes actively translating a nascent mRNA strand (coral) directly off the DNA.",
+    ),
+    (
+        "part-00-orientation/01-chemistry-and-cell-primer.md",
+        "4. The cell",
         "art-01-eukaryotic-cell.png",
         "Cutaway eukaryotic animal cell showing the central nucleus with chromatin and nucleolus (teal), ribosome-studded rough endoplasmic reticulum and smooth ER tubules (blue), stacked Golgi apparatus with budding vesicles (amber), cristae-filled mitochondria (dark teal), spherical lysosomes (coral), and cytoskeletal filaments.",
     ),

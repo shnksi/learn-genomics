@@ -89,9 +89,10 @@ class Canvas:
         op = f' opacity="{opacity}"' if opacity < 1.0 else ""
         self.add(f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{r:.1f}" fill="{fill}" stroke="{stroke}" stroke-width="{sw}"{extra}{op}/>')
 
-    def ellipse(self, cx, cy, rx, ry, fill=TEAL_BG, stroke=TEAL, sw=1.5, opacity=1.0):
+    def ellipse(self, cx, cy, rx, ry, fill=TEAL_BG, stroke=TEAL, sw=1.5, dash="", opacity=1.0):
+        extra = f' stroke-dasharray="{dash}"' if dash else ""
         op = f' opacity="{opacity}"' if opacity < 1.0 else ""
-        self.add(f'<ellipse cx="{cx:.1f}" cy="{cy:.1f}" rx="{rx:.1f}" ry="{ry:.1f}" fill="{fill}" stroke="{stroke}" stroke-width="{sw}"{op}/>')
+        self.add(f'<ellipse cx="{cx:.1f}" cy="{cy:.1f}" rx="{rx:.1f}" ry="{ry:.1f}" fill="{fill}" stroke="{stroke}" stroke-width="{sw}"{extra}{op}/>')
 
     def line(self, x1, y1, x2, y2, stroke=RULE, sw=1.5, dash="", marker="", opacity=1.0):
         extra = f' stroke-dasharray="{dash}"' if dash else ""

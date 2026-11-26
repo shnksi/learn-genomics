@@ -208,16 +208,20 @@ identity tags — including the ABO blood group system you'll meet in
 
 Two architectures.
 
-![Cutaway eukaryotic animal cell showing the central nucleus with chromatin and nucleolus (teal), ribosome-studded rough endoplasmic reticulum and smooth ER tubules (blue), stacked Golgi apparatus with budding vesicles (amber), cristae-filled mitochondria (dark teal), spherical lysosomes (coral), and cytoskeletal filaments.](../figures/art-01-eukaryotic-cell.png)
+![Side-by-side comparison of prokaryotic and eukaryotic cellular architectures: in prokaryotes, a single circular chromosome sits open in the cytoplasm where transcription and translation happen simultaneously, whereas the eukaryotic nuclear envelope separates transcription and RNA processing inside the nucleus from translation in the cytoplasm.](../figures/fig-01d-prokaryote-vs-eukaryote.svg)
 
 **Prokaryotes** (bacteria and archaea) — no nucleus. One circular chromosome sitting in the
 cytoplasm. Transcription and translation happen in the same space, simultaneously: ribosomes
 latch onto RNA while it's still being transcribed. Small, fast, streamlined genomes.
 
+![Cutaway prokaryotic bacterial cell (rod-shaped bacillus) with no nucleus or membrane-bound organelles: deep-teal outer cell wall/capsule with pili and flagellum, amber plasma membrane, a single tangled circular nucleoid chromosome floating freely in the cytoplasm, a small circular plasmid ring (amber), free cytoplasmic ribosomes, and ribosomes actively translating a nascent mRNA strand (coral) directly off the DNA.](../figures/art-01-prokaryotic-cell.png)
+
 **Eukaryotes** (everything else — animals, plants, fungi, protists) — DNA enclosed in a
 **nucleus**. Transcription happens inside, translation outside. That separation creates a
 processing step in between, and that step is where a great deal of regulatory complexity
 lives ([Ch 06](../part-01-molecular-foundations/06-rna-processing.md)).
+
+![Cutaway eukaryotic animal cell showing the central nucleus with chromatin and nucleolus (teal), ribosome-studded rough endoplasmic reticulum and smooth ER tubules (blue), stacked Golgi apparatus with budding vesicles (amber), cristae-filled mitochondria (dark teal), spherical lysosomes (coral), and cytoskeletal filaments.](../figures/art-01-eukaryotic-cell.png)
 
 ```mermaid
 graph TB

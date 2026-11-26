@@ -137,6 +137,62 @@ def fig_01c(out: Path):
     c.save(out / "fig-01c-secondary-structure.svg")
 
 
+def fig_01d(out: Path):
+    c = Canvas(760, 360, "Two cellular architectures: Prokaryotes vs. Eukaryotes",
+               "Whether DNA sits open in the cytoplasm or behind a nuclear envelope shapes how transcription, splicing, and translation work")
+    # Left: Prokaryote (Bacteria & Archaea)
+    c.panel_box(24, 72, 344, 268, "Prokaryote (~1–5 µm · no nucleus)")
+    # Capsule cell outline
+    c.rect(54, 108, 284, 114, fill="#ffffff", stroke=TEAL, sw=2.6, rx=52)
+    c.rect(62, 116, 268, 98, fill=TEAL_BG, stroke=AMBER, sw=1.4, rx=44)
+    # Single circular nucleoid tangle in center-left
+    c.path("M 102 162 C 110 132, 160 132, 174 156 C 188 180, 146 198, 122 184 C 98 170, 134 136, 166 146 C 194 156, 176 196, 144 192", stroke=BLUE, sw=2.4)
+    c.text(138, 132, "Nucleoid (1 circular chr)", size=8.8, weight="700", fill=BLUE_DK, anchor="middle")
+    # Coupled mRNA + ribosomes right off DNA!
+    c.line(174, 162, 266, 162, stroke=ROSE, sw=2.2)
+    for rx in (198, 224, 250):
+        c.circle(rx, 162, 7.5, fill=AMBER_BG, stroke=AMBER, sw=1.6)
+    c.text(230, 146, "Ribosomes on nascent", size=8.4, weight="700", fill=AMBER, anchor="middle")
+    c.text(230, 184, "mRNA (coupled!)", size=8.4, weight="700", fill=ROSE_DK, anchor="middle")
+    # Small plasmid
+    c.circle(294, 166, 12, fill="none", stroke=PURPLE, sw=2)
+    c.text(294, 192, "Plasmid", size=8.2, weight="700", fill=PURPLE, anchor="middle")
+
+    c.multiline(196, 248, [
+        "• No nuclear membrane, no organelles, no splicing.",
+        "• Transcription & translation happen SIMULTANEOUSLY",
+        "  in the same cytoplasm (enables trp attenuation!).",
+        "• Compact circular genome (~0.5–10 Mb, dense genes).",
+    ], size=9.2, lh=16, fill=SOFT, anchor="middle")
+
+    # Right: Eukaryote (Animals, plants, fungi, protists)
+    c.panel_box(392, 72, 344, 268, "Eukaryote (~10–100 µm · membrane-bound nucleus)")
+    # Cell boundary
+    c.ellipse(564, 166, 144, 58, fill="#ffffff", stroke=TEAL, sw=2.4)
+    # Nuclear envelope inside
+    c.ellipse(504, 166, 62, 38, fill=BLUE_BG, stroke=BLUE, sw=2.0, dash="6,3")
+    c.text(504, 152, "Nucleus", size=9.5, weight="700", fill=BLUE_DK, anchor="middle")
+    c.text(504, 166, "DNA → pre-mRNA", size=8.2, fill=SOFT, anchor="middle")
+    c.text(504, 179, "→ Cap/Splice/PolyA", size=8.2, weight="700", fill=BLUE_DK, anchor="middle")
+    # Export arrow across nuclear pore to cytoplasmic ribosome
+    c.arrow(566, 166, 608, 166, color="rose", sw=2.0)
+    c.text(587, 156, "Export", size=8.2, weight="700", fill=ROSE_DK, anchor="middle")
+    c.rect(612, 146, 76, 40, fill=AMBER_BG, stroke=AMBER, sw=1.5, rx=6)
+    c.text(650, 162, "Cytoplasm", size=8.8, weight="700", fill=AMBER, anchor="middle")
+    c.text(650, 176, "Translation", size=8.5, fill=SOFT, anchor="middle")
+    # Small mitochondrion with own circular DNA
+    c.ellipse(638, 204, 24, 10, fill=TEAL_BG, stroke=TEAL, sw=1.4)
+    c.text(566, 208, "Mitochondria (mtDNA)", size=8.2, weight="600", fill=TEAL_DK, anchor="middle")
+
+    c.multiline(564, 248, [
+        "• Nuclear envelope separates transcription (inside)",
+        "  from translation (outside) → inserts RNA processing!",
+        "• Linear chromosomes wrapped in chromatin + organelles.",
+        "• Large genomes (~10 Mb–100 Gb) with introns & enhancers.",
+    ], size=9.2, lh=16, fill=SOFT, anchor="middle")
+    c.save(out / "fig-01d-prokaryote-vs-eukaryote.svg")
+
+
 def fig_02b(out: Path):
     c = Canvas(760, 360, "Anatomy of a nucleotide monomer: sugar numbering, DNA vs. RNA, and bases",
                "Carbon numbering (1′–5′) sets strand polarity; the 2′ position alone distinguishes stable DNA from reactive RNA")
@@ -811,7 +867,7 @@ def fig_16b(out: Path):
 
 
 def build_all(out: Path):
-    for fn in [fig_01b, fig_01c, fig_02b, fig_02c, fig_02d, fig_03b, fig_04b, fig_05b,
+    for fn in [fig_01b, fig_01c, fig_01d, fig_02b, fig_02c, fig_02d, fig_03b, fig_04b, fig_05b,
                fig_06b, fig_07b, fig_08b, fig_09b, fig_11b, fig_13b, fig_14b, fig_16b]:
         fn(out)
-    print("Generated 16 Wave-2 SVGs for Parts 0–3")
+    print("Generated 17 Wave-2 SVGs for Parts 0–3")
