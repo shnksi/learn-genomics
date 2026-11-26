@@ -143,6 +143,8 @@ Count them. Replicating a 6.2 Gb diploid genome means synthesising 1.24 × 10¹�
 
 ## 4. The machinery at the fork
 
+<div class="step-walkthrough" data-walkthrough="replication-fork"></div>
+
 ![Asymmetric DNA replication fork: because all DNA polymerases extend strictly 5′→3′, the leading strand is synthesised continuously toward the advancing helicase while the lagging strand is built discontinuously as RNA-primed Okazaki fragments joined by DNA ligase.](../figures/fig-04-replication-fork.svg)
 
 | Component | Bacteria | Eukaryotes | Job — and what fails without it |

@@ -34,7 +34,7 @@ REQUIRED = ["index.html", "games.html", "404.html", ".nojekyll", "assets/reader.
             "assets/interactions-human.js", "assets/interactions-advanced-stats.js",
             "assets/interactions-sca12.js",
             "assets/interactions-transfer.js",
-            "assets/widgets.js",
+            "assets/widgets.js", "assets/step-walkthrough.js",
             "assets/search-index.js", "assets/recall-index.js",
             "assets/katex/LICENSE", "assets/mermaid.LICENSE"]
 

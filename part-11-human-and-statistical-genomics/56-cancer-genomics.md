@@ -56,6 +56,8 @@ The clinical stakes of the germline/somatic split are large. A somatic *BRCA1* m
 
 Normal tissue is not a passive background. A colonic crypt is maintained by a handful of stem cells competing neutrally for niche positions; drift alone converts a crypt to monoclonality within years. Normal oesophagus and skin in middle-aged people are patchworks of clones carrying *NOTCH1* and *TP53* mutations, some covering square centimetres. **Positively selected somatic mutations in cancer genes are the normal state of normal tissue.**
 
+<div class="step-walkthrough" data-walkthrough="cancer-clonal-evolution"></div>
+
 ![Somatic Darwinian evolution in cancer: a clonal fishplot tracing truncal driver acquisition, branching subclones, and therapy-selected resistant relapse, contrasted with Knudson's two-hit tumour-suppressor versus single-hit oncogene logic.](../figures/fig-56-cancer-evolution.svg)
 
 That reframes the question. Cancer is not "a cell acquired a driver". Drivers are acquired constantly and almost never produce a tumour. Cancer is the rare trajectory in which enough capabilities accumulate in one lineage, in an order that works, for the clone to escape the constraints that hold ordinary clones in place.

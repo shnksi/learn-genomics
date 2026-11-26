@@ -6786,3 +6786,227 @@ section.aux .part-head {
   }
   .doc-list { grid-template-columns: 1fr; }
 }
+
+/* ── Interactive Step-by-Step Walkthroughs ────────────────────────────────── */
+
+.step-walkthrough.sw-card {
+  margin: 1.75rem 0 2rem;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule-strong);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  font-family: var(--font-ui);
+}
+
+.sw-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  flex-wrap: wrap;
+  padding: .75rem 1rem .65rem;
+  background: var(--paper-sunk);
+  border-bottom: 1px solid var(--rule);
+}
+
+.sw-titles { min-width: 0; flex: 1 1 14rem; }
+
+.sw-title {
+  font-size: .92rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.25;
+  letter-spacing: -.01em;
+}
+
+.sw-sub {
+  font-size: .74rem;
+  color: var(--ink-faint);
+  margin-top: .15rem;
+  line-height: 1.3;
+}
+
+.sw-controls {
+  display: flex;
+  align-items: center;
+  gap: .32rem;
+  flex-shrink: 0;
+}
+
+.sw-counter {
+  font-family: var(--font-mono);
+  font-size: .72rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  padding: 0 .35rem;
+  min-width: 3rem;
+  text-align: center;
+}
+
+.sw-btn {
+  appearance: none;
+  border: 1px solid var(--rule-strong);
+  background: var(--paper-raised);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: .74rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: .42rem .6rem;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: border-color .15s ease, background .15s ease, color .15s ease;
+}
+
+.sw-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  background: var(--accent-soft);
+}
+
+.sw-btn.sw-play {
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  background: var(--accent-soft);
+  padding: .42rem .72rem;
+}
+
+.sw-btn.sw-play.is-playing {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.sw-prog {
+  display: flex;
+  gap: 3px;
+  padding: 0;
+  height: 4px;
+  background: var(--rule);
+}
+
+.sw-prog > span {
+  flex: 1 1 0;
+  background: transparent;
+  transition: background .2s ease;
+}
+
+.sw-prog > span.is-done {
+  background: color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.sw-prog > span.is-active {
+  background: var(--accent);
+}
+
+.sw-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.32fr) minmax(0, 1fr);
+  gap: .8rem;
+  padding: .85rem;
+  align-items: start;
+}
+
+.sw-stage {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+}
+
+.sw-stage canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 450 / 350;
+}
+
+.sw-rail {
+  display: flex;
+  flex-direction: column;
+  gap: .32rem;
+  min-width: 0;
+}
+
+.sw-tile {
+  appearance: none;
+  display: flex;
+  align-items: flex-start;
+  gap: .5rem;
+  width: 100%;
+  text-align: left;
+  padding: .42rem .55rem;
+  border-radius: 9px;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: border-color .15s ease, background .15s ease, box-shadow .15s ease, transform .12s ease;
+}
+
+.sw-tile:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--ink);
+}
+
+.sw-tile.is-done {
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--rule));
+  background: var(--paper-raised);
+}
+
+.sw-tile.is-active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--ink);
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.sw-dot {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-top: .32rem;
+  background: var(--rule-strong);
+  transition: background .15s ease, transform .15s ease;
+}
+
+.sw-tile.is-done .sw-dot {
+  background: color-mix(in srgb, var(--accent) 65%, transparent);
+}
+
+.sw-tile.is-active .sw-dot {
+  background: var(--accent);
+  transform: scale(1.25);
+}
+
+.sw-tile-txt {
+  display: flex;
+  flex-direction: column;
+  gap: .1rem;
+  min-width: 0;
+}
+
+.sw-tile-txt strong {
+  font-size: .76rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.sw-tile.is-active .sw-tile-txt strong {
+  color: var(--accent-ink);
+}
+
+.sw-tile-txt span {
+  font-size: .68rem;
+  line-height: 1.32;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 40rem) {
+  .sw-body {
+    grid-template-columns: 1fr;
+  }
+}

@@ -75,6 +75,8 @@ Three further properties. **Non-overlapping**: base 4 belongs to codon 2 and not
 
 Double-stranded DNA can be read in **six frames**: three offsets on each strand. A translator that doesn't know which is real must produce all six.
 
+<div class="step-walkthrough" data-walkthrough="translation-elongation"></div>
+
 ![Ribosomal translation elongation across the A, P, and E sites, reading-frame shifts caused by single-base insertions, and wobble base-pairing at the third codon position explaining why the 64-codon genetic code tolerates synonymous third-base changes.](../figures/fig-07-translation-ribosome.svg)
 
 ```

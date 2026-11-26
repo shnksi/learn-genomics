@@ -716,6 +716,7 @@ def page_template(doc: Doc, body: str, boot: str, nav: dict,
 <script src="assets/interactions-sca12.js"></script>
 <script src="assets/interactions-transfer.js"></script>
 <script src="assets/widgets.js"></script>
+<script src="assets/step-walkthrough.js"></script>
 </body>
 </html>
 """
@@ -1180,7 +1181,7 @@ def main() -> int:
         "interactions-evolution.js", "interactions-methods.js",
         "interactions-genomics.js", "interactions-human.js",
         "interactions-advanced-stats.js", "interactions-sca12.js",
-        "interactions-transfer.js", "widgets.js",
+        "interactions-transfer.js", "widgets.js", "step-walkthrough.js",
         "games.css", "games-core.js", "games-ui.js", "games-ui-advanced.js",
     ):
         shutil.copy2(SRC / name, assets / name)

@@ -164,6 +164,8 @@ geometry of §8, and the order in which the polymerase emits the sequence.
 
 ## 6. The chemistry: two transesterifications
 
+<div class="step-walkthrough" data-walkthrough="transcription-splicing"></div>
+
 **Step 1 — branching.** The 2′-hydroxyl of the branch-point adenosine attacks the phosphate at
 the 5′ splice site. The exon1–intron bond breaks; a bond forms between the intron's first
 nucleotide and the branch A's 2′ position. That **2′–5′ linkage** is a branch in an otherwise

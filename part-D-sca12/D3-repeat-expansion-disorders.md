@@ -129,6 +129,8 @@ This is not sloppiness to be cleaned up; it is what the underlying biology looks
 
 [Ch 16 §9](../part-03-genome-instability/16-mutation.md) gave you slippage and the positive feedback; this section is what it left out. Take the slippage mechanism as read — misalignment of repetitive strands during synthesis — and ask the two questions Ch 16 could not answer: *why do some motifs expand and not others*, and *how does a repeat expand in a cell that never replicates its DNA again?*
 
+<div class="step-walkthrough" data-walkthrough="sca12-repeat-expansion"></div>
+
 ![Molecular engine of somatic CAG repeat expansion: slipped-out CAG·CAG hairpins are bound and stabilised by MutSβ (MSH2–MSH3), causing MutLγ (MLH1–MLH3) to nick the opposite strand so gap-filling locks in net repeat lengthening in post-mitotic neurons.](../figures/fig-D3b-cag-hairpin-mmr.svg)
 
 ### Why motifs differ: secondary structure

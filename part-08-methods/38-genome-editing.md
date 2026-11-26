@@ -72,6 +72,8 @@ The asymptotics matter more than the constant factor. Editing *N* targets costs 
 
 CRISPR is a bacterial adaptive immune system: fragments of past invaders are stored as spacers in a genomic array, transcribed, and used to guide a nuclease against matching sequence. Two RNAs are involved naturally — a **crRNA** carrying the spacer and a **tracrRNA** that scaffolds the protein — and the engineering step was fusing them into one **single-guide RNA (sgRNA)**.
 
+<div class="step-walkthrough" data-walkthrough="crispr-editing"></div>
+
 ![CRISPR-Cas9 programmable DNA cleavage (sgRNA spacer + NGG PAM → DSB repaired by NHEJ indels or HDR templating) alongside nickase-based base editing and prime editing that install precise edits without double-strand breaks.](../figures/fig-38-crispr-editing.svg)
 
 **The PAM is the self/non-self test.** *Streptococcus pyogenes* Cas9 (SpCas9) will not cut unless the target is immediately followed by `NGG`. The bacterium's own CRISPR array contains the spacer sequence but *not* the adjacent PAM, so Cas9 cannot cut the array that encodes it. Without the PAM, a CRISPR system is an autoimmune disease. For us, the PAM is a constraint on the addressable space: `NGG` occurs about once every 8 bp on average across both strands, so most positions are reachable but not all.

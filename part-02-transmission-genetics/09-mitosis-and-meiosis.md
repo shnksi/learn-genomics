@@ -205,6 +205,8 @@ them, no bivalent.
 Prophase I is not a stage so much as a programme, and it can last decades (§10). Its
 sub-stages:
 
+<div class="step-walkthrough" data-walkthrough="meiosis-crossing-over"></div>
+
 ![Prophase I crossing over across a four-chromatid bivalent: physical chiasma formation between two non-sister chromatids tethers homologous chromosomes for faithful Meiosis I segregation while producing two parental and two recombinant gametes.](../figures/fig-09b-prophase1-crossover.svg)
 
 | Sub-stage | Event |

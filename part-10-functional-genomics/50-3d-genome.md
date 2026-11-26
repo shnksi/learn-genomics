@@ -193,6 +193,8 @@ Calling loops is a local-enrichment test, and the local part is what matters. Na
 
 The mechanism that explains TADs, loops and the convergence rule at once.
 
+<div class="step-walkthrough" data-walkthrough="loop-extrusion-hic"></div>
+
 ![Reading a Hi-C contact heatmap (triangular TAD squares and corner loop dots) directly from the loop-extrusion mechanism: cohesin reels chromatin through its ring until stalled by convergently oriented CTCF motifs.](../figures/fig-50-hic-tad-loops.svg)
 
 **Cohesin** is a ring-shaped SMC complex (SMC1, SMC3, RAD21, and a STAG/SA subunit) with ATPase activity. Loaded onto chromatin by **NIPBL** and removed by **WAPL**, it engages the fibre and reels it through, progressively enlarging a loop:

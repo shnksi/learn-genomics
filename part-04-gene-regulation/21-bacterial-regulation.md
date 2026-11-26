@@ -155,6 +155,8 @@ Glucose is a better carbon source, so a cell offered both sugars eats glucose fi
 then eats lactose — **diauxic growth**, two exponential phases with a lag between. The pause
 is the operon being built.
 
+<div class="step-walkthrough" data-walkthrough="lac-operon-gate"></div>
+
 ![The *lac* operon as a biological AND gate: high transcription requires both lactose present (releasing the LacI repressor from the operator) and glucose absent (raising cAMP so CAP–cAMP activates RNA polymerase recruitment).](../figures/fig-21-lac-operon.svg)
 
 Two mechanisms enforce the preference, and neither involves glucose binding anything in the
