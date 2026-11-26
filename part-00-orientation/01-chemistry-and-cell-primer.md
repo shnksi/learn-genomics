@@ -400,6 +400,8 @@ which a DNA duplex comes apart is this equation applied to A + B ⇌ AB.
 
 Predict the structure from the chemistry alone.
 
+![Step-by-step animated derivation of the B-form DNA double helix from seven physical constraints: charged phosphate backbone facing water, face-to-face base stacking (3.4 Å), second strand pairing unsatisfied hydrogen bonds, constant ~20 Å purine–pyrimidine width, right-handed 10.5 bp/turn twist, antiparallel 5′→3′ polarity, and unequal major (~22 Å) versus minor (~12 Å) grooves allowing a transcription-factor α-helix to read sequence without unzipping the duplex.](../figures/anim-01-helix-derivation.gif)
+
 **Given:** a polymer whose backbone carries one negative charge per unit, with flat, largely
 non-polar bases attached, dissolved in water.
 
