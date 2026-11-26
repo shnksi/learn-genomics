@@ -148,6 +148,8 @@ The discount is therefore **trait-specific**, not a universal correction factor,
 
 This distinction is frequently muddled and it matters, because the two statistics answer different questions.
 
+![LD-score regression separating true polygenicity (which elevates the slope of mean χ² against LD score *ℓ*<sub>*j*</sub> while keeping intercept ≈ 1.0) from cryptic population stratification (which shifts the intercept uniformly above 1.0).](../figures/fig-51b-lambda-vs-ldsc.svg)
+
 ### Genomic inflation, λ
 
 Under the global null each statistic is $\chi^2_1$, whose median is $\Phi^{-1}(0.75)^2 = 0.4549$. So define

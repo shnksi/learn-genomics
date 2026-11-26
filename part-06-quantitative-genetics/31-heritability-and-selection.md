@@ -47,6 +47,8 @@ selected parents) and worthless for every other causal question people ask of it
 Start from the partition established in [Ch 30](30-quantitative-traits.md). A phenotype is
 genotypic value plus environmental deviation, P = G + E, and if the two are uncorrelated:
 
+![Broad-sense heritability (*H*² = (*V*<sub>A</sub> + *V*<sub>D</sub> + *V*<sub>I</sub>)/*V*<sub>P</sub>, governing clone and identical-twin resemblance) versus narrow-sense heritability (*h*² = *V*<sub>A</sub>/*V*<sub>P</sub>, the additive fraction transmitted from parent to offspring that responds to selection).](../figures/fig-31b-broad-vs-narrow-h2.svg)
+
 ```
 V_P = V_G + V_E = (V_A + V_D + V_I) + V_E
 ```

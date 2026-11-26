@@ -137,6 +137,8 @@ A statistic whose scale moves with the marginals is useless for comparing loci.
 
 ## 4. Two normalisations: D' and r²
 
+![Why |*D*′| = 1 can coexist with tiny *r*²: whenever one haplotype is absent (zero historical recombination) |*D*′| reaches 1.0, yet a rare mutation nested inside a common allele has *r*² ≈ 0.05 — inflating GWAS tagging sample size by 1/*r*².](../figures/fig-29b-dprime-vs-r2.svg)
+
 ### D' — how far along the physical maximum
 
 Divide by the bound in the direction *D* actually points:

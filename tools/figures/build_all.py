@@ -19,6 +19,7 @@ import figs_wave2_part0_to_3
 import figs_wave2_part4_to_D
 import figs_wave3_part1_to_7
 import figs_wave3_part9_to_D
+import figs_wave4_contrasts
 
 
 def validate_svg(path: Path) -> list[str]:
@@ -66,6 +67,7 @@ def main() -> int:
         ("Wave 2 Parts 4–10 & D", figs_wave2_part4_to_D),
         ("Wave 3 Parts 1–7", figs_wave3_part1_to_7),
         ("Wave 3 Parts 9–12 & D", figs_wave3_part9_to_D),
+        ("Wave 4 Contrasts", figs_wave4_contrasts),
     ]
     total = 0
     for label, mod in modules:

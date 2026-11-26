@@ -881,6 +881,79 @@ PLACEMENTS: list[tuple[str, str, str, str]] = [
         "fig-D5b-rppcr-sawtooth-longread.svg",
         "SCA12 molecular diagnostic readouts compared: standard flanking PCR suffers allelic dropout of expanded repeats (appearing falsely homozygous), repeat-primed PCR (RP-PCR) reveals a diagnostic 3-bp sawtooth tail proving expansion, and long-read sequencing spans the entire repeat tract to capture exact size, interruptions, and methylation.",
     ),
+    # === WAVE 4 — 12 Side-by-Side Contrast & Paired-Concept SVGs ===
+    (
+        "part-01-molecular-foundations/05-transcription.md",
+        "5. Eukaryotes: three polymerases",
+        "fig-05c-three-polymerases.svg",
+        "Division of labour across the three eukaryotic RNA polymerases: Pol I (nucleolar 45S pre-rRNA), Pol II (protein-coding mRNAs and non-coding RNAs with CTD-coupled processing), and Pol III (tRNAs, 5S rRNA, and internal promoters).",
+    ),
+    (
+        "part-02-transmission-genetics/09-mitosis-and-meiosis.md",
+        "8. Nondisjunction: meiosis I versus meiosis II",
+        "fig-09d-nondisjunction-mi-vs-mii.svg",
+        "Meiosis I versus Meiosis II nondisjunction: failure of homologues to separate in MI produces 100% aneuploid gametes carrying both homologous alleles, whereas failure of sister chromatids in MII yields 50% normal gametes and 25% trisomic gametes carrying identical sister alleles.",
+    ),
+    (
+        "part-02-transmission-genetics/11-beyond-mendel.md",
+        "2. Incomplete dominance versus codominance",
+        "fig-11c-incomplete-vs-codominance.svg",
+        "Incomplete dominance (dosage blending of one functional copy into an intermediate phenotype) contrasted with codominance (simultaneous, unblended expression of both distinct parental alleles in the heterozygote).",
+    ),
+    (
+        "part-03-genome-instability/20-chromosome-abnormalities.md",
+        "2. Ploidy versus aneuploidy",
+        "fig-20d-ploidy-vs-aneuploidy.svg",
+        "Polyploidy (whole extra chromosome sets keeping 1:1:1 dosage stoichiometry intact) versus aneuploidy (gain or loss of a single chromosome disrupting stoichiometric balance across hundreds of genes).",
+    ),
+    (
+        "part-04-gene-regulation/25A-developmental-genetics.md",
+        "1. Two logics of development: lineage and position",
+        "fig-25Ac-lineage-vs-position.svg",
+        "Autonomous lineage-based specification (*C. elegans* cytoplasmic determinants where ablating one blastomere deletes its fate) versus conditional positional specification (mammalian regulative blastomeres where splitting a two-cell embryo yields complete identical twins).",
+    ),
+    (
+        "part-05-population-genetics/29-linkage-disequilibrium.md",
+        "4. Two normalisations: D' and r²",
+        "fig-29b-dprime-vs-r2.svg",
+        "Why |*D*′| = 1 can coexist with tiny *r*²: whenever one haplotype is absent (zero historical recombination) |*D*′| reaches 1.0, yet a rare mutation nested inside a common allele has *r*² ≈ 0.05 — inflating GWAS tagging sample size by 1/*r*².",
+    ),
+    (
+        "part-06-quantitative-genetics/31-heritability-and-selection.md",
+        "1. Two heritabilities",
+        "fig-31b-broad-vs-narrow-h2.svg",
+        "Broad-sense heritability (*H*² = (*V*<sub>A</sub> + *V*<sub>D</sub> + *V*<sub>I</sub>)/*V*<sub>P</sub>, governing clone and identical-twin resemblance) versus narrow-sense heritability (*h*² = *V*<sub>A</sub>/*V*<sub>P</sub>, the additive fraction transmitted from parent to offspring that responds to selection).",
+    ),
+    (
+        "part-09-genomics/40-sequencing-technologies.md",
+        "3. Third generation: read one molecule, in real time",
+        "fig-40c-pacbio-smrt-hifi.svg",
+        "PacBio SMRT sequencing inside a zero-mode waveguide (ZMW) nanocavity and Circular Consensus Sequencing (HiFi): hairpin adapters turn linear DNA into a circular SMRTbell read 10–15 times by a single polymerase so independent raw errors cancel to >99.9% (Q30+) accuracy.",
+    ),
+    (
+        "part-10-functional-genomics/48-single-cell-and-spatial.md",
+        "2. Measuring one cell at a time",
+        "fig-48b-plate-vs-droplet-sc.svg",
+        "Comparison of plate-based (SMART-seq2: full-length transcript coverage across hundreds to thousands of FACS-sorted cells) versus droplet-based (10x Chromium: 3′-end UMI barcoding across tens of thousands of cells with Poisson loading) single-cell RNA-seq architectures.",
+    ),
+    (
+        "part-10-functional-genomics/49-epigenome-profiling.md",
+        "7. Testing elements: sufficiency versus necessity",
+        "fig-49c-sufficiency-vs-necessity.svg",
+        "Orthogonal functional validation of cis-regulatory elements: episomal MPRA/STARR-seq assays test biochemical sufficiency outside native chromatin, whereas endogenous CRISPRi silencing tests true in-situ necessity for target gene expression.",
+    ),
+    (
+        "part-11-human-and-statistical-genomics/51-gwas.md",
+        "4. λ versus the LD-score intercept",
+        "fig-51b-lambda-vs-ldsc.svg",
+        "LD-score regression separating true polygenicity (which elevates the slope of mean χ² against LD score *ℓ*<sub>*j*</sub> while keeping intercept ≈ 1.0) from cryptic population stratification (which shifts the intercept uniformly above 1.0).",
+    ),
+    (
+        "part-S-statistics/S6-likelihood-and-bayes.md",
+        "6. Credible intervals versus confidence intervals",
+        "fig-S6b-credible-vs-confidence.svg",
+        "Frequentist 95% confidence intervals (random intervals fluctuating across repeated samples around a fixed parameter *θ*) contrasted with Bayesian 95% credible intervals (fixed data producing a posterior distribution containing 95% probability mass for *θ*).",
+    ),
 ]
 
 

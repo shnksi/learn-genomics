@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 355" width="760" height="355" role="img">
+  <defs>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#334155"/></marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0d8a7b"/></marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#c25e0a"/></marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#2563eb"/></marker>
+  <marker id="arr-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#e11d48"/></marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="0.0" y="0.0" width="760.0" height="355.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+  <text x="24.0" y="30.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a" text-anchor="start">Confidence intervals (Frequentist) vs. Credible intervals (Bayesian)</text>
+  <text x="24.0" y="48.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="start">Same 95% number, opposite probability statements: what is random — the interval or the parameter?</text>
+  <line x1="24.0" y1="58.0" x2="736.0" y2="58.0" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round"/>
+  <rect x="24.0" y="72.0" width="344.0" height="264.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="36.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Frequentist 95% Confidence Interval (interval is random)</text>
+  <line x1="196.0" y1="106.0" x2="196.0" y2="248.0" stroke="#0f172a" stroke-width="2.0" stroke-linecap="round" stroke-dasharray="4,3"/>
+  <text x="196.0" y="102.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.2" font-weight="700" fill="#0f172a" text-anchor="middle">Fixed true θ</text>
+  <line x1="152.0" y1="124.0" x2="232.0" y2="124.0" stroke="#0d8a7b" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="192.0" cy="124.0" r="3.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="168.0" y1="146.0" x2="246.0" y2="146.0" stroke="#0d8a7b" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="207.0" cy="146.0" r="3.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="138.0" y1="168.0" x2="218.0" y2="168.0" stroke="#0d8a7b" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="178.0" cy="168.0" r="3.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="208.0" y1="190.0" x2="284.0" y2="190.0" stroke="#e11d48" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="246.0" cy="190.0" r="3.8" fill="#e11d48" stroke="none" stroke-width="1.5"/>
+  <line x1="160.0" y1="212.0" x2="238.0" y2="212.0" stroke="#0d8a7b" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="199.0" cy="212.0" r="3.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <line x1="144.0" y1="234.0" x2="224.0" y2="234.0" stroke="#0d8a7b" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="184.0" cy="234.0" r="3.8" fill="#0d8a7b" stroke="none" stroke-width="1.5"/>
+  <text x="288.0" y="193.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8.8" font-weight="700" fill="#9f1239" text-anchor="start">Miss!</text>
+  <text x="196.0" y="272.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.1" font-weight="500" fill="#334155" text-anchor="middle">θ is FIXED (not random); the interval jumps across repeats.</text>
+  <text x="196.0" y="287.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.1" font-weight="500" fill="#334155" text-anchor="middle">95% of repeated samples produce intervals bracketing θ.</text>
+  <text x="196.0" y="302.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.1" font-weight="500" fill="#334155" text-anchor="middle">You CANNOT say &#x27;P(θ ∈ this CI) = 95%&#x27; strictly!</text>
+  <rect x="392.0" y="72.0" width="344.0" height="264.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="404.0" y="92.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#085f55" text-anchor="start">Bayesian 95% Credible Interval (θ has a posterior)</text>
+  <line x1="434.0" y1="240.0" x2="698.0" y2="240.0" stroke="#334155" stroke-width="1.4" stroke-linecap="round"/>
+  <polygon points="483.5,240.0 483.5,222.9 486.8,220.2 490.1,217.3 493.4,214.1 496.7,210.6 500.0,206.8 503.3,202.7 506.6,198.4 509.9,193.8 513.2,189.1 516.5,184.2 519.8,179.2 523.1,174.2 526.4,169.1 529.7,164.1 533.0,159.2 536.3,154.6 539.6,150.2 542.9,146.1 546.2,142.4 549.5,139.2 552.8,136.5 556.1,134.3 559.4,132.7 562.7,131.8 566.0,131.4 569.3,131.8 572.6,132.7 575.9,134.3 579.2,136.5 582.5,139.2 585.8,142.4 589.1,146.1 592.4,150.2 595.7,154.6 599.0,159.2 602.3,164.1 605.6,169.1 608.9,174.2 612.2,179.2 615.5,184.2 618.8,189.1 622.1,193.8 625.4,198.4 628.7,202.7 632.0,206.8 635.3,210.6 638.6,214.1 641.9,217.3 645.2,220.2 648.5,222.9 648.5,240.0" fill="#e0f5f2" stroke="none" stroke-width="1.4" stroke-linejoin="round"/>
+  <polyline points="434.0,239.0 437.3,238.8 440.6,238.5 443.9,238.1 447.2,237.7 450.5,237.1 453.8,236.4 457.1,235.7 460.4,234.8 463.7,233.7 467.0,232.4 470.3,231.0 473.6,229.3 476.9,227.4 480.2,225.3 483.5,222.9 486.8,220.2 490.1,217.3 493.4,214.1 496.7,210.6 500.0,206.8 503.3,202.7 506.6,198.4 509.9,193.8 513.2,189.1 516.5,184.2 519.8,179.2 523.1,174.2 526.4,169.1 529.7,164.1 533.0,159.2 536.3,154.6 539.6,150.2 542.9,146.1 546.2,142.4 549.5,139.2 552.8,136.5 556.1,134.3 559.4,132.7 562.7,131.8 566.0,131.4 569.3,131.8 572.6,132.7 575.9,134.3 579.2,136.5 582.5,139.2 585.8,142.4 589.1,146.1 592.4,150.2 595.7,154.6 599.0,159.2 602.3,164.1 605.6,169.1 608.9,174.2 612.2,179.2 615.5,184.2 618.8,189.1 622.1,193.8 625.4,198.4 628.7,202.7 632.0,206.8 635.3,210.6 638.6,214.1 641.9,217.3 645.2,220.2 648.5,222.9 651.8,225.3 655.1,227.4 658.4,229.3 661.7,231.0 665.0,232.4 668.3,233.7 671.6,234.8 674.9,235.7 678.2,236.4 681.5,237.1 684.8,237.7 688.1,238.1 691.4,238.5 694.7,238.8 698.0,239.0" fill="none" stroke="#0d8a7b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="483.5" y1="240.0" x2="483.5" y2="222.9" stroke="#0d8a7b" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <line x1="648.5" y1="240.0" x2="648.5" y2="222.9" stroke="#0d8a7b" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <text x="566.0" y="194.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.8" font-weight="700" fill="#085f55" text-anchor="middle">95% posterior mass</text>
+  <text x="566.0" y="256.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="500" fill="#334155" text-anchor="middle">Parameter θ (given observed data D)</text>
+  <text x="564.0" y="276.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.1" font-weight="500" fill="#334155" text-anchor="middle">Data D are FIXED; posterior P(θ | D) quantifies belief in θ.</text>
+  <text x="564.0" y="291.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.1" font-weight="500" fill="#334155" text-anchor="middle">Directly licenses: &#x27;Given data + prior, P(θ ∈ [a, b]) = 95%.&#x27;</text>
+  <text x="564.0" y="306.0" font-family="'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.1" font-weight="500" fill="#334155" text-anchor="middle">Used for GWAS fine-mapping 95% credible sets (Ch 52)!</text>
+</svg>

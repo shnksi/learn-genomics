@@ -53,6 +53,8 @@ Dosage-sensitive genes are a minority, which is why the recessive default holds.
 
 These are conflated constantly, and the distinction is sharp.
 
+![Incomplete dominance (dosage blending of one functional copy into an intermediate phenotype) contrasted with codominance (simultaneous, unblended expression of both distinct parental alleles in the heterozygote).](../figures/fig-11c-incomplete-vs-codominance.svg)
+
 **Incomplete dominance**: the heterozygote is *intermediate* on a single measured scale. One phenotype, sitting between the two homozygotes. In snapdragons and four-o'clocks, a red-flowered homozygote crossed to a white gives pink F1, and the F2 is **1 red : 2 pink : 1 white** — the phenotypic ratio equals the genotypic ratio, because the map became one-to-one. Pink is not a mixture of red and white flowers; it is a flower with about half the anthocyanin.
 
 **Codominance**: *both* allelic products are present and separately detectable in the heterozygote. Not an average — a superposition. In the MN blood group, the *GYPA* alleles encode two forms of glycophorin A differing by two amino acids; an MN heterozygote carries both antigens on every red cell. The F2 ratio is also 1:2:1, but the heterozygote's phenotype is "M and N", not "halfway between M and N".

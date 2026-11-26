@@ -247,11 +247,11 @@ Two changes at once. **No amplification**, so no PCR bias, no PCR duplicates, an
 chemical modification on the original bases survives to be measured. And **no ensemble**, so
 no dephasing — read length is limited only by how long a molecule you can deliver intact.
 
-![Cutaway illustration of nanopore single-molecule sequencing: a transmembrane protein nanopore (slate blue) spans a synthetic lipid bilayer while a motor helicase (teal) ratchets DNA through the narrow central constriction, modulating the ionic current (glowing cyan ions) in real time.](../figures/art-40-nanopore-sequencing.png)
-
 The price: you are measuring a single molecule, so the raw signal is noisy.
 
 ### 3.1 PacBio SMRT and the circular-consensus trick
+
+![PacBio SMRT sequencing inside a zero-mode waveguide (ZMW) nanocavity and Circular Consensus Sequencing (HiFi): hairpin adapters turn linear DNA into a circular SMRTbell read 10–15 times by a single polymerase so independent raw errors cancel to >99.9% (Q30+) accuracy.](../figures/fig-40c-pacbio-smrt-hifi.svg)
 
 **The zero-mode waveguide.** To watch one polymerase you must illuminate a volume small
 enough that free fluorescent nucleotides in it are countable. A ZMW is an aperture tens of
@@ -313,6 +313,8 @@ A protein pore sits in an electrically resistive membrane with a voltage across 
 flow; you measure the current, sampled at ~4–5 kHz. A motor protein ratchets single-stranded
 DNA through the pore at a few hundred bases per second. Whichever bases occupy the narrow
 constriction partially block the ions, so the current depends on them.
+
+![Cutaway illustration of nanopore single-molecule sequencing: a transmembrane protein nanopore (slate blue) spans a synthetic lipid bilayer while a motor helicase (teal) ratchets DNA through the narrow central constriction, modulating the ionic current (glowing cyan ions) in real time.](../figures/art-40-nanopore-sequencing.png)
 
 ```
    current (pA)

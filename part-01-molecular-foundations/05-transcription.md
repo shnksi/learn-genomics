@@ -132,6 +132,8 @@ That last clause is the hinge for [Ch 21](../part-04-gene-regulation/21-bacteria
 
 ## 5. Eukaryotes: three polymerases
 
+![Division of labour across the three eukaryotic RNA polymerases: Pol I (nucleolar 45S pre-rRNA), Pol II (protein-coding mRNAs and non-coding RNAs with CTD-coupled processing), and Pol III (tRNAs, 5S rRNA, and internal promoters).](../figures/fig-05c-three-polymerases.svg)
+
 | | Pol I | Pol II | Pol III |
 |---|---|---|---|
 | Subunits | 14 | 12 | 17 |

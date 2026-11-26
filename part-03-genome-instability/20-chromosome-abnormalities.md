@@ -70,6 +70,8 @@ is not counting sequence.
 
 **Euploid** changes multiply the whole set; **aneuploid** changes alter individual chromosomes.
 
+![Polyploidy (whole extra chromosome sets keeping 1:1:1 dosage stoichiometry intact) versus aneuploidy (gain or loss of a single chromosome disrupting stoichiometric balance across hundreds of genes).](../figures/fig-20d-ploidy-vs-aneuploidy.svg)
+
 Triploidy (69 chromosomes) occurs in perhaps 1–2% of recognised conceptions and never survives.
 Its two origins give visibly different outcomes, which is the cleanest demonstration of
 imprinting you will meet:

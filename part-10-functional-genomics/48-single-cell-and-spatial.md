@@ -65,7 +65,7 @@ tissue. Bulk co-expression networks are, to a first approximation, cell-composit
 
 Three isolation strategies, each a different point on the same trade-off.
 
-![Microfluidic droplet encapsulation for single-cell RNA-seq: individual cells (teal, blue, rose) and barcoded hydrogel beads coated with capture oligos (amber) meet flanking oil streams to pinch off nanolitre water-in-oil droplets — yielding mostly empty droplets, single-cell/single-bead captures, and occasional doublets governed by Poisson loading.](../figures/art-48-single-cell-droplets.png)
+![Comparison of plate-based (SMART-seq2: full-length transcript coverage across hundreds to thousands of FACS-sorted cells) versus droplet-based (10x Chromium: 3′-end UMI barcoding across tens of thousands of cells with Poisson loading) single-cell RNA-seq architectures.](../figures/fig-48b-plate-vs-droplet-sc.svg)
 
 **Plate-based (full-length).** Sort one cell per well, build a full-length library per well.
 Hundreds to low thousands of cells; hundreds of thousands of reads each; coverage across the
@@ -77,6 +77,8 @@ barcoded bead in an oil droplet. Cells are loaded at low concentration so most d
 empty. Tens of thousands to millions of cells, at ~10²–10⁴ reads each. Only the transcript
 end near the capture primer is sequenced, so you get a count per gene and almost no isoform
 information.
+
+![Microfluidic droplet encapsulation for single-cell RNA-seq: individual cells (teal, blue, rose) and barcoded hydrogel beads coated with capture oligos (amber) meet flanking oil streams to pinch off nanolitre water-in-oil droplets — yielding mostly empty droplets, single-cell/single-bead captures, and occasional doublets governed by Poisson loading.](../figures/art-48-single-cell-droplets.png)
 
 **Combinatorial indexing (split-pool).** No physical isolation at all. Fixed cells or nuclei
 are distributed across a plate, tagged with a well-specific barcode, pooled, redistributed,

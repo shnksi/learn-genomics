@@ -499,6 +499,8 @@ calculation. When it is not a measured frequency, it belongs in the methods sect
 This is the sharpest contrast in the chapter, and the place where the two frameworks are most
 often conflated.
 
+![Frequentist 95% confidence intervals (random intervals fluctuating across repeated samples around a fixed parameter *θ*) contrasted with Bayesian 95% credible intervals (fixed data producing a posterior distribution containing 95% probability mass for *θ*).](../figures/fig-S6b-credible-vs-confidence.svg)
+
 | | Confidence interval (S3) | Credible interval |
 |---|---|---|
 | Built from | the sampling distribution of the estimator | the posterior distribution of the parameter |

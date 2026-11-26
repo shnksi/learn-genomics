@@ -370,6 +370,8 @@ around that is set by how many crossovers there are and where they land.
 **Nondisjunction** is failure to separate — of homologs at anaphase I, or of sisters at
 anaphase II. The two produce distinguishable products.
 
+![Meiosis I versus Meiosis II nondisjunction: failure of homologues to separate in MI produces 100% aneuploid gametes carrying both homologous alleles, whereas failure of sister chromatids in MII yields 50% normal gametes and 25% trisomic gametes carrying identical sister alleles.](../figures/fig-09d-nondisjunction-mi-vs-mii.svg)
+
 ```
   MEIOSIS I NONDISJUNCTION            MEIOSIS II NONDISJUNCTION
   both homologs go to one pole        one cell's sisters fail to split

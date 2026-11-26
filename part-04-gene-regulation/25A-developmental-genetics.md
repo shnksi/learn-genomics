@@ -62,6 +62,8 @@ means separating three things a plain knockout fuses together: *which gene*, *wh
 A cell has to become one thing rather than another, and there are exactly two kinds of information
 it can use.
 
+![Autonomous lineage-based specification (*C. elegans* cytoplasmic determinants where ablating one blastomere deletes its fate) versus conditional positional specification (mammalian regulative blastomeres where splitting a two-cell embryo yields complete identical twins).](../figures/fig-25Ac-lineage-vs-position.svg)
+
 **Lineage.** Fate follows from ancestry — which cell you descended from, through which divisions.
 Determinants are *inherited*: a dividing cell partitions cytoplasmic material unequally and the
 daughters differ because they got different stuff.
